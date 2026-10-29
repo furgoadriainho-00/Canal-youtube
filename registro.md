@@ -6,3 +6,5 @@
 - 2026-10-29 · Prueba completa correcta: voz Kokoro → transcripción con Whisper exacta → clip 1080×1920 H.264/AAC a −14 LUFS.
 - 2026-10-29 · Creados `requirements.txt` e `instalar.sh` para reproducir el entorno en cualquier máquina.
 - 2026-10-29 · Paso 2: creada la estructura de carpetas (informes/, salida/, canales/), gastos.md, aprendizajes.md y una plantilla de canal en canales/_plantilla con las cabeceras de los CSV. Añado publicados.csv con estructura, miniatura y frase de inicio para poder comprobar la regla de no repetir.
+- 2026-10-29 · Paso 3: investigados 3 nichos en inglés (A cosas cotidianas 7,25 · B tu casa 7,45 · C geografía 6,25). Recomiendo B. Plazo para que el humano elija: 2026-10-30; si no responde, B. Informe en informes/2026-10-29_propuesta-nichos.md.
+- 2026-10-29 · Paso 4: propuesta de herramientas. Seguimos a 0 € con Kokoro. ElevenLabs Creator (22 $) queda como opción solo si la retención es baja. Hacen falta claves gratuitas de Pexels y Pixabay. Informe en informes/2026-10-29_propuesta-herramientas.md.
