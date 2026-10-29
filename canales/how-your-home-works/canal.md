@@ -4,7 +4,7 @@ Todo está listo para copiar y pegar. Los archivos de imagen están en `marca/`.
 
 ## Nombre y @
 - **Nombre:** Home By The Numbers
-- **@ (identificador):** `@HomeByTheNumbers`. Estaba libre el 2026-10-29.
+- **@ (identificador):** `@HomeByTheNumbers` · **creado** el 2026-10-29: https://www.youtube.com/@HomeByTheNumbers
 - **Alternativa si estuviera cogido:** The Home Math (`@TheHomeMath`, también libre).
 - Ya no sirven «Home Explained», «How Homes Work» ni «House Decoded»: existen.
 
