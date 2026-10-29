@@ -5,3 +5,4 @@
 - 2026-10-29 · Decisión: uso faster-whisper en lugar de openai-whisper porque va más rápido en CPU y no necesita PyTorch. He fijado `av<16` porque la versión 19 rompe faster-whisper.
 - 2026-10-29 · Prueba completa correcta: voz Kokoro → transcripción con Whisper exacta → clip 1080×1920 H.264/AAC a −14 LUFS.
 - 2026-10-29 · Creados `requirements.txt` e `instalar.sh` para reproducir el entorno en cualquier máquina.
+- 2026-10-29 · Paso 2: creada la estructura de carpetas (informes/, salida/, canales/), gastos.md, aprendizajes.md y una plantilla de canal en canales/_plantilla con las cabeceras de los CSV. Añado publicados.csv con estructura, miniatura y frase de inicio para poder comprobar la regla de no repetir.
