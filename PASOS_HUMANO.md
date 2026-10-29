@@ -65,4 +65,4 @@ Esta sesión corre en un servidor temporal en la nube, no en tu ordenador. Para 
 - **A. Tu ordenador** (lo que dice `CLAUDE.md`): clonas el repositorio, ejecutas `./instalar.sh` y programamos una tarea diaria. Hace falta tener Claude Code instalado ahí.
 - **B. En la nube:** una tarea programada abre una sesión como esta cada día, produce el vídeo y lo sube al repositorio, y tú lo descargas y lo subes a YouTube. Es más cómodo, pero los vídeos pesan y hay que moverlos.
 
-Dime cuál prefieres. Si no dices nada, cuando lleguemos a ese paso prepararé la B, porque no necesita nada de tu parte.
+**Ya está activa la B** (cada día a las 03:17, hora de Madrid). Si prefieres la A, dímelo y la cambio.
