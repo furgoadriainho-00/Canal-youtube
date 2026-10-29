@@ -1,0 +1,45 @@
+TÍTULO:
+Which Appliances Use the Most Electricity? Ranked by Cost
+
+DESCRIPCIÓN:
+Which appliances use the most electricity in your home, and what does each one really cost per year? I ranked 15 household appliances using the U.S. government's own Residential Energy Consumption Survey and 2026 electricity prices.
+
+The top three cost about $500 a year each. A forgotten second fridge costs almost as much as your main one. And the #4 spot surprises most people.
+
+How the numbers work: average yearly kWh per household that has each appliance (EIA RECS 2020) × the average U.S. residential price in 2026 (18.19¢/kWh, EIA, Jan–Aug 2026, preliminary). Your own costs will vary with climate, rates and usage.
+
+Chapters:
+0:00 Dishwasher vs air conditioner
+0:36 How the numbers work
+1:14 #15 to #11: the cheap stuff
+2:28 #10 the forgotten fridge
+3:01 #9 to #6: freezer, fridge, TVs, lighting
+3:48 #5 the clothes dryer
+4:01 #4 the surprise
+4:30 The top 3
+6:37 Pool pumps, EVs and hot tubs
+7:00 Full ranking recap
+7:26 What it all means
+
+Sources:
+EIA Residential Energy Consumption Survey 2020, tables CE5.3a/CE5.3b: https://www.eia.gov/consumption/residential/data/2020/index.php?view=consumption
+EIA Electric Power Monthly, Table 5.3: https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_03
+EIA, average home electricity use: https://www.eia.gov/tools/faqs/faq.php?id=97&t=3
+ENERGY STAR, clothes washers: https://www.energystar.gov/products/clothes_washers
+U.S. DOE, heat pump water heaters: https://bsesc.energy.gov/energy-basics/water-heaters-heat-pumps
+U.S. DOE, thermostat setback (Feb 2024): https://content.govdelivery.com/accounts/USEERE/bulletins/3883189
+
+ETIQUETAS:
+appliances that use the most electricity, electricity cost per appliance, how much electricity does my fridge use, energy saving tips, electric bill, home energy, water heater cost, air conditioner cost per year, dehumidifier electricity cost, second fridge cost, EIA RECS, how your home works
+
+AJUSTES EN YOUTUBE STUDIO:
+
+- Idioma del vídeo: English · Subtítulos: sube subtitulos_en.srt (Inglés)
+
+- Lista de reproducción: Home energy costs, explained
+
+- Contenido para niños: NO
+
+- Contenido alterado o sintético: SÍ (narración con voz sintética; marcado por prudencia según CLAUDE.md, sección 2.7)
+
+- Miniatura: miniatura_A.jpg (si tu cuenta tiene «Probar y comparar», sube también B y C)

@@ -1,0 +1,95 @@
+{
+ "ok": true,
+ "resultados": [
+  {
+   "ok": true,
+   "prueba": "Resolución",
+   "detalle": "1080×1920",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "30 fps, H.264 + AAC",
+   "detalle": "30/1",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Duración",
+   "detalle": "30.3 s",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Volumen ≈ −14 LUFS",
+   "detalle": "-14.5 LUFS",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Sin picos (true peak ≤ −1 dBFS)",
+   "detalle": "-1.4 dBFS",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Longitud del guion",
+   "detalle": "86 palabras",
+   "aviso": true
+  },
+  {
+   "ok": true,
+   "prueba": "Gancho sin saludo",
+   "detalle": "that fridge in your garage costs you about ninety ",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Cambio visual cada 2–4 s",
+   "detalle": "hueco máximo 3.9 s",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Existe fuentes.md",
+   "detalle": "",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Existe licencias.md",
+   "detalle": "",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Existe metadatos.json",
+   "detalle": "",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Título < 60 caracteres",
+   "detalle": "52",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Etiqueta de IA decidida",
+   "detalle": "",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Cifras en pantalla documentadas en fuentes.md",
+   "detalle": "[]",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Voz = guion (transcripción Whisper)",
+   "detalle": "similitud 0.87",
+   "aviso": false
+  }
+ ]
+}

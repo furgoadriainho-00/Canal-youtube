@@ -72,8 +72,8 @@ def controlar(carpeta: Path):
     final = carpeta / "final.mp4"
     res = []
 
-    def ok(nombre, cond, detalle=""):
-        res.append((cond, nombre, detalle))
+    def ok(nombre, cond, detalle="", aviso=False):
+        res.append((cond, nombre, detalle, aviso))
 
     info = _probe(final)
     v = next(s for s in info["streams"] if s["codec_name"] == "h264")
@@ -88,7 +88,9 @@ def controlar(carpeta: Path):
     ok("Sin picos (true peak ≤ −1 dBFS)", pico <= -1.0, f"{pico:.1f} dBFS")
 
     palabras = sum(len(s["t"].split()) for s in g["segmentos"])
-    ok("Longitud del guion", (80 <= palabras <= 150) if short else (1300 <= palabras <= 1800), f"{palabras} palabras")
+    # orientativo: lo que manda es la duración
+    ok("Longitud del guion", (80 <= palabras <= 150) if short else (1300 <= palabras <= 1800), f"{palabras} palabras",
+       aviso=True)
     primera = g["segmentos"][0]["t"].lower()
     ok("Gancho sin saludo", not re.match(r"(hi|hello|hey|welcome)\b", primera), primera[:50])
 
@@ -137,12 +139,12 @@ def controlar(carpeta: Path):
 
     mos = mosaico(final, carpeta / "visuales" / "mosaico_qc.png")
     print(f"\nControl de calidad · {carpeta.name}")
-    for cond, nombre, det in res:
-        print(f"  {'✓' if cond else '✗'} {nombre}" + (f"  ({det})" if det else ""))
+    for cond, nombre, det, aviso in res:
+        print(f"  {'✓' if cond else ('!' if aviso else '✗')} {nombre}" + (f"  ({det})" if det else "") + ("  [aviso]" if aviso and not cond else ""))
     print(f"  · Revisión visual: {mos}")
-    fallos = [r for r in res if not r[0]]
+    fallos = [r for r in res if not r[0] and not r[3]]
     (carpeta / "control.json").write_text(json.dumps(
-        {"ok": not fallos, "resultados": [{"ok": c, "prueba": n, "detalle": d} for c, n, d in res]}, indent=1,
+        {"ok": not fallos, "resultados": [{"ok": c, "prueba": n, "detalle": d, "aviso": a} for c, n, d, a in res]}, indent=1,
         ensure_ascii=False))
     return not fallos
 

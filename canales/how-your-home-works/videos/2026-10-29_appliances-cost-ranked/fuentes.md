@@ -41,3 +41,27 @@ Coste al año = kWh de RECS 2020 × 0,1819 $/kWh. Script: `datos/calcular.py` �
 ## Descartado por no poder verificarlo
 - «Las LED gastan hasta un 90 % menos». No he podido abrir la página oficial de ENERGY STAR.
 - Qué estados forman la subdivisión «Mountain South» de RECS. Uso la división West South Central, que es la estándar del censo.
+
+## Tabla de costes calculada (datos/costes.csv)
+
+| Uso | kWh/año | Coste/año |
+|---|---|---|
+| Air conditioning (incl. its fan) | 2775 | 505 $ |
+| Electric space heating (incl. its fan) | 2717 | 494 $ |
+| Electric water heater | 2706 | 492 $ |
+| Pool pump | 2384 | 434 $ |
+| EV charging | 2363 | 430 $ |
+| Hot tub (heater + pump) | 1963 | 357 $ |
+| Dehumidifier | 999 | 182 $ |
+| Clothes dryer | 680 | 124 $ |
+| Lighting | 654 | 119 $ |
+| TVs and related devices | 632 | 115 $ |
+| Main refrigerator | 617 | 112 $ |
+| Separate freezer | 570 | 104 $ |
+| Second refrigerator | 494 | 90 $ |
+| Cooking (range/oven) | 290 | 53 $ |
+| Ceiling fans | 226 | 41 $ |
+| Humidifier | 139 | 25 $ |
+| Dishwasher (machine only) | 112 | 20 $ |
+| Microwave | 107 | 19 $ |
+| Clothes washer (machine only) | 69 | 13 $ |

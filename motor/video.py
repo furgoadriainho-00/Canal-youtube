@@ -205,8 +205,10 @@ def _subtitulo(lienzo, W, H, tg, palabras):
     for gr in grupos:
         if gr[0]["ini"] - 0.05 <= tg < gr[-1]["fin"] + 0.15:
             trozos = []
+            sonando = [p for p in gr if p["ini"] <= tg]
+            actual = sonando[-1] if sonando else None
             for p in gr:
-                activa = p["ini"] <= tg < p["fin"] + 0.1
+                activa = p is actual
                 trozos.append(texto(p["w"].strip().upper(), 96, COLORES["calor"] if activa else COLORES["texto"],
                                     borde=6))
             ancho = sum(s.width for s in trozos) + 24 * (len(trozos) - 1)
@@ -249,15 +251,18 @@ def _ffmpeg(*args):
     subprocess.run(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", *args], check=True)
 
 
-def _normalizar(entrada, salida, objetivo, tp=-1.5):
-    """loudnorm en dos pasadas (lineal) para clavar el volumen."""
+def _normalizar(entrada, salida, objetivo, tp=-1.5, lineal=True, previo=""):
+    """loudnorm en dos pasadas. En la mezcla final va en modo dinámico: el lineal se queda corto
+    cuando el límite de picos no deja subir la ganancia."""
+    previo = previo + "," if previo else ""
     r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(entrada), "-af",
-                        f"loudnorm=I={objetivo}:TP={tp}:LRA=11:print_format=json", "-f", "null", "-"],
+                        f"{previo}loudnorm=I={objetivo}:TP={tp}:LRA=11:print_format=json", "-f", "null", "-"],
                        capture_output=True, text=True)
     m = json.loads(r.stderr[r.stderr.rindex("{"):])
     _ffmpeg("-i", str(entrada), "-af",
-            f"loudnorm=I={objetivo}:TP={tp}:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
-            f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true",
+            f"{previo}loudnorm=I={objetivo}:TP={tp}:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+            f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:"
+            f"linear={'true' if lineal else 'false'}",
             "-ar", "48000", str(salida))
 
 
@@ -280,6 +285,21 @@ def _srt(carpeta, g, tiempos, palabras=None):
     for i, (s, tt) in enumerate(zip(g["segmentos"], tiempos)):
         lineas += [str(i + 1), f'{ts(tt["ini"])} --> {ts(tt["ini"] + tt["voz"])}', s["t"], ""]
     (carpeta / "subtitulos.srt").write_text("\n".join(lineas))
+
+
+def mezclar(carpeta: Path, total: float, mudo: Path, final: Path):
+    print("· audio: música, mezcla y −14 LUFS…", flush=True)
+    a = carpeta / "audio"
+    generar_musica(a / "musica.wav", total)
+    # compresor suave: la voz sintética tiene picos altos y sin él no se llega a −14 LUFS sin pasar de −1,5 dBTP
+    _normalizar(a / "voz.wav", a / "voz_norm.wav", -16,
+                previo="acompressor=threshold=-24dB:ratio=3:attack=5:release=120:makeup=4")
+    _normalizar(a / "musica.wav", a / "musica_norm.wav", -34)  # ≈18 dB por debajo de la voz
+    _ffmpeg("-i", str(a / "voz_norm.wav"), "-i", str(a / "musica_norm.wav"), "-filter_complex",
+            "[0][1]amix=inputs=2:duration=first:normalize=0", "-ar", "48000", str(a / "mezcla.wav"))
+    _normalizar(a / "mezcla.wav", a / "mezcla_norm.wav", -14, lineal=False)
+    _ffmpeg("-i", str(mudo), "-i", str(a / "mezcla_norm.wav"), "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+            "-shortest", "-movflags", "+faststart", str(final))
 
 
 def producir(carpeta: Path, prueba: int = 0, sin_cache=False):
@@ -319,17 +339,8 @@ def producir(carpeta: Path, prueba: int = 0, sin_cache=False):
     mudo = carpeta / "visuales" / "mudo.mp4"
     _ffmpeg("-f", "concat", "-safe", "0", "-i", str(lista), "-c", "copy", str(mudo))
 
-    print("· audio: música, mezcla y −14 LUFS…", flush=True)
-    a = carpeta / "audio"
-    generar_musica(a / "musica.wav", total)
-    _normalizar(a / "voz.wav", a / "voz_norm.wav", -16)
-    _normalizar(a / "musica.wav", a / "musica_norm.wav", -34)  # ≈18 dB por debajo de la voz
-    _ffmpeg("-i", str(a / "voz_norm.wav"), "-i", str(a / "musica_norm.wav"), "-filter_complex",
-            "[0][1]amix=inputs=2:duration=first:normalize=0", "-ar", "48000", str(a / "mezcla.wav"))
-    _normalizar(a / "mezcla.wav", a / "mezcla_norm.wav", -14)
     final = carpeta / ("prueba.mp4" if prueba else "final.mp4")
-    _ffmpeg("-i", str(mudo), "-i", str(a / "mezcla_norm.wav"), "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
-            "-shortest", "-movflags", "+faststart", str(final))
+    mezclar(carpeta, total, mudo, final)
     _srt(carpeta, g, tiempos)
     print(f"✓ {final}", flush=True)
     return final
@@ -340,5 +351,11 @@ if __name__ == "__main__":
     ap.add_argument("carpeta")
     ap.add_argument("--prueba", type=int, default=0)
     ap.add_argument("--sin-cache", action="store_true")
+    ap.add_argument("--solo-audio", action="store_true", help="rehace solo la mezcla sobre visuales/mudo.mp4")
     a = ap.parse_args()
-    producir(Path(a.carpeta).resolve(), a.prueba, a.sin_cache)
+    c = Path(a.carpeta).resolve()
+    if a.solo_audio:
+        t = json.loads((c / "audio" / "tiempos.json").read_text())
+        mezclar(c, t[-1]["ini"] + t[-1]["dur"], c / "visuales" / "mudo.mp4", c / "final.mp4")
+    else:
+        producir(c, a.prueba, a.sin_cache)

@@ -1,7 +1,13 @@
 {
   "titulo": "Is Your Washing Machine Really Cheap to Run? #shorts",
   "descripcion": "The washer itself uses about $13 of electricity a year, but ENERGY STAR says about 90% of the energy it takes to run a washer goes into heating the water.\n\nFull ranking of 15 appliances by yearly cost: see the related video.",
-  "etiquetas": ["washing machine electricity cost", "cold water laundry", "energy saving tips", "water heater cost", "shorts"],
+  "etiquetas": [
+    "washing machine electricity cost",
+    "cold water laundry",
+    "energy saving tips",
+    "water heater cost",
+    "shorts"
+  ],
   "idioma": "English",
   "lista": "Home energy costs, explained",
   "etiqueta_ia": true,
@@ -9,5 +15,9 @@
   "miniatura_base": "short",
   "video_relacionado": "Which Appliances Use the Most Electricity? Ranked by Cost",
   "afiliados": [],
-  "fuentes_publicas": ["ENERGY STAR: https://www.energystar.gov/products/clothes_washers", "EIA RECS 2020: https://www.eia.gov/consumption/residential/data/2020/index.php?view=consumption"]
+  "fuentes_publicas": [
+    "ENERGY STAR: https://www.energystar.gov/products/clothes_washers",
+    "EIA RECS 2020: https://www.eia.gov/consumption/residential/data/2020/index.php?view=consumption"
+  ],
+  "descripcion_final": "The washer itself uses about $13 of electricity a year, but ENERGY STAR says about 90% of the energy it takes to run a washer goes into heating the water.\n\nFull ranking of 15 appliances by yearly cost: see the related video.\n\nSources:\nENERGY STAR: https://www.energystar.gov/products/clothes_washers\nEIA RECS 2020: https://www.eia.gov/consumption/residential/data/2020/index.php?view=consumption"
 }

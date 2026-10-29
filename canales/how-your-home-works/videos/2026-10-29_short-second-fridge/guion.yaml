@@ -20,3 +20,4 @@ segmentos:
   v: {tipo: texto, lineas: ["Mostly empty?", "*Unplug it*"], icono: power_settings_new}
 - t: "I ranked fifteen appliances by yearly cost. One of the biggest surprises was that fridge in your garage."
   v: {tipo: texto, lineas: ["15 appliances", "*ranked* · full video"], icono: play_circle}
+  pausa: 0.5
