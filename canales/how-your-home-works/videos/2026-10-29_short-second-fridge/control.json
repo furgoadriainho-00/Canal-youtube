@@ -51,6 +51,12 @@
   },
   {
    "ok": true,
+   "prueba": "Visual: pantallas de solo texto ≤ 10 % y ninguna > 2,2 s",
+   "detalle": "1/8 de texto; largas: []",
+   "aviso": false
+  },
+  {
+   "ok": true,
    "prueba": "Existe fuentes.md",
    "detalle": "",
    "aviso": false
