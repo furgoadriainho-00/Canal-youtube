@@ -1,0 +1,20 @@
+uso,kwh_anual,coste_anual_usd,tabla
+Air conditioning (incl. its fan),2775,505,CE5.3a
+Electric space heating (incl. its fan),2717,494,CE5.3a
+Electric water heater,2706,492,CE5.3a
+Pool pump,2384,434,CE5.3b
+EV charging,2363,430,CE5.3a
+Hot tub (heater + pump),1963,357,CE5.3b
+Dehumidifier,999,182,CE5.3a
+Clothes dryer,680,124,CE5.3a
+Lighting,654,119,CE5.3a
+TVs and related devices,632,115,CE5.3b
+Main refrigerator,617,112,CE5.3b
+Separate freezer,570,104,CE5.3b
+Second refrigerator,494,90,CE5.3b
+Cooking (range/oven),290,53,CE5.3b
+Ceiling fans,226,41,CE5.3a
+Humidifier,139,25,CE5.3a
+Dishwasher (machine only),112,20,CE5.3b
+Microwave,107,19,CE5.3b
+Clothes washer (machine only),69,13,CE5.3a

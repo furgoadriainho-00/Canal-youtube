@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:03,208
+Your dishwasher costs about twenty dollars a year to run.
+
+2
+00:00:03,428 --> 00:00:05,887
+Your air conditioner? About five hundred.
+
+3
+00:00:06,407 --> 00:00:08,932
+So where does your electric bill actually go?
+
+4
+00:00:09,152 --> 00:00:14,745
+I ranked fifteen things in the average American home by what they cost to run for a full year.
+
+5
+00:00:14,965 --> 00:00:20,398
+The numbers come from the federal government's own household energy survey, not from guesses.
+
+6
+00:00:20,618 --> 00:00:27,652
+For scale, the average American home buys about ten thousand eight hundred kilowatt-hours of electricity a year.

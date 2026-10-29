@@ -1,0 +1,22 @@
+# Short derivado de 2026-10-29_appliances-cost-ranked. Termina enlazando con el principio para que se repita.
+titulo: "Your garage fridge costs more than you think"
+estructura: pregunta-respuesta
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: "That fridge in your garage costs you about ninety dollars a year."
+  v: {tipo: numero, icono: kitchen, valor: 90, prefijo: "$", sufijo: "/yr", etiqueta: "Second fridge", color: calor}
+- t: "That's from the government's own home energy survey, at twenty twenty-six power prices."
+  v: {tipo: fuente, titulo: "Residential Energy Consumption Survey", detalle: "U.S. EIA · 2020 data", nota: "× 18.2¢/kWh (2026)"}
+- t: "Your main fridge? About a hundred and twelve."
+  v: {tipo: comparar, a: ["Garage fridge", 90, kitchen], b: ["Main fridge", 112, kitchen], prefijo: "$", sufijo: ""}
+- t: "So the backup costs eighty percent as much as the one you open every day."
+  v: {tipo: numero, icono: kitchen, valor: 80, prefijo: "", sufijo: "%", etiqueta: "of your main fridge", color: calor}
+- t: "Over ten years, that's around nine hundred dollars."
+  v: {tipo: numero, icono: payments, valor: 900, prefijo: "$", sufijo: "", etiqueta: "in 10 years", color: calor}
+- t: "Usually just to keep a few drinks cold."
+  v: {tipo: iconos, iconos: [local_drink, local_drink, local_drink], etiquetas: ["", "", ""]}
+- t: "Mostly empty? Unplug it."
+  v: {tipo: texto, lineas: ["Mostly empty?", "*Unplug it*"], icono: power_settings_new}
+- t: "I ranked fifteen appliances by yearly cost. One of the biggest surprises was that fridge in your garage."
+  v: {tipo: texto, lineas: ["15 appliances", "*ranked* · full video"], icono: play_circle}

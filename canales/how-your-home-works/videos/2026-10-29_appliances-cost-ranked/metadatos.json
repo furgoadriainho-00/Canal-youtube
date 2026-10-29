@@ -1,0 +1,20 @@
+{
+  "titulo": "Which Appliances Use the Most Electricity? Ranked by Cost",
+  "descripcion": "Which appliances use the most electricity in your home, and what does each one really cost per year? I ranked 15 household appliances using the U.S. government's own Residential Energy Consumption Survey and 2026 electricity prices.\n\nThe top three cost about $500 a year each. A forgotten second fridge costs almost as much as your main one. And the #4 spot surprises most people.\n\nHow the numbers work: average yearly kWh per household that has each appliance (EIA RECS 2020) × the average U.S. residential price in 2026 (18.19¢/kWh, EIA, Jan–Aug 2026, preliminary). Your own costs will vary with climate, rates and usage.",
+  "etiquetas": ["appliances that use the most electricity", "electricity cost per appliance", "how much electricity does my fridge use", "energy saving tips", "electric bill", "home energy", "water heater cost", "air conditioner cost per year", "dehumidifier electricity cost", "second fridge cost", "EIA RECS", "how your home works"],
+  "idioma": "English",
+  "lista": "Home energy costs, explained",
+  "etiqueta_ia": true,
+  "motivo_ia": "narración con voz sintética; marcado por prudencia según CLAUDE.md, sección 2.7",
+  "miniatura_base": "icono_grande",
+  "hora": "",
+  "afiliados": [],
+  "fuentes_publicas": [
+    "EIA Residential Energy Consumption Survey 2020, tables CE5.3a/CE5.3b: https://www.eia.gov/consumption/residential/data/2020/index.php?view=consumption",
+    "EIA Electric Power Monthly, Table 5.3: https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_03",
+    "EIA, average home electricity use: https://www.eia.gov/tools/faqs/faq.php?id=97&t=3",
+    "ENERGY STAR, clothes washers: https://www.energystar.gov/products/clothes_washers",
+    "U.S. DOE, heat pump water heaters: https://bsesc.energy.gov/energy-basics/water-heaters-heat-pumps",
+    "U.S. DOE, thermostat setback (Feb 2024): https://content.govdelivery.com/accounts/USEERE/bulletins/3883189"
+  ]
+}

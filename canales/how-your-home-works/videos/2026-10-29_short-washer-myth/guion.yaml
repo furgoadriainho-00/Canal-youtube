@@ -1,0 +1,20 @@
+# Short derivado de 2026-10-29_appliances-cost-ranked. Termina enlazando con el principio para que se repita.
+titulo: "Is your washing machine really cheap to run?"
+estructura: mito-vs-realidad
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: "Myth or reality: your washing machine is cheap to run."
+  v: {tipo: texto, lineas: ["Myth or reality?", "*Washers are cheap*"], icono: local_laundry_service}
+- t: "The machine itself uses about thirteen dollars of electricity a year."
+  v: {tipo: numero, icono: local_laundry_service, valor: 13, prefijo: "$", sufijo: "/yr", etiqueta: "Washer motor & controls", color: frio}
+- t: "But Energy Star says about ninety percent of the energy it takes to run a washer goes into heating the water."
+  v: {tipo: numero, icono: water_heater, valor: 90, prefijo: "", sufijo: "%", etiqueta: "goes to heating water", color: calor, fuente: "ENERGY STAR"}
+- t: "And an electric water heater costs the average home about four hundred and ninety-two dollars a year."
+  v: {tipo: numero, icono: water_heater, valor: 492, prefijo: "$", sufijo: "/yr", etiqueta: "Electric water heater", color: calor}
+- t: "Switching from hot to warm can cut the washer's energy use in half. Cold saves even more."
+  v: {tipo: comparar, a: ["Hot", 100, local_fire_department], b: ["Warm", 50, water_drop], prefijo: "", sufijo: "%", fuente: "ENERGY STAR"}
+- t: "So, the verdict? Half true. The machine is cheap. The hot water is not."
+  v: {tipo: texto, lineas: ["Machine: *cheap*", "Hot water: *not*"], icono: gavel}
+- t: "I ranked fifteen appliances by yearly cost, full video linked. So, is your washing machine cheap to run?"
+  v: {tipo: texto, lineas: ["15 appliances", "*ranked* · full video"], icono: play_circle}

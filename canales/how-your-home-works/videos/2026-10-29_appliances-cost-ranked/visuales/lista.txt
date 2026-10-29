@@ -1,0 +1,6 @@
+file '/home/user/Canal-youtube/canales/how-your-home-works/videos/2026-10-29_appliances-cost-ranked/visuales/segmentos/s000_36d84de5967a.mp4'
+file '/home/user/Canal-youtube/canales/how-your-home-works/videos/2026-10-29_appliances-cost-ranked/visuales/segmentos/s001_7db125a964ea.mp4'
+file '/home/user/Canal-youtube/canales/how-your-home-works/videos/2026-10-29_appliances-cost-ranked/visuales/segmentos/s002_4768fabfd868.mp4'
+file '/home/user/Canal-youtube/canales/how-your-home-works/videos/2026-10-29_appliances-cost-ranked/visuales/segmentos/s003_66586545557e.mp4'
+file '/home/user/Canal-youtube/canales/how-your-home-works/videos/2026-10-29_appliances-cost-ranked/visuales/segmentos/s004_0cafd69b2cbf.mp4'
+file '/home/user/Canal-youtube/canales/how-your-home-works/videos/2026-10-29_appliances-cost-ranked/visuales/segmentos/s005_6ba1180813c5.mp4'

@@ -3,3 +3,5 @@ modelos/
 __pycache__/
 *.mp4
 *.wav
+visuales/segmentos/
+visuales/lista.txt

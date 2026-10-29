@@ -5,3 +5,6 @@ av>=14,<16
 kokoro-onnx==0.6.1
 soundfile==0.14.0
 numpy
+scipy
+pyyaml
+openpyxl
