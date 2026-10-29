@@ -23,6 +23,7 @@ from PIL import Image
 
 from .graficos import RAIZ, COLORES, fondo, texto, encajar, pegar, prog, ease_out, ease_in_out, caja_redondeada
 from .escenas import ESCENAS, escalera
+from .ilustraciones import particulas_fondo
 
 FPS = 30
 SR_VOZ = 24000
@@ -143,7 +144,8 @@ def golpes(dur):
 
 
 def _version_motor():
-    return hashlib.sha1(b"".join(p.read_bytes() for p in sorted(Path(__file__).parent.glob("*.py")))).hexdigest()[:8]
+    dibujo = ["graficos.py", "escenas.py", "ilustraciones.py", "casa.py", "video.py"]
+    return hashlib.sha1(b"".join((Path(__file__).parent / f).read_bytes() for f in dibujo)).hexdigest()[:8]
 
 
 _BG = {}
@@ -166,6 +168,7 @@ def _cuadro(g, i, t, tiempos, extra):
     dx = (bg.width - W) / 2 * (1 + 0.8 * np.sin(tg * 0.05))
     dy = (bg.height - H) / 2 * (1 + 0.8 * np.cos(tg * 0.04))
     lienzo = bg.crop((int(dx), int(dy), int(dx) + W, int(dy) + H)).copy()
+    particulas_fondo(lienzo, W, H, tg)
     caja = caja_contenido(g, W, H)
     ESCENAS[seg["v"]["tipo"]](lienzo, caja, seg["v"], t, dur, u)
     # cámara: zoom lento + golpe de zoom a mitad en frases largas (segundo tiempo visual)
@@ -221,6 +224,27 @@ def _subtitulo(lienzo, W, H, tg, palabras):
             return
 
 
+def _transicion(a, b, p, i):
+    """Cambio de escena: empuje lateral, empuje vertical o zoom, alternando."""
+    W, H = a.size
+    p = ease_in_out(p)
+    modo = i % 3
+    if modo == 0:
+        out = Image.new("RGB", (W, H))
+        out.paste(a, (int(-p * W), 0))
+        out.paste(b, (int((1 - p) * W), 0))
+        return out
+    if modo == 1:
+        out = Image.new("RGB", (W, H))
+        out.paste(a, (0, int(-p * H)))
+        out.paste(b, (0, int((1 - p) * H)))
+        return out
+    z = 1 + 0.35 * p
+    cw, ch = W / z, H / z
+    a2 = a.resize((W, H), Image.BILINEAR, box=((W - cw) / 2, (H - ch) / 2, (W + cw) / 2, (H + ch) / 2))
+    return Image.blend(a2, b, p)
+
+
 def _render_segmento(args):
     carpeta, g, i, tiempos, extra, salida = args
     W, H, _ = formato(g)
@@ -238,8 +262,8 @@ def _render_segmento(args):
     for f in range(n):
         t = (f_ini + f) / FPS - t0
         img = _cuadro(g, i, t, tiempos, extra)
-        if previo is not None and f < 5:
-            img = Image.blend(previo, img, (f + 1) / 6)
+        if previo is not None and f < 8:
+            img = _transicion(previo, img, (f + 1) / 9, i)
         proc.stdin.write(img.tobytes())
     proc.stdin.close()
     if proc.wait() != 0:

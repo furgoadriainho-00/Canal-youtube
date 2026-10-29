@@ -5,249 +5,227 @@ estructura: lista
 formato: largo
 voz: {nombre: am_michael, velocidad: 1.0}
 segmentos:
-# --- GANCHO ---
 - t: "Your dishwasher costs about twenty dollars a year to run."
+  v: {"tipo": "numero", "icono": "dishwasher", "valor": 20, "prefijo": "$", "sufijo": "/yr", "etiqueta": "Dishwasher", "color": "frio"}
   capitulo: "Dishwasher vs air conditioner"
-  v: {tipo: numero, icono: dishwasher, valor: 20, prefijo: "$", sufijo: "/yr", etiqueta: "Dishwasher", color: frio}
 - t: "Your air conditioner? About five hundred."
-  v: {tipo: numero, icono: ac_unit, valor: 505, prefijo: "$", sufijo: "/yr", etiqueta: "Air conditioning", color: calor}
+  v: {"tipo": "numero", "icono": "ac_unit", "valor": 505, "prefijo": "$", "sufijo": "/yr", "etiqueta": "Air conditioning", "color": "calor"}
   pausa: 0.3
-# --- PROMESA ---
 - t: "So where does your electric bill actually go?"
-  v: {tipo: texto, lineas: ["Where does your", "*electric bill* go?"], icono: electric_meter}
+  v: {"tipo": "casa", "foco": "todos"}
 - t: "I ranked fifteen things in the average American home by what they cost to run for a full year."
-  v: {tipo: titulo, lineas: ["15 things", "ranked by *yearly cost*"], iconos: [local_laundry_service, microwave, dishwasher, mode_fan, skillet, kitchen, tv, lightbulb, humidity_high, water_heater, heat, ac_unit]}
+  v: {"tipo": "casa", "foco": "todos", "lineas": ["15 things,", "ranked by *yearly cost*"]}
 - t: "The numbers come from the federal government's own household energy survey, not from guesses."
-  v: {tipo: fuente, titulo: "Residential Energy Consumption Survey", detalle: "U.S. Energy Information Administration (EIA)", nota: "Latest edition: 2020 · published 2023"}
+  v: {"tipo": "fuente", "titulo": "Residential Energy Consumption Survey", "detalle": "U.S. Energy Information Administration (EIA)", "nota": "Latest edition: 2020 · published 2023"}
 - t: "For scale, the average American home buys about ten thousand eight hundred kilowatt-hours of electricity a year."
-  v: {tipo: numero, icono: electric_meter, valor: 10791, prefijo: "", sufijo: " kWh", etiqueta: "per home, per year (EIA, 2022)", color: frio}
+  v: {"tipo": "contador", "valor": 10791, "unidad": "kWh / year", "lineas": ["The average home:", "*10,791 kWh* a year"]}
 - t: "At twenty twenty-six prices, that's almost two thousand dollars."
-  v: {tipo: numero, icono: payments, valor: 1963, prefijo: "$", sufijo: "/yr", etiqueta: "10,791 kWh × $0.1819", color: calor}
+  v: {"tipo": "numero", "icono": "payments", "valor": 1963, "prefijo": "$", "sufijo": "/yr", "etiqueta": "10,791 kWh × $0.1819", "color": "calor"}
 - t: "And a few spots on this list will probably surprise you."
-  v: {tipo: texto, lineas: ["A few *surprises*", "ahead"], icono: bolt}
-# --- MÉTODO ---
+  v: {"tipo": "casa", "foco": "nevera2", "lineas": ["A few *surprises*", "ahead"]}
 - t: "First, a quick word on the math, so you know where every number comes from."
+  v: {"tipo": "casa", "foco": "medidor", "lineas": ["How the math", "*works*"]}
   capitulo: "How the numbers work"
-  v: {tipo: texto, lineas: ["How the math", "*works*"], icono: calculate}
 - t: "The survey measures how many kilowatt-hours each appliance uses in a year."
-  v: {tipo: formula, partes: ["kWh per year", "×", "price", "=", "yearly cost"], revelar: 1}
+  v: {"tipo": "formula", "partes": ["kWh per year", "×", "price", "=", "yearly cost"], "revelar": 1}
 - t: "And it only counts homes that actually have that appliance."
-  v: {tipo: texto, lineas: ["Only homes that", "*have one*"], icono: home}
+  v: {"tipo": "casa", "foco": "piscina", "lineas": ["Only homes that", "*have one*"]}
 - t: "Then I multiplied that by what Americans are paying for power in twenty twenty-six: about eighteen cents per kilowatt-hour."
-  v: {tipo: formula, partes: ["kWh per year", "×", "$0.18", "=", "yearly cost"], revelar: 3}
+  v: {"tipo": "formula", "partes": ["kWh per year", "×", "$0.18", "=", "yearly cost"], "revelar": 3}
 - t: "That price has jumped since the survey."
-  v: {tipo: comparar, a: ["2020", 13.15, payments], b: ["2026", 18.19, payments], prefijo: "", sufijo: "¢/kWh", decimales: 2}
+  v: {"tipo": "comparar", "a": ["2020", 13.15, "payments"], "b": ["2026", 18.19, "payments"], "prefijo": "", "sufijo": "¢/kWh", "decimales": 2}
 - t: "Running the exact same fridge costs about thirty-eight percent more today than it did in twenty twenty."
-  v: {tipo: numero, icono: kitchen, valor: 38, prefijo: "+", sufijo: "%", etiqueta: "Same fridge, 2020 → 2026", color: calor}
+  v: {"tipo": "numero", "icono": "kitchen", "valor": 38, "prefijo": "+", "sufijo": "%", "etiqueta": "Same fridge, 2020 → 2026", "color": "calor"}
 - t: "Your own bill will depend on your climate and your rates. But this is the national picture."
-  v: {tipo: texto, lineas: ["Your home ≠ average", "but this is the *national picture*"], icono: thermostat}
+  v: {"tipo": "casa", "foco": "todos", "lineas": ["Your home ≠ average", "the *national picture*"]}
 - t: "Let's start at the bottom."
-  v: {tipo: texto, lineas: ["Starting at", "*#15*"]}
-# --- 15 · LAVADORA ---
+  v: {"tipo": "texto", "lineas": ["Starting at", "*#15*"]}
 - t: "Number fifteen: the washing machine."
+  v: {"tipo": "puesto", "n": 15, "icono": "local_laundry_service", "nombre": "Washing machine", "coste": 13, "foco": "lavadora"}
   capitulo: "#15 to #11: the cheap stuff"
-  v: {tipo: puesto, n: 15, icono: local_laundry_service, nombre: "Washing machine", coste: 13}
 - t: "The machine itself uses only about thirteen dollars of electricity a year."
-  v: {tipo: numero, icono: local_laundry_service, valor: 13, prefijo: "$", sufijo: "/yr", etiqueta: "Washer motor & controls", color: frio}
+  v: {"tipo": "numero", "icono": "local_laundry_service", "valor": 13, "prefijo": "$", "sufijo": "/yr", "etiqueta": "Washer motor & controls", "color": "frio"}
 - t: "But that number is a little misleading."
-  v: {tipo: texto, lineas: ["But that's", "*misleading*"], icono: help}
+  v: {"tipo": "casa", "foco": "lavadora", "lineas": ["But that's", "*misleading*"]}
 - t: "According to Energy Star, about ninety percent of the energy it takes to run a washer goes into heating the water."
-  v: {tipo: numero, icono: water_heater, valor: 90, prefijo: "", sufijo: "%", etiqueta: "of washer energy = heating water", color: calor, fuente: "ENERGY STAR"}
+  v: {"tipo": "numero", "icono": "water_heater", "valor": 90, "prefijo": "", "sufijo": "%", "etiqueta": "of washer energy = heating water", "color": "calor", "fuente": "ENERGY STAR"}
 - t: "And that cost doesn't vanish. It shows up later on this list."
-  v: {tipo: texto, lineas: ["That cost shows up", "*later on the list*"], icono: arrow_upward}
+  v: {"tipo": "casa", "foco": "termo", "lineas": ["That cost shows up", "*later on the list*"]}
 - t: "Energy Star also says switching from hot to warm can cut that energy in half."
-  v: {tipo: comparar, a: ["Hot wash", 100, local_fire_department], b: ["Warm wash", 50, water_drop], prefijo: "", sufijo: "%", etiqueta: "energy use", fuente: "ENERGY STAR"}
-# --- 14 · MICROONDAS ---
+  v: {"tipo": "comparar", "a": ["Hot wash", 100, "local_fire_department"], "b": ["Warm wash", 50, "water_drop"], "prefijo": "", "sufijo": "%", "etiqueta": "energy use", "fuente": "ENERGY STAR"}
 - t: "Number fourteen: the microwave. About nineteen dollars a year."
-  v: {tipo: puesto, n: 14, icono: microwave, nombre: "Microwave", coste: 19}
+  v: {"tipo": "puesto", "n": 14, "icono": "microwave", "nombre": "Microwave", "coste": 19, "foco": "microondas"}
 - t: "It pulls a lot of power while it runs, but it only runs for minutes at a time."
-  v: {tipo: texto, lineas: ["High power,", "*short bursts*"], icono: timer}
-# --- 13 · LAVAVAJILLAS ---
+  v: {"tipo": "casa", "foco": "microondas", "lineas": ["High power,", "*short bursts*"]}
 - t: "Number thirteen: the dishwasher, at about twenty dollars."
-  v: {tipo: puesto, n: 13, icono: dishwasher, nombre: "Dishwasher", coste: 20}
+  v: {"tipo": "puesto", "n": 13, "icono": "dishwasher", "nombre": "Dishwasher", "coste": 20, "foco": "lavavajillas"}
 - t: "Just like the washer, a big part of its real cost is the hot water it pulls from your water heater."
-  v: {tipo: texto, lineas: ["The real cost:", "*hot water*"], icono: water_heater}
-# --- 12 · VENTILADORES DE TECHO ---
+  v: {"tipo": "casa", "foco": "termo", "lineas": ["The real cost:", "*hot water*"]}
 - t: "Number twelve: ceiling fans. About forty-one dollars a year, for all the fans in a home that has them."
-  v: {tipo: puesto, n: 12, icono: mode_fan, nombre: "Ceiling fans", coste: 41}
+  v: {"tipo": "puesto", "n": 12, "icono": "mode_fan", "nombre": "Ceiling fans", "coste": 41, "foco": "ventiladores"}
 - t: "Keep that number in mind for when we get to air conditioning."
-  v: {tipo: comparar, a: ["Ceiling fans", 41, mode_fan], b: ["Air conditioning", "?", ac_unit], prefijo: "$", sufijo: "/yr"}
-# --- 11 · COCINA ---
+  v: {"tipo": "comparar", "a": ["Ceiling fans", 41, "mode_fan"], "b": ["Air conditioning", "?", "ac_unit"], "prefijo": "$", "sufijo": "/yr"}
 - t: "Number eleven: the electric stove and oven. About fifty-three dollars."
-  v: {tipo: puesto, n: 11, icono: skillet, nombre: "Stove & oven", coste: 53}
+  v: {"tipo": "puesto", "n": 11, "icono": "skillet", "nombre": "Stove & oven", "coste": 53, "foco": "cocina"}
 - t: "Around four dollars and change per month."
-  v: {tipo: numero, icono: skillet, valor: 4.4, prefijo: "$", sufijo: "/mo", etiqueta: "stove & oven, per month", color: frio, decimales: 1}
+  v: {"tipo": "numero", "icono": "skillet", "valor": 4.4, "prefijo": "$", "sufijo": "/mo", "etiqueta": "stove & oven, per month", "color": "frio", "decimales": 1}
 - t: "That's the range and the oven only. The survey counts the microwave separately."
-  v: {tipo: iconos, iconos: [skillet, oven, microwave], etiquetas: ["Cooktop", "Oven", "Not included"], tachar: 2}
+  v: {"tipo": "iconos", "iconos": ["skillet", "oven", "microwave"], "etiquetas": ["Cooktop", "Oven", "Not included"], "tachar": 2}
 - t: "Now the list gets more interesting."
-  v: {tipo: texto, lineas: ["Now it gets", "*interesting*"], icono: visibility}
+  v: {"tipo": "casa", "foco": "todos", "lineas": ["Now it gets", "*interesting*"]}
   pausa: 0.2
-# --- 10 · SEGUNDO FRIGORÍFICO ---
 - t: "Number ten is something a lot of people own and completely forget about."
+  v: {"tipo": "casa", "foco": "nevera2", "lineas": ["#10:", "the one you *forget*"]}
   capitulo: "#10 the forgotten fridge"
-  v: {tipo: texto, lineas: ["#10:", "the one you *forget*"], icono: question_mark}
 - t: "The second refrigerator. About ninety dollars a year."
-  v: {tipo: puesto, n: 10, icono: kitchen, nombre: "Second fridge", coste: 90}
+  v: {"tipo": "puesto", "n": 10, "icono": "kitchen", "nombre": "Second fridge", "coste": 90, "foco": "nevera2"}
 - t: "The extra fridge in the garage or the basement, usually holding drinks."
-  v: {tipo: iconos, iconos: [garage, kitchen, local_drink], etiquetas: ["Garage", "Fridge #2", "Drinks"]}
+  v: {"tipo": "iconos", "iconos": ["garage", "kitchen", "local_drink"], "etiquetas": ["Garage", "Fridge #2", "Drinks"]}
 - t: "Your main fridge, by comparison, costs about a hundred and twelve."
-  v: {tipo: comparar, a: ["Second fridge", 90, kitchen], b: ["Main fridge", 112, kitchen], prefijo: "$", sufijo: "/yr"}
+  v: {"tipo": "comparar", "a": ["Second fridge", 90, "kitchen"], "b": ["Main fridge", 112, "kitchen"], "prefijo": "$", "sufijo": "/yr"}
 - t: "So the backup costs almost as much as the one you open every day."
-  v: {tipo: numero, icono: kitchen, valor: 80, prefijo: "", sufijo: "%", etiqueta: "of your main fridge's cost", color: calor}
+  v: {"tipo": "numero", "icono": "kitchen", "valor": 80, "prefijo": "", "sufijo": "%", "etiqueta": "of your main fridge's cost", "color": "calor"}
 - t: "If it's mostly empty, unplugging it is one of the easiest savings in the whole house."
-  v: {tipo: texto, lineas: ["Mostly empty?", "*Unplug it*"], icono: power_settings_new}
+  v: {"tipo": "casa", "foco": "nevera2", "lineas": ["Mostly empty?", "*Unplug it*"]}
 - t: "Over ten years, at today's prices, that second fridge adds up to about nine hundred dollars."
-  v: {tipo: numero, icono: kitchen, valor: 900, prefijo: "$", sufijo: "", etiqueta: "second fridge over 10 years", color: calor}
-# --- 9 · CONGELADOR ---
+  v: {"tipo": "numero", "icono": "kitchen", "valor": 900, "prefijo": "$", "sufijo": "", "etiqueta": "second fridge over 10 years", "color": "calor"}
 - t: "Number nine: a separate chest or upright freezer. About a hundred and four dollars."
+  v: {"tipo": "puesto", "n": 9, "icono": "ac_unit", "nombre": "Separate freezer", "coste": 104, "foco": "congelador"}
   capitulo: "#9 to #6: freezer, fridge, TVs, lighting"
-  v: {tipo: puesto, n: 9, icono: ac_unit, nombre: "Separate freezer", coste: 104}
 - t: "Almost nine dollars a month, just to keep frozen food frozen."
-  v: {tipo: numero, icono: ac_unit, valor: 8.7, prefijo: "$", sufijo: "/mo", etiqueta: "separate freezer, per month", color: frio, decimales: 1}
-# --- 8 · FRIGORÍFICO PRINCIPAL ---
+  v: {"tipo": "numero", "icono": "ac_unit", "valor": 8.7, "prefijo": "$", "sufijo": "/mo", "etiqueta": "separate freezer, per month", "color": "frio", "decimales": 1}
 - t: "Number eight: the main refrigerator, at a hundred and twelve."
-  v: {tipo: puesto, n: 8, icono: kitchen, nombre: "Main fridge", coste: 112}
+  v: {"tipo": "puesto", "n": 8, "icono": "kitchen", "nombre": "Main fridge", "coste": 112, "foco": "nevera"}
 - t: "It runs every hour of every day, and it still lands in the middle of this list."
-  v: {tipo: texto, lineas: ["24 hours a day,", "*still mid-list*"], icono: schedule}
-# --- 7 · TELEVISORES ---
+  v: {"tipo": "casa", "foco": "nevera", "lineas": ["24 hours a day,", "*still mid-list*"]}
 - t: "Number seven: your TVs, and everything plugged into them."
-  v: {tipo: puesto, n: 7, icono: tv, nombre: "TVs & devices", coste: 115}
+  v: {"tipo": "puesto", "n": 7, "icono": "tv", "nombre": "TVs & devices", "coste": 115, "foco": "tv"}
 - t: "The survey counts cable boxes, streaming sticks, game consoles and sound systems too."
-  v: {tipo: iconos, iconos: [tv, router, sports_esports, speaker], etiquetas: ["TVs", "Boxes", "Consoles", "Audio"]}
+  v: {"tipo": "iconos", "iconos": ["tv", "router", "sports_esports", "speaker"], "etiquetas": ["TVs", "Boxes", "Consoles", "Audio"]}
 - t: "All together, about a hundred and fifteen dollars a year."
-  v: {tipo: numero, icono: tv, valor: 115, prefijo: "$", sufijo: "/yr", etiqueta: "TVs + everything connected", color: frio}
+  v: {"tipo": "numero", "icono": "tv", "valor": 115, "prefijo": "$", "sufijo": "/yr", "etiqueta": "TVs + everything connected", "color": "frio"}
 - t: "That's a little under ten dollars a month."
-  v: {tipo: numero, icono: tv, valor: 9.6, prefijo: "$", sufijo: "/mo", etiqueta: "TVs & devices, per month", color: frio, decimales: 1}
-# --- 6 · ILUMINACIÓN ---
+  v: {"tipo": "numero", "icono": "tv", "valor": 9.6, "prefijo": "$", "sufijo": "/mo", "etiqueta": "TVs & devices, per month", "color": "frio", "decimales": 1}
 - t: "Number six: lighting. About a hundred and nineteen dollars."
-  v: {tipo: puesto, n: 6, icono: lightbulb, nombre: "Lighting", coste: 119}
+  v: {"tipo": "puesto", "n": 6, "icono": "lightbulb", "nombre": "Lighting", "coste": 119, "foco": "luz"}
 - t: "And that's every bulb in the house, combined, for a whole year."
-  v: {tipo: texto, lineas: ["Every bulb,", "*combined*"], icono: lightbulb}
+  v: {"tipo": "casa", "foco": "todos", "lineas": ["Every bulb,", "*combined*"]}
 - t: "Roughly ten dollars a month to light your entire home."
-  v: {tipo: numero, icono: lightbulb, valor: 9.9, prefijo: "$", sufijo: "/mo", etiqueta: "all lighting, per month", color: frio, decimales: 1}
-# --- 5 · SECADORA ---
+  v: {"tipo": "numero", "icono": "lightbulb", "valor": 9.9, "prefijo": "$", "sufijo": "/mo", "etiqueta": "all lighting, per month", "color": "frio", "decimales": 1}
 - t: "Number five: the clothes dryer, at a hundred and twenty-four."
+  v: {"tipo": "puesto", "n": 5, "icono": "laundry", "nombre": "Clothes dryer", "coste": 124, "foco": "secadora"}
   capitulo: "#5 the clothes dryer"
-  v: {tipo: puesto, n: 5, icono: laundry, nombre: "Clothes dryer", coste: 124}
 - t: "It's the priciest laundry appliance by far, because its main job is making heat."
-  v: {tipo: comparar, a: ["Washer", 13, local_laundry_service], b: ["Dryer", 124, laundry], prefijo: "$", sufijo: "/yr"}
+  v: {"tipo": "comparar", "a": ["Washer", 13, "local_laundry_service"], "b": ["Dryer", 124, "laundry"], "prefijo": "$", "sufijo": "/yr"}
 - t: "That's more than nine times what the washer costs to run."
-  v: {tipo: numero, icono: laundry, valor: 9.5, prefijo: "", sufijo: "×", etiqueta: "dryer vs washer", color: calor, decimales: 1}
-# --- 4 · DESHUMIDIFICADOR ---
+  v: {"tipo": "numero", "icono": "laundry", "valor": 9.5, "prefijo": "", "sufijo": "×", "etiqueta": "dryer vs washer", "color": "calor", "decimales": 1}
 - t: "And now a big jump."
+  v: {"tipo": "texto", "lineas": ["Now a", "*big jump*"], "icono": "trending_up"}
   capitulo: "#4 the surprise"
-  v: {tipo: texto, lineas: ["Now a", "*big jump*"], icono: trending_up}
 - t: "Number four costs more than your main fridge, and most people never even think about it."
-  v: {tipo: texto, lineas: ["#4 beats", "*your fridge*"], icono: question_mark}
+  v: {"tipo": "casa", "foco": "deshumidificador", "lineas": ["#4 beats", "*your fridge*"]}
 - t: "The dehumidifier. About a hundred and eighty-two dollars a year."
-  v: {tipo: puesto, n: 4, icono: humidity_high, nombre: "Dehumidifier", coste: 182}
+  v: {"tipo": "puesto", "n": 4, "icono": "humidity_high", "nombre": "Dehumidifier", "coste": 182, "foco": "deshumidificador"}
 - t: "That's around fifteen dollars every month."
-  v: {tipo: numero, icono: humidity_high, valor: 15, prefijo: "$", sufijo: "/mo", etiqueta: "dehumidifier, per month", color: calor}
+  v: {"tipo": "numero", "icono": "humidity_high", "valor": 15, "prefijo": "$", "sufijo": "/mo", "etiqueta": "dehumidifier, per month", "color": "calor"}
 - t: "That's over sixty percent more than the refrigerator you use every day."
-  v: {tipo: comparar, a: ["Main fridge", 112, kitchen], b: ["Dehumidifier", 182, humidity_high], prefijo: "$", sufijo: "/yr"}
+  v: {"tipo": "comparar", "a": ["Main fridge", 112, "kitchen"], "b": ["Dehumidifier", 182, "humidity_high"], "prefijo": "$", "sufijo": "/yr"}
 - t: "In a damp basement, one can run for hours a day, all summer long."
-  v: {tipo: iconos, iconos: [humidity_high, schedule, sunny], etiquetas: ["Damp basement", "Hours a day", "All summer"]}
+  v: {"tipo": "iconos", "iconos": ["humidity_high", "schedule", "sunny"], "etiquetas": ["Damp basement", "Hours a day", "All summer"]}
 - t: "If you have one, check the humidity setting. Running it drier than you need just costs money."
-  v: {tipo: texto, lineas: ["Check the", "*humidity setting*"], icono: tune}
-# --- TOP 3 ---
+  v: {"tipo": "casa", "foco": "deshumidificador", "lineas": ["Check the", "*humidity setting*"]}
 - t: "The top three are in a completely different league."
-  capitulo: "The top 3"
-  v: {tipo: texto, lineas: ["The top 3:", "*a different league*"], icono: emoji_events}
+  v: {"tipo": "casa", "foco": "todos", "lineas": ["The top 3:", "*a different league*"]}
   pausa: 0.2
+  capitulo: "The top 3"
 - t: "Each one costs about half as much as the other twelve items on this list combined."
-  v: {tipo: comparar, a: ["#4 to #15 combined", 992, list], b: ["Each top-3 item", 500, warning], prefijo: "$", sufijo: "/yr"}
-# --- 3 · TERMO ---
+  v: {"tipo": "comparar", "a": ["#4 to #15 combined", 992, "list"], "b": ["Each top-3 item", 500, "warning"], "prefijo": "$", "sufijo": "/yr"}
 - t: "Number three: the electric water heater. About four hundred and ninety-two dollars."
-  v: {tipo: puesto, n: 3, icono: water_heater, nombre: "Electric water heater", coste: 492}
+  v: {"tipo": "puesto", "n": 3, "icono": "water_heater", "nombre": "Electric water heater", "coste": 492, "foco": "termo"}
 - t: "Remember the washing machine? This is where its hot water shows up."
-  v: {tipo: iconos, iconos: [local_laundry_service, arrow_forward, water_heater], etiquetas: ["Washer", "", "Water heater"]}
+  v: {"tipo": "iconos", "iconos": ["local_laundry_service", "arrow_forward", "water_heater"], "etiquetas": ["Washer", "", "Water heater"]}
 - t: "Showers, dishes and laundry all get billed right here."
-  v: {tipo: iconos, iconos: [shower, dishwasher, local_laundry_service], etiquetas: ["Showers", "Dishes", "Laundry"]}
+  v: {"tipo": "iconos", "iconos": ["shower", "dishwasher", "local_laundry_service"], "etiquetas": ["Showers", "Dishes", "Laundry"]}
 - t: "That's about forty-one dollars a month, just to have hot water."
-  v: {tipo: numero, icono: shower, valor: 41, prefijo: "$", sufijo: "/mo", etiqueta: "electric water heater, per month", color: calor}
+  v: {"tipo": "numero", "icono": "shower", "valor": 41, "prefijo": "$", "sufijo": "/mo", "etiqueta": "electric water heater, per month", "color": "calor"}
 - t: "Which is why washing clothes in cold water is one of the easiest ways to shrink this number."
-  v: {tipo: texto, lineas: ["Cold wash =", "*smaller hot water bill*"], icono: water_drop}
+  v: {"tipo": "casa", "foco": "lavadora", "lineas": ["Cold wash =", "*smaller hot water bill*"]}
 - t: "The Department of Energy says heat pump water heaters can be two to three times more efficient than standard electric ones."
-  v: {tipo: numero, icono: heat_pump, valor: 3, prefijo: "2–", sufijo: "×", etiqueta: "more efficient: heat pump water heater", color: frio, fuente: "U.S. Department of Energy"}
+  v: {"tipo": "numero", "icono": "heat_pump", "valor": 3, "prefijo": "2–", "sufijo": "×", "etiqueta": "more efficient: heat pump water heater", "color": "frio", "fuente": "U.S. Department of Energy"}
 - t: "By my math, that could bring this cost down to somewhere between one hundred sixty-five and two hundred fifty dollars a year."
-  v: {tipo: barras, items: [["Standard electric", 492, water_heater], ["Heat pump (2× better)", 246, heat_pump], ["Heat pump (3× better)", 164, heat_pump]], prefijo: "$", sufijo: "/yr", nota: "Estimate based on DOE efficiency range"}
-# --- 2 · CALEFACCIÓN ---
+  v: {"tipo": "barras", "items": [["Standard electric", 492, "water_heater"], ["Heat pump (2× better)", 246, "heat_pump"], ["Heat pump (3× better)", 164, "heat_pump"]], "prefijo": "$", "sufijo": "/yr", "nota": "Estimate based on DOE efficiency range"}
 - t: "Number two: electric space heating, including the fan that pushes the warm air around."
-  v: {tipo: puesto, n: 2, icono: heat, nombre: "Electric heating", coste: 494}
+  v: {"tipo": "puesto", "n": 2, "icono": "heat", "nombre": "Electric heating", "coste": 494, "foco": "calefaccion"}
 - t: "That's about four hundred and ninety-four dollars a year."
-  v: {tipo: numero, icono: heat, valor: 494, prefijo: "$", sufijo: "/yr", etiqueta: "Electric heating + its fan", color: calor}
+  v: {"tipo": "numero", "icono": "heat", "valor": 494, "prefijo": "$", "sufijo": "/yr", "etiqueta": "Electric heating + its fan", "color": "calor"}
 - t: "This is the one that swings most with climate. In the Midwest, the average heating use is about twenty-five percent higher."
-  v: {tipo: comparar, a: ["U.S. average", 100, home], b: ["Midwest", 125, ac_unit], prefijo: "", sufijo: "%", etiqueta: "electric heating use"}
+  v: {"tipo": "comparar", "a": ["U.S. average", 100, "home"], "b": ["Midwest", 125, "ac_unit"], "prefijo": "", "sufijo": "%", "etiqueta": "electric heating use"}
 - t: "Including the fan, that's about six hundred and forty-four dollars a year in the Midwest."
-  v: {tipo: comparar, a: ["U.S. average", 494, home], b: ["Midwest", 644, ac_unit], prefijo: "$", sufijo: "/yr", etiqueta: "electric heating + fan"}
-# --- 1 · AIRE ACONDICIONADO ---
+  v: {"tipo": "comparar", "a": ["U.S. average", 494, "home"], "b": ["Midwest", 644, "ac_unit"], "prefijo": "$", "sufijo": "/yr", "etiqueta": "electric heating + fan"}
 - t: "And number one."
-  v: {tipo: texto, lineas: ["And", "*#1*"]}
+  v: {"tipo": "texto", "lineas": ["And", "*#1*"]}
   pausa: 0.3
 - t: "Air conditioning, including its fan. About five hundred and five dollars a year."
-  v: {tipo: puesto, n: 1, icono: ac_unit, nombre: "Air conditioning", coste: 505}
+  v: {"tipo": "puesto", "n": 1, "icono": "ac_unit", "nombre": "Air conditioning", "coste": 505, "foco": "aire"}
 - t: "That's more than twelve times what your ceiling fans cost."
-  v: {tipo: comparar, a: ["Ceiling fans", 41, mode_fan], b: ["Air conditioning", 505, ac_unit], prefijo: "$", sufijo: "/yr"}
+  v: {"tipo": "comparar", "a": ["Ceiling fans", 41, "mode_fan"], "b": ["Air conditioning", 505, "ac_unit"], "prefijo": "$", "sufijo": "/yr"}
 - t: "Or about forty-two dollars every single month."
-  v: {tipo: numero, icono: ac_unit, valor: 42, prefijo: "$", sufijo: "/mo", etiqueta: "air conditioning, per month", color: calor}
+  v: {"tipo": "numero", "icono": "ac_unit", "valor": 42, "prefijo": "$", "sufijo": "/mo", "etiqueta": "air conditioning, per month", "color": "calor"}
 - t: "But that's the national average, and where you live changes everything."
-  v: {tipo: texto, lineas: ["Where you live", "*changes everything*"], icono: map}
+  v: {"tipo": "casa", "foco": "aire", "lineas": ["Where you live", "*changes everything*"]}
 - t: "In the Northeast, air conditioning averages about three hundred and thirteen dollars a year."
-  v: {tipo: barras, items: [["Northeast", 313, ac_unit]], prefijo: "$", sufijo: "/yr", max: 831, etiqueta: "A/C + fan, by region"}
+  v: {"tipo": "barras", "items": [["Northeast", 313, "ac_unit"]], "prefijo": "$", "sufijo": "/yr", "max": 831, "etiqueta": "A/C + fan, by region"}
 - t: "Across the South, it's about seven hundred and eight."
-  v: {tipo: barras, items: [["Northeast", 313, ac_unit], ["South", 708, ac_unit]], prefijo: "$", sufijo: "/yr", max: 831, etiqueta: "A/C + fan, by region"}
+  v: {"tipo": "barras", "items": [["Northeast", 313, "ac_unit"], ["South", 708, "ac_unit"]], "prefijo": "$", "sufijo": "/yr", "max": 831, "etiqueta": "A/C + fan, by region"}
 - t: "And in Texas, Oklahoma, Arkansas and Louisiana, about eight hundred and thirty-one."
-  v: {tipo: barras, items: [["Northeast", 313, ac_unit], ["South", 708, ac_unit], ["TX · OK · AR · LA", 831, ac_unit]], prefijo: "$", sufijo: "/yr", max: 831, etiqueta: "A/C + fan, by region"}
+  v: {"tipo": "barras", "items": [["Northeast", 313, "ac_unit"], ["South", 708, "ac_unit"], ["TX · OK · AR · LA", 831, "ac_unit"]], "prefijo": "$", "sufijo": "/yr", "max": 831, "etiqueta": "A/C + fan, by region"}
 - t: "And notice how close the top three are. Cooling, heating and hot water are basically tied."
-  v: {tipo: barras, items: [["Air conditioning", 505, ac_unit], ["Electric heating", 494, heat], ["Water heater", 492, water_heater]], prefijo: "$", sufijo: "/yr"}
+  v: {"tipo": "barras", "items": [["Air conditioning", 505, "ac_unit"], ["Electric heating", 494, "heat"], ["Water heater", 492, "water_heater"]], "prefijo": "$", "sufijo": "/yr"}
 - t: "So what actually moves the needle?"
-  v: {tipo: texto, lineas: ["What actually", "*moves the needle?*"], icono: tune}
+  v: {"tipo": "casa", "foco": "termostato", "lineas": ["What actually", "*moves the needle?*"]}
 - t: "The Department of Energy says setting your thermostat back for at least eight hours a day can save as much as ten percent a year on heating and cooling."
-  v: {tipo: numero, icono: thermostat, valor: 10, prefijo: "up to ", sufijo: "%", etiqueta: "heating + cooling savings (8 h/day setback)", color: frio, fuente: "U.S. Department of Energy, 2024"}
+  v: {"tipo": "numero", "icono": "thermostat", "valor": 10, "prefijo": "up to ", "sufijo": "%", "etiqueta": "heating + cooling savings (8 h/day setback)", "color": "frio", "fuente": "U.S. Department of Energy, 2024"}
 - t: "On these average numbers, that's up to about a hundred dollars a year, just for changing a setting."
-  v: {tipo: formula, partes: ["($505 + $494)", "×", "10%", "≈", "$100/yr"], revelar: 5}
-# --- MENCIONES ---
+  v: {"tipo": "formula", "partes": ["($505 + $494)", "×", "10%", "≈", "$100/yr"], "revelar": 5}
 - t: "But there are three things I left off the main list, because most homes don't have them."
+  v: {"tipo": "casa", "foco": "piscina", "lineas": ["3 more,", "*if you have them*"]}
   capitulo: "Pool pumps, EVs and hot tubs"
-  v: {tipo: texto, lineas: ["3 more,", "*if you have them*"], icono: add_circle}
 - t: "A pool pump: about four hundred and thirty-four dollars a year."
-  v: {tipo: numero, icono: pool, valor: 434, prefijo: "$", sufijo: "/yr", etiqueta: "Pool pump", color: calor}
+  v: {"tipo": "numero", "icono": "pool", "valor": 434, "prefijo": "$", "sufijo": "/yr", "etiqueta": "Pool pump", "color": "calor"}
 - t: "Charging an electric car at home: about four hundred and thirty."
-  v: {tipo: numero, icono: ev_station, valor: 430, prefijo: "$", sufijo: "/yr", etiqueta: "EV charging at home", color: frio}
+  v: {"tipo": "numero", "icono": "ev_station", "valor": 430, "prefijo": "$", "sufijo": "/yr", "etiqueta": "EV charging at home", "color": "frio"}
 - t: "And a hot tub, heater plus pump: about three hundred and fifty-seven."
-  v: {tipo: numero, icono: hot_tub, valor: 357, prefijo: "$", sufijo: "/yr", etiqueta: "Hot tub (heater + pump)", color: calor}
+  v: {"tipo": "numero", "icono": "hot_tub", "valor": 357, "prefijo": "$", "sufijo": "/yr", "etiqueta": "Hot tub (heater + pump)", "color": "calor"}
 - t: "If you have one of these, it belongs right up there with your top three."
-  v: {tipo: barras, items: [["Air conditioning", 505, ac_unit], ["Pool pump", 434, pool], ["EV charging", 430, ev_station], ["Hot tub", 357, hot_tub]], prefijo: "$", sufijo: "/yr"}
+  v: {"tipo": "barras", "items": [["Air conditioning", 505, "ac_unit"], ["Pool pump", 434, "pool"], ["EV charging", 430, "ev_station"], ["Hot tub", 357, "hot_tub"]], "prefijo": "$", "sufijo": "/yr"}
 - t: "Here's the full ranking in one shot."
+  v: {"tipo": "casa", "foco": "todos", "lineas": ["The full", "*ranking*"]}
   capitulo: "Full ranking recap"
-  v: {tipo: texto, lineas: ["The full", "*ranking*"], icono: list}
 - t: "Fifteen to eleven: washer, microwave, dishwasher, ceiling fans and the stove. All under sixty dollars a year."
-  v: {tipo: barras, items: [["Stove & oven", 53, skillet], ["Ceiling fans", 41, mode_fan], ["Dishwasher", 20, dishwasher], ["Microwave", 19, microwave], ["Washer", 13, local_laundry_service]], prefijo: "$", sufijo: "/yr", max: 505}
+  v: {"tipo": "barras", "items": [["Stove & oven", 53, "skillet"], ["Ceiling fans", 41, "mode_fan"], ["Dishwasher", 20, "dishwasher"], ["Microwave", 19, "microwave"], ["Washer", 13, "local_laundry_service"]], "prefijo": "$", "sufijo": "/yr", "max": 505}
 - t: "Ten to six: the second fridge, the freezer, the main fridge, TVs and lighting. Roughly ninety to a hundred and twenty each."
-  v: {tipo: barras, items: [["Lighting", 119, lightbulb], ["TVs & devices", 115, tv], ["Main fridge", 112, kitchen], ["Freezer", 104, ac_unit], ["Second fridge", 90, kitchen]], prefijo: "$", sufijo: "/yr", max: 505}
+  v: {"tipo": "barras", "items": [["Lighting", 119, "lightbulb"], ["TVs & devices", 115, "tv"], ["Main fridge", 112, "kitchen"], ["Freezer", 104, "ac_unit"], ["Second fridge", 90, "kitchen"]], "prefijo": "$", "sufijo": "/yr", "max": 505}
 - t: "Five and four: the dryer and the dehumidifier."
-  v: {tipo: barras, items: [["Dehumidifier", 182, humidity_high], ["Clothes dryer", 124, laundry]], prefijo: "$", sufijo: "/yr", max: 505}
+  v: {"tipo": "barras", "items": [["Dehumidifier", 182, "humidity_high"], ["Clothes dryer", 124, "laundry"]], "prefijo": "$", "sufijo": "/yr", "max": 505}
 - t: "And the top three, all around five hundred dollars each."
-  v: {tipo: barras, items: [["Air conditioning", 505, ac_unit], ["Electric heating", 494, heat], ["Water heater", 492, water_heater]], prefijo: "$", sufijo: "/yr", max: 505}
-# --- RECOMPENSA ---
+  v: {"tipo": "barras", "items": [["Air conditioning", 505, "ac_unit"], ["Electric heating", 494, "heat"], ["Water heater", 492, "water_heater"]], "prefijo": "$", "sufijo": "/yr", "max": 505}
 - t: "So, here's the whole picture."
+  v: {"tipo": "casa", "foco": "todos"}
   capitulo: "What it all means"
-  v: {tipo: texto, lineas: ["The whole", "*picture*"], icono: insights}
 - t: "Heating, cooling and hot water are where the real money goes."
-  v: {tipo: iconos, iconos: [heat, ac_unit, water_heater], etiquetas: ["Heating", "Cooling", "Hot water"]}
+  v: {"tipo": "iconos", "iconos": ["heat", "ac_unit", "water_heater"], "etiquetas": ["Heating", "Cooling", "Hot water"]}
 - t: "If your home runs all three on electricity, that's close to fifteen hundred dollars a year."
-  v: {tipo: numero, icono: payments, valor: 1491, prefijo: "$", sufijo: "/yr", etiqueta: "Cooling + heating + hot water", color: calor}
+  v: {"tipo": "numero", "icono": "payments", "valor": 1491, "prefijo": "$", "sufijo": "/yr", "etiqueta": "Cooling + heating + hot water", "color": "calor"}
 - t: "Lights, TVs and kitchen gadgets are real costs, but small by comparison."
-  v: {tipo: barras, items: [["Big 3 combined", 1491, warning], ["Lighting", 119, lightbulb], ["TVs & devices", 115, tv], ["Microwave", 19, microwave]], prefijo: "$", sufijo: "/yr"}
+  v: {"tipo": "barras", "items": [["Big 3 combined", 1491, "warning"], ["Lighting", 119, "lightbulb"], ["TVs & devices", 115, "tv"], ["Microwave", 19, "microwave"]], "prefijo": "$", "sufijo": "/yr"}
 - t: "Remember, these are national averages. The only way to know your own numbers is to measure them."
-  v: {tipo: texto, lineas: ["Averages ≠ your home.", "*Measure it*"], icono: electric_meter}
+  v: {"tipo": "casa", "foco": "medidor", "lineas": ["Averages ≠ your home.", "*Measure it*"]}
 - t: "A simple plug-in electricity meter shows exactly what any appliance uses. That's how you find your own surprise."
-  v: {tipo: iconos, iconos: [outlet, electric_meter, savings], etiquetas: ["Plug it in", "Read the kWh", "Find the waste"]}
-# --- CIERRE ---
+  v: {"tipo": "iconos", "iconos": ["outlet", "electric_meter", "savings"], "etiquetas": ["Plug it in", "Read the kWh", "Find the waste"]}
 - t: "Next, I'm digging into the top of this list: is a heat pump actually cheaper to run than a gas furnace?"
-  v: {tipo: comparar, a: ["Heat pump", "?", heat_pump], b: ["Gas furnace", "?", local_fire_department], prefijo: "$", sufijo: "/yr"}
+  v: {"tipo": "comparar", "a": ["Heat pump", "?", "heat_pump"], "b": ["Gas furnace", "?", "local_fire_department"], "prefijo": "$", "sufijo": "/yr"}
 - t: "That one is coming up next on this channel."
-  v: {tipo: texto, lineas: ["Heat pump vs gas:", "*next video*"], icono: play_circle}
+  v: {"tipo": "casa", "foco": "bomba_calor", "lineas": ["Heat pump vs gas:", "*next video*"]}
 
 miniaturas:
 - {tipo: icono_grande, icono: ac_unit, cifra: "$505", color: calor, texto: ["What costs", "the most?"]}

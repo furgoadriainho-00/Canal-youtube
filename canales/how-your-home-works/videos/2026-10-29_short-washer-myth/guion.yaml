@@ -5,7 +5,7 @@ formato: short
 voz: {nombre: am_michael, velocidad: 1.08}
 segmentos:
 - t: "Myth or reality: your washing machine is cheap to run."
-  v: {tipo: texto, lineas: ["Myth or reality?", "*Washers are cheap*"], icono: local_laundry_service}
+  v: {tipo: casa, foco: lavadora, lineas: ["Myth or reality?", "*Washers are cheap*"]}
 - t: "The machine itself uses about thirteen dollars of electricity a year."
   v: {tipo: numero, icono: local_laundry_service, valor: 13, prefijo: "$", sufijo: "/yr", etiqueta: "Washer motor & controls", color: frio}
 - t: "But Energy Star says about ninety percent of the energy it takes to run a washer goes into heating the water."
@@ -15,6 +15,6 @@ segmentos:
 - t: "Switching from hot to warm can cut the washer's energy use in half. Cold saves even more."
   v: {tipo: comparar, a: ["Hot", 100, local_fire_department], b: ["Warm", 50, water_drop], prefijo: "", sufijo: "%", fuente: "ENERGY STAR"}
 - t: "So, the verdict? Half true. The machine is cheap. The hot water is not."
-  v: {tipo: texto, lineas: ["Machine: *cheap*", "Hot water: *not*"], icono: gavel}
+  v: {tipo: casa, foco: termo, lineas: ["Machine: *cheap*", "Hot water: *not*"]}
 - t: "I ranked fifteen appliances by yearly cost, full video linked. So, is your washing machine cheap to run?"
-  v: {tipo: texto, lineas: ["15 appliances", "*ranked* · full video"], icono: play_circle}
+  v: {tipo: casa, foco: todos, lineas: ["15 appliances", "*ranked* · full video"]}

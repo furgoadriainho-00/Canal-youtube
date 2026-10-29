@@ -6,8 +6,13 @@ añaden un segundo tiempo a mitad para que la imagen cambie cada 2–4 s.
 """
 from PIL import Image, ImageDraw
 
+import math
+import re
+
 from .graficos import (COLORES, icono, texto, linea_rica, encajar, prog, ease_out, ease_back,
                        pegar, caja_redondeada, halo, fmt_num)
+from .ilustraciones import aparato, pila_monedas, contador
+from .casa import vista_casa
 
 C = COLORES
 
@@ -23,11 +28,55 @@ def _fuente_pie(lienzo, caja, u, t, cadena):
 
 
 def _icono_animado(lienzo, nombre, tam, color, cx, cy, t, ini=0.0, halo_col=None):
+    """Icono que entra con rebote y luego hace su propio movimiento (gira, suelta vapor, gotea…)."""
     p = ease_back(prog(t, ini, 0.45))
-    if halo_col:
-        pegar(lienzo, halo(int(tam * 1.9), halo_col), cx, cy, alfa=prog(t, ini, 0.5), escala=max(0.01, p))
-    flot = 6 * (t * 0.7 % 2 - 1) ** 2  # ligero balanceo
-    pegar(lienzo, icono(nombre, tam, color), cx, cy - flot, escala=max(0.01, p))
+    aparato(lienzo, nombre, cx, cy, tam, t, color, resplandor=halo_col, entrada=max(0.0, p))
+
+
+def _anillo(lienzo, cx, cy, radio, pct, color, u, grosor=26):
+    capa = Image.new("RGBA", (int(2 * radio + 2 * grosor), int(2 * radio + 2 * grosor)), (0, 0, 0, 0))
+    d = ImageDraw.Draw(capa)
+    caja = (grosor, grosor, grosor + 2 * radio, grosor + 2 * radio)
+    d.arc(caja, 0, 360, fill=(255, 255, 255, 35), width=int(grosor * u))
+    if pct > 0.002:
+        d.arc(caja, -90, -90 + 360 * min(1, pct), fill=color + (255,), width=int(grosor * u))
+    pegar(lienzo, capa, cx, cy)
+
+
+def _palabras(linea):
+    """'Hola *mundo azul*' -> [('Hola', False), ('mundo', True), ('azul', True)]"""
+    out = []
+    for trozo in re.split(r"(\*[^*]+\*)", linea):
+        acento = trozo.startswith("*")
+        out += [(w, acento) for w in trozo.strip("*").split()]
+    return out
+
+
+def _lineas_cineticas(lienzo, lineas, cx, cy, u, t, dur, tam, ancho_max, ini=0.05):
+    """Texto que aparece palabra a palabra con rebote; las palabras de acento laten."""
+    filas = []
+    for l in lineas:
+        ps = [(texto(w, int(tam * u), C["calor"] if a else C["texto"]), a) for w, a in _palabras(l)]
+        esp = int(tam * u * 0.28)
+        ancho = sum(sp.width for sp, _ in ps) + esp * (len(ps) - 1)
+        filas.append((ps, ancho, esp))
+    k = min(1.0, ancho_max / max(1, max(a for _, a, _ in filas)))
+    alto_fila = int(tam * u * 1.25 * k)
+    n = sum(len(ps) for ps, _, _ in filas)
+    paso = min(0.22, max(0.08, dur * 0.5 / max(1, n)))
+    y = cy - alto_fila * (len(filas) - 1) / 2
+    i = 0
+    for ps, ancho, esp in filas:
+        x = cx - ancho * k / 2
+        for sp, acento in ps:
+            p = ease_back(prog(t, ini + i * paso, 0.35))
+            if p > 0:
+                lat = 1 + (0.05 * math.sin((t - ini - i * paso) * 5) if acento and p >= 1 else 0)
+                pegar(lienzo, sp, x + sp.width * k / 2, y + (1 - min(1, p)) * 35 * u,
+                      alfa=min(1, p * 2), escala=max(0.01, k * (0.6 + 0.4 * p) * lat))
+            x += (sp.width + esp) * k
+            i += 1
+        y += alto_fila
 
 
 def numero(lienzo, caja, s, t, dur, u):
@@ -36,21 +85,41 @@ def numero(lienzo, caja, s, t, dur, u):
     vertical = w < h * 1.2
     v = s["valor"]
     dec = s.get("decimales", 0)
-    contar = isinstance(v, (int, float)) and not any(ch.isdigit() for ch in s.get("prefijo", ""))
-    valor = v * ease_out(prog(t, 0.15, 0.9)) if contar else v
-    cad = f'{s.get("prefijo", "")}{fmt_num(valor, dec) if isinstance(valor, (int, float)) else valor}{s.get("sufijo", "")}'
+    pre, suf = s.get("prefijo", ""), s.get("sufijo", "")
+    contar = isinstance(v, (int, float)) and not any(ch.isdigit() for ch in pre)
+    pc = ease_out(prog(t, 0.15, 0.9))
+    valor = v * pc if contar else v
+    cad = f'{pre}{fmt_num(valor, dec) if isinstance(valor, (int, float)) else valor}{suf}'
     num = encajar(texto(cad, int(200 * u), col), int(w * (0.86 if vertical else 0.55)))
     lab = encajar(texto(s.get("etiqueta", ""), int(52 * u), C["texto"], "Inter", "SemiBold"), int(w * 0.85))
+    dinero = pre.endswith("$") and isinstance(v, (int, float)) and v >= 4
+    pct = suf.strip() == "%" and isinstance(v, (int, float)) and 0 < v <= 100 and not pre
     if vertical:
         cx_i, cy_i = x0 + w / 2, y0 + h * 0.28
-        cx_n, cy_n = x0 + w / 2, y0 + h * 0.6
-        cy_l = cy_n + num.height / 2 + 50 * u
-        cx_l = cx_n
+        cx_n, cy_n = x0 + w / 2, y0 + h * 0.62
+        cx_l, cy_l = cx_n, cy_n + num.height / 2 + 50 * u
     else:
-        cx_i, cy_i = x0 + w * 0.25, y0 + h * 0.5
+        cx_i, cy_i = x0 + w * 0.24, y0 + h * 0.5
         cx_n, cy_n = x0 + w * 0.62, y0 + h * 0.46
         cx_l, cy_l = cx_n, cy_n + num.height / 2 + 55 * u
-    _icono_animado(lienzo, s["icono"], int(230 * u), C["texto"], cx_i, cy_i, t, 0.0, col)
+    if dinero:
+        por = 2.5 if "/mo" in suf else 25
+        cols = 1 if v / por <= 22 else (2 if v / por <= 44 else 4)
+        if vertical:
+            pila_monedas(lienzo, x0 + w * 0.78, y0 + h * 0.42, v, t, u * 0.8, 0.2, por, 22, cols)
+            _icono_animado(lienzo, s["icono"], int(200 * u), C["texto"], x0 + w * 0.3, cy_i, t, 0.0, col)
+        else:
+            n_mon = max(1, min(22 * cols, round(v / por)))
+            base = y0 + h * 0.78
+            alto_pila = (n_mon // cols) * int(110 * u * 0.18)
+            cy_ic = max(y0 + h * 0.2, base - alto_pila - 150 * u)
+            _icono_animado(lienzo, s["icono"], int(170 * u), C["texto"], cx_i, cy_ic, t, 0.0, col)
+            pila_monedas(lienzo, cx_i, base, v, t, u, 0.25, por, 22, cols)
+    elif pct:
+        _anillo(lienzo, cx_i, cy_i, int(190 * u), v / 100 * pc, col, u)
+        _icono_animado(lienzo, s["icono"], int(190 * u), C["texto"], cx_i, cy_i, t, 0.0, None)
+    else:
+        _icono_animado(lienzo, s["icono"], int(230 * u), C["texto"], cx_i, cy_i, t, 0.0, col)
     pn = ease_out(prog(t, 0.1, 0.5))
     pegar(lienzo, num, cx_n + (1 - pn) * 60 * u, cy_n, alfa=pn)
     pegar(lienzo, lab, cx_l, cy_l, alfa=prog(t, 0.45, 0.4))
@@ -73,13 +142,13 @@ def texto_escena(lienzo, caja, s, t, dur, u):
     x0, y0, w, h = caja
     cy = y0 + h * (0.55 if s.get("icono") else 0.5)
     if s.get("icono"):
-        _icono_animado(lienzo, s["icono"], int(150 * u), C["frio"], x0 + w / 2, y0 + h * 0.24, t, 0.0, C["frio"])
-    _lineas(lienzo, s["lineas"], x0 + w / 2, cy, u, t, 0.1, 110, int(w * 0.88))
+        _icono_animado(lienzo, s["icono"], int(190 * u), C["frio"], x0 + w / 2, y0 + h * 0.26, t, 0.0, C["frio"])
+    _lineas_cineticas(lienzo, s["lineas"], x0 + w / 2, cy + 20 * u, u, t, dur, 110, int(w * 0.88), 0.15)
 
 
 def titulo(lienzo, caja, s, t, dur, u):
     x0, y0, w, h = caja
-    _lineas(lienzo, s["lineas"], x0 + w / 2, y0 + h * 0.3, u, t, 0.0, 120, int(w * 0.9))
+    _lineas_cineticas(lienzo, s["lineas"], x0 + w / 2, y0 + h * 0.3, u, t, min(dur, 2.0), 120, int(w * 0.9))
     iconos = s.get("iconos", [])
     por_fila = 6 if w > h else 4
     filas = (len(iconos) + por_fila - 1) // por_fila
@@ -259,47 +328,85 @@ def iconos(lienzo, caja, s, t, dur, u):
                 lienzo.alpha_composite(capa)
 
 
+FOCO_POR_ICONO = {
+    "local_laundry_service": "lavadora", "microwave": "microondas", "dishwasher": "lavavajillas",
+    "mode_fan": "ventiladores", "skillet": "cocina", "tv": "tv", "lightbulb": "luz", "laundry": "secadora",
+    "humidity_high": "deshumidificador", "water_heater": "termo", "heat": "calefaccion", "ac_unit": "aire",
+    "pool": "piscina", "ev_station": "coche", "hot_tub": "jacuzzi", "shower": "ducha", "thermostat": "termostato",
+}
+
+
 def puesto(lienzo, caja, s, t, dur, u, maximo=505):
+    """Puesto del ranking: la casa con la cámara en el aparato + puesto, nombre y coste contando."""
     x0, y0, w, h = caja
     vertical = w < h * 1.2
     n, coste = s["n"], s["coste"]
     col = C["calor"] if n <= 3 else C["frio"]
-    # placa del puesto
-    pb = ease_back(prog(t, 0.0, 0.4))
-    placa = texto(f"#{n}", int(170 * u), col)
-    cx_p, cy_p = (x0 + w * 0.17, y0 + h * 0.42) if not vertical else (x0 + w * 0.22, y0 + h * 0.18)
-    pegar(lienzo, halo(int(380 * u), col), cx_p, cy_p, alfa=prog(t, 0, 0.4))
-    pegar(lienzo, placa, cx_p, cy_p, escala=max(0.01, pb))
-    # icono y nombre
-    cx_i, cy_i = (x0 + w * 0.42, y0 + h * 0.42) if not vertical else (x0 + w * 0.7, y0 + h * 0.18)
-    _icono_animado(lienzo, s["icono"], int(210 * u), C["texto"], cx_i, cy_i, t, 0.15)
-    nombre = encajar(texto(s["nombre"], int(76 * u), C["texto"]), int(w * (0.42 if not vertical else 0.9)))
-    pc = ease_out(prog(t, 0.35, 1.0))
-    cad = f"${fmt_num(coste * pc)}"
-    precio = texto(cad, int(150 * u), col)
-    sub = texto("per year", int(44 * u), C["suave"], "Inter", "SemiBold")
-    if not vertical:
-        xr = x0 + w * 0.56
-        pegar(lienzo, nombre, xr, y0 + h * 0.3, alfa=prog(t, 0.25, 0.3), ancla="l")
-        pegar(lienzo, precio, xr, y0 + h * 0.46, alfa=prog(t, 0.35, 0.3), ancla="l")
-        pegar(lienzo, sub, xr + precio.width + 20 * u, y0 + h * 0.49, alfa=prog(t, 0.6, 0.3), ancla="l")
+    foco = s.get("foco") or FOCO_POR_ICONO.get(s["icono"])
+    if vertical:
+        cc = (x0 + 40 * u, y0, w - 80 * u, h * 0.56)
+        xr, ancho_r = x0 + w / 2, w * 0.9
+        ys = [h * 0.64, h * 0.73, h * 0.85, h * 0.95]
     else:
-        pegar(lienzo, nombre, x0 + w / 2, y0 + h * 0.38, alfa=prog(t, 0.25, 0.3))
-        pegar(lienzo, precio, x0 + w / 2, y0 + h * 0.52, alfa=prog(t, 0.35, 0.3))
-        pegar(lienzo, sub, x0 + w / 2, y0 + h * 0.62, alfa=prog(t, 0.6, 0.3))
-    # segundo tiempo: barra frente al nº 1
-    ini_b = min(1.6, dur * 0.45)
+        cc = (x0 + 50 * u, y0 + 110 * u, w * 0.56, h - 220 * u)
+        xr, ancho_r = x0 + w * 0.8, w * 0.36
+        ys = [h * 0.22, h * 0.36, h * 0.53, h * 0.66]
+    pe = ease_out(prog(t, 0, 0.4))
+    vista_casa(lienzo, cc, foco, t, dur, u, coste=coste, color=col)
+    # columna derecha
+    placa = texto(f"#{n}", int(150 * u), col)
+    pegar(lienzo, halo(int(320 * u), col), xr, y0 + ys[0], alfa=pe)
+    pegar(lienzo, placa, xr, y0 + ys[0], escala=max(0.01, ease_back(prog(t, 0.0, 0.4))))
+    nombre = encajar(texto(s["nombre"], int(70 * u), C["texto"]), int(ancho_r))
+    pegar(lienzo, nombre, xr + (1 - ease_out(prog(t, 0.2, 0.4))) * 80 * u, y0 + ys[1], alfa=prog(t, 0.2, 0.3))
+    pc = ease_out(prog(t, 0.5, 1.2))
+    precio = encajar(texto(f"${fmt_num(coste * pc)}", int(150 * u), col), int(ancho_r))
+    pegar(lienzo, precio, xr, y0 + ys[2], alfa=prog(t, 0.45, 0.3), escala=1 + 0.06 * math.sin(math.pi * prog(t, 1.6, 0.4)))
+    # segundo tiempo: al mes y comparación con el nº 1
+    ini_b = min(1.8, dur * 0.45)
     pbar = ease_out(prog(t, ini_b, 0.8))
     if pbar > 0:
-        bx0, bw = x0 + w * 0.12, w * 0.76
-        by = y0 + h * (0.74 if not vertical else 0.78)
-        pegar(lienzo, caja_redondeada(int(bw), int(26 * u), int(13 * u), (255, 255, 255, 30)), bx0, by, alfa=pbar, ancla="l")
+        mes = texto(f"per year · ≈ ${fmt_num(coste / 12, 1 if coste < 120 else 0)}/month", int(42 * u), C["texto"], "Inter", "Bold")
+        pegar(lienzo, mes, xr, y0 + ys[3], alfa=pbar)
+        bw = ancho_r
+        by = y0 + ys[3] + 70 * u
+        pegar(lienzo, caja_redondeada(int(bw), int(22 * u), int(11 * u), (255, 255, 255, 30)), xr - bw / 2, by, alfa=pbar, ancla="l")
         largo = max(6, int(bw * coste / maximo * pbar))
-        pegar(lienzo, caja_redondeada(largo, int(26 * u), int(13 * u), col + (255,)), bx0, by, ancla="l")
-        ref = texto(f"#1 = ${maximo}/yr", int(34 * u), C["suave"], "Inter", "SemiBold")
-        pegar(lienzo, ref, bx0 + bw - ref.width, by + 45 * u, alfa=pbar, ancla="l")
-        mes = texto(f"≈ ${fmt_num(coste / 12, 1 if coste < 120 else 0)}/month", int(40 * u), C["texto"], "Inter", "Bold")
-        pegar(lienzo, mes, bx0, by + 50 * u, alfa=pbar, ancla="l")
+        pegar(lienzo, caja_redondeada(largo, int(22 * u), int(11 * u), col + (255,)), xr - bw / 2, by, ancla="l")
+        ref = texto(f"vs #1: ${maximo}", int(30 * u), C["suave"], "Inter", "SemiBold")
+        pegar(lienzo, ref, xr + bw / 2 - ref.width, by + 36 * u, alfa=pbar, ancla="l")
+
+
+def casa_escena(lienzo, caja, s, t, dur, u):
+    """La casa en corte: plano general («todos») o la cámara en un aparato, con texto opcional al lado."""
+    x0, y0, w, h = caja
+    vertical = w < h * 1.2
+    lineas = s.get("lineas")
+    foco = s.get("foco")
+    if lineas and not vertical:
+        vista_casa(lienzo, (x0 + 50 * u, y0 + 90 * u, w * 0.58, h - 180 * u), foco, t, dur, u, coste=s.get("coste"))
+        _lineas_cineticas(lienzo, lineas, x0 + w * 0.81, y0 + h / 2, u, t, dur, 96, int(w * 0.36), 0.4)
+    elif lineas:
+        vista_casa(lienzo, (x0 + 40 * u, y0, w - 80 * u, h * 0.62), foco, t, dur, u, coste=s.get("coste"))
+        _lineas_cineticas(lienzo, lineas, x0 + w / 2, y0 + h * 0.82, u, t, dur, 84, int(w * 0.9), 0.4)
+    else:
+        mw = w * (0.9 if vertical else 0.74)
+        mh = h * (0.8 if vertical else 0.86)
+        vista_casa(lienzo, (x0 + (w - mw) / 2, y0 + (h - mh) / 2, mw, mh), foco, t, dur, u, coste=s.get("coste"))
+
+
+def contador_escena(lienzo, caja, s, t, dur, u):
+    """Contador de la luz con la aguja girando y los kWh subiendo."""
+    x0, y0, w, h = caja
+    vertical = w < h * 1.2
+    r = int((260 if vertical else 300) * u)
+    if vertical:
+        contador(lienzo, x0 + w / 2, y0 + h * 0.35, r, t, s["valor"], u, 0.1, s.get("unidad", "kWh"))
+        cx, cy = x0 + w / 2, y0 + h * 0.78
+    else:
+        contador(lienzo, x0 + w * 0.3, y0 + h / 2, r, t, s["valor"], u, 0.1, s.get("unidad", "kWh"))
+        cx, cy = x0 + w * 0.7, y0 + h / 2
+    _lineas_cineticas(lienzo, s.get("lineas", []), cx, cy, u, t, dur, 90, int(w * (0.9 if vertical else 0.42)), 0.5)
 
 
 ESCENAS = {
@@ -312,6 +419,8 @@ ESCENAS = {
     "barras": barras,
     "iconos": iconos,
     "puesto": puesto,
+    "casa": casa_escena,
+    "contador": contador_escena,
 }
 
 

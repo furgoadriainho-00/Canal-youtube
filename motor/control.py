@@ -99,6 +99,13 @@ def controlar(carpeta: Path):
     hueco = max(t["dur"] / (golpes(t["dur"]) + 1) for t in tiempos)
     ok("Cambio visual cada 2–4 s", hueco <= 4.2, f"hueco máximo {hueco:.1f} s")
 
+    solo_texto = [i for i, (sg, tt) in enumerate(zip(g["segmentos"], tiempos))
+                  if sg["v"]["tipo"] in ("texto", "titulo") and tt["dur"] > 2.2]
+    n_texto = sum(1 for sg in g["segmentos"] if sg["v"]["tipo"] in ("texto", "titulo"))
+    ok("Visual: pantallas de solo texto ≤ 10 % y ninguna > 2,2 s",
+       n_texto <= max(1, 0.1 * len(g["segmentos"])) and not solo_texto,
+       f"{n_texto}/{len(g['segmentos'])} de texto; largas: {solo_texto}")
+
     for f in ("fuentes.md", "licencias.md", "metadatos.json"):
         ok(f"Existe {f}", (carpeta / f).exists())
     m = json.loads((carpeta / "metadatos.json").read_text())
