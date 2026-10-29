@@ -8,16 +8,10 @@ Cuando termines cada paso, márcalo con `[x]` o dímelo en el chat.
 
 ## 1. Crear el canal (10 min) · urgente
 
-- [ ] Entra en youtube.com con tu cuenta de Google → foto de perfil → **Crear un canal**.
-- [ ] Elige **usar un nombre personalizado**. Así se crea una cuenta de marca y el canal no queda atado a tu nombre personal, que es lo que conviene si algún día lo vendes o lo compartes.
-- [ ] Nombre. Propuestas, por orden:
-  1. **Home Explained**
-  2. **How Homes Work**
-  3. **House Decoded**
+Todo lo que hay que poner está listo para copiar y pegar en **`canales/how-your-home-works/canal.md`**: nombre (**Home By The Numbers**, @HomeByTheNumbers, libre el 2026-10-29), logo, banner, marca de agua, descripción, palabras clave y ajustes. Yo no puedo crear el canal: hace falta entrar en tu cuenta de Google.
 
-  Si el nombre o el @ ya están cogidos, prueba el siguiente y dime cuál ha quedado.
-- [ ] En YouTube Studio → **Configuración → Canal → Información básica**: país **Estados Unidos** si te deja; si no, el tuyo real. Idioma del canal: **inglés**.
-- [ ] Logo y banner: déjalos vacíos. Te los preparo yo cuando me digas el nombre.
+- [ ] Sigue los «Pasos para el humano» de `canal.md`.
+- [ ] **País de residencia: tu país real** (no Estados Unidos). Corrijo lo que te dije antes: YouTube lo usa para pagos e impuestos.
 
 ## 2. Verificar el canal con el teléfono (3 min) · urgente
 
