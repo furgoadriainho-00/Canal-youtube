@@ -22,3 +22,4 @@
 - 2026-10-29 · Reactivada la producción diaria con el estilo visual nuevo (el humano pidió avanzar con todo lo posible).
 - 2026-10-29 · El humano ha creado el canal: https://www.youtube.com/@HomeByTheNumbers. No hay ningún ordenador suyo conectado a esta sesión; le explico cómo conectar Chrome para que yo pueda subir los vídeos.
 - 2026-10-30 · El humano pide vídeos con 3D. Con su autorización instalado Blender 4.5.15 LTS (descarga oficial, suma SHA-256 verificada) y Mesa por apt. Modelos CC0 de Poly Haven en recursos/3d. motor3d/estudio.py: plató de marca y aparatos modelados por código. Cycles CPU a 720p y 8 muestras: unos 8 s por fotograma. Biblioteca de clips de 3 s en marcha (motor3d/biblioteca.py).
+- 2026-10-30 · Biblioteca 3D completa (15 clips en recursos/clips3d, señal LISTO). Vídeo largo montado de nuevo con el 3D en el ranking y el gancho. Control superado.
