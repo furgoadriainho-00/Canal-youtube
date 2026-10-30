@@ -5,3 +5,4 @@ __pycache__/
 *.wav
 **/visuales/segmentos/
 **/visuales/lista.txt
+!recursos/clips3d/*.mp4

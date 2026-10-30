@@ -6,6 +6,7 @@
 | Música | Generada por código (`motor/video.py`, `generar_musica`): acordes y arpegio originales | Obra propia, sin derechos de terceros |
 | Iconos | Google Material Symbols Rounded (`recursos/iconos/`) | Apache 2.0 |
 | Tipografías | Montserrat e Inter (`recursos/fuentes/`) | SIL Open Font License 1.1 |
+| Clips 3D de aparatos | Renderizados con Blender 4.5 (`motor3d/estudio.py`). Modelos propios por código y modelos de Poly Haven (`recursos/3d/`) | Blender: GPL (el resultado es obra propia). Poly Haven: CC0, dominio público |
 | Gráficos, cifras y diagramas | Dibujados por código (`motor/escenas.py`) | Obra propia |
 | Datos | U.S. EIA, U.S. DOE y ENERGY STAR (ver `fuentes.md`) | Obras del Gobierno de EE. UU., de dominio público; citadas en pantalla |
 

@@ -13,6 +13,7 @@ from .graficos import (COLORES, icono, texto, linea_rica, encajar, prog, ease_ou
                        pegar, caja_redondeada, halo, fmt_num)
 from .ilustraciones import aparato, pila_monedas, contador
 from .casa import vista_casa
+from . import clips3d
 
 C = COLORES
 
@@ -102,7 +103,12 @@ def numero(lienzo, caja, s, t, dur, u):
         cx_i, cy_i = x0 + w * 0.24, y0 + h * 0.5
         cx_n, cy_n = x0 + w * 0.62, y0 + h * 0.46
         cx_l, cy_l = cx_n, cy_n + num.height / 2 + 55 * u
-    if dinero:
+    if s.get("clip") and clips3d.existe(s["clip"]) and not vertical:
+        clips3d.panel_clip(lienzo, (x0 + 50 * u, y0 + 110 * u, w * 0.5, h - 220 * u), s["clip"], t, dur, u,
+                           coste=v if dinero else None, color=col)
+        cx_n, cx_l = x0 + w * 0.77, x0 + w * 0.77
+        num = encajar(num, int(w * 0.42))
+    elif dinero:
         por = 2.5 if "/mo" in suf else 25
         cols = 1 if v / por <= 22 else (2 if v / por <= 44 else 4)
         if vertical:
@@ -352,7 +358,11 @@ def puesto(lienzo, caja, s, t, dur, u, maximo=505):
         xr, ancho_r = x0 + w * 0.8, w * 0.36
         ys = [h * 0.22, h * 0.36, h * 0.53, h * 0.66]
     pe = ease_out(prog(t, 0, 0.4))
-    vista_casa(lienzo, cc, foco, t, dur, u, coste=coste, color=col)
+    clip = "nevera" if foco == "nevera2" else foco
+    if clips3d.existe(clip):  # el aparato en 3D si está en la biblioteca; si no, la casa
+        clips3d.panel_clip(lienzo, cc, clip, t, dur, u, coste=coste, color=col)
+    else:
+        vista_casa(lienzo, cc, foco, t, dur, u, coste=coste, color=col)
     # columna derecha
     placa = texto(f"#{n}", int(150 * u), col)
     pegar(lienzo, halo(int(320 * u), col), xr, y0 + ys[0], alfa=pe)

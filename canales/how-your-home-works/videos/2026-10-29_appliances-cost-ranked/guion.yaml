@@ -6,10 +6,10 @@ formato: largo
 voz: {nombre: am_michael, velocidad: 1.0}
 segmentos:
 - t: "Your dishwasher costs about twenty dollars a year to run."
-  v: {"tipo": "numero", "icono": "dishwasher", "valor": 20, "prefijo": "$", "sufijo": "/yr", "etiqueta": "Dishwasher", "color": "frio"}
+  v: {"tipo": "numero", "icono": "dishwasher", "valor": 20, "prefijo": "$", "sufijo": "/yr", "etiqueta": "Dishwasher", "color": "frio", "clip": "lavavajillas"}
   capitulo: "Dishwasher vs air conditioner"
 - t: "Your air conditioner? About five hundred."
-  v: {"tipo": "numero", "icono": "ac_unit", "valor": 505, "prefijo": "$", "sufijo": "/yr", "etiqueta": "Air conditioning", "color": "calor"}
+  v: {"tipo": "numero", "icono": "ac_unit", "valor": 505, "prefijo": "$", "sufijo": "/yr", "etiqueta": "Air conditioning", "color": "calor", "clip": "aire"}
   pausa: 0.3
 - t: "So where does your electric bill actually go?"
   v: {"tipo": "casa", "foco": "todos"}
