@@ -1,0 +1,119 @@
+{
+ "ok": true,
+ "resultados": [
+  {
+   "ok": true,
+   "prueba": "Resolución",
+   "detalle": "1080×1920",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "30 fps, H.264 + AAC",
+   "detalle": "30/1",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Duración",
+   "detalle": "38.1 s",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Volumen ≈ −14 LUFS",
+   "detalle": "-14.4 LUFS",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Sin picos (true peak ≤ −1 dBFS)",
+   "detalle": "-1.3 dBFS",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Longitud del guion",
+   "detalle": "103 palabras",
+   "aviso": true
+  },
+  {
+   "ok": true,
+   "prueba": "Gancho sin saludo",
+   "detalle": "your dehumidifier probably costs you more than you",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Cambio visual cada 2–4 s",
+   "detalle": "hueco máximo 3.6 s",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Visual: pantallas de solo texto ≤ 10 % y ninguna > 2,2 s",
+   "detalle": "0/8 de texto; largas: []",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Existe fuentes.md",
+   "detalle": "",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Existe licencias.md",
+   "detalle": "",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Existe metadatos.json",
+   "detalle": "",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Título < 60 caracteres",
+   "detalle": "53",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Etiqueta de IA decidida",
+   "detalle": "",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Cifras en pantalla documentadas en fuentes.md",
+   "detalle": "[]",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Estructura no repite 3 seguidas",
+   "detalle": "",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Miniatura base no repite 3 seguidas",
+   "detalle": "",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Frase de inicio no repite 3 seguidas",
+   "detalle": "",
+   "aviso": false
+  },
+  {
+   "ok": true,
+   "prueba": "Voz = guion (transcripción Whisper)",
+   "detalle": "similitud 0.88",
+   "aviso": false
+  }
+ ]
+}

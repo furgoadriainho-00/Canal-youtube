@@ -1,0 +1,307 @@
+1
+00:00:00,000 --> 00:00:06,341
+In Florida, a heat pump heats a typical home for about ninety dollars a year less than a gas furnace.
+
+2
+00:00:06,641 --> 00:00:11,315
+In Illinois, the same heat pump costs about seven hundred dollars a year more.
+
+3
+00:00:11,615 --> 00:00:15,045
+Same machines. Same physics. Completely different answer.
+
+4
+00:00:15,645 --> 00:00:19,579
+So is a heat pump actually cheaper to run than gas where you live?
+
+5
+00:00:19,879 --> 00:00:27,251
+I ran the numbers for six states, using government data on energy prices and on how much heat homes really use.
+
+6
+00:00:27,551 --> 00:00:31,628
+By the end, you'll know the one number that decides it for your own house.
+
+7
+00:00:31,928 --> 00:00:38,232
+Quick note: this is about running costs only, not the price of buying or installing either system.
+
+8
+00:00:38,532 --> 00:00:39,902
+First, the key difference.
+
+9
+00:00:40,202 --> 00:00:43,215
+A gas furnace makes heat by burning natural gas.
+
+10
+00:00:43,515 --> 00:00:50,649
+A new high-efficiency furnace turns at least ninety-five percent of the energy in that gas into heat for your home.
+
+11
+00:00:50,949 --> 00:00:52,902
+A heat pump doesn't burn anything.
+
+12
+00:00:53,202 --> 00:01:00,608
+It moves heat that's already outside, even in cold air, into your house, using electricity to run a compressor.
+
+13
+00:01:00,908 --> 00:01:05,021
+That's why it can deliver more heat than the electricity it uses.
+
+14
+00:01:05,321 --> 00:01:15,691
+The federal minimum efficiency for a new heat pump works out to about two point two units of heat for every unit of electricity, averaged over a heating season.
+
+15
+00:01:15,990 --> 00:01:18,983
+So on efficiency, the heat pump wins. Easily.
+
+16
+00:01:19,283 --> 00:01:26,106
+But you don't pay for efficiency. You pay for energy. And gas and electricity have very different prices.
+
+17
+00:01:26,406 --> 00:01:27,411
+Here's the catch.
+
+18
+00:01:27,711 --> 00:01:34,739
+In twenty twenty-six, the average American home pays about eighteen cents per kilowatt-hour for electricity.
+
+19
+00:01:35,039 --> 00:01:44,199
+For natural gas, the average residential price in twenty twenty-five was fifteen dollars and thirty-four cents per thousand cubic feet.
+
+20
+00:01:44,499 --> 00:01:53,354
+Put both in the same unit of energy, and the same amount of energy costs about three and a half times more as electricity than as gas.
+
+21
+00:01:53,654 --> 00:01:58,175
+That gives us the number that decides everything: the break-even efficiency.
+
+22
+00:01:58,475 --> 00:02:07,800
+If your heat pump delivers more heat per unit of electricity than that number, the heat pump is cheaper to run. If it delivers less, gas wins.
+
+23
+00:02:08,100 --> 00:02:16,497
+At national average prices, the break-even is about three point four. And a minimum-efficiency heat pump is about two point two.
+
+24
+00:02:16,797 --> 00:02:20,824
+So on average, across the country, gas is still cheaper to run.
+
+25
+00:02:21,124 --> 00:02:25,832
+But nobody pays the national average. And this is where it gets interesting.
+
+26
+00:02:26,132 --> 00:02:30,326
+The other half of the math is how much heat your home actually needs.
+
+27
+00:02:30,626 --> 00:02:38,333
+The government's Residential Energy Consumption Survey measured how much gas homes burn for heating in each climate zone.
+
+28
+00:02:38,633 --> 00:02:46,759
+A gas-heated home in a very cold or cold climate burns about three times as much as one in a hot, humid climate.
+
+29
+00:02:47,059 --> 00:02:58,247
+I turned that into the heat those homes actually need, then worked out what it costs to supply it with a new gas furnace, or with a heat pump, at each state's own prices.
+
+30
+00:02:58,547 --> 00:03:01,231
+Let's go state by state, from warm to cold.
+
+31
+00:03:01,531 --> 00:03:09,950
+Florida. Electricity is about fifteen cents, but gas is expensive, around twenty-five dollars per thousand cubic feet.
+
+32
+00:03:10,250 --> 00:03:18,547
+Heating a typical gas-heated home in Florida's climate costs about four hundred thirty dollars a year with a new gas furnace.
+
+33
+00:03:18,847 --> 00:03:21,481
+With a heat pump, about three hundred forty.
+
+34
+00:03:21,781 --> 00:03:29,775
+The heat pump wins by roughly ninety dollars a year. And in Florida, that same heat pump also works as your air conditioner.
+
+35
+00:03:30,075 --> 00:03:32,497
+Arizona. Heating needs are small here.
+
+36
+00:03:32,797 --> 00:03:38,561
+Gas furnace: about two hundred ninety dollars a year. Heat pump: about three hundred ten.
+
+37
+00:03:38,861 --> 00:03:42,825
+Nearly a tie, with gas slightly ahead at minimum efficiency.
+
+38
+00:03:43,125 --> 00:03:47,739
+Washington State has relatively cheap electricity, about fourteen cents.
+
+39
+00:03:48,039 --> 00:03:54,166
+Gas: about four hundred thirty dollars a year. Heat pump: about four hundred sixty-five.
+
+40
+00:03:54,466 --> 00:03:59,982
+Close again. The break-even here is about two point four, just above the federal minimum.
+
+41
+00:04:00,282 --> 00:04:08,607
+Georgia, in the mixed-humid zone. Gas: about seven hundred thirty dollars. Heat pump: about seven hundred twenty-seven.
+
+42
+00:04:08,907 --> 00:04:10,000
+That's a dead heat.
+
+43
+00:04:10,300 --> 00:04:17,193
+Now the cold states. Minnesota. Gas is cheap here, about eleven dollars, and homes need a lot of heat.
+
+44
+00:04:17,493 --> 00:04:25,742
+Gas furnace: about five hundred forty dollars a year. Heat pump at the federal minimum: about one thousand sixty-five.
+
+45
+00:04:26,042 --> 00:04:30,618
+Why does the cold matter? A heat pump has to pull heat out of the outdoor air.
+
+46
+00:04:30,918 --> 00:04:36,371
+The colder that air is, the harder the compressor works for every unit of heat it moves.
+
+47
+00:04:36,671 --> 00:04:39,886
+So on the coldest days, efficiency drops further.
+
+48
+00:04:40,186 --> 00:04:47,435
+ENERGY STAR's cold-climate heat pumps only have to reach one point seven five at five degrees Fahrenheit.
+
+49
+00:04:47,735 --> 00:04:52,157
+At that level, the heat pump would cost over thirteen hundred dollars a year.
+
+50
+00:04:52,457 --> 00:05:00,766
+Illinois is even more lopsided. Gas: about five hundred fifty-five. Heat pump: about twelve hundred forty-five.
+
+51
+00:05:01,066 --> 00:05:07,076
+The break-even efficiency in Illinois is almost five. That's more than double the federal minimum.
+
+52
+00:05:07,376 --> 00:05:08,695
+So here's the pattern.
+
+53
+00:05:08,995 --> 00:05:17,760
+The heat pump wins where gas is expensive and winters are mild. Gas wins where gas is cheap and winters are long and cold.
+
+54
+00:05:18,060 --> 00:05:26,642
+And notice: the cold states aren't losing mainly because heat pumps stop working in the cold. They're losing because gas is so cheap there.
+
+55
+00:05:26,942 --> 00:05:31,099
+Minnesota pays less than half what Florida pays for the same gas.
+
+56
+00:05:31,399 --> 00:05:33,201
+Two more things move the result.
+
+57
+00:05:33,501 --> 00:05:41,852
+If you're comparing against an old furnace that's only eighty percent efficient, gas costs about nineteen percent more than with a new one.
+
+58
+00:05:42,152 --> 00:05:47,305
+And better insulation shrinks both bills, but it doesn't change which one is cheaper.
+
+59
+00:05:47,605 --> 00:05:52,102
+There's also a middle path, and it follows straight from the break-even idea.
+
+60
+00:05:52,402 --> 00:05:59,005
+Some homes use a hybrid setup, often called dual fuel: a heat pump paired with a gas furnace.
+
+61
+00:05:59,305 --> 00:06:03,671
+On mild days, the heat pump does the heating at its best efficiency.
+
+62
+00:06:03,971 --> 00:06:10,296
+When it gets really cold and its efficiency drops below your break-even line, the furnace takes over.
+
+63
+00:06:10,596 --> 00:06:18,639
+In a state like Georgia or Washington, where the two are nearly tied on average, that switch point is where the savings come from.
+
+64
+00:06:18,939 --> 00:06:21,923
+One more thing to keep in mind: prices move.
+
+65
+00:06:22,223 --> 00:06:32,085
+Since twenty twenty, the average residential electricity price rose about thirty-eight percent, and natural gas rose about forty-two percent.
+
+66
+00:06:32,385 --> 00:06:42,072
+Because both went up by a similar amount, the overall picture hasn't flipped. But in your state, a big change in either price can move your break-even.
+
+67
+00:06:42,372 --> 00:06:47,025
+Now let's find the answer for your own home. You need two numbers from your bills.
+
+68
+00:06:47,325 --> 00:06:53,145
+One: what you pay per kilowatt-hour of electricity. Two: what you pay for gas, per therm.
+
+69
+00:06:53,445 --> 00:06:59,498
+Divide your electricity price by your gas price, then multiply by twenty-seven point eight.
+
+70
+00:06:59,798 --> 00:07:05,157
+That's the efficiency your heat pump needs to beat a new ninety-five percent furnace.
+
+71
+00:07:05,457 --> 00:07:12,179
+For example, eighteen cents per kilowatt-hour and a dollar fifty per therm gives about three point three.
+
+72
+00:07:12,479 --> 00:07:22,309
+If your number comes out around two or lower, a typical heat pump should be cheaper to run. If it's above three, gas will most likely win on running costs.
+
+73
+00:07:22,609 --> 00:07:35,464
+And if you heat with electric baseboard heaters, which turn one unit of electricity into one unit of heat, a heat pump at the federal minimum uses less than half the electricity for the same warmth.
+
+74
+00:07:35,764 --> 00:07:38,342
+So, is a heat pump cheaper to run than gas?
+
+75
+00:07:38,642 --> 00:07:45,471
+In Florida, yes. In Georgia, it's a tie. In Minnesota and Illinois, no, not at today's prices.
+
+76
+00:07:45,771 --> 00:07:53,508
+The heat pump is the more efficient machine almost everywhere. Whether it's cheaper depends on what you pay for each kind of energy.
+
+77
+00:07:53,808 --> 00:08:01,510
+If you want to see what every other appliance in your home costs per year, my full ranking of fifteen appliances is right here.

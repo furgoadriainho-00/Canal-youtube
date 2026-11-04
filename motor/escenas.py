@@ -13,7 +13,7 @@ from .graficos import (COLORES, icono, texto, linea_rica, encajar, prog, ease_ou
                        pegar, caja_redondeada, halo, fmt_num)
 from .ilustraciones import aparato, pila_monedas, contador
 from .casa import vista_casa
-from . import clips3d
+from . import clips3d, mapa
 
 C = COLORES
 
@@ -264,6 +264,16 @@ def comparar(lienzo, caja, s, t, dur, u):
         _icono_animado(lienzo, ic, int(110 * u), col, cx, min(top - 60 * u, y0 + h * 0.3), t, ini)
         nom = encajar(texto(nombre, int(46 * u), C["texto"], "Inter", "Bold"), int(w * 0.4))
         pegar(lienzo, nom, cx, base_y + 50 * u, alfa=prog(t, ini, 0.3))
+        if s.get("gana") == "ab"[j]:
+            pg = ease_back(prog(t, 1.4, 0.4))
+            if pg > 0:
+                sello = texto("CHEAPER", int(40 * u), C["fondo"])
+                fondo_s = caja_redondeada(sello.width + int(44 * u), sello.height + int(22 * u), int(18 * u), C["ahorro"] + (255,))
+                pegar(lienzo, fondo_s, cx, base_y + 118 * u, escala=max(0.01, pg))
+                pegar(lienzo, sello, cx, base_y + 118 * u, escala=max(0.01, pg))
+    if s.get("nota"):
+        pegar(lienzo, encajar(texto(s["nota"], int(30 * u), C["suave"], "Inter", "Medium"), int(w * 0.9)),
+              x0 + w / 2, y0 + h - 40 * u, alfa=prog(t, 0.5, 0.4))
     if s.get("fuente"):
         _fuente_pie(lienzo, caja, u, t, s["fuente"])
 
@@ -297,7 +307,7 @@ def barras(lienzo, caja, s, t, dur, u):
         largo = max(4, int(largo_max * v / vmax * p))
         hb = int(alto_fila * 0.5)
         pegar(lienzo, caja_redondeada(largo, hb, hb // 2, col + (255,)), x_bar, cy, ancla="l")
-        cad = f'{s.get("prefijo", "")}{fmt_num(v * p)}{s.get("sufijo", "")}'
+        cad = f'{s.get("prefijo", "")}{fmt_num(v * p, s.get("decimales", 0))}{s.get("sufijo", "")}'
         pegar(lienzo, texto(cad, int(min(48 * u, alto_fila * 0.4)), C["texto"]), x_bar + largo + 20 * u, cy,
               alfa=prog(t, ini + 0.2, 0.3), ancla="l")
     if s.get("nota"):
@@ -419,7 +429,106 @@ def contador_escena(lienzo, caja, s, t, dur, u):
     _lineas_cineticas(lienzo, s.get("lineas", []), cx, cy, u, t, dur, 90, int(w * (0.9 if vertical else 0.42)), 0.5)
 
 
+def mapa_escena(lienzo, caja, s, t, dur, u):
+    """Mapa de EE. UU. con estados que se encienden uno a uno; texto opcional al lado."""
+    x0, y0, w, h = caja
+    res = s.get("resaltar", {})
+    lineas = s.get("lineas")
+    mw = w * (0.6 if lineas else 0.86)
+    mh = h * 0.86
+    k = min(mw / mapa.ANCHO, mh / mapa.ALTO)
+    aw, ah = int(mapa.ANCHO * k), int(mapa.ALTO * k)
+    cx = x0 + (w * 0.33 if lineas else w / 2)
+    cy = y0 + h / 2
+    pegar(lienzo, mapa.base(aw, ah), cx, cy, alfa=prog(t, 0, 0.3))
+    reparto = min(0.5, max(0.12, dur * 0.6 / max(1, len(res))))
+    for i, (st, col) in enumerate(res.items()):
+        p = prog(t, 0.15 + i * reparto, 0.35)
+        if p > 0:
+            pegar(lienzo, mapa.estado(st, aw, ah, _color(col)), cx, cy, alfa=p)
+    if lineas:
+        _lineas_cineticas(lienzo, lineas, x0 + w * 0.81, y0 + h / 2, u, t, dur, 84, int(w * 0.34), 0.4)
+
+
+def regla(lienzo, caja, s, t, dur, u):
+    """Regla de eficiencia (COP) con zonas de color y marcas: el punto de empate frente a la bomba de calor."""
+    x0, y0, w, h = caja
+    lo, hi = s.get("rango", [1, 5])
+    xa, xb = x0 + w * 0.08, x0 + w * 0.92
+    yb = y0 + h * 0.56
+    alto = int(44 * u)
+
+    def px(v):
+        return xa + (xb - xa) * (v - lo) / (hi - lo)
+
+    if s.get("titulo"):
+        pegar(lienzo, encajar(texto(s["titulo"], int(60 * u), C["texto"]), int(w * 0.85)), x0 + w / 2, y0 + h * 0.12,
+              alfa=prog(t, 0, 0.3))
+    pe = ease_out(prog(t, 0.05, 0.5))
+    largo = max(4, int((xb - xa) * pe))
+    pegar(lienzo, caja_redondeada(largo, alto, alto // 2, C["panel"] + (255,)), xa, yb, ancla="l")
+    for i, (a, b, col, et) in enumerate(s.get("zonas", [])):
+        pz = ease_out(prog(t, 0.2 + i * 0.3, 0.4))
+        if pz > 0:
+            ancho = max(4, int((px(b) - px(a)) * pz))
+            pegar(lienzo, caja_redondeada(ancho, alto, alto // 2, _color(col) + (255,)), px(a), yb, ancla="l")
+            pegar(lienzo, encajar(texto(et, int(40 * u), _color(col), "Inter", "Bold"), int(px(b) - px(a) - 16 * u)),
+                  (px(a) + px(b)) / 2, yb + 130 * u, alfa=pz)
+    for v in range(int(lo), int(hi) + 1):
+        pegar(lienzo, texto(str(v), int(36 * u), C["suave"], "Inter", "SemiBold"), px(v), yb + 62 * u, alfa=pe)
+    for i, (v, et, col) in enumerate(s.get("marcas", [])):
+        c = _color(col)
+        pm = ease_back(prog(t, 0.4 + i * 0.5, 0.4))
+        if pm > 0:
+            pegar(lienzo, caja_redondeada(int(12 * u), int(150 * u), int(6 * u), c + (255,)), px(v), yb - 50 * u, alfa=min(1, pm))
+            sp = encajar(texto(f"{et} {v:g}", int(58 * u), c), int(w * 0.42))
+            x = min(max(px(v), x0 + sp.width / 2 + 20 * u), x0 + w - sp.width / 2 - 20 * u)
+            pegar(lienzo, sp, x, yb - (160 + 80 * (i % 2)) * u, escala=max(0.01, pm))
+    if s.get("nota"):
+        pegar(lienzo, encajar(texto(s["nota"], int(30 * u), C["suave"], "Inter", "Medium"), int(w * 0.9)),
+              x0 + w / 2, y0 + h - 40 * u, alfa=prog(t, 0.8, 0.4))
+
+
+def dispersion(lienzo, caja, s, t, dur, u):
+    """Puntos por estado: precio del gas (x) frente a calor que necesita la casa (y)."""
+    x0, y0, w, h = caja
+    xa, xb = x0 + w * 0.14, x0 + w * 0.9
+    ya, yb = y0 + h * 0.1, y0 + h * 0.8
+    (lx, hx), (ly, hy) = s["rango_x"], s["rango_y"]
+    pe = ease_out(prog(t, 0, 0.4))
+    pegar(lienzo, caja_redondeada(max(4, int((xb - xa) * pe)), int(6 * u), int(3 * u), C["suave"] + (255,)), xa, yb, ancla="l")
+    pegar(lienzo, caja_redondeada(int(6 * u), max(4, int((yb - ya) * pe)), int(3 * u), C["suave"] + (255,)), xa, (ya + yb) / 2)
+    pegar(lienzo, texto(s["eje_x"], int(38 * u), C["suave"], "Inter", "SemiBold"), (xa + xb) / 2, yb + 62 * u, alfa=pe)
+    pegar(lienzo, texto(s["eje_y"], int(38 * u), C["suave"], "Inter", "SemiBold").rotate(90, expand=True),
+          xa - 60 * u, (ya + yb) / 2, alfa=pe)
+    reparto = min(0.45, max(0.12, dur * 0.6 / len(s["puntos"])))
+    for i, (nombre, vx, vy, col, lado) in enumerate(s["puntos"]):
+        c = _color(col)
+        p = ease_back(prog(t, 0.3 + i * reparto, 0.4))
+        if p > 0:
+            cx = xa + (xb - xa) * (vx - lx) / (hx - lx)
+            cy = yb - (yb - ya) * (vy - ly) / (hy - ly)
+            pegar(lienzo, halo(int(110 * u), c), cx, cy, alfa=min(1, p) * 0.7)
+            pegar(lienzo, caja_redondeada(int(44 * u), int(44 * u), int(22 * u), c + (255,)), cx, cy, escala=max(0.01, p))
+            pegar(lienzo, texto(nombre, int(40 * u), C["texto"], "Inter", "Bold"), cx + lado * 40 * u, cy,
+                  alfa=min(1, p), ancla="l" if lado > 0 else "r")
+    for j, (linea, col) in enumerate(s.get("leyenda", [])):
+        pegar(lienzo, encajar(texto(linea, int(38 * u), _color(col), "Inter", "Bold"), int(w * 0.42)),
+              x0 + w * (0.3 + 0.42 * j), y0 + h - 34 * u, alfa=prog(t, 1.2, 0.4))
+
+
+def clip_escena(lienzo, caja, s, t, dur, u):
+    """Clip 3D en un panel con texto al lado."""
+    x0, y0, w, h = caja
+    clips3d.panel_clip(lienzo, (x0 + 50 * u, y0 + 110 * u, w * 0.52, h - 220 * u), s["clip"], t, dur, u)
+    _lineas_cineticas(lienzo, s.get("lineas", []), x0 + w * 0.79, y0 + h / 2, u, t, dur, 90, int(w * 0.36), 0.4)
+
+
 ESCENAS = {
+    "mapa": mapa_escena,
+    "regla": regla,
+    "dispersion": dispersion,
+    "clip": clip_escena,
     "numero": numero,
     "texto": texto_escena,
     "titulo": titulo,

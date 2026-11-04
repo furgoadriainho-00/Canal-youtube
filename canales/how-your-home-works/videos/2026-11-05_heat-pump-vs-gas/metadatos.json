@@ -1,0 +1,42 @@
+{
+  "titulo": "Heat Pump vs Gas Furnace: Which Is Cheaper to Run?",
+  "descripcion": "Heat pump vs gas furnace: which one is actually cheaper to run? I calculated the yearly heating cost in 6 states, from Florida to Illinois, using official U.S. government data on energy prices and home heating use.\n\nIn Florida a heat pump saves about $90 a year. In Illinois it costs about $690 more. The difference comes down to one number: your break-even efficiency, and you can calculate yours in 30 seconds (see 6:42).\n\nThis video covers running costs only, not purchase or installation.\n\nHow the numbers work: heating demand from the EIA Residential Energy Consumption Survey (2020) by climate zone; new furnace at 95% efficiency (ENERGY STAR minimum, South); heat pump at the 2023 federal minimum (HSPF2 7.5 ≈ 2.2 seasonal efficiency); residential prices from the EIA (electricity Jan–Aug 2026, gas 2025). Your own costs depend on your home, climate and rates.",
+  "etiquetas": [
+    "heat pump vs gas furnace",
+    "heat pump cost",
+    "gas furnace cost",
+    "is a heat pump cheaper",
+    "heating cost comparison",
+    "heat pump cold climate",
+    "home heating",
+    "energy bills",
+    "break even",
+    "home by the numbers"
+  ],
+  "idioma": "English",
+  "lista": "Home energy costs, explained",
+  "etiqueta_ia": true,
+  "motivo_ia": "narración con voz sintética",
+  "miniatura_base": "versus",
+  "afiliados": [],
+  "fuentes_publicas": [
+    "EIA Residential Energy Consumption Survey 2020, table CE5.4: https://www.eia.gov/consumption/residential/data/2020/index.php?view=consumption",
+    "EIA electricity prices by state, Table 5.6.B: https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_b",
+    "EIA natural gas residential prices by state: https://www.eia.gov/dnav/ng/ng_pri_sum_a_EPG0_PRS_DMcf_a.htm",
+    "ENERGY STAR furnace criteria: https://www.energystar.gov/products/furnaces/key_product_criteria",
+    "ENERGY STAR heat pump criteria: https://www.energystar.gov/products/air_source_heat_pumps/key-product-criteria"
+  ],
+  "capitulos": [
+    "0:00 Florida vs Illinois",
+    "0:15 What we're comparing",
+    "0:38 How each system makes heat",
+    "1:26 The price of gas vs electricity",
+    "2:26 How much heat homes need",
+    "2:58 State by state",
+    "5:07 The pattern",
+    "5:47 Hybrid systems and changing prices",
+    "6:42 Calculate your own break-even",
+    "7:35 Summary"
+  ],
+  "descripcion_final": "Heat pump vs gas furnace: which one is actually cheaper to run? I calculated the yearly heating cost in 6 states, from Florida to Illinois, using official U.S. government data on energy prices and home heating use.\n\nIn Florida a heat pump saves about $90 a year. In Illinois it costs about $690 more. The difference comes down to one number: your break-even efficiency, and you can calculate yours in 30 seconds (see 6:42).\n\nThis video covers running costs only, not purchase or installation.\n\nHow the numbers work: heating demand from the EIA Residential Energy Consumption Survey (2020) by climate zone; new furnace at 95% efficiency (ENERGY STAR minimum, South); heat pump at the 2023 federal minimum (HSPF2 7.5 ≈ 2.2 seasonal efficiency); residential prices from the EIA (electricity Jan–Aug 2026, gas 2025). Your own costs depend on your home, climate and rates.\n\nChapters:\n0:00 Florida vs Illinois\n0:15 What we're comparing\n0:38 How each system makes heat\n1:26 The price of gas vs electricity\n2:26 How much heat homes need\n2:58 State by state\n5:07 The pattern\n5:47 Hybrid systems and changing prices\n6:42 Calculate your own break-even\n7:35 Summary\n\nSources:\nEIA Residential Energy Consumption Survey 2020, table CE5.4: https://www.eia.gov/consumption/residential/data/2020/index.php?view=consumption\nEIA electricity prices by state, Table 5.6.B: https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_b\nEIA natural gas residential prices by state: https://www.eia.gov/dnav/ng/ng_pri_sum_a_EPG0_PRS_DMcf_a.htm\nENERGY STAR furnace criteria: https://www.energystar.gov/products/furnaces/key_product_criteria\nENERGY STAR heat pump criteria: https://www.energystar.gov/products/air_source_heat_pumps/key-product-criteria"
+}

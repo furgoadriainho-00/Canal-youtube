@@ -1,0 +1,11 @@
+COP mínimo federal = 2.20
+estado,zona,calor_MMBtu,gas_nueva_usd,bomba_cop2.2_usd,bomba_cop1.75_usd,cop_empate
+Florida,Hot-humid,16.6,431,340,427,1.73
+Arizona,Mixed-dry/Hot-dry,15.2,287,311,391,2.38
+Washington,Marine,24.2,433,465,584,2.36
+Georgia,Mixed-humid,35.2,730,727,913,2.19
+Minnesota,Very cold/Cold,48.6,542,1065,1338,4.32
+Illinois,Very cold/Cold,48.6,556,1246,1565,4.93
+nacional: electricidad 53.3 $/MMBtu, gas 14.81 $/MMBtu, relación 3.60, COP de empate 3.42
+fórmula casera: COP de empate = 27,84 × (¢/kWh ÷ 100) ÷ ($/therm); ejemplo 0,18 y 1,50 → 3.34
+caldera vieja al 80 %: el gas cuesta 19% más que con una nueva al 95 %

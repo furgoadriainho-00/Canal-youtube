@@ -1,0 +1,22 @@
+# Short del guionista (guiones/2026-11-06_short-dehumidifier/GUION.md). Narración literal. Termina enlazando con el principio.
+titulo: "Your dehumidifier costs more than your fridge"
+estructura: comparacion
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: "Your dehumidifier probably costs you more than your fridge."
+  v: {tipo: comparar, etiqueta: "Dehumidifier vs Fridge", a: ["Dehumidifier", "?", humidity_high], b: ["Fridge", "?", kitchen]}
+- t: "According to government survey data, a dehumidifier uses about a thousand kilowatt-hours a year in the homes that have one."
+  v: {tipo: contador, valor: 999, unidad: "kWh / year", lineas: ["EIA survey:", "*999 kWh* a year"]}
+- t: "At twenty twenty-six prices, that's about a hundred and eighty-two dollars."
+  v: {tipo: numero, icono: humidity_high, valor: 182, prefijo: "$", sufijo: "/yr", etiqueta: "Dehumidifier", color: calor}
+- t: "Your main refrigerator? About a hundred and twelve."
+  v: {tipo: numero, icono: kitchen, valor: 112, prefijo: "$", sufijo: "/yr", etiqueta: "Main refrigerator", color: frio}
+- t: "That's over sixty percent more, for a machine most people forget is even running."
+  v: {tipo: comparar, etiqueta: "+62% a year", a: ["Fridge", 112, kitchen], b: ["Dehumidifier", 182, humidity_high], prefijo: "$", sufijo: "/yr"}
+- t: "In a damp basement, it can run for hours a day, all summer."
+  v: {tipo: casa, foco: deshumidificador, lineas: ["Damp basement,", "*hours a day*"]}
+- t: "Check the humidity setting. Running it drier than you need just burns money."
+  v: {tipo: iconos, iconos: [humidity_high, arrow_forward, savings], etiquetas: ["Check the setting", "", "Save money"]}
+- t: "I ranked fifteen appliances by yearly cost. The one that surprised people most? Your dehumidifier."
+  v: {tipo: casa, foco: deshumidificador, lineas: ["15 appliances ranked", "*full video*"]}

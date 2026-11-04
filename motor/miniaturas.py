@@ -11,6 +11,7 @@ import yaml
 from PIL import Image, ImageDraw, ImageFilter
 
 from .graficos import COLORES as C, fondo, icono, texto, encajar, pegar, halo, caja_redondeada
+from . import mapa
 
 W, H = 1280, 720
 
@@ -73,7 +74,19 @@ def ranking(m):
     return img
 
 
-TIPOS = {"icono_grande": icono_grande, "versus": versus, "ranking": ranking}
+def mapa_cifras(m):
+    img = _base()
+    aw, ah = 900, 562
+    pegar(img, mapa.base(aw, ah), W / 2, 420)
+    for st, col in m["resaltar"].items():
+        pegar(img, mapa.estado(st, aw, ah, _color(col)), W / 2, 420)
+    banda = caja_redondeada(W - 120, 130, 24, (245, 247, 250, 245))
+    pegar(img, banda, W / 2, 85)
+    pegar(img, encajar(texto(m["cifras"], 96, (15, 27, 45)), W - 180), W / 2, 85)
+    return img
+
+
+TIPOS = {"icono_grande": icono_grande, "versus": versus, "ranking": ranking, "mapa": mapa_cifras}
 
 
 def generar(carpeta: Path):
