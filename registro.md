@@ -23,3 +23,10 @@
 - 2026-10-29 · El humano ha creado el canal: https://www.youtube.com/@HomeByTheNumbers. No hay ningún ordenador suyo conectado a esta sesión; le explico cómo conectar Chrome para que yo pueda subir los vídeos.
 - 2026-10-30 · El humano pide vídeos con 3D. Con su autorización instalado Blender 4.5.15 LTS (descarga oficial, suma SHA-256 verificada) y Mesa por apt. Modelos CC0 de Poly Haven en recursos/3d. motor3d/estudio.py: plató de marca y aparatos modelados por código. Cycles CPU a 720p y 8 muestras: unos 8 s por fotograma. Biblioteca de clips de 3 s en marcha (motor3d/biblioteca.py).
 - 2026-10-30 · Biblioteca 3D completa (15 clips en recursos/clips3d, señal LISTO). Vídeo largo montado de nuevo con el 3D en el ranking y el gancho. Control superado.
+- 2026-10-30 · En el Mac del humano (Intel, sin Homebrew): instalados en ~/.local uv + Python 3.12, ffmpeg/ffprobe 9.0.2 (evermeet.cx) y Node 22; .venv con Python 3.12. Arreglado motor/video.py para leer el JSON de loudnorm con ffmpeg 9 (añade texto detrás).
+- 2026-10-30 · Publicados con Chrome los Shorts de la nevera (https://youtube.com/shorts/3mbQphWYFAQ) y de la lavadora (https://youtube.com/shorts/ibW2LavZhKg), con confirmación del humano. Creada la lista «Home energy costs, explained».
+- 2026-11-03 · Vídeo largo con 3D montado en local y publicado con confirmación: https://youtu.be/9VEwktvLfUM. Tras la verificación por teléfono del humano, puesta la miniatura A.
+- 2026-11-03 · Vídeo relacionado de los Shorts y enlaces clicables en las descripciones: YouTube exige la verificación de funciones avanzadas (vídeo con la cara, documento de identidad o historial del canal). Es del humano; pendiente.
+- 2026-11-03 · El humano ha enviado la verificación por vídeo; YouTube la revisa (≈24 h). Vídeo relacionado de los Shorts pendiente hasta que la aprueben.
+- 2026-11-04 · 13:20: la verificación de funciones avanzadas sigue en revisión; YouTube aún no deja enlazar el vídeo relacionado en los Shorts. Reintento programado a las 16:27.
+- 2026-11-04 · Reparto de trabajo: un agente guionista sube los guiones a GitHub y el agente del Mac del humano los monta y los sube a YouTube con confirmación.

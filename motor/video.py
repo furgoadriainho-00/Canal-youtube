@@ -282,7 +282,7 @@ def _normalizar(entrada, salida, objetivo, tp=-1.5, lineal=True, previo=""):
     r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(entrada), "-af",
                         f"{previo}loudnorm=I={objetivo}:TP={tp}:LRA=11:print_format=json", "-f", "null", "-"],
                        capture_output=True, text=True)
-    m = json.loads(r.stderr[r.stderr.rindex("{"):])
+    m = json.loads(r.stderr[r.stderr.rindex("{"):r.stderr.rindex("}") + 1])
     _ffmpeg("-i", str(entrada), "-af",
             f"{previo}loudnorm=I={objetivo}:TP={tp}:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
             f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:"
