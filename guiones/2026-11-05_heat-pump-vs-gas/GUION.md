@@ -18,7 +18,7 @@
   - 3-second 3D clips in `recursos/clips3d/`. For this video: `aire.mp4` (wall-mounted unit, use it as the heat pump), `calefaccion.mp4` (electric radiator), `termo.mp4` (water heater) and `medidor.mp4` (electric meter).
   - Logo, banner and watermark in `canales/how-your-home-works/marca/`.
 - **What you need to source:** a gas furnace, an outdoor heat pump unit, a gas flame, and a US map with the 6 states. Use only free-license stock (Pexels or Pixabay), your own graphics or your own 3D. **No clips from other YouTubers, movies or news.**
-- **Voice:** you record the narration yourself, in US English, at a calm, clear pace. Read the narration exactly as written: the numbers are spelled out the way they should be said.
+- **Voice:** US English, calm and clear pace, using the narration exactly as written (numbers are spelled out the way they should be said). With an AI voice, set "Altered or synthetic content: Yes".
 - **Music:** YouTube Audio Library only, 18–20 dB below the voice. Final loudness around −14 LUFS.
 
 ---
@@ -280,4 +280,4 @@ ENERGY STAR heat pump criteria: https://www.energystar.gov/products/air_source_h
 **Tags:**
 `heat pump vs gas furnace, heat pump cost, gas furnace cost, is a heat pump cheaper, heating cost comparison, heat pump cold climate, home heating, energy bills, break even, home by the numbers`
 
-**Settings:** language English · playlist "Home energy costs, explained" · not made for kids · altered or synthetic content: **No** (real voice; the 3D and graphics are clearly animated). Switch it to **Yes** only if you add realistic AI-generated footage.
+**Settings:** language English · playlist "Home energy costs, explained" · not made for kids · altered or synthetic content: **Yes** with an AI voice (**No** only if a real person records it).

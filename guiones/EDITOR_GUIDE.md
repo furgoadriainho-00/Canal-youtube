@@ -1,31 +1,32 @@
-# Editor guide · Home By The Numbers
+# Guía de los guiones · Home By The Numbers
 
-Here are the scripts for **Home By The Numbers** (@HomeByTheNumbers), an English-language channel for a US audience. Each folder is one video: `YYYY-MM-DD_<topic>/`, where the date is the publish day.
+Guiones de **Home By The Numbers** (@HomeByTheNumbers), canal en inglés para público de EE. UU. Los escribe el **guionista** (Claude, en la nube). Los monta y los publica el **montavideos** (el agente de Claude que trabaja en el Mac del humano) con el motor del repositorio. Las notas entre los dos van en `guiones/NOTA_MONTAVIDEOS.md` o en `registro.md`.
 
-## How to get the scripts
-Everything is in the GitHub repository **github.com/furgoadriainho-00/Canal-youtube**, in the `guiones/` folder. New scripts appear there every day. You can read them on the GitHub website, or download them with *Code → Download ZIP*. The 3D clips are in `recursos/clips3d/`.
+## Dónde está todo
+- Repositorio: **github.com/furgoadriainho-00/Canal-youtube**, carpeta `guiones/`. Hay una carpeta por vídeo, `AAAA-MM-DD_<tema>`, con la fecha de publicación.
+- En cada carpeta: `GUION.md` (narración e imagen), `fuentes.md` (de dónde sale cada cifra) y `datos/` (cálculos).
+- Clips 3D de 15 aparatos en `recursos/clips3d/`. Logo, banner y marca de agua en `canales/how-your-home-works/marca/`.
 
-## What's in each folder
-- `GUION.md`: the script. English narration (what is heard), the visuals for each part, on-screen text, thumbnails, title, description and tags.
-- `fuentes.md`: where every number comes from. **Don't change numbers or any sentence with data in it.** If something doesn't fit, tell us.
-- `datos/`: the calculations.
+## Reglas para escribir (guionista)
+- **Narración en inglés de EE. UU.**, con los números escritos como se dicen. Las indicaciones pueden ir en español.
+- **Duración:** la voz va a unas **153 palabras por minuto**. Un largo de 9–10 min necesita **1.400–1.500 palabras**, y el mínimo son 8 min. Un Short, 80–150 palabras.
+- **Cifras en pantalla:** cada una tiene que estar en `fuentes.md` **tal como sale**, redondeo incluido.
+- **Capítulos:** no hace falta poner los minutos; los calcula el montavideos.
+- **Sin stock por ahora** (no hay claves de Pexels ni Pixabay). Pide solo escenas que el motor sabe hacer:
+  - casa en corte con foco en un aparato · contador de la luz · cifra animada (monedas o anillo)
+  - comparación de dos barras con sello CHEAPER · barras horizontales · iconos · fórmula · tarjeta de fuente
+  - puesto de ranking · clip 3D con texto · mapa de EE. UU. con estados resaltados · regla con marcas y zonas · gráfico de puntos
+- **Shorts:** el clip 3D todavía no sale en vertical. Usa la casa en corte, iconos o cifras.
+- **Miniaturas:** icono grande con cifra, versus, ranking, o mapa con cifras. Máximo 4 palabras.
+- **Variedad:** no más de 3 vídeos seguidos con la misma estructura, la misma miniatura base o la misma frase de inicio.
 
-## Weekly schedule
-- **2 long videos** (Mondays and Thursdays, 8–12 min) and **1 Short every day** (30–60 s).
-- Scripts are ready at least one week ahead.
+## Reglas de montaje y publicación (montavideos)
+- **Voz:** la IA del canal, Kokoro `am_michael`, aprobada por el humano. La narración se usa **literal**.
+- **YouTube «Altered or synthetic content»: Sí**, siempre que la voz sea de IA.
+- Nada de material con derechos. Música generada por el motor o de la Biblioteca de audio de YouTube.
+- Volumen en torno a −14 LUFS y música entre 18 y 20 dB por debajo de la voz.
+- No se cambian cifras ni frases. Si algo no encaja, se avisa en `NOTA_MONTAVIDEOS.md`.
+- Antes de publicar cada vídeo se pide confirmación al humano. El enlace publicado se apunta en `registro.md` y en `canales/how-your-home-works/publicados.csv`.
 
-## Style
-- Midnight-blue background `#0F1B2D`, orange `#FF7A1A` and blue `#2EC4F1`. Fonts: Montserrat ExtraBold and Inter.
-- Change the picture every 2–4 seconds. Animated numbers (counters, coins, bars) and almost no static text.
-- **Channel assets:** 3D clips of 15 appliances in `recursos/clips3d/` (file names are Spanish: nevera = fridge, lavadora = washer, secadora = dryer, lavavajillas = dishwasher, termo = water heater, aire = air conditioner/heat pump, calefaccion = electric heater, tv, microondas = microwave, cocina = stove, deshumidificador = dehumidifier, congelador = freezer, ventiladores = ceiling fan, luz = light bulb, medidor = electric meter). Logo, banner and watermark in `canales/how-your-home-works/marca/`.
-
-## Rules you can't break (so YouTube monetizes the channel)
-- No copyrighted material: no clips from other channels, movies, TV shows, sports or commercial music.
-- Stock only from Pexels or Pixabay (free license), or your own assets.
-- Music only from the YouTube Audio Library.
-- **Voice:** you record it yourself, in US English. Read the narration exactly as written.
-- "Altered or synthetic content" in YouTube: **No** with your real voice and our animated graphics. Switch it to **Yes** only if you add realistic AI-generated footage.
-- Final loudness around −14 LUFS, with music 18–20 dB below the voice.
-
-## When you publish
-Copy the title, description, tags and settings from `GUION.md`, and adjust the chapter timestamps to the final edit. Then send us the video link so we can log it.
+## Calendario
+**1 Short cada día** y **2 vídeos largos a la semana** (lunes y jueves). Los guiones van siempre con al menos una semana de antelación.

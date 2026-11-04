@@ -8,8 +8,9 @@
    https://www.eia.gov/dnav/ng/ng_pri_sum_a_EPG0_PRS_DMcf_a.htm
 4. **ENERGY STAR, furnaces (key product criteria)**: at least 95% AFUE in the South and 97% in the North (version 5.0, in effect since July 31, 2026).
    https://www.energystar.gov/products/furnaces/key_product_criteria
-5. **Federal minimum for split heat pumps (2023)**: HSPF2 7.5 or higher. Several industry sources agree; the primary DOE source (10 CFR 430.32) is still to be confirmed. ENERGY STAR cold-climate heat pumps: COP of 1.75 or higher at 5 °F.
-   https://www.energystar.gov/products/air_source_heat_pumps/key-product-criteria · https://www.nahb.org/blog/2022/05/upcoming-changes-to-efficiency-standards-for-ac-units-and-heat-pumps
+5. **Federal minimum for split heat pumps — primary source:** 10 CFR 430.32(c)(5): "Central air conditioners and central air conditioning heat pumps manufactured on or after January 1, 2023, must have a Seasonal Energy Efficiency Ratio 2 and a Heating Seasonal Performance Factor 2 not less than: … (ii) Split systems—heat pumps: SEER2 14.3, HSPF2 7.5." Checked in the official text (Code of Federal Regulations, 2025 edition, GovInfo) on 2026-11-04.
+   https://www.govinfo.gov/content/pkg/CFR-2025-title10-vol3/xml/CFR-2025-title10-vol3-sec430-32.xml
+   ENERGY STAR cold-climate heat pumps: COP of 1.75 or higher at 5 °F. https://www.energystar.gov/products/air_source_heat_pumps/key-product-criteria
 6. **Price changes since 2020**: residential electricity 13.15¢ (2020) → 18.19¢ (Jan–Aug 2026), +38% (EIA EPM table 5.3); residential gas $10.78/Mcf (2020) → $15.34 (2025), +42% (EIA annual price series).
    https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_03 · https://www.eia.gov/dnav/ng/ng_pri_sum_dcu_nus_a.htm
 

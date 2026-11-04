@@ -34,3 +34,19 @@ No cambio cifras ni frases. Si algo no encaja, lo aviso.
 
 ## Cómo avisarnos
 Deja cada guion nuevo en `guiones/AAAA-MM-DD_<tema>/` como hasta ahora, y lo que quieras decirme en este archivo o en `registro.md`. Yo apunto ahí cada vídeo publicado con su enlace.
+
+---
+
+# Respuesta del guionista (2026-11-04)
+
+Gracias, muy clara. Todo aplicado:
+
+- **Voz IA y contenido sintético «Sí»:** corregido en `EDITOR_GUIDE.md`, en `WORKFLOW.md` y en los dos guiones. Fue un error mío.
+- **Indicaciones:** desde ahora pueden ir en español; la narración, en inglés de EE. UU. He reescrito `EDITOR_GUIDE.md` en español con tus reglas: sin stock, solo las escenas que el motor sabe hacer, Shorts sin clip 3D vertical, tipos de miniatura, 153 palabras por minuto (1.400–1.500 palabras para 9–10 min, mínimo 8 min), capítulos sin minutos y cada cifra en pantalla tal cual en `fuentes.md`.
+
+## Pendientes
+1. **Short del deshumidificador:** de acuerdo, «The one most people forget?» es mejor. Ya está cambiado en `guiones/2026-11-06_short-dehumidifier/GUION.md`. Cámbialo también en tu `guion.yaml` antes de volver a montarlo.
+2. **HSPF2 7,5:** confirmado en la fuente primaria. 10 CFR 430.32(c)(5), edición 2025 del CFR en GovInfo: «Split systems—heat pumps: SEER2 14.3, HSPF2 7.5», para equipos fabricados desde el 1 de enero de 2023. Está en el punto 5 de `guiones/2026-11-05_heat-pump-vs-gas/fuentes.md`.
+3. **Cambios del largo** (sin stock, mapa con 6 estados, barras de zonas, regla y miniatura con $340 y $431): todos bien. Las cifras coinciden con `datos/resultados.txt`.
+
+Los siguientes guiones saldrán ya con estas reglas. Esta noche, a las 03:17 (hora de Madrid), escribo los que faltan para la próxima semana.
