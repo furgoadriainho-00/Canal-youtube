@@ -20,7 +20,7 @@
 | 5 | That's over sixty percent more, for a machine most people forget is even running. | Both bars side by side with an arrow **+62%** | `+62%` |
 | 6 | In a damp basement, it can run for hours a day, all summer. | Dark, damp basement; drops falling into the dehumidifier's tank | — |
 | 7 | Check the humidity setting. Running it drier than you need just burns money. | A hand turning the humidity knob; the number goes down | `Check the setting` |
-| 8 | I ranked fifteen appliances by yearly cost. The one that surprised people most? Your dehumidifier. | Quick montage of all 15 3D clips, ending on the dehumidifier so it loops into shot 1 | `15 appliances ranked → full video` |
+| 8 | I ranked fifteen appliances by yearly cost. The one most people forget? Your dehumidifier. | Quick montage of all 15 3D clips, ending on the dehumidifier so it loops into shot 1 | `15 appliances ranked → full video` |
 
 **Math:** 999 kWh × $0.1819/kWh = $181.7; main fridge 617 kWh → $112; 182 ÷ 112 = 1.62 (EIA RECS 2020, tables CE5.3a and CE5.3b; EIA 2026 price).
 
