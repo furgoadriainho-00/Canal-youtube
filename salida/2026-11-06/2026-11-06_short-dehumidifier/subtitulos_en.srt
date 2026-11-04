@@ -27,5 +27,5 @@ In a damp basement, it can run for hours a day, all summer.
 Check the humidity setting. Running it drier than you need just burns money.
 
 8
-00:00:31,475 --> 00:00:37,995
-I ranked fifteen appliances by yearly cost. The one that surprised people most? Your dehumidifier.
+00:00:31,475 --> 00:00:37,365
+I ranked fifteen appliances by yearly cost. The one most people forget? Your dehumidifier.

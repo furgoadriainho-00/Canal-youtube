@@ -18,5 +18,5 @@ segmentos:
   v: {tipo: casa, foco: deshumidificador, lineas: ["Damp basement,", "*hours a day*"]}
 - t: "Check the humidity setting. Running it drier than you need just burns money."
   v: {tipo: iconos, iconos: [humidity_high, arrow_forward, savings], etiquetas: ["Check the setting", "", "Save money"]}
-- t: "I ranked fifteen appliances by yearly cost. The one that surprised people most? Your dehumidifier."
+- t: "I ranked fifteen appliances by yearly cost. The one most people forget? Your dehumidifier."
   v: {tipo: casa, foco: deshumidificador, lineas: ["15 appliances ranked", "*full video*"]}
