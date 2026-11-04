@@ -1,62 +1,62 @@
-# Guion · Heat Pump vs Gas Furnace
+# Script · Heat Pump vs Gas Furnace
 
 | | |
 |---|---|
-| **Canal** | Home By The Numbers (@HomeByTheNumbers) |
-| **Formato** | Vídeo largo · 16:9 · 1920×1080 · 30 fps |
-| **Duración objetivo** | 9–10 min (unas 1.350 palabras de narración) |
-| **Publicar** | Jueves 5 de noviembre de 2026 |
-| **Estructura** | Comparación (el vídeo anterior era una lista) |
-| **Idioma** | Narración en inglés (EE. UU.). Las indicaciones para el editor van en español. |
-| **Fuentes y cálculos** | `fuentes.md` y `datos/calculo.py` en esta carpeta. **No cambies ninguna cifra sin avisar.** |
+| **Channel** | Home By The Numbers (@HomeByTheNumbers) |
+| **Format** | Long video · 16:9 · 1920×1080 · 30 fps |
+| **Target length** | 9–10 min (about 1,250 words of narration) |
+| **Publish** | Thursday, November 5, 2026 |
+| **Structure** | Comparison (the previous video was a list) |
+| **Language** | Narration in US English |
+| **Sources & math** | `fuentes.md` and `datos/calculo.py` in this folder. **Do not change any number without checking with us first.** |
 
-## Indicaciones generales para el editor
-- **Estilo del canal:** fondo azul noche `#0F1B2D`, acento naranja `#FF7A1A` (calor, gas, coste) y azul `#2EC4F1` (frío, electricidad, ahorro). Tipografía Montserrat ExtraBold para cifras y títulos, Inter para el resto.
-- **Ritmo:** cambio de imagen cada 2–4 s. **Nada de pantallas de solo texto** salvo frases cortas de transición (menos de 2 s).
-- **Cifras:** cada cifra en dólares aparece contando desde 0, con monedas o barras animadas. Las fuentes van en pantalla, abajo y en pequeño, la primera vez que sale cada dato.
-- **Recursos que ya tenemos** (en el repositorio):
-  - Clips 3D de 3 s en `recursos/clips3d/`. Para este vídeo sirven `aire.mp4` (split, como bomba de calor), `calefaccion.mp4` (radiador), `termo.mp4` y `medidor.mp4` (contador de luz).
-  - Logo, banner y marca de agua en `canales/how-your-home-works/marca/`.
-- **Lo que falta y tienes que conseguir:** imagen de una caldera de gas, de una unidad exterior de bomba de calor y de una llama de gas; un mapa de EE. UU. con los 6 estados. Usa solo stock con licencia libre (Pexels o Pixabay), gráficos propios o 3D propio. **Nada de clips de otros youtubers, películas o noticias.**
-- **Voz:** sintética o grabada, en inglés de EE. UU., ritmo tranquilo. Si es voz de IA, en YouTube hay que marcar «Contenido alterado o sintético: Sí».
-- **Música:** solo de la Biblioteca de audio de YouTube, entre 18 y 20 dB por debajo de la voz. Volumen final en torno a −14 LUFS.
+## General notes for the editor
+- **Channel style:** midnight-blue background `#0F1B2D`, orange accent `#FF7A1A` (heat, gas, cost) and blue `#2EC4F1` (cold, electricity, savings). Montserrat ExtraBold for numbers and titles, Inter for everything else.
+- **Pace:** change the picture every 2–4 seconds. **No text-only screens**, except short transition lines (under 2 seconds).
+- **Numbers:** every dollar figure counts up from 0, with coins or animated bars. Show the source small at the bottom the first time each figure appears.
+- **Assets we already have** (in the repository):
+  - 3-second 3D clips in `recursos/clips3d/`. For this video: `aire.mp4` (wall-mounted unit, use it as the heat pump), `calefaccion.mp4` (electric radiator), `termo.mp4` (water heater) and `medidor.mp4` (electric meter).
+  - Logo, banner and watermark in `canales/how-your-home-works/marca/`.
+- **What you need to source:** a gas furnace, an outdoor heat pump unit, a gas flame, and a US map with the 6 states. Use only free-license stock (Pexels or Pixabay), your own graphics or your own 3D. **No clips from other YouTubers, movies or news.**
+- **Voice:** you record the narration yourself, in US English, at a calm, clear pace. Read the narration exactly as written: the numbers are spelled out the way they should be said.
+- **Music:** YouTube Audio Library only, 18–20 dB below the voice. Final loudness around −14 LUFS.
 
 ---
 
-## 1 · Gancho (0:00–0:15)
-**Narración**
+## 1 · Hook (0:00–0:15)
+**Narration**
 > In Florida, a heat pump heats a typical home for about ninety dollars a year less than a gas furnace.
 > In Illinois, the same heat pump costs about seven hundred dollars a year *more*.
 > Same machines. Same physics. Completely different answer.
 
-**Imagen**
-- Pantalla partida: Florida (palmeras, sol) a la izquierda e Illinois (nieve) a la derecha.
-- En cada lado, un contador de dólares: Florida **−$90/yr**, en verde, e Illinois **+$690/yr**, en naranja.
-- «Same machines» → clip 3D `aire.mp4` girando, entre las dos mitades.
+**Visuals**
+- Split screen: Florida (palm trees, sun) on the left and Illinois (snow) on the right.
+- A dollar counter on each side: Florida **−$90/yr** in green, Illinois **+$690/yr** in orange.
+- "Same machines" → 3D clip `aire.mp4` rotating between the two halves.
 
-**Texto en pantalla:** `Florida: heat pump saves ~$90/yr` · `Illinois: heat pump costs ~$690/yr more`
+**On-screen text:** `Florida: heat pump saves ~$90/yr` · `Illinois: heat pump costs ~$690/yr more`
 
 ---
 
-## 2 · Promesa (0:15–0:40)
-**Narración**
+## 2 · Promise (0:15–0:40)
+**Narration**
 > So is a heat pump actually cheaper to run than gas where you live?
 > I ran the numbers for six states, using government data on energy prices and on how much heat homes really use.
 > By the end, you'll know the one number that decides it for your own house.
 > Quick note: this is about running costs only, not the price of buying or installing either system.
 
-**Imagen**
-- Mapa de EE. UU. en el estilo del canal. Se iluminan uno a uno Florida, Arizona, Washington, Georgia, Minnesota e Illinois.
-- «Government data»: tarjeta con «U.S. Energy Information Administration» y el sello «OFFICIAL DATA».
-- «The one number»: un `?` grande que late.
-- «Running costs only»: icono de factura mensual, y una etiqueta de precio de instalación tachada.
+**Visuals**
+- US map in the channel style. Florida, Arizona, Washington, Georgia, Minnesota and Illinois light up one by one.
+- "Government data": a card reading "U.S. Energy Information Administration" with an "OFFICIAL DATA" stamp.
+- "The one number": a big pulsing `?`.
+- "Running costs only": a monthly-bill icon, plus an installation price tag that gets crossed out.
 
-**Texto en pantalla:** `6 states · official data` · `Running costs only`
+**On-screen text:** `6 states · official data` · `Running costs only`
 
 ---
 
-## 3 · Cómo funciona cada uno (0:40–2:00)
-**Narración**
+## 3 · How each one works (0:40–2:00)
+**Narration**
 > First, the key difference.
 > A gas furnace makes heat by burning natural gas. A new high-efficiency furnace turns at least ninety-five percent of the energy in that gas into heat for your home.
 > A heat pump doesn't burn anything. It moves heat that's already outside, even in cold air, into your house, using electricity to run a compressor.
@@ -65,18 +65,18 @@
 > So on efficiency, the heat pump wins. Easily.
 > But you don't pay for efficiency. You pay for energy. And gas and electricity have very different prices.
 
-**Imagen**
-- Caldera: llama, y una barra que se llena hasta el **95 %**, en naranja. Fuente: ENERGY STAR.
-- Bomba de calor: unidad exterior, flechas de calor que entran desde fuera aunque nieve, compresor girando. Clip `aire.mp4`.
-- «Two point two»: ecuación animada `1 unit of electricity → 2.2 units of heat`, con 1 rayo y 2,2 llamas pequeñas. Fuente: DOE, mínimo federal 2023 (HSPF2 7,5).
-- «You pay for energy»: corte rápido a dos facturas, una de gas y otra de luz.
+**Visuals**
+- Furnace: a flame, and a bar that fills to **95%** in orange. Source: ENERGY STAR.
+- Heat pump: outdoor unit, heat arrows coming in from outside even with snow falling, spinning compressor. Clip `aire.mp4`.
+- "Two point two": animated equation `1 unit of electricity → 2.2 units of heat`, with 1 lightning bolt and 2.2 small flames. Source: DOE, 2023 federal minimum (HSPF2 7.5).
+- "You pay for energy": quick cut to two bills, one for gas and one for electricity.
 
-**Texto en pantalla:** `Gas furnace: ≥95% efficient` · `Heat pump: ~2.2× (federal minimum)`
+**On-screen text:** `Gas furnace: ≥95% efficient` · `Heat pump: ~2.2× (federal minimum)`
 
 ---
 
-## 4 · El precio de cada energía (2:00–3:15)
-**Narración**
+## 4 · The price of each energy (2:00–3:15)
+**Narration**
 > Here's the catch.
 > In twenty twenty-six, the average American home pays about eighteen cents per kilowatt-hour for electricity.
 > For natural gas, the average residential price in twenty twenty-five was fifteen dollars and thirty-four cents per thousand cubic feet.
@@ -87,38 +87,38 @@
 > So on average, across the country, gas is still cheaper to run.
 > But nobody pays the national average. And this is where it gets interesting.
 
-**Imagen**
-- Contador de luz (`medidor.mp4`) y una cifra que cuenta hasta **18.2¢/kWh**. Fuente: EIA, 2026.
-- Llama y cifra **$15.34 per 1,000 cubic feet**. Fuente: EIA, 2025.
-- «Same unit»: dos barras con el mismo bloque de energía. La de la electricidad crece hasta **3.6×** la del gas: $53.3 frente a $14.8 por millón de BTU.
-- «Break-even efficiency»: una balanza, con «heat pump efficiency» en un lado y «price ratio» en el otro.
-- «3.4 vs 2.2»: dos marcas sobre una regla, 2.2 en azul y 3.4 en naranja, con un hueco entre ellas.
-- «Nobody pays the average»: el mapa de EE. UU. con cada estado cambiando de color según su precio.
+**Visuals**
+- Electric meter (`medidor.mp4`) with a number counting up to **18.2¢/kWh**. Source: EIA, 2026.
+- Flame with **$15.34 per 1,000 cubic feet**. Source: EIA, 2025.
+- "Same unit": two bars for the same block of energy. The electricity bar grows to **3.6×** the gas bar: $53.3 vs $14.8 per million BTU.
+- "Break-even efficiency": a balance scale, "heat pump efficiency" on one side and "price ratio" on the other.
+- "3.4 vs 2.2": two marks on a ruler, 2.2 in blue and 3.4 in orange, with a gap between them.
+- "Nobody pays the average": the US map with each state changing color by its prices.
 
-**Texto en pantalla:** `Electricity ≈ 3.6× the price of gas (same energy)` · `Break-even: 3.4 · Heat pump: 2.2`
+**On-screen text:** `Electricity ≈ 3.6× the price of gas (same energy)` · `Break-even: 3.4 · Heat pump: 2.2`
 
 ---
 
-## 5 · Cuánto calor necesita cada casa (3:15–4:00)
-**Narración**
+## 5 · How much heat each home needs (3:15–4:00)
+**Narration**
 > The other half of the math is how much heat your home actually needs.
 > The government's Residential Energy Consumption Survey measured how much gas homes burn for heating in each climate zone.
 > A gas-heated home in a very cold or cold climate burns about three times as much as one in a hot, humid climate.
 > I turned that into the heat those homes actually need, then worked out what it costs to supply it with a new gas furnace, or with a heat pump, at each state's own prices.
 
-**Imagen**
-- Tarjeta de fuente: «Residential Energy Consumption Survey · EIA · 2020».
-- Mapa de zonas climáticas, con una barra de calor por zona, de menos a más: hot-humid 20.8, mixed-dry 19.0, marine 30.2, mixed-humid 44.0 y very cold/cold 60.8 millones de BTU de gas al año.
-- «Three times»: comparación de dos casas, una pequeña llama en la de Florida y tres llamas en la de Minnesota.
+**Visuals**
+- Source card: "Residential Energy Consumption Survey · EIA · 2020".
+- Climate-zone map with one heat bar per zone, smallest to largest: hot-humid 20.8, mixed-dry 19.0, marine 30.2, mixed-humid 44.0, very cold/cold 60.8 million BTU of gas per year.
+- "Three times": two houses side by side, one small flame on the Florida house and three flames on the Minnesota house.
 
-**Texto en pantalla:** `Cold climates: ~3× the heating of hot-humid ones`
+**On-screen text:** `Cold climates: ~3× the heating of hot-humid ones`
 
 ---
 
-## 6 · Estado por estado (4:00–6:45)
-> Gráfico recurrente para todo el bloque: **dos barras por estado**, gas en naranja y bomba de calor en azul, que crecen contando dólares. Arriba, el nombre del estado y un icono de su clima. Abajo y en pequeño, los precios del estado. Gana la barra más baja: se ilumina con la etiqueta «CHEAPER».
+## 6 · State by state (4:00–6:45)
+> Recurring graphic for the whole section: **two bars per state**, gas in orange and heat pump in blue, growing as the dollars count up. State name and a climate icon at the top; that state's prices small at the bottom. The lower bar wins: it lights up with a "CHEAPER" label.
 
-**Narración**
+**Narration**
 > Let's go state by state, from warm to cold.
 >
 > Florida. Electricity is about fifteen cents, but gas is expensive, around twenty-five dollars per thousand cubic feet.
@@ -144,24 +144,24 @@
 > Illinois is even more lopsided. Gas: about five hundred fifty-five. Heat pump: about twelve hundred forty-five.
 > The break-even efficiency in Illinois is almost five. That's more than double the federal minimum.
 
-| Estado | Gas (furnace 95 %) | Bomba de calor (COP 2,2) | Gana | Precios en pantalla |
+| State | Gas (95% furnace) | Heat pump (COP 2.2) | Winner | Prices on screen |
 |---|---|---|---|---|
-| Florida | **$431** | **$340** | Bomba de calor | 15.3¢/kWh · $25.48/Mcf |
-| Arizona | **$287** | **$311** | Gas (casi empate) | 15.4¢ · $18.58 |
-| Washington | **$433** | **$465** | Gas (casi empate) | 14.4¢ · $17.62 |
-| Georgia | **$730** | **$727** | Empate | 15.5¢ · $20.42 |
-| Minnesota | **$542** | **$1,065** (y $1,338 con COP 1,75) | Gas | 16.4¢ · $10.98 |
+| Florida | **$431** | **$340** | Heat pump | 15.3¢/kWh · $25.48/Mcf |
+| Arizona | **$287** | **$311** | Gas (near tie) | 15.4¢ · $18.58 |
+| Washington | **$433** | **$465** | Gas (near tie) | 14.4¢ · $17.62 |
+| Georgia | **$730** | **$727** | Tie | 15.5¢ · $20.42 |
+| Minnesota | **$542** | **$1,065** ($1,338 at COP 1.75) | Gas | 16.4¢ · $10.98 |
 | Illinois | **$556** | **$1,246** | Gas | 19.2¢ · $11.25 |
 
-**Imagen extra**
-- Florida: después de «air conditioner», la bomba de calor (clip `aire.mp4`) con copos de nieve, porque también enfría.
-- Minnesota: con «coldest days», termómetro a **5 °F** y la barra azul que crece de $1,065 a $1,338.
-- Illinois: con «almost five», la regla de antes con una marca en **4.9**, muy lejos de 2.2.
+**Extra visuals**
+- Florida: after "air conditioner", the heat pump (clip `aire.mp4`) with snowflakes, because it also cools.
+- Minnesota: on "coldest days", a thermometer at **5 °F** and the blue bar growing from $1,065 to $1,338.
+- Illinois: on "almost five", the ruler from before with a mark at **4.9**, far from 2.2.
 
 ---
 
-## 7 · El patrón (6:45–7:30)
-**Narración**
+## 7 · The pattern (6:45–7:30)
+**Narration**
 > So here's the pattern.
 > The heat pump wins where gas is expensive and winters are mild. Gas wins where gas is cheap and winters are long and cold.
 > And notice: the cold states aren't losing mainly because heat pumps stop working in the cold. They're losing because gas is so cheap there.
@@ -170,18 +170,18 @@
 > If you're comparing against an old furnace that's only eighty percent efficient, gas costs about nineteen percent more than with a new one.
 > And better insulation shrinks both bills, but it doesn't change which one is cheaper.
 
-**Imagen**
-- Gráfico de dispersión: eje X «precio del gas», eje Y «frío del clima». Los 6 estados como puntos, azules donde gana la bomba de calor y naranjas donde gana el gas.
-- «Less than half»: dos montones de monedas, **$10.98** en Minnesota frente a **$25.48** en Florida.
-- «Old furnace 80 %»: barra de eficiencia que baja de 95 % a 80 % y factura de gas que sube **+19 %**.
-- «Insulation»: casa que se envuelve en aislante y dos facturas que bajan a la vez.
+**Visuals**
+- Scatter plot: X axis "gas price", Y axis "how cold the climate is". The 6 states as dots, blue where the heat pump wins and orange where gas wins.
+- "Less than half": two coin stacks, **$10.98** in Minnesota vs **$25.48** in Florida.
+- "Old furnace 80%": efficiency bar dropping from 95% to 80% and the gas bill rising **+19%**.
+- "Insulation": a house wrapping itself in insulation and both bills shrinking together.
 
-**Texto en pantalla:** `Cheap gas + cold winters → gas wins` · `Pricey gas + mild winters → heat pump wins`
+**On-screen text:** `Cheap gas + cold winters → gas wins` · `Pricey gas + mild winters → heat pump wins`
 
 ---
 
-## 7b · ¿Y si combinas los dos? (7:30–8:15)
-**Narración**
+## 7b · What if you combine both? (7:30–8:15)
+**Narration**
 > There's also a middle path, and it follows straight from the break-even idea.
 > Some homes use a hybrid setup, often called dual fuel: a heat pump paired with a gas furnace.
 > On mild days, the heat pump does the heating at its best efficiency. When it gets really cold and its efficiency drops below your break-even line, the furnace takes over.
@@ -190,17 +190,17 @@
 > Since twenty twenty, the average residential electricity price rose about thirty-eight percent, and natural gas rose about forty-two percent.
 > Because both went up by a similar amount, the overall picture hasn't flipped. But in your state, a big change in either price can move your break-even.
 
-**Imagen**
-- Termómetro que baja poco a poco. Por encima de una línea marcada «break-even», trabaja la bomba de calor (azul, `aire.mp4`); al cruzarla hacia abajo, se enciende la caldera (llama naranja).
-- Rótulo: `Dual fuel: heat pump on mild days, furnace on the coldest`.
-- «Prices move»: dos líneas de 2020 a 2026. Electricidad **13.15¢ → 18.19¢ (+38%)**, fuente EIA EPM 5.3; gas **$10.78 → $15.34 (+42%)**, fuente EIA.
+**Visuals**
+- A thermometer slowly dropping. Above a line marked "break-even", the heat pump runs (blue, `aire.mp4`); once it crosses below, the furnace kicks in (orange flame).
+- Caption: `Dual fuel: heat pump on mild days, furnace on the coldest`.
+- "Prices move": two lines from 2020 to 2026. Electricity **13.15¢ → 18.19¢ (+38%)**, source EIA EPM 5.3; gas **$10.78 → $15.34 (+42%)**, source EIA.
 
-**Texto en pantalla:** `Electricity +38% · Gas +42% (since 2020)`
+**On-screen text:** `Electricity +38% · Gas +42% (since 2020)`
 
 ---
 
-## 8 · Tu número (8:15–9:15) — la recompensa
-**Narración**
+## 8 · Your number (8:15–9:15) — the payoff
+**Narration**
 > Now let's find the answer for your own home. You need two numbers from your bills.
 > One: what you pay per kilowatt-hour of electricity. Two: what you pay for gas, per therm.
 > Divide your electricity price by your gas price, then multiply by twenty-seven point eight.
@@ -209,44 +209,44 @@
 > If your number comes out around two or lower, a typical heat pump should be cheaper to run. If it's above three, gas will most likely win on running costs.
 > And if you heat with electric baseboard heaters, which turn one unit of electricity into one unit of heat, a heat pump at the federal minimum uses less than half the electricity for the same warmth.
 
-**Imagen**
-- Calculadora en pantalla, paso a paso:
+**Visuals**
+- On-screen calculator, step by step:
   `$/kWh ÷ $/therm × 27.8 = break-even`
   `0.18 ÷ 1.50 × 27.8 = 3.3`
-- Semáforo: **≤ 2** en verde («heat pump likely cheaper»), **2–3** en amarillo («check carefully») y **> 3** en naranja («gas likely cheaper»).
-- Radiador eléctrico (clip `calefaccion.mp4`) frente a bomba de calor: barras de electricidad **1.0** frente a **0.45**.
+- Traffic light: **≤ 2** green ("heat pump likely cheaper"), **2–3** yellow ("check carefully"), **> 3** orange ("gas likely cheaper").
+- Electric radiator (clip `calefaccion.mp4`) vs heat pump: electricity bars **1.0** vs **0.45**.
 
-**Texto en pantalla:** `Break-even = (¢/kWh ÷ 100) ÷ ($/therm) × 27.8`
+**On-screen text:** `Break-even = (¢/kWh ÷ 100) ÷ ($/therm) × 27.8`
 
-> ✅ **Comprobación de la fórmula:** 1 therm = 29,307 kWh; 29,307 × 0,95 = 27,84. Está en `datos/resultados.txt`.
+> ✅ **Formula check:** 1 therm = 29.307 kWh; 29.307 × 0.95 = 27.84. See `datos/resultados.txt`.
 
 ---
 
-## 9 · Resumen y cierre (9:15–10:00)
-**Narración**
+## 9 · Recap and close (9:15–10:00)
+**Narration**
 > So, is a heat pump cheaper to run than gas?
 > In Florida, yes. In Georgia, it's a tie. In Minnesota and Illinois, no, not at today's prices.
 > The heat pump is the more efficient machine almost everywhere. Whether it's cheaper depends on what you pay for each kind of energy.
 > If you want to see what every other appliance in your home costs per year, my full ranking of fifteen appliances is right here.
 
-**Imagen**
-- Repaso rápido: los 6 estados con su ganador (iconos de bomba de calor o de llama) sobre el mapa.
-- Pantalla final (últimos 10–15 s): tarjeta del vídeo «Which Appliances Use the Most Electricity? Ranked by Cost» y botón de suscripción.
+**Visuals**
+- Quick recap: the 6 states with their winner (heat pump or flame icon) on the map.
+- End screen (last 10–15 s): card for the video "Which Appliances Use the Most Electricity? Ranked by Cost" and the subscribe button.
 
 ---
 
-## Miniaturas (haz las 3 y súbelas a «Probar y comparar»)
-1. **Versus:** bomba de calor (azul) a la izquierda y llama de gas (naranja) a la derecha, con «VS» en el centro. Texto: **«WHICH IS CHEAPER?»**
-2. **Mapa:** EE. UU. con Florida en azul y Minnesota en naranja. Texto: **«$340 vs $1,065»**
-3. **Cifra:** bomba de calor grande con una etiqueta roja **«+$690/YR?»**. Texto: **«DEPENDS WHERE»**
+## Thumbnails (make all 3 and use YouTube's "Test & compare")
+1. **Versus:** heat pump (blue) on the left, gas flame (orange) on the right, "VS" in the middle. Text: **"WHICH IS CHEAPER?"**
+2. **Map:** US with Florida in blue and Minnesota in orange. Text: **"$340 vs $1,065"**
+3. **Number:** big heat pump with a red tag **"+$690/YR?"**. Text: **"DEPENDS WHERE"**
 
-Máximo 4 palabras, alto contraste y que se lea en el móvil.
+Maximum 4 words, high contrast, readable on a phone.
 
-## Metadatos para YouTube
-**Título** (menos de 60 caracteres):
+## YouTube metadata
+**Title** (under 60 characters):
 `Heat Pump vs Gas Furnace: Which Is Cheaper to Run?`
 
-**Descripción:**
+**Description:**
 ```
 Heat pump vs gas furnace: which one is actually cheaper to run? I calculated the yearly heating cost in 6 states, from Florida to Illinois, using official U.S. government data on energy prices and home heating use.
 
@@ -275,9 +275,9 @@ EIA natural gas residential prices by state: https://www.eia.gov/dnav/ng/ng_pri_
 ENERGY STAR furnace criteria: https://www.energystar.gov/products/furnaces/key_product_criteria
 ENERGY STAR heat pump criteria: https://www.energystar.gov/products/air_source_heat_pumps/key-product-criteria
 ```
-> Ajusta los minutos de los capítulos a los del montaje final.
+> Update the chapter timestamps to match the final edit.
 
-**Etiquetas:**
+**Tags:**
 `heat pump vs gas furnace, heat pump cost, gas furnace cost, is a heat pump cheaper, heating cost comparison, heat pump cold climate, home heating, energy bills, break even, home by the numbers`
 
-**Ajustes:** idioma inglés · lista «Home energy costs, explained» · no es para niños · contenido sintético: **Sí** si la voz es de IA.
+**Settings:** language English · playlist "Home energy costs, explained" · not made for kids · altered or synthetic content: **No** (real voice; the 3D and graphics are clearly animated). Switch it to **Yes** only if you add realistic AI-generated footage.
