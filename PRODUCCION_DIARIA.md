@@ -1,6 +1,6 @@
 # Producción diaria
 
-> **Modo actual (desde el 2026-11-04): guiones para el editor.** El humano trabaja con un editor de vídeo. Yo escribo los guiones en `guiones/AAAA-MM-DD_<tema>/` (GUION.md, fuentes.md y datos/), con una semana de ventaja, siguiendo `guiones/LEEME_EDITOR.md`. El editor monta y sube los vídeos. El motor de montaje (lo de abajo) solo se usa si el humano lo pide.
+> **Modo actual (desde el 2026-11-04): guiones para el editor.** El humano trabaja con un editor de vídeo. Yo escribo los guiones en `guiones/AAAA-MM-DD_<tema>/` (GUION.md, fuentes.md y datos/), con una semana de ventaja, siguiendo `guiones/EDITOR_GUIDE.md`. El editor monta y sube los vídeos. El motor de montaje (lo de abajo) solo se usa si el humano lo pide.
 
 Este es el procedimiento que sigue cada sesión automática (y cualquier sesión a mano). Las reglas de fondo están en `CLAUDE.md`; aquí solo va el cómo.
 
