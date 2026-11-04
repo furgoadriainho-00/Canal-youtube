@@ -282,7 +282,7 @@ def _normalizar(entrada, salida, objetivo, tp=-1.5, lineal=True, previo=""):
     r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(entrada), "-af",
                         f"{previo}loudnorm=I={objetivo}:TP={tp}:LRA=11:print_format=json", "-f", "null", "-"],
                        capture_output=True, text=True)
-    m = json.loads(r.stderr[r.stderr.rindex("{"):])
+    m = json.loads(r.stderr[r.stderr.rindex("{"):r.stderr.rindex("}") + 1])
     _ffmpeg("-i", str(entrada), "-af",
             f"{previo}loudnorm=I={objetivo}:TP={tp}:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
             f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:"
@@ -295,7 +295,12 @@ def _palabras(carpeta: Path):
     from faster_whisper import WhisperModel
     m = WhisperModel("small", device="cpu", compute_type="int8")
     segs, _ = m.transcribe(str(carpeta / "audio" / "voz.wav"), word_timestamps=True, language="en")
-    out = [{"w": w.word, "ini": w.start, "fin": w.end} for s in segs for w in s.words]
+    out = []
+    for w in (w for s in segs for w in s.words):
+        if out and not w.word.startswith(" "):  # Whisper parte «1,000» en «1» y «,000»
+            out[-1].update(w=out[-1]["w"] + w.word, fin=w.end)
+        else:
+            out.append({"w": w.word, "ini": w.start, "fin": w.end})
     (carpeta / "audio" / "palabras.json").write_text(json.dumps(out, indent=0))
     return out
 
@@ -321,8 +326,9 @@ def mezclar(carpeta: Path, total: float, mudo: Path, final: Path):
     _normalizar(a / "musica.wav", a / "musica_norm.wav", -34)  # ≈18 dB por debajo de la voz
     _ffmpeg("-i", str(a / "voz_norm.wav"), "-i", str(a / "musica_norm.wav"), "-filter_complex",
             "[0][1]amix=inputs=2:duration=first:normalize=0", "-ar", "48000", str(a / "mezcla.wav"))
-    _normalizar(a / "mezcla.wav", a / "mezcla_norm.wav", -14, lineal=False)
-    _ffmpeg("-i", str(mudo), "-i", str(a / "mezcla_norm.wav"), "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+    _normalizar(a / "mezcla.wav", a / "mezcla_norm.wav", -14, tp=-2.0, lineal=False)  # el AAC sube los picos
+    _ffmpeg("-i", str(mudo), "-i", str(a / "mezcla_norm.wav"), "-c:v", "copy", "-af", "alimiter=limit=0.75:level=false",
+            "-c:a", "aac", "-b:a", "192k",
             "-shortest", "-movflags", "+faststart", str(final))
 
 

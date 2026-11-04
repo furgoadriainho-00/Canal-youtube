@@ -1,0 +1,176 @@
+# Guion del guionista (guiones/2026-11-05_heat-pump-vs-gas/GUION.md). Narración literal; bomba de calor en azul, gas en naranja.
+titulo: "Heat pump vs gas furnace"
+estructura: comparacion
+formato: largo
+voz: {nombre: am_michael, velocidad: 1.0}
+segmentos:
+- t: "In Florida, a heat pump heats a typical home for about ninety dollars a year less than a gas furnace."
+  v: {tipo: mapa, resaltar: {FL: frio}, lineas: ["Florida:", "heat pump saves", "*~$90/yr*"]}
+  capitulo: "Florida vs Illinois"
+- t: "In Illinois, the same heat pump costs about seven hundred dollars a year more."
+  v: {tipo: mapa, resaltar: {IL: calor}, lineas: ["Illinois:", "heat pump costs", "*~$690/yr* more"]}
+- t: "Same machines. Same physics. Completely different answer."
+  v: {tipo: clip, clip: aire, lineas: ["Same machines.", "*Different answer.*"]}
+  pausa: 0.3
+- t: "So is a heat pump actually cheaper to run than gas where you live?"
+  v: {tipo: comparar, a: ["Heat pump", "?", heat_pump], b: ["Gas furnace", "?", local_fire_department]}
+  capitulo: "What we're comparing"
+- t: "I ran the numbers for six states, using government data on energy prices and on how much heat homes really use."
+  v: {tipo: mapa, resaltar: {FL: frio, AZ: frio, WA: frio, GA: frio, MN: frio, IL: frio}, lineas: ["6 states", "*official data*"]}
+- t: "By the end, you'll know the one number that decides it for your own house."
+  v: {tipo: numero, icono: home, valor: "?", etiqueta: "The one number that decides it", color: calor}
+- t: "Quick note: this is about running costs only, not the price of buying or installing either system."
+  v: {tipo: iconos, iconos: [receipt_long, sell], etiquetas: ["Running costs", "Install price"], tachar: 1}
+- t: "First, the key difference."
+  v: {tipo: texto, lineas: ["The key", "*difference*"]}
+  capitulo: "How each system makes heat"
+- t: "A gas furnace makes heat by burning natural gas."
+  v: {tipo: casa, foco: calefaccion, lineas: ["Gas furnace:", "*burns* gas"]}
+- t: "A new high-efficiency furnace turns at least ninety-five percent of the energy in that gas into heat for your home."
+  v: {tipo: numero, icono: local_fire_department, valor: 95, sufijo: "%", etiqueta: "Gas furnace: at least 95% efficient", color: calor, fuente: "ENERGY STAR"}
+- t: "A heat pump doesn't burn anything."
+  v: {tipo: clip, clip: aire, lineas: ["Heat pump:", "*burns nothing*"]}
+- t: "It moves heat that's already outside, even in cold air, into your house, using electricity to run a compressor."
+  v: {tipo: casa, foco: bomba_calor, lineas: ["Moves heat", "from *outside* in"]}
+- t: "That's why it can deliver more heat than the electricity it uses."
+  v: {tipo: iconos, iconos: [bolt, arrow_forward, local_fire_department], etiquetas: ["Electricity in", "", "More heat out"]}
+- t: "The federal minimum efficiency for a new heat pump works out to about two point two units of heat for every unit of electricity, averaged over a heating season."
+  v: {tipo: numero, icono: heat_pump, valor: 2.2, decimales: 1, sufijo: "×", etiqueta: "units of heat per unit of electricity", color: frio, fuente: "2023 federal minimum (HSPF2 7.5)"}
+- t: "So on efficiency, the heat pump wins. Easily."
+  v: {tipo: comparar, etiqueta: "Heat out per unit of energy in", a: ["Heat pump", 2.2, heat_pump], b: ["Gas furnace", 0.95, local_fire_department], sufijo: "×", decimales: 2}
+- t: "But you don't pay for efficiency. You pay for energy. And gas and electricity have very different prices."
+  v: {tipo: iconos, iconos: [bolt, receipt_long, local_fire_department], etiquetas: ["Electric bill", "", "Gas bill"]}
+- t: "Here's the catch."
+  v: {tipo: texto, lineas: ["Here's the", "*catch*"]}
+  capitulo: "The price of gas vs electricity"
+- t: "In twenty twenty-six, the average American home pays about eighteen cents per kilowatt-hour for electricity."
+  v: {tipo: numero, icono: bolt, valor: 18.2, decimales: 1, sufijo: "¢/kWh", etiqueta: "Electricity, 2026", color: frio, clip: medidor, fuente: "EIA"}
+- t: "For natural gas, the average residential price in twenty twenty-five was fifteen dollars and thirty-four cents per thousand cubic feet."
+  v: {tipo: numero, icono: local_fire_department, valor: 15.34, decimales: 2, prefijo: "$", etiqueta: "per 1,000 cubic feet of gas, 2025", color: calor, fuente: "EIA"}
+- t: "Put both in the same unit of energy, and the same amount of energy costs about three and a half times more as electricity than as gas."
+  v: {tipo: comparar, etiqueta: "Same energy: electricity ≈ 3.6× the price of gas", a: ["Electricity", 53.3, bolt], b: ["Gas", 14.8, local_fire_department], prefijo: "$", sufijo: "/MMBtu", decimales: 1}
+- t: "That gives us the number that decides everything: the break-even efficiency."
+  v: {tipo: numero, icono: balance, valor: "?", etiqueta: "Break-even efficiency", color: calor}
+- t: "If your heat pump delivers more heat per unit of electricity than that number, the heat pump is cheaper to run. If it delivers less, gas wins."
+  v: {tipo: regla, titulo: "Heat pump efficiency vs break-even", rango: [1, 5], zonas: [[1, 3, calor, "Below break-even: gas wins"], [3, 5, frio, "Above: heat pump wins"]]}
+- t: "At national average prices, the break-even is about three point four. And a minimum-efficiency heat pump is about two point two."
+  v: {tipo: regla, titulo: "National average", rango: [1, 5], marcas: [[2.2, "Heat pump", frio], [3.4, "Break-even", calor]]}
+- t: "So on average, across the country, gas is still cheaper to run."
+  v: {tipo: numero, icono: local_fire_department, valor: "Gas", etiqueta: "cheaper to run, on average", color: calor}
+- t: "But nobody pays the national average. And this is where it gets interesting."
+  v: {tipo: mapa, resaltar: {FL: frio, AZ: calor, WA: frio, GA: calor, MN: frio, IL: calor}, lineas: ["Nobody pays", "the *average*"]}
+- t: "The other half of the math is how much heat your home actually needs."
+  v: {tipo: casa, foco: calefaccion, lineas: ["How much heat", "do you *need*?"]}
+  capitulo: "How much heat homes need"
+- t: "The government's Residential Energy Consumption Survey measured how much gas homes burn for heating in each climate zone."
+  v: {tipo: fuente, titulo: "Residential Energy Consumption Survey", detalle: "U.S. Energy Information Administration (EIA)", nota: "2020 survey · table CE5.4"}
+- t: "A gas-heated home in a very cold or cold climate burns about three times as much as one in a hot, humid climate."
+  v: {tipo: barras, etiqueta: "Gas burned for heating, million BTU a year", decimales: 1, items: [["Very cold / cold", 60.8, severe_cold], ["Mixed-humid", 44.0, thermostat], ["Marine", 30.2, water_drop], ["Hot-humid", 20.8, wb_sunny], ["Mixed-dry", 19.0, wb_sunny]], nota: "EIA RECS 2020, table CE5.4"}
+- t: "I turned that into the heat those homes actually need, then worked out what it costs to supply it with a new gas furnace, or with a heat pump, at each state's own prices."
+  v: {tipo: formula, partes: ["heat needed", "×", "state prices", "=", "yearly cost"]}
+- t: "Let's go state by state, from warm to cold."
+  v: {tipo: mapa, resaltar: {FL: frio, AZ: frio, WA: frio, GA: frio, MN: calor, IL: calor}, lineas: ["State by state,", "*warm to cold*"]}
+  capitulo: "State by state"
+- t: "Florida. Electricity is about fifteen cents, but gas is expensive, around twenty-five dollars per thousand cubic feet."
+  v: {tipo: mapa, resaltar: {FL: frio}, lineas: ["Florida", "15.3¢/kWh", "gas *$25.48*/Mcf"]}
+- t: "Heating a typical gas-heated home in Florida's climate costs about four hundred thirty dollars a year with a new gas furnace."
+  v: {tipo: numero, icono: local_fire_department, valor: 431, prefijo: "$", sufijo: "/yr", etiqueta: "Florida · new gas furnace", color: calor}
+- t: "With a heat pump, about three hundred forty."
+  v: {tipo: comparar, etiqueta: "Florida", a: ["Heat pump", 340, heat_pump], b: ["Gas furnace", 431, local_fire_department], prefijo: "$", sufijo: "/yr", gana: a, nota: "15.3¢/kWh · $25.48/Mcf"}
+- t: "The heat pump wins by roughly ninety dollars a year. And in Florida, that same heat pump also works as your air conditioner."
+  v: {tipo: clip, clip: aire, lineas: ["Saves *~$90/yr*", "and it *cools* too"]}
+- t: "Arizona. Heating needs are small here."
+  v: {tipo: mapa, resaltar: {AZ: frio}, lineas: ["Arizona", "*small* heating needs"]}
+- t: "Gas furnace: about two hundred ninety dollars a year. Heat pump: about three hundred ten."
+  v: {tipo: comparar, etiqueta: "Arizona", a: ["Heat pump", 311, heat_pump], b: ["Gas furnace", 287, local_fire_department], prefijo: "$", sufijo: "/yr", nota: "15.4¢/kWh · $18.58/Mcf"}
+- t: "Nearly a tie, with gas slightly ahead at minimum efficiency."
+  v: {tipo: regla, titulo: "Arizona", rango: [1, 5], marcas: [[2.2, "Heat pump", frio], [2.4, "Break-even", calor]]}
+- t: "Washington State has relatively cheap electricity, about fourteen cents."
+  v: {tipo: mapa, resaltar: {WA: frio}, lineas: ["Washington", "*14.4¢*/kWh"]}
+- t: "Gas: about four hundred thirty dollars a year. Heat pump: about four hundred sixty-five."
+  v: {tipo: comparar, etiqueta: "Washington", a: ["Heat pump", 465, heat_pump], b: ["Gas furnace", 433, local_fire_department], prefijo: "$", sufijo: "/yr", nota: "14.4¢/kWh · $17.62/Mcf"}
+- t: "Close again. The break-even here is about two point four, just above the federal minimum."
+  v: {tipo: regla, titulo: "Washington", rango: [1, 5], marcas: [[2.2, "Heat pump", frio], [2.4, "Break-even", calor]]}
+- t: "Georgia, in the mixed-humid zone. Gas: about seven hundred thirty dollars. Heat pump: about seven hundred twenty-seven."
+  v: {tipo: comparar, etiqueta: "Georgia", a: ["Heat pump", 727, heat_pump], b: ["Gas furnace", 730, local_fire_department], prefijo: "$", sufijo: "/yr", nota: "15.5¢/kWh · $20.42/Mcf"}
+- t: "That's a dead heat."
+  v: {tipo: mapa, resaltar: {GA: ahorro}, lineas: ["Georgia:", "*dead heat*"]}
+- t: "Now the cold states. Minnesota. Gas is cheap here, about eleven dollars, and homes need a lot of heat."
+  v: {tipo: mapa, resaltar: {MN: calor}, lineas: ["Minnesota", "gas *$10.98*/Mcf"]}
+- t: "Gas furnace: about five hundred forty dollars a year. Heat pump at the federal minimum: about one thousand sixty-five."
+  v: {tipo: comparar, etiqueta: "Minnesota", a: ["Heat pump", 1065, heat_pump], b: ["Gas furnace", 542, local_fire_department], prefijo: "$", sufijo: "/yr", gana: b, nota: "16.4¢/kWh · $10.98/Mcf"}
+- t: "Why does the cold matter? A heat pump has to pull heat out of the outdoor air."
+  v: {tipo: casa, foco: bomba_calor, lineas: ["Why does", "*cold* matter?"]}
+- t: "The colder that air is, the harder the compressor works for every unit of heat it moves."
+  v: {tipo: clip, clip: aire, lineas: ["Colder air,", "*harder work*"]}
+- t: "So on the coldest days, efficiency drops further."
+  v: {tipo: numero, icono: severe_cold, valor: "5°F", etiqueta: "Efficiency drops further", color: frio}
+- t: "ENERGY STAR's cold-climate heat pumps only have to reach one point seven five at five degrees Fahrenheit."
+  v: {tipo: numero, icono: heat_pump, valor: 1.75, decimales: 2, sufijo: "×", etiqueta: "Cold-climate minimum at 5°F", color: frio, fuente: "ENERGY STAR"}
+- t: "At that level, the heat pump would cost over thirteen hundred dollars a year."
+  v: {tipo: comparar, etiqueta: "Minnesota, heat pump", a: ["At 2.2×", 1065, heat_pump], b: ["At 1.75×", 1338, severe_cold], prefijo: "$", sufijo: "/yr"}
+- t: "Illinois is even more lopsided. Gas: about five hundred fifty-five. Heat pump: about twelve hundred forty-five."
+  v: {tipo: comparar, etiqueta: "Illinois", a: ["Heat pump", 1246, heat_pump], b: ["Gas furnace", 556, local_fire_department], prefijo: "$", sufijo: "/yr", gana: b, nota: "19.2¢/kWh · $11.25/Mcf"}
+- t: "The break-even efficiency in Illinois is almost five. That's more than double the federal minimum."
+  v: {tipo: regla, titulo: "Illinois", rango: [1, 5.5], marcas: [[2.2, "Heat pump", frio], [4.9, "Break-even", calor]]}
+- t: "So here's the pattern."
+  v: {tipo: dispersion, eje_x: "Price of gas ($/Mcf)", eje_y: "Heat needed", rango_x: [8, 28], rango_y: [10, 55], puntos: [["Florida", 25.48, 16.6, frio, -1], ["Arizona", 18.58, 15.2, calor, 1], ["Washington", 17.62, 24.2, calor, 1], ["Georgia", 20.42, 35.2, ahorro, 1], ["Minnesota", 10.98, 48.6, calor, 1], ["Illinois", 11.25, 44.5, calor, 1]]}
+  capitulo: "The pattern"
+- t: "The heat pump wins where gas is expensive and winters are mild. Gas wins where gas is cheap and winters are long and cold."
+  v: {tipo: dispersion, eje_x: "Price of gas ($/Mcf)", eje_y: "Heat needed", rango_x: [8, 28], rango_y: [10, 55], leyenda: [["Pricey gas, mild winters: heat pump", frio], ["Cheap gas, cold winters: gas", calor]], puntos: [["Florida", 25.48, 16.6, frio, -1], ["Arizona", 18.58, 15.2, calor, 1], ["Washington", 17.62, 24.2, calor, 1], ["Georgia", 20.42, 35.2, ahorro, 1], ["Minnesota", 10.98, 48.6, calor, 1], ["Illinois", 11.25, 44.5, calor, 1]]}
+- t: "And notice: the cold states aren't losing mainly because heat pumps stop working in the cold. They're losing because gas is so cheap there."
+  v: {tipo: clip, clip: aire, lineas: ["Not the cold:", "the *cheap gas*"]}
+- t: "Minnesota pays less than half what Florida pays for the same gas."
+  v: {tipo: comparar, etiqueta: "Residential gas, per 1,000 cubic feet", a: ["Minnesota", 10.98, savings], b: ["Florida", 25.48, payments], prefijo: "$", decimales: 2}
+- t: "Two more things move the result."
+  v: {tipo: texto, lineas: ["Two more", "*things*"]}
+- t: "If you're comparing against an old furnace that's only eighty percent efficient, gas costs about nineteen percent more than with a new one."
+  v: {tipo: numero, icono: local_fire_department, valor: 19, prefijo: "+", sufijo: "%", etiqueta: "Old 80% furnace vs new 95%", color: calor}
+- t: "And better insulation shrinks both bills, but it doesn't change which one is cheaper."
+  v: {tipo: casa, foco: todos, lineas: ["Insulation:", "*both bills* shrink"]}
+- t: "There's also a middle path, and it follows straight from the break-even idea."
+  v: {tipo: iconos, iconos: [heat_pump, add, local_fire_department], etiquetas: ["Heat pump", "", "Furnace"]}
+  capitulo: "Hybrid systems and changing prices"
+- t: "Some homes use a hybrid setup, often called dual fuel: a heat pump paired with a gas furnace."
+  v: {tipo: casa, foco: bomba_calor, lineas: ["*Dual fuel:*", "heat pump + furnace"]}
+- t: "On mild days, the heat pump does the heating at its best efficiency."
+  v: {tipo: clip, clip: aire, lineas: ["Mild days:", "*heat pump*"]}
+- t: "When it gets really cold and its efficiency drops below your break-even line, the furnace takes over."
+  v: {tipo: iconos, iconos: [severe_cold, arrow_forward, local_fire_department], etiquetas: ["Really cold", "", "Furnace takes over"]}
+- t: "In a state like Georgia or Washington, where the two are nearly tied on average, that switch point is where the savings come from."
+  v: {tipo: mapa, resaltar: {GA: ahorro, WA: ahorro}, lineas: ["Nearly tied?", "the *switch point* saves"]}
+- t: "One more thing to keep in mind: prices move."
+  v: {tipo: iconos, iconos: [bolt, trending_up, local_fire_department], etiquetas: ["Electricity", "", "Gas"]}
+- t: "Since twenty twenty, the average residential electricity price rose about thirty-eight percent, and natural gas rose about forty-two percent."
+  v: {tipo: comparar, etiqueta: "Since 2020", a: ["13.15¢ → 18.19¢", 38, bolt], b: ["$10.78 → $15.34", 42, local_fire_department], prefijo: "+", sufijo: "%", fuente: "EIA"}
+- t: "Because both went up by a similar amount, the overall picture hasn't flipped. But in your state, a big change in either price can move your break-even."
+  v: {tipo: regla, titulo: "Your break-even can move", rango: [1, 5], marcas: [[3.4, "National", calor]]}
+- t: "Now let's find the answer for your own home. You need two numbers from your bills."
+  v: {tipo: iconos, iconos: [bolt, receipt_long, local_fire_department], etiquetas: ["Electric bill", "", "Gas bill"]}
+  capitulo: "Calculate your own break-even"
+- t: "One: what you pay per kilowatt-hour of electricity. Two: what you pay for gas, per therm."
+  v: {tipo: formula, partes: ["$/kWh", "÷", "$/therm", "×", "27.8", "=", "break-even"], revelar: 3}
+- t: "Divide your electricity price by your gas price, then multiply by twenty-seven point eight."
+  v: {tipo: formula, partes: ["$/kWh", "÷", "$/therm", "×", "27.8", "=", "break-even"]}
+- t: "That's the efficiency your heat pump needs to beat a new ninety-five percent furnace."
+  v: {tipo: casa, foco: bomba_calor, lineas: ["Your target", "to beat a *95%* furnace"]}
+- t: "For example, eighteen cents per kilowatt-hour and a dollar fifty per therm gives about three point three."
+  v: {tipo: formula, partes: ["0.18", "÷", "1.50", "×", "27.8", "=", "3.3"]}
+- t: "If your number comes out around two or lower, a typical heat pump should be cheaper to run. If it's above three, gas will most likely win on running costs."
+  v: {tipo: regla, titulo: "Your break-even number", rango: [1, 5], zonas: [[1, 2, ahorro, "Heat pump likely"], [2, 3, texto, "Check carefully"], [3, 5, calor, "Gas likely cheaper"]]}
+- t: "And if you heat with electric baseboard heaters, which turn one unit of electricity into one unit of heat, a heat pump at the federal minimum uses less than half the electricity for the same warmth."
+  v: {tipo: comparar, etiqueta: "Electricity for the same heat", a: ["Heat pump", 0.45, heat_pump], b: ["Baseboard heater", 1.0, heat], decimales: 2}
+- t: "So, is a heat pump cheaper to run than gas?"
+  v: {tipo: comparar, a: ["Heat pump", "?", heat_pump], b: ["Gas furnace", "?", local_fire_department]}
+  capitulo: "Summary"
+- t: "In Florida, yes. In Georgia, it's a tie. In Minnesota and Illinois, no, not at today's prices."
+  v: {tipo: mapa, resaltar: {FL: frio, GA: ahorro, MN: calor, IL: calor}, lineas: ["Florida: *yes*", "Georgia: tie", "MN, IL: no"]}
+- t: "The heat pump is the more efficient machine almost everywhere. Whether it's cheaper depends on what you pay for each kind of energy."
+  v: {tipo: clip, clip: aire, lineas: ["More efficient.", "Cheaper? *Check prices.*"]}
+- t: "If you want to see what every other appliance in your home costs per year, my full ranking of fifteen appliances is right here."
+  v: {tipo: casa, foco: todos, lineas: ["15 appliances", "*ranked by cost*"]}
+  pausa: 6
+miniaturas:
+- {tipo: versus, a: [heat_pump, "$340", frio], b: [local_fire_department, "$431", calor], texto: "Which is cheaper?"}
+- {tipo: mapa, resaltar: {FL: frio, MN: calor}, cifras: "$340 vs $1,065"}
+- {tipo: icono_grande, icono: heat_pump, cifra: "+$690/yr?", color: calor, texto: ["Depends", "where"]}
