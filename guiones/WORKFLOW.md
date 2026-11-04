@@ -7,7 +7,7 @@
 |---|---|---|
 | Topic & research | Picks topics people search for and checks every number against official sources (EIA, U.S. Department of Energy, ENERGY STAR) | — |
 | Script | Writes the narration, visuals, on-screen text, thumbnails and YouTube metadata | Reads it and flags anything unclear |
-| Voice | — | Records the narration in US English, exactly as written |
+| Voice | — | Provides the narration in US English, exactly as written (currently AI voice → mark synthetic content **Yes**) |
 | Video | Provides 3D clips, logo, banner and watermark | Edits, animates and adds music |
 | YouTube | Provides title, description, tags, chapters and settings | Uploads, sets the thumbnail and publishes on the scheduled day |
 

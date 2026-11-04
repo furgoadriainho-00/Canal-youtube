@@ -33,4 +33,4 @@
   Source: https://www.eia.gov/consumption/residential/data/2020/index.php?view=consumption
   ```
 - **Tags:** `dehumidifier electricity cost, dehumidifier vs fridge, basement dehumidifier, energy saving tips, shorts, home by the numbers`
-- **Settings:** not made for kids · altered or synthetic content: **No** (real voice, animated graphics). Switch it to **Yes** only if you add realistic AI-generated footage.
+- **Settings:** not made for kids · altered or synthetic content: **Yes** with an AI voice (**No** only if a real person records it).

@@ -23,8 +23,8 @@ Everything is in the GitHub repository **github.com/furgoadriainho-00/Canal-yout
 - No copyrighted material: no clips from other channels, movies, TV shows, sports or commercial music.
 - Stock only from Pexels or Pixabay (free license), or your own assets.
 - Music only from the YouTube Audio Library.
-- **Voice:** you record it yourself, in US English. Read the narration exactly as written.
-- "Altered or synthetic content" in YouTube: **No** with your real voice and our animated graphics. Switch it to **Yes** only if you add realistic AI-generated footage.
+- **Voice:** the editor provides it (currently the AI voice Kokoro `am_michael`, US English). Use the narration exactly as written.
+- "Altered or synthetic content" in YouTube: **Yes** whenever the voice is AI-generated. Only set it to **No** if a real person records the narration and no realistic AI footage is used.
 - Final loudness around −14 LUFS, with music 18–20 dB below the voice.
 
 ## When you publish
