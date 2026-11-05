@@ -24,5 +24,19 @@
     "ENERGY STAR tankless gas water heaters: https://www.energystar.gov/products/whole_home_tankless_gas_water_heaters",
     "Federal water heater standards, 10 CFR 430.32(d): https://www.govinfo.gov/content/pkg/CFR-2025-title10-vol3/xml/CFR-2025-title10-vol3-sec430-32.xml",
     "EIA Residential Energy Consumption Survey 2020 (CE5.3a, CE5.4, HC8.1): https://www.eia.gov/consumption/residential/data/2020/"
-  ]
+  ],
+  "capitulos": [
+    "0:00 The tankless myth",
+    "0:14 What we're comparing",
+    "0:40 Why it matters",
+    "1:15 How each one works",
+    "2:02 The official numbers",
+    "3:03 Electric home: the numbers",
+    "3:52 Savings by state",
+    "4:36 Gas home: the numbers",
+    "5:40 The fine print",
+    "6:50 How to decide",
+    "7:49 The verdict"
+  ],
+  "descripcion_final": "Tank vs tankless vs heat pump water heater: which one actually saves money? Using the official efficiency ratings (federal minimums and ENERGY STAR) and the government's data on real hot-water use, I compared yearly running costs for an electric home and a gas home.\n\nElectric home: tank about $492/yr, electric tankless about $498, heat pump water heater about $137 (saves ~$355/yr).\nGas home: minimum gas tank about $269/yr, ENERGY STAR tankless about $159, heat pump water heater about $165.\n\nHow the numbers work: hot-water energy from the EIA Residential Energy Consumption Survey 2020; efficiencies (UEF) from 10 CFR 430.32(d) for a 50-gallon medium-draw tank and from ENERGY STAR criteria; EIA 2026 electricity and 2025 natural gas prices. Running costs only, not purchase or installation.\n\nChapters:\n0:00 The tankless myth\n0:14 What we're comparing\n0:40 Why it matters\n1:15 How each one works\n2:02 The official numbers\n3:03 Electric home: the numbers\n3:52 Savings by state\n4:36 Gas home: the numbers\n5:40 The fine print\n6:50 How to decide\n7:49 The verdict\n\nSources:\nENERGY STAR water heater criteria: https://www.energystar.gov/products/water_heaters/residential_water_heaters_key_product_criteria\nENERGY STAR heat pump water heaters: https://www.energystar.gov/products/heat_pump_water_heaters\nENERGY STAR tankless gas water heaters: https://www.energystar.gov/products/whole_home_tankless_gas_water_heaters\nFederal water heater standards, 10 CFR 430.32(d): https://www.govinfo.gov/content/pkg/CFR-2025-title10-vol3/xml/CFR-2025-title10-vol3-sec430-32.xml\nEIA Residential Energy Consumption Survey 2020 (CE5.3a, CE5.4, HC8.1): https://www.eia.gov/consumption/residential/data/2020/"
 }

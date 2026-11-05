@@ -1,0 +1,359 @@
+1
+00:00:00,000 --> 00:00:03,318
+The most famous water heater upgrade is going tankless.
+
+2
+00:00:03,618 --> 00:00:09,029
+But if your water heater runs on electricity, going tankless saves you almost nothing.
+
+3
+00:00:09,329 --> 00:00:12,994
+There's a different upgrade that cuts that bill by about seventy percent.
+
+4
+00:00:13,294 --> 00:00:14,488
+Let's run the numbers.
+
+5
+00:00:14,788 --> 00:00:22,898
+In this video, I'll compare the three main types of water heaters: a regular tank, a tankless unit, and a heat pump water heater.
+
+6
+00:00:23,198 --> 00:00:29,104
+I'll do it for a home that heats water with electricity, and for one that uses natural gas,
+
+7
+00:00:29,404 --> 00:00:36,570
+using the official efficiency ratings and the government's own data on how much hot water homes actually use.
+
+8
+00:00:36,870 --> 00:00:39,983
+By the end, you'll know which one makes sense for your house.
+
+9
+00:00:40,283 --> 00:00:41,667
+First, why this matters.
+
+10
+00:00:41,967 --> 00:00:52,312
+In my ranking of household appliances, the electric water heater came in at number three, at about four hundred ninety-two dollars a year for the homes that have one.
+
+11
+00:00:52,612 --> 00:00:58,923
+That's every shower, every load of laundry, and every dishwasher cycle, all billed to one machine.
+
+12
+00:00:59,223 --> 00:01:09,704
+And it's split almost evenly across the country: about fifty-nine million homes heat their water with natural gas, and about fifty-seven million with electricity.
+
+13
+00:01:10,004 --> 00:01:15,318
+So whichever way your home goes, this is one of the biggest numbers on your energy bill.
+
+14
+00:01:15,618 --> 00:01:17,052
+Now, how each one works.
+
+15
+00:01:17,352 --> 00:01:23,027
+A regular tank water heater keeps a big tank of water hot all day, whether you use it or not.
+
+16
+00:01:23,327 --> 00:01:25,916
+A typical one holds around fifty gallons.
+
+17
+00:01:26,216 --> 00:01:28,339
+A tankless water heater has no tank.
+
+18
+00:01:28,639 --> 00:01:34,804
+It heats water only when you open a tap, using a powerful gas burner or electric element.
+
+19
+00:01:35,104 --> 00:01:41,612
+A heat pump water heater looks like a regular tank, but it works like the heat pump we covered in the heating video.
+
+20
+00:01:41,912 --> 00:01:47,393
+Instead of making heat directly, it pulls heat from the air around it and moves it into the water.
+
+21
+00:01:47,693 --> 00:01:53,377
+To compare them fairly, there's one number that matters: the Uniform Energy Factor, or UEF.
+
+22
+00:01:53,677 --> 00:01:56,522
+It comes from a standard Department of Energy test.
+
+23
+00:01:56,822 --> 00:02:02,343
+The higher the UEF, the less energy the water heater needs for the same hot water.
+
+24
+00:02:02,643 --> 00:02:04,603
+So here are the official numbers.
+
+25
+00:02:04,903 --> 00:02:12,680
+Under current federal rules, a standard fifty-gallon electric tank has to reach a UEF of about point nine two.
+
+26
+00:02:12,980 --> 00:02:18,008
+In other words, almost all the electricity it uses ends up as heat in the water.
+
+27
+00:02:18,308 --> 00:02:22,017
+An electric tankless heater has to reach about point nine one.
+
+28
+00:02:22,317 --> 00:02:23,788
+That's basically the same.
+
+29
+00:02:24,088 --> 00:02:25,286
+That's the key point.
+
+30
+00:02:25,586 --> 00:02:34,165
+Electric resistance can't get much better than turning one unit of electricity into one unit of heat, whether there's a tank or not.
+
+31
+00:02:34,465 --> 00:02:37,052
+A heat pump water heater is in another league.
+
+32
+00:02:37,352 --> 00:02:44,478
+To earn the ENERGY STAR label, a standard heat pump water heater needs a UEF of at least three point three.
+
+33
+00:02:44,778 --> 00:02:49,043
+That's about three point six times as efficient as the electric tank.
+
+34
+00:02:49,343 --> 00:02:55,047
+On the gas side, a minimum fifty-gallon gas tank is rated around point five six.
+
+35
+00:02:55,347 --> 00:03:02,805
+ENERGY STAR gas tanks need at least point eight one, and ENERGY STAR gas tankless units need at least point nine five.
+
+36
+00:03:03,105 --> 00:03:08,022
+Now let's put dollars on it, starting with a home that heats water with electricity.
+
+37
+00:03:08,322 --> 00:03:16,858
+The government's household survey says the average electric water heater uses about two thousand seven hundred kilowatt-hours a year.
+
+38
+00:03:17,158 --> 00:03:22,333
+At today's average price, that's the four hundred ninety-two dollars from my ranking.
+
+39
+00:03:22,633 --> 00:03:29,114
+Swap that tank for an electric tankless unit, and you'd spend about four hundred ninety-eight dollars a year.
+
+40
+00:03:29,414 --> 00:03:31,214
+A few dollars more, not less.
+
+41
+00:03:31,514 --> 00:03:38,415
+Swap it for an ENERGY STAR heat pump water heater, and it drops to about a hundred thirty-seven dollars a year.
+
+42
+00:03:38,715 --> 00:03:42,540
+That's around three hundred fifty-five dollars saved every year,
+
+43
+00:03:42,840 --> 00:03:44,712
+and a cut of about seventy percent.
+
+44
+00:03:45,012 --> 00:03:47,723
+So for an electric home, the answer is clear.
+
+45
+00:03:48,023 --> 00:03:50,487
+Tankless is not the efficiency upgrade.
+
+46
+00:03:50,787 --> 00:03:52,606
+The heat pump water heater is.
+
+47
+00:03:52,906 --> 00:03:55,599
+And the savings grow with your electricity price.
+
+48
+00:03:55,899 --> 00:04:03,555
+A heat pump water heater saves about one thousand nine hundred fifty kilowatt-hours a year compared with an electric tank.
+
+49
+00:04:03,855 --> 00:04:05,699
+What that's worth depends on your state.
+
+50
+00:04:05,999 --> 00:04:11,561
+In Washington, with relatively cheap power, that's about two hundred eighty dollars a year.
+
+51
+00:04:11,861 --> 00:04:13,892
+In Florida, about three hundred.
+
+52
+00:04:14,192 --> 00:04:16,674
+In Texas, about three hundred thirteen.
+
+53
+00:04:16,974 --> 00:04:19,980
+In Illinois, it's around three hundred seventy-five.
+
+54
+00:04:20,280 --> 00:04:23,703
+And in states with expensive electricity, it gets big.
+
+55
+00:04:24,003 --> 00:04:30,105
+About five hundred seventy dollars a year in New York, and over six hundred thirty in California.
+
+56
+00:04:30,405 --> 00:04:35,774
+So the more you pay per kilowatt-hour, the faster a heat pump water heater pays you back.
+
+57
+00:04:36,074 --> 00:04:38,868
+Now a home that heats water with natural gas.
+
+58
+00:04:39,168 --> 00:04:45,172
+The survey says the average gas water heater burns about eighteen million BTUs a year.
+
+59
+00:04:45,472 --> 00:04:52,353
+With a minimum-efficiency gas tank at today's gas prices, that's about two hundred sixty-nine dollars a year.
+
+60
+00:04:52,653 --> 00:04:57,785
+An ENERGY STAR gas tank would bring that down to about a hundred eighty-seven dollars.
+
+61
+00:04:58,085 --> 00:05:03,268
+A tankless gas heater at the federal minimum lands at the same hundred eighty-seven.
+
+62
+00:05:03,568 --> 00:05:09,189
+An ENERGY STAR tankless unit gets down to about a hundred fifty-nine dollars a year.
+
+63
+00:05:09,489 --> 00:05:18,020
+And a heat pump water heater, running on electricity at today's average price, would cost about a hundred sixty-five dollars a year.
+
+64
+00:05:18,320 --> 00:05:20,060
+So in a gas home, it's close.
+
+65
+00:05:20,360 --> 00:05:31,084
+The best tankless unit and a heat pump water heater land within a few dollars of each other, and both save about a hundred dollars a year compared with a minimum gas tank.
+
+66
+00:05:31,384 --> 00:05:40,081
+The big takeaway for a gas home: the biggest jump comes from leaving the minimum-efficiency tank behind, whichever upgrade you choose.
+
+67
+00:05:40,381 --> 00:05:43,449
+Before you decide, there are a few practical limits.
+
+68
+00:05:43,749 --> 00:05:47,274
+A tankless unit has to heat water as fast as you use it.
+
+69
+00:05:47,574 --> 00:05:57,869
+ENERGY STAR gives typical flow rates: about two and a half gallons per minute for a shower, two point two for a sink, and three point three for a clothes washer.
+
+70
+00:05:58,169 --> 00:06:06,894
+A certified gas tankless unit only has to deliver at least two point eight gallons per minute at a sixty-seven degree temperature rise.
+
+71
+00:06:07,194 --> 00:06:12,716
+So a shower and a kitchen sink running at the same time can already ask for more than that.
+
+72
+00:06:13,016 --> 00:06:15,678
+Bigger households often need a larger unit.
+
+73
+00:06:15,978 --> 00:06:18,598
+A heat pump water heater has its own limits.
+
+74
+00:06:18,898 --> 00:06:31,543
+ENERGY STAR says it needs to sit in a space that stays between forty and ninety degrees, with about a thousand cubic feet of air around it, like a basement, a garage or a utility room.
+
+75
+00:06:31,843 --> 00:06:40,344
+It pulls heat out of that air, so the room around it gets a little cooler, which is a bonus in a hot garage and a drawback in a cold one.
+
+76
+00:06:40,644 --> 00:06:47,743
+And one more data point: only about six and a half percent of American homes have a tankless water heater at all.
+
+77
+00:06:48,043 --> 00:06:49,729
+Most homes still have a tank.
+
+78
+00:06:50,029 --> 00:06:51,499
+So here's how to decide.
+
+79
+00:06:51,799 --> 00:07:02,499
+If you heat water with electricity and you have a basement, garage or utility room with enough space, a heat pump water heater is the clear winner on running costs.
+
+80
+00:07:02,799 --> 00:07:04,959
+It cuts the bill by about seventy percent.
+
+81
+00:07:05,259 --> 00:07:13,204
+If you heat water with electricity and you're thinking about tankless to save energy, the efficiency numbers say it won't do much.
+
+82
+00:07:13,504 --> 00:07:18,005
+Its real benefits are space and endless hot water, not a lower bill.
+
+83
+00:07:18,305 --> 00:07:23,046
+If you heat with gas, the first step is getting off a minimum-efficiency tank.
+
+84
+00:07:23,346 --> 00:07:30,298
+An ENERGY STAR tank, an ENERGY STAR tankless unit, or a heat pump water heater all save real money.
+
+85
+00:07:30,598 --> 00:07:34,165
+And whatever you have, the hot water itself is the cost.
+
+86
+00:07:34,465 --> 00:07:41,934
+ENERGY STAR says about ninety percent of the energy it takes to run a clothes washer goes into heating the water.
+
+87
+00:07:42,234 --> 00:07:49,590
+So washing clothes in cold water and taking shorter showers shrink the bill, no matter which machine heats the water.
+
+88
+00:07:49,890 --> 00:07:59,703
+To sum it up: for an electric home, a heat pump water heater saves around three hundred fifty dollars a year, and electric tankless saves almost nothing.
+
+89
+00:08:00,003 --> 00:08:09,071
+For a gas home, the best options cluster around a hundred sixty dollars a year, versus about two hundred seventy for a minimum gas tank.
+
+90
+00:08:09,371 --> 00:08:16,900
+If you're weighing a heat pump for your whole house too, my heat pump versus gas furnace video does the same math for heating.

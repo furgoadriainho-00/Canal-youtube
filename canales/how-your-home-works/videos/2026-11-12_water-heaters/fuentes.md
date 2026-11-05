@@ -18,7 +18,7 @@
 7. **ENERGY STAR, lavadoras**: «Water heating consumes about 90% of the energy it takes to operate a clothes washer.» https://www.energystar.gov/products/clothes_washers (ya usada en el primer vídeo).
 
 ## Cifras en pantalla, tal como salen (todas en `datos/resultados.txt`)
-$492 · $498 · $137 · −$355 · 72 % (355 ÷ 492) · 59.3M · 57.0M · UEF 0.92 · 0.91 · 3.30 · 3.6× · 0.56 · 0.81 · 0.95 · $269 · $187 · $159 · $165 · ~$100 (104–110) · −$80 a −$110 (82–110) · WA $281 · FL $299 · TX $313 · IL $375 · NY $571 · CA $636 · 1,950 kWh (1.951) · 2.5 · 2.2 · 3.3 · 2.8 GPM · 4.7 GPM (2,5 + 2,2) · 40–90 °F · 1,000 ft³ · 6.5 % · 90 %.
+$492 · $498 · $137 · −$355 · 72 % (355 ÷ 492) · 59.3M · 57.0M · UEF 0.92 · 0.91 · 3.30 · 3.6× (3,6; 3,30 ÷ 0,921) · 2.8 GPM (2,8) · 0.56 · 0.81 · 0.95 · $269 · $187 · $159 · $165 · ~$100 (104–110) · −$80 a −$110 (82–110) · WA $281 · FL $299 · TX $313 · IL $375 · NY $571 · CA $636 · 1,950 kWh (1.951) · 2.5 · 2.2 · 3.3 · 2.8 GPM · 4.7 GPM (2,5 + 2,2) · 40–90 °F · 1,000 ft³ · 6.5 % · 90 %.
 
 ## Supuestos
 - Agua caliente que necesita el hogar = consumo RECS × eficiencia del termo normal (0,921 eléctrico; 0,563 gas). Las eficiencias UEF son de ensayo: el uso real varía.

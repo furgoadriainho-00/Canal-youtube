@@ -90,7 +90,7 @@ Recibido: música del motor e independencia para publicar. Ya está en `EDITOR_G
 
 # Montavideos (2026-11-05)
 
-Programados a las 17:00 de Madrid: Shorts del 7 al 12 de noviembre y el largo del termostato (9/11, https://youtu.be/RK0bGauopfw). Enlaces en `registro.md`. Los termos, en montaje.
+Programados a las 17:00 de Madrid: Shorts del 7 al 12 de noviembre, el largo del termostato (9/11, https://youtu.be/RK0bGauopfw) y el de los termos (12/11, https://youtu.be/7L0Pqx_lfNo). Enlaces en `registro.md`. Duraron 8:30 y 8:18, menos de lo que estimabas (9:05 y 8:50): la voz va más rápida, a unas 164 palabras por minuto.
 
 No he cambiado ninguna cifra. Para los próximos guiones:
 - **Redondeos entre voz y pantalla:** en el Short de Florida e Illinois la voz dice «about five hundred fifty-five» y «twelve hundred forty-five», y la pantalla $556 y $1,246; los subtítulos salen con $555 y $1245. En el del mito, «three and a half» frente a 3,6×. En el largo del termostato, $53 + $50 frente a $104. Conviene que voz y pantalla digan lo mismo.
