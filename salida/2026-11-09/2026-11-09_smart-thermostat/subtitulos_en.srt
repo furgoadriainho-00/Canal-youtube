@@ -1,0 +1,399 @@
+1
+00:00:00,000 --> 00:00:06,301
+About sixty-five million American homes have a thermostat that can adjust itself automatically.
+
+2
+00:00:06,601 --> 00:00:08,942
+Only about twenty million actually let it.
+
+3
+00:00:09,242 --> 00:00:11,757
+So does a smart thermostat really save you money?
+
+4
+00:00:12,057 --> 00:00:16,076
+Or is it just an expensive way to change the temperature from your phone?
+
+5
+00:00:16,376 --> 00:00:30,444
+In the next few minutes, I'll answer that with real numbers: what these thermostats are actually required to prove, what that's worth in dollars for a typical home, and the one habit that decides whether yours pays off.
+
+6
+00:00:30,744 --> 00:00:31,662
+No guesses.
+
+7
+00:00:31,962 --> 00:00:39,224
+Everything here comes from ENERGY STAR, the Department of Energy, and the government's own household energy survey.
+
+8
+00:00:39,524 --> 00:00:43,046
+First question: how much money are we even talking about?
+
+9
+00:00:43,346 --> 00:00:50,853
+According to ENERGY STAR, the average American household spends more than nine hundred dollars a year on heating and cooling.
+
+10
+00:00:51,153 --> 00:00:54,091
+That's almost half of a typical home energy bill.
+
+11
+00:00:54,391 --> 00:01:00,231
+Using the government's household survey and today's prices, I get numbers in the same range.
+
+12
+00:01:00,531 --> 00:01:06,663
+A home heated with natural gas spends about six hundred sixty-five dollars a year on heating.
+
+13
+00:01:06,963 --> 00:01:14,467
+A home with central air spends about five hundred five dollars a year on cooling, including the fan that moves the air.
+
+14
+00:01:14,767 --> 00:01:18,868
+So the thermostat controls the biggest single chunk of your energy bill.
+
+15
+00:01:19,168 --> 00:01:21,790
+That's why even a small percentage matters here.
+
+16
+00:01:22,090 --> 00:01:26,254
+Second question: what does a smart thermostat actually do differently?
+
+17
+00:01:26,554 --> 00:01:29,680
+A basic thermostat holds whatever temperature you set.
+
+18
+00:01:29,980 --> 00:01:34,035
+About forty-four million American homes still have one of those.
+
+19
+00:01:34,335 --> 00:01:37,664
+A programmable one follows a schedule that you enter.
+
+20
+00:01:37,964 --> 00:01:40,110
+A smart thermostat goes a step further.
+
+21
+00:01:40,410 --> 00:01:48,710
+ENERGY STAR describes features like geofencing, which uses your phone to notice when you've left for the day and set your system back.
+
+22
+00:01:49,010 --> 00:01:57,658
+And learning, where certain models figure out your preferences on their own and adjust to energy-saving temperatures when you're asleep or away.
+
+23
+00:01:57,958 --> 00:02:04,030
+The idea behind all of it is simple: your heating and cooling should run less when nobody needs them.
+
+24
+00:02:04,330 --> 00:02:08,404
+Third question, and it's the big one: does it actually save energy?
+
+25
+00:02:08,704 --> 00:02:10,645
+Here's the part most reviews skip.
+
+26
+00:02:10,945 --> 00:02:17,063
+To earn the ENERGY STAR label, a smart thermostat has to prove its savings with real-world data.
+
+27
+00:02:17,363 --> 00:02:25,316
+The companies analyze a full year of data from hundreds of their customers' homes, using software provided by the EPA.
+
+28
+00:02:25,616 --> 00:02:31,475
+Run time simply means how many hours your furnace or air conditioner is actually running.
+
+29
+00:02:31,775 --> 00:02:33,489
+Less run time, less energy.
+
+30
+00:02:33,789 --> 00:02:35,208
+And the bar is specific.
+
+31
+00:02:35,508 --> 00:02:41,962
+Across the national average, certified thermostats have to cut heating run time by at least eight percent,
+
+32
+00:02:42,262 --> 00:02:44,720
+and cooling run time by at least ten percent.
+
+33
+00:02:45,020 --> 00:02:47,403
+There's also a floor for the weaker results.
+
+34
+00:02:47,703 --> 00:02:55,310
+Four out of five homes in the sample have to save at least four percent on heating, and at least five percent on cooling.
+
+35
+00:02:55,610 --> 00:03:00,404
+So a certified smart thermostat isn't just a promise printed on a box.
+
+36
+00:03:00,704 --> 00:03:03,091
+Its savings are measured in real homes.
+
+37
+00:03:03,391 --> 00:03:06,750
+Fourth question: what is that worth in actual dollars?
+
+38
+00:03:07,050 --> 00:03:12,759
+I'll assume that cutting how long your system runs cuts its energy use by about the same amount.
+
+39
+00:03:13,059 --> 00:03:17,445
+That's a simplification, but a reasonable one for most standard systems.
+
+40
+00:03:17,745 --> 00:03:20,133
+Take a home with gas heat and central air.
+
+41
+00:03:20,433 --> 00:03:26,031
+Eight percent of six hundred sixty-five dollars in heating is about fifty-three dollars.
+
+42
+00:03:26,331 --> 00:03:30,777
+Ten percent of five hundred five dollars in cooling is about fifty.
+
+43
+00:03:31,077 --> 00:03:36,878
+Together, that's roughly a hundred and four dollars a year, at the certified national average.
+
+44
+00:03:37,178 --> 00:03:42,719
+For four out of five homes, savings come out to at least about fifty-two dollars a year.
+
+45
+00:03:43,019 --> 00:03:49,296
+An all-electric home, with electric heat and central air, lands at around ninety dollars a year.
+
+46
+00:03:49,596 --> 00:03:58,569
+And if you start from ENERGY STAR's nine hundred dollar figure instead, eight to ten percent works out to roughly seventy-two to ninety dollars.
+
+47
+00:03:58,869 --> 00:04:05,247
+So a realistic range for a typical home is somewhere between fifty and a hundred dollars a year.
+
+48
+00:04:05,547 --> 00:04:08,099
+Before we go on, does it matter where you live?
+
+49
+00:04:08,399 --> 00:04:10,807
+It does, but maybe not the way you'd expect.
+
+50
+00:04:11,107 --> 00:04:19,785
+In the Midwest, a gas-heated home spends about nine hundred thirty dollars a year on heating, and about three hundred thirty on cooling.
+
+51
+00:04:20,085 --> 00:04:27,283
+At the certified minimum, that's around a hundred and eight dollars a year in savings, and most of it comes from heating.
+
+52
+00:04:27,583 --> 00:04:28,884
+In the South, it flips.
+
+53
+00:04:29,184 --> 00:04:34,417
+Heating is only about five hundred dollars, but cooling is around seven hundred eight.
+
+54
+00:04:34,717 --> 00:04:40,116
+Savings come out to about a hundred and eleven, and most of that comes from the air conditioner.
+
+55
+00:04:40,416 --> 00:04:47,054
+The Northeast lands near ninety-three dollars, and the West, with milder weather on both ends, near eighty.
+
+56
+00:04:47,354 --> 00:04:50,638
+So the total is surprisingly similar across the country.
+
+57
+00:04:50,938 --> 00:04:53,879
+What changes is which season does the saving.
+
+58
+00:04:54,179 --> 00:04:58,382
+In a cold state, the setback that matters is the one on winter nights.
+
+59
+00:04:58,682 --> 00:05:03,967
+In a hot state, it's the one on summer afternoons, while everyone is out of the house.
+
+60
+00:05:04,267 --> 00:05:08,571
+Fifth question: if the savings are real, why don't more people get them?
+
+61
+00:05:08,871 --> 00:05:11,927
+This is the most revealing number in the whole survey.
+
+62
+00:05:12,227 --> 00:05:23,413
+According to the government's Residential Energy Consumption Survey, about fifty-two and a half million homes have a programmable thermostat, and almost thirteen million have a smart one.
+
+63
+00:05:23,713 --> 00:05:29,417
+Smart ones are still fairly rare: only about twelve percent of the homes that have a thermostat.
+
+64
+00:05:29,717 --> 00:05:34,786
+That's around sixty-five million homes that could adjust the temperature automatically.
+
+65
+00:05:35,086 --> 00:05:39,222
+But only about twenty million homes say their thermostat actually does it.
+
+66
+00:05:39,522 --> 00:05:41,022
+That's about three in ten.
+
+67
+00:05:41,322 --> 00:05:47,252
+Meanwhile, about fifty-one million homes set one temperature and leave it there most of the time.
+
+68
+00:05:47,552 --> 00:05:50,449
+Another thirty-one million adjust it by hand.
+
+69
+00:05:50,749 --> 00:05:55,827
+In other words, millions of people already own the tool, and simply aren't using it.
+
+70
+00:05:56,127 --> 00:06:00,982
+And that matters, because a smart thermostat doesn't save energy by being smart.
+
+71
+00:06:01,282 --> 00:06:04,816
+It saves energy by lowering the temperature when you don't need it.
+
+72
+00:06:05,116 --> 00:06:09,152
+Sixth question: do you even need a smart thermostat to save money?
+
+73
+00:06:09,452 --> 00:06:10,663
+Not necessarily.
+
+74
+00:06:10,963 --> 00:06:20,500
+The Department of Energy says that setting your thermostat back for at least eight hours a day can save you as much as ten percent a year on heating and cooling.
+
+75
+00:06:20,800 --> 00:06:27,305
+For that home with gas heat and central air, ten percent is up to about a hundred seventeen dollars a year.
+
+76
+00:06:27,605 --> 00:06:30,871
+Any thermostat can do that, if you're disciplined about it.
+
+77
+00:06:31,171 --> 00:06:35,903
+You just have to remember to do it every single night, and every time you leave.
+
+78
+00:06:36,203 --> 00:06:38,345
+That's where the smart one earns its keep.
+
+79
+00:06:38,645 --> 00:06:44,471
+Its real value is that it does the setback for you, every day, without you having to think about it.
+
+80
+00:06:44,771 --> 00:06:50,925
+And you'll sometimes hear that turning the heat down makes your system work harder later, so you don't really save.
+
+81
+00:06:51,225 --> 00:06:56,748
+The Department of Energy's own advice points the other way: set it back, and you save.
+
+82
+00:06:57,048 --> 00:07:00,211
+Last question: will one pay for itself in your home?
+
+83
+00:07:00,511 --> 00:07:01,676
+Here's the quick math.
+
+84
+00:07:01,976 --> 00:07:07,116
+Take the price you'd pay for the thermostat, and divide it by what you'd save each year.
+
+85
+00:07:07,416 --> 00:07:16,687
+If a thermostat costs, say, a hundred fifty dollars, and you save about a hundred dollars a year, it pays for itself in about a year and a half.
+
+86
+00:07:16,987 --> 00:07:19,714
+If you only save fifty, it takes three years.
+
+87
+00:07:20,014 --> 00:07:30,916
+You'll save more if your home sits empty for long stretches, like during the workday, if your heating and cooling bills are above average, and if you actually let the schedule run.
+
+88
+00:07:31,216 --> 00:07:37,797
+You'll save less if someone is home all day, or if you already turn the temperature down by hand every night.
+
+89
+00:07:38,097 --> 00:07:40,373
+So, does a smart thermostat save money?
+
+90
+00:07:40,673 --> 00:07:41,244
+Yes.
+
+91
+00:07:41,544 --> 00:07:51,246
+Certified models have to prove at least eight to ten percent less run time, which works out to roughly fifty to a hundred dollars a year for a typical home.
+
+92
+00:07:51,546 --> 00:07:53,707
+But the bigger lesson is in that survey.
+
+93
+00:07:54,007 --> 00:07:56,182
+The savings don't come from the device.
+
+94
+00:07:56,482 --> 00:07:58,954
+They come from actually setting the temperature back.
+
+95
+00:07:59,254 --> 00:08:02,579
+About sixty-five million homes could do it automatically.
+
+96
+00:08:02,879 --> 00:08:04,522
+Only around twenty million do.
+
+97
+00:08:04,822 --> 00:08:10,102
+So if you already have a programmable thermostat, check that its schedule is actually on.
+
+98
+00:08:10,402 --> 00:08:16,637
+If you're buying a new one, look for the ENERGY STAR label, because that's the one with measured savings.
+
+99
+00:08:16,937 --> 00:08:21,881
+And whichever you have, the rule is the same: lower it when you're asleep or away.
+
+100
+00:08:22,181 --> 00:08:29,330
+If you want to know what else in your home costs the most to run, my full ranking of fifteen appliances is on this channel.
