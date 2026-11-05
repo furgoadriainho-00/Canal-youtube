@@ -31,8 +31,17 @@ def base(w, h):
     return img.resize((w, h), Image.LANCZOS)
 
 
-@lru_cache(maxsize=32)
+ABREV = {"AL": "Alabama", "AR": "Arkansas", "CA": "California", "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware",
+         "IA": "Iowa", "ID": "Idaho", "IN": "Indiana", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana", "MA": "Massachusetts",
+         "MD": "Maryland", "ME": "Maine", "MI": "Michigan", "MO": "Missouri", "MS": "Mississippi", "MT": "Montana",
+         "NC": "North Carolina", "ND": "North Dakota", "NE": "Nebraska", "NH": "New Hampshire", "NJ": "New Jersey",
+         "NM": "New Mexico", "NV": "Nevada", "NY": "New York", "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon",
+         "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina", "SD": "South Dakota", "TN": "Tennessee",
+         "TX": "Texas", "UT": "Utah", "VA": "Virginia", "VT": "Vermont", "WI": "Wisconsin", "WV": "West Virginia", "WY": "Wyoming"}
+
+
+@lru_cache(maxsize=128)
 def estado(nombre, w, h, color):
     img = Image.new("RGBA", (w * SS, h * SS), (0, 0, 0, 0))
-    _dibujar(ImageDraw.Draw(img), _estados()[nombre], w * SS / ANCHO, color + (255,), C["texto"] + (255,))
+    _dibujar(ImageDraw.Draw(img), _estados()[ABREV.get(nombre, nombre)], w * SS / ANCHO, color + (255,), C["texto"] + (255,))
     return img.resize((w, h), Image.LANCZOS)

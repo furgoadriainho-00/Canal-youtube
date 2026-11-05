@@ -1,0 +1,47 @@
+1
+00:00:00,000 --> 00:00:02,111
+Will a heat pump actually save you money?
+
+2
+00:00:02,231 --> 00:00:04,073
+You can find out in thirty seconds.
+
+3
+00:00:04,193 --> 00:00:09,153
+Grab two numbers from your bills: what you pay per kilowatt-hour of electricity,
+
+4
+00:00:09,273 --> 00:00:11,070
+and what you pay per therm of gas.
+
+5
+00:00:11,190 --> 00:00:16,659
+Divide the electricity price by the gas price, then multiply by twenty-seven point eight.
+
+6
+00:00:16,779 --> 00:00:23,146
+That's your break-even: how efficient a heat pump has to be to beat a new ninety-five percent gas furnace.
+
+7
+00:00:23,266 --> 00:00:28,376
+For example, eighteen cents and a dollar fifty a therm gives about three point three.
+
+8
+00:00:28,496 --> 00:00:31,818
+A heat pump at the federal minimum is about two point two.
+
+9
+00:00:31,938 --> 00:00:34,473
+So around two or lower, the heat pump should win.
+
+10
+00:00:34,593 --> 00:00:36,780
+Above three, gas will most likely win.
+
+11
+00:00:36,900 --> 00:00:38,294
+Try it with your own bills.
+
+12
+00:00:38,414 --> 00:00:42,375
+In thirty seconds, you'll know if a heat pump will actually save you money.

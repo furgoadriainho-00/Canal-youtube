@@ -1,0 +1,45 @@
+# Short del guionista (guiones/2026-11-11_short-thermostat-numbers/GUION.md). Narración literal.
+titulo: 3 thermostat numbers
+estructura: lista
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: Three thermostat numbers that are worth real money.
+  v:
+    tipo: casa
+    foco: termostato
+    lineas: ['*3* numbers']
+- t: 'Number one: eight hours.'
+  v: {tipo: numero, icono: schedule, valor: 8, sufijo: ' hours', etiqueta: '#1', color: frio}
+- t: The Department of Energy says setting your thermostat back for at least eight hours a day can save as much as ten percent a year on heating and cooling.
+  v: {tipo: numero, icono: thermostat, valor: 10, sufijo: '%', etiqueta: up to 10% a year, color: frio, fuente: U.S. DOE}
+- t: 'Number two: nine hundred.'
+  v: {tipo: numero, icono: payments, valor: 900, prefijo: $, sufijo: +, etiqueta: '#2', color: calor}
+- t: ENERGY STAR says the average household spends more than nine hundred dollars a year on heating and cooling.
+  v:
+    tipo: casa
+    foco: calefaccion
+    lineas: [More than, '*$900* a year']
+- t: Ten percent of that is about ninety dollars.
+  v:
+    tipo: formula
+    partes: [$900, ×, 10%, '=', $90]
+- t: 'Number three: three in ten.'
+  v: {tipo: numero, icono: thermostat, valor: 3 in 10, etiqueta: '#3', color: calor}
+- t: Only about three in ten homes with a programmable or smart thermostat actually let it adjust the temperature automatically.
+  v: {tipo: numero, icono: thermostat, valor: 30, sufijo: '%', etiqueta: let it adjust automatically, color: calor, fuente: EIA RECS 2020}
+- t: 'Put them together: the savings are there, and most people just aren''t using them.'
+  v:
+    tipo: iconos
+    iconos: [schedule, payments, thermostat]
+    etiquetas: [8h, $900, 3/10]
+- t: So tonight, set it back while you sleep.
+  v:
+    tipo: casa
+    foco: termostato
+    lineas: [Set it back, '*tonight*']
+- t: Three thermostat numbers worth real money.
+  v:
+    tipo: casa
+    foco: todos
+    lineas: ['*3* numbers']

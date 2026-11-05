@@ -1,0 +1,69 @@
+# Short del guionista (guiones/2026-11-09_short-heat-pump-myth/GUION.md). Narración literal.
+titulo: Heat pumps always save? Myth or reality
+estructura: mito-vs-realidad
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: 'Myth or reality: switching to a heat pump always lowers your heating bill.'
+  v:
+    tipo: iconos
+    iconos: [heat_pump, help]
+    etiquetas: ['Myth or', 'reality?']
+- t: A heat pump is far more efficient than a gas furnace.
+  v:
+    tipo: comparar
+    etiqueta: Heat out per unit of energy in
+    a: [Heat pump, 2.2, heat_pump]
+    b: [Gas furnace, 0.95, local_fire_department]
+    sufijo: ×
+    decimales: 2
+- t: At the federal minimum, it delivers about two point two units of heat for every unit of electricity.
+  v:
+    tipo: formula
+    partes: [1 unit of electricity, →, 2.2 units of heat]
+- t: But you pay for energy, not efficiency.
+  v:
+    tipo: iconos
+    iconos: [bolt, local_fire_department, receipt_long]
+    etiquetas: ['', '', Your bill]
+- t: At average U.S. prices, the same energy costs about three and a half times more as electricity than as gas.
+  v:
+    tipo: comparar
+    etiqueta: Same energy, average U.S. prices
+    a: [Gas, 1, local_fire_department]
+    b: [Electricity, 3.6, bolt]
+    sufijo: ×
+    decimales: 1
+    nota: 'Source: EIA'
+- t: In Florida, where gas is expensive, a heat pump saves a typical home about ninety dollars a year.
+  v:
+    tipo: mapa
+    resaltar: {FL: frio}
+    lineas: ['Florida:', '*−$90/yr*']
+- t: In Minnesota, where gas is cheap, it costs about five hundred dollars more.
+  v:
+    tipo: mapa
+    resaltar: {MN: calor}
+    lineas: ['Minnesota:', '*+$523/yr*']
+- t: 'Verdict: myth.'
+  v:
+    tipo: iconos
+    iconos: [gavel]
+    etiquetas: [MYTH]
+- t: It depends on your prices.
+  v:
+    tipo: iconos
+    iconos: [bolt, receipt_long, local_fire_department]
+    etiquetas: ['', Your prices, '']
+- t: But against electric baseboard heat, a heat pump uses less than half the electricity.
+  v:
+    tipo: comparar
+    etiqueta: Electricity for the same heat
+    a: [Heat pump, 0.45, heat_pump]
+    b: [Electric baseboard, 1.0, heat]
+    decimales: 2
+- t: So, does a heat pump always lower your heating bill?
+  v:
+    tipo: iconos
+    iconos: [heat_pump, help]
+    etiquetas: [Always, 'cheaper?']

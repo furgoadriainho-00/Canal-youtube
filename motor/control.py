@@ -41,9 +41,14 @@ def _transcribir(f):
     return " ".join(s.text for s in segs)
 
 
+# Whisper escribe las cifras con dígitos y el guion con letras: se comparan solo las demás palabras
+NUMEROS = set("""zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen
+seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety hundred thousand million point""".split())
+
+
 def _norm(t):
     t = t.lower().replace("-", " ")
-    return re.findall(r"[a-z]+|\d+", t)
+    return [p for p in re.findall(r"[a-z]+|\d+", t) if not p.isdigit() and p not in NUMEROS]
 
 
 def mosaico(video, destino, n=12, ancho=480):
@@ -134,7 +139,8 @@ def controlar(carpeta: Path):
     previos = [f for f in filas if f["carpeta"] != carpeta.name][-3:]
     if len(previos) == 3:
         ok("Estructura no repite 3 seguidas", not all(f["estructura"] == g.get("estructura") for f in previos))
-        ok("Miniatura base no repite 3 seguidas", not all(f["miniatura_base"] == m.get("miniatura_base") for f in previos))
+        if not short:  # los Shorts no llevan miniatura propia
+            ok("Miniatura base no repite 3 seguidas", not all(f["miniatura_base"] == m.get("miniatura_base") for f in previos))
         ok("Frase de inicio no repite 3 seguidas",
            not all(f["frase_inicio"] == " ".join(g["segmentos"][0]["t"].split()[:5]) for f in previos))
 

@@ -1,0 +1,76 @@
+# Short del guionista (guiones/2026-11-07_short-heat-pump-florida-illinois/GUION.md). Narración literal.
+titulo: Same heat pump, opposite result
+estructura: comparacion
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: The same heat pump can save you money in Florida, and cost you hundreds more in Illinois.
+  v:
+    tipo: mapa
+    resaltar: {FL: frio, IL: calor}
+    lineas: [Florida, '*vs* Illinois']
+- t: In Florida, heating a typical home costs about four hundred thirty dollars a year with a new gas furnace,
+  v: {tipo: numero, icono: local_fire_department, valor: 431, prefijo: $, sufijo: /yr, etiqueta: 'Florida: new gas furnace', color: calor}
+- t: and about three hundred forty with a heat pump.
+  v:
+    tipo: comparar
+    etiqueta: 'Florida: yearly heating cost'
+    a: [Heat pump, 340, heat_pump]
+    b: [Gas furnace, 431, local_fire_department]
+    prefijo: $
+    gana: a
+- t: In Illinois, it's about five hundred fifty-five with gas,
+  v: {tipo: numero, icono: local_fire_department, valor: 556, prefijo: $, sufijo: /yr, etiqueta: 'Illinois: new gas furnace', color: calor}
+- t: and about twelve hundred forty-five with a heat pump.
+  v:
+    tipo: comparar
+    etiqueta: 'Illinois: yearly heating cost'
+    a: [Heat pump, 1246, heat_pump]
+    b: [Gas furnace, 556, local_fire_department]
+    prefijo: $
+    gana: b
+- t: The big difference is the price of gas.
+  v:
+    tipo: iconos
+    iconos: [local_fire_department, arrow_forward, payments]
+    etiquetas: [Gas, '', Price]
+- t: In Florida, it's about twenty-five dollars per thousand cubic feet.
+  v: {tipo: numero, icono: local_fire_department, valor: 25.48, decimales: 2, prefijo: $, etiqueta: 'Florida, per 1,000 cubic feet', color: calor, fuente: EIA 2025}
+- t: In Illinois, about eleven.
+  v:
+    tipo: comparar
+    etiqueta: Gas per 1,000 cubic feet
+    a: [Illinois, 11.25, local_fire_department]
+    b: [Florida, 25.48, local_fire_department]
+    prefijo: $
+    decimales: 2
+- t: Expensive gas makes the heat pump the winner.
+  v:
+    tipo: regla
+    rango: &id001 [1, 5]
+    titulo: Break-even efficiency
+    zonas:
+    - [1, 2.2, frio, Heat pump wins]
+    marcas:
+    - [1.73, FL, frio]
+- t: Cheap gas makes the furnace hard to beat.
+  v:
+    tipo: regla
+    rango: *id001
+    titulo: Break-even efficiency
+    zonas:
+    - [1, 2.2, frio, Heat pump wins]
+    - [2.2, 5, calor, Gas wins]
+    marcas:
+    - [1.73, FL, frio]
+    - [4.93, IL, calor]
+- t: So before you choose, compare your own electricity and gas prices.
+  v:
+    tipo: iconos
+    iconos: [receipt_long, search]
+    etiquetas: [Your bills, Your prices]
+- t: Because the same heat pump can save you money in Florida…
+  v:
+    tipo: mapa
+    resaltar: {FL: frio, IL: calor}
+    lineas: [Check your, '*own prices*']

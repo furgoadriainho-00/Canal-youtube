@@ -1,0 +1,72 @@
+# Short del guionista (guiones/2026-11-08_short-break-even-test/GUION.md). Narración literal.
+titulo: The 30-second heat pump test
+estructura: paso-a-paso
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: Will a heat pump actually save you money?
+  v:
+    tipo: iconos
+    iconos: [heat_pump, help]
+    etiquetas: [Heat pump, 'Save money?']
+- t: You can find out in thirty seconds.
+  v: {tipo: numero, icono: timer, valor: 30, sufijo: ' s', etiqueta: 30-second test, color: frio}
+- t: 'Grab two numbers from your bills: what you pay per kilowatt-hour of electricity,'
+  v:
+    tipo: iconos
+    iconos: [bolt, receipt_long]
+    etiquetas: [$/kWh, Electric bill]
+- t: and what you pay per therm of gas.
+  v:
+    tipo: iconos
+    iconos: [bolt, local_fire_department]
+    etiquetas: [$/kWh, $/therm]
+- t: Divide the electricity price by the gas price, then multiply by twenty-seven point eight.
+  v:
+    tipo: formula
+    partes: [$/kWh, ÷, $/therm, ×, '27.8']
+- t: 'That''s your break-even: how efficient a heat pump has to be to beat a new ninety-five percent gas furnace.'
+  v:
+    tipo: regla
+    rango: [1, 5]
+    titulo: Your break-even
+    sin_valor: true
+    marcas:
+    - [3, break-even, calor]
+- t: For example, eighteen cents and a dollar fifty a therm gives about three point three.
+  v:
+    tipo: formula
+    partes: ['0.18', ÷, '1.50', ×, '27.8', '=', '3.3']
+- t: A heat pump at the federal minimum is about two point two.
+  v:
+    tipo: regla
+    rango: [1, 5]
+    titulo: Your break-even
+    marcas:
+    - [2.2, Federal min, frio]
+- t: So around two or lower, the heat pump should win.
+  v:
+    tipo: regla
+    rango: [1, 5]
+    titulo: Your break-even
+    zonas:
+    - [1, 2, frio, ≤2 heat pump]
+    marcas:
+    - [2.2, Federal min, frio]
+- t: Above three, gas will most likely win.
+  v:
+    tipo: regla
+    rango: [1, 5]
+    titulo: Your break-even
+    zonas:
+    - [1, 2, frio, ≤2 heat pump]
+    - [3, 5, calor, '>3 gas']
+    marcas:
+    - [2.2, Federal min, frio]
+- t: Try it with your own bills.
+  v:
+    tipo: iconos
+    iconos: [receipt_long, calculate]
+    etiquetas: [Your bills, Try it now]
+- t: In thirty seconds, you'll know if a heat pump will actually save you money.
+  v: {tipo: numero, icono: timer, valor: 0 s, etiqueta: Now you know, color: calor}

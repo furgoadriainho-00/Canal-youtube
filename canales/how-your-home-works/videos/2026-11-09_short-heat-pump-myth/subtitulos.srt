@@ -1,0 +1,43 @@
+1
+00:00:00,000 --> 00:00:04,472
+Myth or reality: switching to a heat pump always lowers your heating bill.
+
+2
+00:00:04,592 --> 00:00:07,551
+A heat pump is far more efficient than a gas furnace.
+
+3
+00:00:07,671 --> 00:00:13,595
+At the federal minimum, it delivers about two point two units of heat for every unit of electricity.
+
+4
+00:00:13,715 --> 00:00:16,097
+But you pay for energy, not efficiency.
+
+5
+00:00:16,216 --> 00:00:23,764
+At average U.S. prices, the same energy costs about three and a half times more as electricity than as gas.
+
+6
+00:00:23,884 --> 00:00:30,397
+In Florida, where gas is expensive, a heat pump saves a typical home about ninety dollars a year.
+
+7
+00:00:30,517 --> 00:00:35,228
+In Minnesota, where gas is cheap, it costs about five hundred dollars more.
+
+8
+00:00:35,348 --> 00:00:36,304
+Verdict: myth.
+
+9
+00:00:36,424 --> 00:00:37,935
+It depends on your prices.
+
+10
+00:00:38,055 --> 00:00:43,286
+But against electric baseboard heat, a heat pump uses less than half the electricity.
+
+11
+00:00:43,406 --> 00:00:46,123
+So, does a heat pump always lower your heating bill?

@@ -231,6 +231,13 @@ def formula(lienzo, caja, s, t, dur, u):
             pegar(lienzo, caja_redondeada(largo, int(10 * u), int(5 * u), C["calor"] + (255,)), xr, y0 + h / 2 + 70 * u)
 
 
+def _sello(lienzo, cadena, cx, cy, p, u):
+    sello = texto(cadena, int(40 * u), C["fondo"])
+    fondo_s = caja_redondeada(sello.width + int(44 * u), sello.height + int(22 * u), int(18 * u), C["ahorro"] + (255,))
+    pegar(lienzo, fondo_s, cx, cy, escala=max(0.01, p))
+    pegar(lienzo, sello, cx, cy, escala=max(0.01, p))
+
+
 def comparar(lienzo, caja, s, t, dur, u):
     x0, y0, w, h = caja
     a, b = s["a"], s["b"]
@@ -267,10 +274,11 @@ def comparar(lienzo, caja, s, t, dur, u):
         if s.get("gana") == "ab"[j]:
             pg = ease_back(prog(t, 1.4, 0.4))
             if pg > 0:
-                sello = texto("CHEAPER", int(40 * u), C["fondo"])
-                fondo_s = caja_redondeada(sello.width + int(44 * u), sello.height + int(22 * u), int(18 * u), C["ahorro"] + (255,))
-                pegar(lienzo, fondo_s, cx, base_y + 118 * u, escala=max(0.01, pg))
-                pegar(lienzo, sello, cx, base_y + 118 * u, escala=max(0.01, pg))
+                _sello(lienzo, s.get("sello", "CHEAPER"), cx, base_y + 118 * u, pg, u)
+    if s.get("gana") == "=":
+        pg = ease_back(prog(t, 1.4, 0.4))
+        if pg > 0:
+            _sello(lienzo, s.get("sello", "SAME"), x0 + w / 2, base_y + 118 * u, pg, u)
     if s.get("nota"):
         pegar(lienzo, encajar(texto(s["nota"], int(30 * u), C["suave"], "Inter", "Medium"), int(w * 0.9)),
               x0 + w / 2, y0 + h - 40 * u, alfa=prog(t, 0.5, 0.4))
@@ -434,19 +442,22 @@ def mapa_escena(lienzo, caja, s, t, dur, u):
     x0, y0, w, h = caja
     res = s.get("resaltar", {})
     lineas = s.get("lineas")
-    mw = w * (0.6 if lineas else 0.86)
-    mh = h * 0.86
+    vertical = w < h * 1.2
+    mw = w * (0.94 if vertical else 0.6 if lineas else 0.86)
+    mh = h * (0.5 if vertical else 0.86)
     k = min(mw / mapa.ANCHO, mh / mapa.ALTO)
     aw, ah = int(mapa.ANCHO * k), int(mapa.ALTO * k)
-    cx = x0 + (w * 0.33 if lineas else w / 2)
-    cy = y0 + h / 2
+    cx = x0 + (w * 0.33 if lineas and not vertical else w / 2)
+    cy = y0 + h * (0.34 if vertical and lineas else 0.5)
     pegar(lienzo, mapa.base(aw, ah), cx, cy, alfa=prog(t, 0, 0.3))
     reparto = min(0.5, max(0.12, dur * 0.6 / max(1, len(res))))
     for i, (st, col) in enumerate(res.items()):
         p = prog(t, 0.15 + i * reparto, 0.35)
         if p > 0:
             pegar(lienzo, mapa.estado(st, aw, ah, _color(col)), cx, cy, alfa=p)
-    if lineas:
+    if lineas and vertical:
+        _lineas_cineticas(lienzo, lineas, x0 + w / 2, y0 + h * 0.74, u, t, dur, 84, int(w * 0.9), 0.4)
+    elif lineas:
         _lineas_cineticas(lienzo, lineas, x0 + w * 0.81, y0 + h / 2, u, t, dur, 84, int(w * 0.34), 0.4)
 
 
@@ -474,14 +485,15 @@ def regla(lienzo, caja, s, t, dur, u):
             pegar(lienzo, caja_redondeada(ancho, alto, alto // 2, _color(col) + (255,)), px(a), yb, ancla="l")
             pegar(lienzo, encajar(texto(et, int(40 * u), _color(col), "Inter", "Bold"), int(px(b) - px(a) - 16 * u)),
                   (px(a) + px(b)) / 2, yb + 130 * u, alfa=pz)
-    for v in range(int(lo), int(hi) + 1):
-        pegar(lienzo, texto(str(v), int(36 * u), C["suave"], "Inter", "SemiBold"), px(v), yb + 62 * u, alfa=pe)
+    for v in range(int(lo), int(hi) + 1, s.get("paso", 1)):
+        pegar(lienzo, texto(f'{s.get("prefijo", "")}{v}', int(36 * u), C["suave"], "Inter", "SemiBold"), px(v), yb + 62 * u, alfa=pe)
     for i, (v, et, col) in enumerate(s.get("marcas", [])):
         c = _color(col)
         pm = ease_back(prog(t, 0.4 + i * 0.5, 0.4))
         if pm > 0:
             pegar(lienzo, caja_redondeada(int(12 * u), int(150 * u), int(6 * u), c + (255,)), px(v), yb - 50 * u, alfa=min(1, pm))
-            sp = encajar(texto(f"{et} {v:g}", int(58 * u), c), int(w * 0.42))
+            cad = et if s.get("sin_valor") else f"{et} {v:.{s['decimales']}f}" if "decimales" in s else f"{et} {v:g}"
+            sp = encajar(texto(cad, int(58 * u), c), int(w * 0.42))
             x = min(max(px(v), x0 + sp.width / 2 + 20 * u), x0 + w - sp.width / 2 - 20 * u)
             pegar(lienzo, sp, x, yb - (160 + 80 * (i % 2)) * u, escala=max(0.01, pm))
     if s.get("nota"):

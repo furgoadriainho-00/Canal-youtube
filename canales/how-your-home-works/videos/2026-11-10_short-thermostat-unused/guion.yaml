@@ -1,0 +1,48 @@
+# Short del guionista (guiones/2026-11-10_short-thermostat-unused/GUION.md). Narración literal.
+titulo: The thermostat feature most people ignore
+estructura: pregunta-respuesta
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: Sixty-five million American homes have a thermostat that can adjust itself.
+  v: {tipo: numero, icono: thermostat, valor: 65, sufijo: M, etiqueta: homes can automate, color: frio}
+- t: Guess how many actually let it.
+  v:
+    tipo: casa
+    foco: termostato
+    lineas: [How many, '*use it?*']
+- t: According to the government's household energy survey, about fifty-two and a half million homes have a programmable thermostat,
+  v: {tipo: fuente, titulo: EIA · RECS 2020, detalle: Residential Energy Consumption Survey, nota: 52.6M programmable}
+- t: and almost thirteen million have a smart one.
+  v:
+    tipo: barras
+    etiqueta: Homes, millions
+    items:
+    - [Programmable, 52.6, schedule]
+    - [Smart, 12.8, thermostat]
+    sufijo: M
+    decimales: 1
+- t: But only about twenty million say it adjusts the temperature automatically.
+  v: {tipo: numero, icono: thermostat, valor: 20, sufijo: M, etiqueta: let it adjust automatically, color: calor}
+- t: About three in ten.
+  v: {tipo: numero, icono: thermostat, valor: 30, sufijo: '%', etiqueta: Only 3 in 10, color: calor}
+- t: Fifty-one million just set one temperature and leave it there.
+  v: {tipo: numero, icono: lock, valor: 51, sufijo: M, etiqueta: one temperature, color: frio}
+- t: That's where the savings are.
+  v:
+    tipo: iconos
+    iconos: [thermostat, arrow_forward, savings]
+    etiquetas: [Automate, '', Save]
+- t: ENERGY STAR certified smart thermostats have to cut heating run time by at least eight percent,
+  v: {tipo: numero, icono: heat, valor: 8, sufijo: '%', etiqueta: less heating run time, color: calor, fuente: ENERGY STAR}
+- t: and cooling by at least ten.
+  v: {tipo: numero, icono: ac_unit, valor: 10, sufijo: '%', etiqueta: less cooling run time, color: frio, fuente: ENERGY STAR}
+- t: For a home with gas heat and central air, that's roughly a hundred dollars a year.
+  v: {tipo: numero, icono: savings, valor: 104, prefijo: ~$, sufijo: /yr, etiqueta: Gas heat + central air, color: ahorro}
+- t: So check that your schedule is on tonight.
+  v:
+    tipo: casa
+    foco: termostato
+    lineas: [Turn your, '*schedule* on']
+- t: Sixty-five million homes could be doing this.
+  v: {tipo: numero, icono: thermostat, valor: 65, sufijo: M, etiqueta: homes could do this, color: frio}

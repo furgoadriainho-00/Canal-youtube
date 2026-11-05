@@ -1,0 +1,73 @@
+# Short del guionista (guiones/2026-11-12_short-electric-tankless/GUION.md). Narración literal.
+titulo: Electric tankless barely saves
+estructura: comparacion
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: Thinking about a tankless water heater to save money?
+  v:
+    tipo: iconos
+    iconos: [water_heater, bolt, help]
+    etiquetas: ['', '', 'Electric tankless?']
+- t: If yours runs on electricity, look at these numbers first.
+  v:
+    tipo: casa
+    foco: termo
+    lineas: [Runs on, '*electricity?*']
+- t: Under federal rules, a standard fifty-gallon electric tank is rated at about point nine two.
+  v:
+    tipo: regla
+    rango: [0, 1]
+    titulo: Efficiency rating (UEF)
+    marcas:
+    - [0.92, Tank, calor]
+    nota: 'Source: 10 CFR 430.32'
+- t: An electric tankless heater, about point nine one.
+  v:
+    tipo: regla
+    rango: [0, 1]
+    titulo: Efficiency rating (UEF)
+    marcas:
+    - [0.92, Tank, calor]
+    - [0.91, Tankless, frio]
+    nota: 'Source: 10 CFR 430.32'
+- t: That's basically the same.
+  v:
+    tipo: comparar
+    etiqueta: Efficiency rating (UEF)
+    a: [Tank, 0.92, water_heater]
+    b: [Tankless, 0.91, bolt]
+    decimales: 2
+    gana: '='
+- t: 'So the yearly cost barely moves: about four hundred ninety-two dollars with the tank, and about four hundred ninety-eight tankless.'
+  v:
+    tipo: comparar
+    etiqueta: Yearly cost
+    a: [Tank, 492, water_heater]
+    b: [Tankless, 498, bolt]
+    prefijo: $
+    gana: '='
+- t: The real upgrade is a heat pump water heater.
+  v:
+    tipo: casa
+    foco: termo
+    lineas: [Heat pump, '*water heater*']
+- t: ENERGY STAR models are rated at least three point three, about three point six times as efficient.
+  v:
+    tipo: regla
+    rango: [0, 4]
+    titulo: Efficiency rating (UEF)
+    decimales: 2
+    marcas:
+    - [0.92, Tank, calor]
+    - [3.3, Heat pump, frio]
+    nota: 'About 3.6× as efficient · Source: ENERGY STAR'
+- t: That's about a hundred thirty-seven dollars a year,
+  v: {tipo: numero, icono: water_heater, valor: 137, prefijo: $, sufijo: /yr, etiqueta: Heat pump water heater, color: frio}
+- t: roughly three hundred fifty-five dollars saved.
+  v: {tipo: numero, icono: savings, valor: 355, prefijo: −$, sufijo: /yr, etiqueta: saved every year, color: ahorro}
+- t: So if you're thinking about tankless to save money, and your water heater is electric…
+  v:
+    tipo: iconos
+    iconos: [water_heater, bolt, help]
+    etiquetas: ['', '', 'Electric tankless?']
