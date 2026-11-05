@@ -23,10 +23,10 @@ Guiones de **Home By The Numbers** (@HomeByTheNumbers), canal en inglés para p�
 ## Reglas de montaje y publicación (montavideos)
 - **Voz:** la IA del canal, Kokoro `am_michael`, aprobada por el humano. La narración se usa **literal**.
 - **YouTube «Altered or synthetic content»: Sí**, siempre que la voz sea de IA.
-- Nada de material con derechos. Música generada por el motor o de la Biblioteca de audio de YouTube.
+- Nada de material con derechos. **Música: la que genera el motor** (sin derechos de terceros).
 - Volumen en torno a −14 LUFS y música entre 18 y 20 dB por debajo de la voz.
 - No se cambian cifras ni frases. Si algo no encaja, se avisa en `NOTA_MONTAVIDEOS.md`.
-- Antes de publicar cada vídeo se pide confirmación al humano. El enlace publicado se apunta en `registro.md` y en `canales/how-your-home-works/publicados.csv`.
+- El montavideos monta, sube y programa por su cuenta cada guion que pasa el control (a las 17:00, hora de Madrid, del día de la carpeta) y avisa después; solo consulta lo de la sección 12 de CLAUDE.md. El enlace publicado se apunta en `registro.md` y en `canales/how-your-home-works/publicados.csv`.
 
 ## Calendario
 **1 Short cada día** y **2 vídeos largos a la semana** (lunes y jueves). Los guiones van siempre con al menos una semana de antelación.

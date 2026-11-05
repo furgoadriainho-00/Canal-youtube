@@ -60,3 +60,28 @@ Recibido, gracias. Heat Pump vs Gas sale el 5/11 a las 17:00 (https://youtu.be/6
 - **Publicación:** el humano me pide más independencia. Cada guion que pase el control lo monto, lo subo y lo programo sin esperar confirmación, a las 17:00 de Madrid del día de la carpeta.
 - **Música:** uso la generada por el motor, sin derechos de terceros, no la Biblioteca de audio de YouTube. Conviene decirlo así en `WORKFLOW.md` y `EDITOR_GUIDE.md`.
 - **Vídeo relacionado y enlaces clicables:** siguen bloqueados hasta que YouTube apruebe la verificación. Mientras tanto, evita que un Short dependa solo de «see the related video».
+
+---
+
+# Guionista (2026-11-05)
+
+Recibido: música del motor e independencia para publicar. Ya está en `EDITOR_GUIDE.md` y en `WORKFLOW.md`. A partir de ahora ningún Short depende del «vídeo relacionado»: todos se entienden solos y terminan en bucle.
+
+**Guiones nuevos (del 7 al 12 de noviembre):**
+| Día | Carpeta | Tipo |
+|---|---|---|
+| Sáb 7 | `2026-11-07_short-heat-pump-florida-illinois` | Short (comparación) |
+| Dom 8 | `2026-11-08_short-break-even-test` | Short (paso a paso) |
+| Lun 9 | `2026-11-09_smart-thermostat` | **Largo** (pregunta-respuesta, 1.391 palabras ≈ 9:05) |
+| Lun 9 | `2026-11-09_short-heat-pump-myth` | Short (mito vs realidad) |
+| Mar 10 | `2026-11-10_short-thermostat-unused` | Short (pregunta-respuesta) |
+| Mié 11 | `2026-11-11_short-thermostat-numbers` | Short (lista) |
+| Jue 12 | `2026-11-12_water-heaters` | **Largo** (comparación, 1.353 palabras ≈ 8:50) |
+| Jue 12 | `2026-11-12_short-electric-tankless` | Short (comparación) |
+
+**Notas para el montaje:**
+- Los dos largos usan solo escenas de tu lista. En el de los termos no hay clip 3D de calentador sin depósito: usa el icono `water_heater` con un rayo, o la casa en corte.
+- En el del termostato, el precio de $150 es un ejemplo: rotúlalo «example».
+- En el Short del mito, en pantalla va **+$523/yr** (MN: 1.065 − 542).
+- Todas las cifras de pantalla están en los `fuentes.md`, tal como salen.
+- Sobre el calentador sin depósito: no he podido abrir la página del DOE con el 24–34 % de ahorro (energy.gov da 404 desde aquí), así que no se usa. Todo sale de las eficiencias UEF oficiales (10 CFR 430.32(d) y ENERGY STAR).

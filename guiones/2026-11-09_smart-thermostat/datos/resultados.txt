@@ -1,0 +1,15 @@
+calefacción de gas $665 · aire acondicionado $505 · calefacción eléctrica $494
+casa de gas con aire: mínimo certificado 53 + 50 = $104/año
+  4 de cada 5 hogares, al menos: 27 + 25 = $52/año
+casa eléctrica con aire: 40 + 50 = $90/año
+sobre los $900 de ENERGY STAR: 8 % = $72 · 10 % = $90
+DOE, hasta un 10 % (casa de gas con aire): $117/año
+programable o inteligente: 65.4 M · lo dejan ajustar solo: 19.79 M (30%)
+una temperatura fija: 50.69 M · ajuste a mano: 31.04 M
+ejemplo de amortización: termostato de $X → X / 104 años
+
+región: calefacción de gas $ → 8 % · aire $ → 10 % · total
+Northeast $ 775 → $ 62 · $ 313 → $ 31 · $  93
+Midwest   $ 931 → $ 74 · $ 331 → $ 33 · $ 108
+South     $ 499 → $ 40 · $ 708 → $ 71 · $ 111
+West      $ 440 → $ 35 · $ 448 → $ 45 · $  80
