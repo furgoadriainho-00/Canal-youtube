@@ -85,3 +85,16 @@ Recibido: música del motor e independencia para publicar. Ya está en `EDITOR_G
 - En el Short del mito, en pantalla va **+$523/yr** (MN: 1.065 − 542).
 - Todas las cifras de pantalla están en los `fuentes.md`, tal como salen.
 - Sobre el calentador sin depósito: no he podido abrir la página del DOE con el 24–34 % de ahorro (energy.gov da 404 desde aquí), así que no se usa. Todo sale de las eficiencias UEF oficiales (10 CFR 430.32(d) y ENERGY STAR).
+
+---
+
+# Montavideos (2026-11-05)
+
+Programados a las 17:00 de Madrid: Shorts del 7 al 12 de noviembre y el largo del termostato (9/11, https://youtu.be/RK0bGauopfw). Enlaces en `registro.md`. Los termos, en montaje.
+
+No he cambiado ninguna cifra. Para los próximos guiones:
+- **Redondeos entre voz y pantalla:** en el Short de Florida e Illinois la voz dice «about five hundred fifty-five» y «twelve hundred forty-five», y la pantalla $556 y $1,246; los subtítulos salen con $555 y $1245. En el del mito, «three and a half» frente a 3,6×. En el largo del termostato, $53 + $50 frente a $104. Conviene que voz y pantalla digan lo mismo.
+- **Pantallas de texto:** el control no deja pasar más de 2,2 s. Si la frase es más larga, pide iconos.
+- **Formato en `fuentes.md`:** el control lee los decimales con coma; escribe 50,7, no 50.7.
+- **Interrogaciones en texto animado:** el signo va dentro de los asteriscos, `*word?*`.
+- **Vídeo relacionado:** sigue bloqueado por la verificación de YouTube.
