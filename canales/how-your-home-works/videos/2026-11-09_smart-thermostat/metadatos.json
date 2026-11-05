@@ -1,0 +1,29 @@
+{
+  "titulo": "Does a Smart Thermostat Actually Save Money? The Math",
+  "descripcion": "Does a smart thermostat actually save money? ENERGY STAR certified models have to prove at least 8% less heating run time and 10% less cooling run time using real data from hundreds of homes. For a typical home, that works out to roughly $50–$100 a year.\n\nBut the government's household energy survey shows the real problem: about 65 million US homes have a programmable or smart thermostat, and only about 20 million let it adjust the temperature automatically.\n\nHow the numbers work: heating and cooling use from the EIA Residential Energy Consumption Survey 2020, valued at EIA 2026 electricity and 2025 natural gas prices; savings assume run-time reductions translate into similar energy reductions. Your savings depend on your home, schedule and rates.",
+  "etiquetas": [
+    "smart thermostat",
+    "does a smart thermostat save money",
+    "smart thermostat savings",
+    "programmable thermostat",
+    "thermostat setback",
+    "energy star thermostat",
+    "heating and cooling costs",
+    "energy bills",
+    "home by the numbers"
+  ],
+  "idioma": "English",
+  "lista": "Home energy costs, explained",
+  "etiqueta_ia": true,
+  "motivo_ia": "narración con voz sintética",
+  "miniatura_base": "icono_grande",
+  "afiliados": [],
+  "fuentes_publicas": [
+    "ENERGY STAR smart thermostats: https://www.energystar.gov/products/smart_thermostats",
+    "ENERGY STAR connected thermostat criteria: https://www.energystar.gov/products/smart_thermostats/key_product_criteria",
+    "U.S. DOE thermostat setback guidance (Feb 2024): https://content.govdelivery.com/accounts/USEERE/bulletins/3883189",
+    "EIA Residential Energy Consumption Survey 2020 (tables HC6.1, CE5.3a, CE5.4): https://www.eia.gov/consumption/residential/data/2020/",
+    "EIA electricity prices: https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_03",
+    "EIA natural gas prices: https://www.eia.gov/dnav/ng/ng_pri_sum_dcu_nus_a.htm"
+  ]
+}

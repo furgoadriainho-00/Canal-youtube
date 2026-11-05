@@ -1,0 +1,505 @@
+# Guion del guionista (guiones/2026-11-12_water-heaters/GUION.md). Narración literal.
+titulo: Tank vs tankless vs heat pump water heater
+estructura: comparacion
+formato: largo
+voz: {nombre: am_michael, velocidad: 1.0}
+segmentos:
+- t: The most famous water heater upgrade is going tankless.
+  v:
+    tipo: iconos
+    iconos: [water_heater, bolt]
+    etiquetas: [Tankless, The famous upgrade]
+  capitulo: The tankless myth
+- t: But if your water heater runs on electricity, going tankless saves you almost nothing.
+  v:
+    tipo: comparar
+    a: [Electric tank, 492, water_heater]
+    b: [Electric tankless, 498, bolt]
+    prefijo: $
+    gana: '='
+    etiqueta: Yearly cost
+- t: There's a different upgrade that cuts that bill by about seventy percent.
+  v: {tipo: numero, icono: water_heater, valor: 72, etiqueta: with a heat pump water heater, color: ahorro, sufijo: '%'}
+- t: Let's run the numbers.
+  v:
+    tipo: barras
+    items:
+    - [Electric tankless, 498, bolt]
+    - [Electric tank, 492, water_heater]
+    - [Heat pump water heater, 137, heat_pump]
+    prefijo: $
+    etiqueta: Yearly cost, electric home
+- t: 'In this video, I''ll compare the three main types of water heaters: a regular tank, a tankless unit, and a heat pump water heater.'
+  v:
+    tipo: iconos
+    iconos: [water_heater, bolt, heat_pump]
+    etiquetas: [Tank, Tankless, Heat pump]
+  capitulo: What we're comparing
+- t: I'll do it for a home that heats water with electricity, and for one that uses natural gas,
+  v:
+    tipo: iconos
+    iconos: [bolt, local_fire_department]
+    etiquetas: [Electric home, Gas home]
+- t: using the official efficiency ratings and the government's own data on how much hot water homes actually use.
+  v: {tipo: fuente, titulo: ENERGY STAR · U.S. DOE · EIA, detalle: Residential Energy Consumption Survey 2020, nota: ''}
+- t: By the end, you'll know which one makes sense for your house.
+  v:
+    tipo: casa
+    foco: termo
+    lineas: [Which one, '*for your house?*']
+- t: First, why this matters.
+  v:
+    tipo: clip
+    clip: termo
+    lineas: [Why it, '*matters*']
+  capitulo: Why it matters
+- t: In my ranking of household appliances, the electric water heater came in at number three, at about four hundred ninety-two dollars a year for the homes that have one.
+  v: {tipo: numero, icono: water_heater, valor: 492, etiqueta: '#3 in my ranking', color: calor, prefijo: $, sufijo: /yr, clip: termo}
+- t: That's every shower, every load of laundry, and every dishwasher cycle, all billed to one machine.
+  v:
+    tipo: iconos
+    iconos: [shower, local_laundry_service, dishwasher]
+    etiquetas: [Showers, Laundry, Dishes]
+- t: 'And it''s split almost evenly across the country: about fifty-nine million homes heat their water with natural gas, and about fifty-seven million with electricity.'
+  v:
+    tipo: comparar
+    a: [Electric, 57.0, bolt]
+    b: [Gas, 59.3, local_fire_department]
+    sufijo: M
+    decimales: 1
+    etiqueta: Homes by water heater fuel
+    nota: 'Source: EIA RECS 2020'
+- t: So whichever way your home goes, this is one of the biggest numbers on your energy bill.
+  v:
+    tipo: casa
+    foco: termo
+    lineas: [One of the, '*biggest numbers*']
+- t: Now, how each one works.
+  v:
+    tipo: iconos
+    iconos: [water_heater, bolt, heat_pump]
+    etiquetas: [Tank, Tankless, Heat pump]
+  capitulo: How each one works
+- t: A regular tank water heater keeps a big tank of water hot all day, whether you use it or not.
+  v:
+    tipo: clip
+    clip: termo
+    lineas: ['Tank:', '*hot all day*']
+- t: A typical one holds around fifty gallons.
+  v: {tipo: numero, icono: water_drop, valor: 50, etiqueta: Typical tank, color: frio, sufijo: ' gal'}
+- t: A tankless water heater has no tank.
+  v:
+    tipo: iconos
+    iconos: [water_heater]
+    etiquetas: [No tank]
+    tachar: 0
+- t: It heats water only when you open a tap, using a powerful gas burner or electric element.
+  v:
+    tipo: iconos
+    iconos: [faucet, arrow_forward, bolt]
+    etiquetas: [Open a tap, '', Heats on demand]
+- t: A heat pump water heater looks like a regular tank, but it works like the heat pump we covered in the heating video.
+  v:
+    tipo: clip
+    clip: termo
+    lineas: ['Looks like a tank,', works like a, '*heat pump*']
+- t: Instead of making heat directly, it pulls heat from the air around it and moves it into the water.
+  v:
+    tipo: iconos
+    iconos: [air, arrow_forward, water_drop]
+    etiquetas: [Heat from the air, '', Into the water]
+- t: 'To compare them fairly, there''s one number that matters: the Uniform Energy Factor, or UEF.'
+  v: {tipo: fuente, titulo: UEF · Uniform Energy Factor, detalle: DOE test (10 CFR 430), nota: ''}
+- t: It comes from a standard Department of Energy test.
+  v:
+    tipo: iconos
+    iconos: [verified]
+    etiquetas: [Standard DOE test]
+- t: The higher the UEF, the less energy the water heater needs for the same hot water.
+  v:
+    tipo: regla
+    rango: [0, 4]
+    titulo: Efficiency rating (UEF)
+    decimales: 2
+    nota: Higher = less energy for the same hot water
+- t: So here are the official numbers.
+  v: {tipo: fuente, titulo: 10 CFR 430.32(d) · ENERGY STAR, detalle: Federal minimums and ENERGY STAR criteria, nota: ''}
+  capitulo: The official numbers
+- t: Under current federal rules, a standard fifty-gallon electric tank has to reach a UEF of about point nine two.
+  v:
+    tipo: regla
+    rango: [0, 4]
+    titulo: Efficiency rating (UEF)
+    decimales: 2
+    marcas:
+    - [0.92, Electric tank, calor]
+- t: In other words, almost all the electricity it uses ends up as heat in the water.
+  v:
+    tipo: iconos
+    iconos: [bolt, arrow_forward, water_drop]
+    etiquetas: [Electricity, '', Heat in the water]
+- t: An electric tankless heater has to reach about point nine one.
+  v:
+    tipo: regla
+    rango: [0, 4]
+    titulo: Efficiency rating (UEF)
+    decimales: 2
+    marcas:
+    - [0.92, Electric tank, calor]
+    - [0.91, Tankless, frio]
+- t: That's basically the same.
+  v:
+    tipo: comparar
+    a: [Tank, 0.92, water_heater]
+    b: [Tankless, 0.91, bolt]
+    decimales: 2
+    gana: '='
+    etiqueta: Efficiency rating (UEF)
+- t: That's the key point.
+  v:
+    tipo: texto
+    lineas: [The key, '*point*']
+- t: Electric resistance can't get much better than turning one unit of electricity into one unit of heat, whether there's a tank or not.
+  v:
+    tipo: formula
+    partes: [1 unit of electricity, →, 1 unit of heat]
+- t: A heat pump water heater is in another league.
+  v:
+    tipo: clip
+    clip: termo
+    lineas: ['*Another*', league]
+- t: To earn the ENERGY STAR label, a standard heat pump water heater needs a UEF of at least three point three.
+  v:
+    tipo: regla
+    rango: [0, 4]
+    titulo: Efficiency rating (UEF)
+    decimales: 2
+    marcas:
+    - [0.92, Electric tank, calor]
+    - [3.3, Heat pump, frio]
+    nota: 'Source: ENERGY STAR'
+- t: That's about three point six times as efficient as the electric tank.
+  v: {tipo: numero, icono: heat_pump, valor: 3.6, etiqueta: as efficient as an electric tank, color: frio, decimales: 1, sufijo: ×}
+- t: On the gas side, a minimum fifty-gallon gas tank is rated around point five six.
+  v:
+    tipo: regla
+    rango: [0, 1]
+    titulo: Gas water heaters (UEF)
+    decimales: 2
+    nota: ES = ENERGY STAR
+    marcas:
+    - [0.56, Min tank, calor]
+- t: ENERGY STAR gas tanks need at least point eight one, and ENERGY STAR gas tankless units need at least point nine five.
+  v:
+    tipo: regla
+    rango: [0, 1]
+    titulo: Gas water heaters (UEF)
+    decimales: 2
+    nota: ES = ENERGY STAR
+    marcas:
+    - [0.56, Min tank, calor]
+    - [0.81, ES tank, frio]
+    - [0.95, ES tankless, ahorro]
+- t: Now let's put dollars on it, starting with a home that heats water with electricity.
+  v:
+    tipo: casa
+    foco: termo
+    lineas: ['*Electric*', home]
+  capitulo: 'Electric home: the numbers'
+- t: The government's household survey says the average electric water heater uses about two thousand seven hundred kilowatt-hours a year.
+  v:
+    tipo: contador
+    valor: 2706
+    unidad: kWh / year
+    lineas: ['EIA survey:', '*2,706 kWh* a year']
+- t: At today's average price, that's the four hundred ninety-two dollars from my ranking.
+  v: {tipo: numero, icono: water_heater, valor: 492, etiqueta: Electric tank, color: calor, prefijo: $, sufijo: /yr}
+- t: Swap that tank for an electric tankless unit, and you'd spend about four hundred ninety-eight dollars a year.
+  v:
+    tipo: comparar
+    a: [Electric tank, 492, water_heater]
+    b: [Electric tankless, 498, bolt]
+    prefijo: $
+    gana: '='
+    etiqueta: Yearly cost
+- t: A few dollars more, not less.
+  v: {tipo: numero, icono: bolt, valor: 498, etiqueta: Electric tankless, color: calor, prefijo: $, sufijo: /yr}
+- t: Swap it for an ENERGY STAR heat pump water heater, and it drops to about a hundred thirty-seven dollars a year.
+  v:
+    tipo: barras
+    items:
+    - [Electric tankless, 498, bolt]
+    - [Electric tank, 492, water_heater]
+    - [Heat pump (ENERGY STAR), 137, heat_pump]
+    prefijo: $
+    etiqueta: Electric home, yearly cost
+- t: That's around three hundred fifty-five dollars saved every year,
+  v: {tipo: numero, icono: savings, valor: 355, etiqueta: saved every year, color: ahorro, prefijo: −$, sufijo: /yr}
+- t: and a cut of about seventy percent.
+  v: {tipo: numero, icono: water_heater, valor: 72, etiqueta: lower water heating bill, color: ahorro, sufijo: '%'}
+- t: So for an electric home, the answer is clear.
+  v:
+    tipo: comparar
+    a: [Heat pump, 137, heat_pump]
+    b: [Electric tank, 492, water_heater]
+    prefijo: $
+    gana: a
+    etiqueta: Electric home
+- t: Tankless is not the efficiency upgrade.
+  v:
+    tipo: iconos
+    iconos: [bolt]
+    etiquetas: [Electric tankless]
+    tachar: 0
+- t: The heat pump water heater is.
+  v:
+    tipo: clip
+    clip: termo
+    lineas: [Heat pump, '*water heater*']
+- t: And the savings grow with your electricity price.
+  v:
+    tipo: mapa
+    resaltar: {WA: frio, FL: frio, TX: frio, IL: frio, NY: frio, CA: frio}
+    lineas: ['Same machine,', '*$281 to $636*', saved a year]
+  capitulo: Savings by state
+- t: A heat pump water heater saves about one thousand nine hundred fifty kilowatt-hours a year compared with an electric tank.
+  v:
+    tipo: contador
+    valor: 1951
+    unidad: kWh / year
+    lineas: ['Saved:', '*1,951 kWh* a year']
+- t: What that's worth depends on your state.
+  v:
+    tipo: mapa
+    resaltar: {WA: frio, FL: frio, TX: frio, IL: frio, NY: frio, CA: frio}
+    lineas: [Depends on, '*your state*']
+- t: In Washington, with relatively cheap power, that's about two hundred eighty dollars a year.
+  v:
+    tipo: mapa
+    resaltar: {WA: frio}
+    lineas: ['Washington:', '*$281/yr*']
+- t: In Florida, about three hundred.
+  v:
+    tipo: mapa
+    resaltar: {FL: frio}
+    lineas: ['Florida:', '*$299/yr*']
+- t: In Texas, about three hundred thirteen.
+  v:
+    tipo: mapa
+    resaltar: {TX: frio}
+    lineas: ['Texas:', '*$313/yr*']
+- t: In Illinois, it's around three hundred seventy-five.
+  v:
+    tipo: mapa
+    resaltar: {IL: frio}
+    lineas: ['Illinois:', '*$375/yr*']
+- t: And in states with expensive electricity, it gets big.
+  v:
+    tipo: mapa
+    resaltar: {NY: calor, CA: calor}
+    lineas: ['Expensive power,', '*big savings*']
+- t: About five hundred seventy dollars a year in New York, and over six hundred thirty in California.
+  v:
+    tipo: barras
+    items:
+    - [California, 636, location_on]
+    - [New York, 571, location_on]
+    - [Illinois, 375, location_on]
+    - [Texas, 313, location_on]
+    - [Florida, 299, location_on]
+    - [Washington, 281, location_on]
+    prefijo: $
+    etiqueta: Saved a year
+    nota: 'Electricity, ¢/kWh: CA 32.58 · NY 29.26 · IL 19.23 · TX 16.03 · FL 15.32 · WA 14.42'
+- t: So the more you pay per kilowatt-hour, the faster a heat pump water heater pays you back.
+  v:
+    tipo: iconos
+    iconos: [bolt, arrow_forward, savings]
+    etiquetas: [Higher price, '', Faster payback]
+- t: Now a home that heats water with natural gas.
+  v:
+    tipo: casa
+    foco: termo
+    lineas: ['*Gas*', home]
+  capitulo: 'Gas home: the numbers'
+- t: The survey says the average gas water heater burns about eighteen million BTUs a year.
+  v: {tipo: numero, icono: local_fire_department, valor: 18, etiqueta: 'a year, average gas water heater', color: calor, sufijo: M BTU, fuente: EIA RECS 2020}
+- t: With a minimum-efficiency gas tank at today's gas prices, that's about two hundred sixty-nine dollars a year.
+  v: {tipo: numero, icono: local_fire_department, valor: 269, etiqueta: 'Gas tank, federal minimum', color: calor, prefijo: $, sufijo: /yr}
+- t: An ENERGY STAR gas tank would bring that down to about a hundred eighty-seven dollars.
+  v:
+    tipo: comparar
+    a: [ENERGY STAR tank, 187, local_fire_department]
+    b: [Minimum tank, 269, local_fire_department]
+    prefijo: $
+    etiqueta: Gas home, yearly cost
+- t: A tankless gas heater at the federal minimum lands at the same hundred eighty-seven.
+  v:
+    tipo: barras
+    items:
+    - [Gas tank (federal min), 269, local_fire_department]
+    - [ENERGY STAR gas tank, 187, local_fire_department]
+    - [Gas tankless (federal min), 187, bolt]
+    prefijo: $
+    etiqueta: Gas home, yearly cost
+- t: An ENERGY STAR tankless unit gets down to about a hundred fifty-nine dollars a year.
+  v: {tipo: numero, icono: bolt, valor: 159, etiqueta: ENERGY STAR gas tankless, color: frio, prefijo: $, sufijo: /yr}
+- t: And a heat pump water heater, running on electricity at today's average price, would cost about a hundred sixty-five dollars a year.
+  v: {tipo: numero, icono: heat_pump, valor: 165, etiqueta: Heat pump (ENERGY STAR), color: frio, prefijo: $, sufijo: /yr, clip: termo}
+- t: So in a gas home, it's close.
+  v:
+    tipo: barras
+    items:
+    - [Gas tank (federal min), 269, local_fire_department]
+    - [ENERGY STAR gas tank, 187, local_fire_department]
+    - [Gas tankless (federal min), 187, bolt]
+    - [Heat pump (ENERGY STAR), 165, heat_pump]
+    - [ENERGY STAR gas tankless, 159, bolt]
+    prefijo: $
+    etiqueta: Gas home, yearly cost
+- t: The best tankless unit and a heat pump water heater land within a few dollars of each other, and both save about a hundred dollars a year compared with a minimum gas tank.
+  v:
+    tipo: comparar
+    a: [ES gas tankless, 159, bolt]
+    b: [Heat pump, 165, heat_pump]
+    prefijo: $
+    gana: '='
+    sello: ~ TIE
+    etiqueta: Gas home, yearly cost
+- t: 'The big takeaway for a gas home: the biggest jump comes from leaving the minimum-efficiency tank behind, whichever upgrade you choose.'
+  v: {tipo: numero, icono: savings, valor: ~$100/yr, etiqueta: saved vs a minimum gas tank, color: ahorro}
+- t: Before you decide, there are a few practical limits.
+  v:
+    tipo: iconos
+    iconos: [water_heater, help]
+    etiquetas: [Before you decide, Practical limits]
+  capitulo: The fine print
+- t: A tankless unit has to heat water as fast as you use it.
+  v:
+    tipo: iconos
+    iconos: [faucet, arrow_forward, bolt]
+    etiquetas: [Water out, '', 'Heat, right now']
+- t: 'ENERGY STAR gives typical flow rates: about two and a half gallons per minute for a shower, two point two for a sink, and three point three for a clothes washer.'
+  v:
+    tipo: barras
+    items:
+    - [Clothes washer, 3.3, local_laundry_service]
+    - [Shower, 2.5, shower]
+    - [Sink, 2.2, faucet]
+    sufijo: ' GPM'
+    decimales: 1
+    etiqueta: Typical flow rates
+- t: A certified gas tankless unit only has to deliver at least two point eight gallons per minute at a sixty-seven degree temperature rise.
+  v: {tipo: numero, icono: speed, valor: 2.8, etiqueta: 'ENERGY STAR minimum, 67°F rise', color: calor, decimales: 1, sufijo: ' GPM'}
+- t: So a shower and a kitchen sink running at the same time can already ask for more than that.
+  v:
+    tipo: formula
+    partes: ['2.5', +, '2.2', '=', 4.7 GPM]
+- t: Bigger households often need a larger unit.
+  v:
+    tipo: iconos
+    iconos: [groups, arrow_forward, water_heater]
+    etiquetas: [Bigger household, '', Larger unit]
+- t: A heat pump water heater has its own limits.
+  v:
+    tipo: clip
+    clip: termo
+    lineas: [Its own, '*limits*']
+- t: ENERGY STAR says it needs to sit in a space that stays between forty and ninety degrees, with about a thousand cubic feet of air around it, like a basement, a garage or a utility room.
+  v:
+    tipo: casa
+    foco: termo
+    lineas: [40–90°F, '*~1,000 cubic feet*', of air]
+- t: It pulls heat out of that air, so the room around it gets a little cooler, which is a bonus in a hot garage and a drawback in a cold one.
+  v:
+    tipo: iconos
+    iconos: [sunny, snowing]
+    etiquetas: ['Hot garage: bonus', 'Cold garage: drawback']
+- t: 'And one more data point: only about six and a half percent of American homes have a tankless water heater at all.'
+  v: {tipo: numero, icono: bolt, valor: 6.5, etiqueta: of homes have a tankless heater, color: frio, decimales: 1, sufijo: '%', fuente: EIA RECS 2020}
+- t: Most homes still have a tank.
+  v:
+    tipo: clip
+    clip: termo
+    lineas: ['Most homes:', a *tank*]
+- t: So here's how to decide.
+  v:
+    tipo: iconos
+    iconos: [bolt, local_fire_department]
+    etiquetas: [Electric, Gas]
+  capitulo: How to decide
+- t: If you heat water with electricity and you have a basement, garage or utility room with enough space, a heat pump water heater is the clear winner on running costs.
+  v:
+    tipo: iconos
+    iconos: [bolt, home, heat_pump]
+    etiquetas: ['Electric?', 'Space for it?', Heat pump]
+- t: It cuts the bill by about seventy percent.
+  v: {tipo: numero, icono: heat_pump, valor: 72, etiqueta: lower water heating bill, color: ahorro, sufijo: '%'}
+- t: If you heat water with electricity and you're thinking about tankless to save energy, the efficiency numbers say it won't do much.
+  v:
+    tipo: iconos
+    iconos: [bolt, arrow_forward, water_heater]
+    etiquetas: [Electric + tankless, '', About $0 saved]
+- t: Its real benefits are space and endless hot water, not a lower bill.
+  v:
+    tipo: iconos
+    iconos: [home, water_drop, receipt_long]
+    etiquetas: [Space, Endless hot water, Lower bill]
+    tachar: 2
+- t: If you heat with gas, the first step is getting off a minimum-efficiency tank.
+  v:
+    tipo: iconos
+    iconos: [local_fire_department, arrow_forward, savings]
+    etiquetas: ['Gas?', '', Leave the minimum tank]
+- t: An ENERGY STAR tank, an ENERGY STAR tankless unit, or a heat pump water heater all save real money.
+  v: {tipo: numero, icono: savings, valor: $82–$110, etiqueta: a year vs a minimum gas tank, color: ahorro}
+- t: And whatever you have, the hot water itself is the cost.
+  v:
+    tipo: casa
+    foco: ducha
+    lineas: [Hot water, '*is the cost*']
+- t: ENERGY STAR says about ninety percent of the energy it takes to run a clothes washer goes into heating the water.
+  v: {tipo: numero, icono: local_laundry_service, valor: 90, etiqueta: of a washer's energy heats water, color: calor, sufijo: '%', fuente: ENERGY STAR}
+- t: So washing clothes in cold water and taking shorter showers shrink the bill, no matter which machine heats the water.
+  v:
+    tipo: iconos
+    iconos: [local_laundry_service, shower]
+    etiquetas: [Cold wash, Shorter showers]
+- t: 'To sum it up: for an electric home, a heat pump water heater saves around three hundred fifty dollars a year, and electric tankless saves almost nothing.'
+  v:
+    tipo: comparar
+    a: [Heat pump, 137, heat_pump]
+    b: [Electric tankless, 498, bolt]
+    prefijo: $
+    gana: a
+    etiqueta: Electric home
+  capitulo: The verdict
+- t: For a gas home, the best options cluster around a hundred sixty dollars a year, versus about two hundred seventy for a minimum gas tank.
+  v:
+    tipo: comparar
+    a: [Best options, 160, savings]
+    b: [Minimum tank, 269, local_fire_department]
+    prefijo: $
+    gana: a
+    etiqueta: Gas home
+- t: If you're weighing a heat pump for your whole house too, my heat pump versus gas furnace video does the same math for heating.
+  v:
+    tipo: casa
+    foco: bomba_calor
+    lineas: [Heat pump, vs *gas furnace*]
+miniaturas:
+- tipo: versus
+  a: [heat_pump, $137, frio]
+  b: [water_heater, $498, calor]
+  texto: Heat pump vs tankless
+- tipo: ranking
+  items:
+  - [heat_pump, $137, 137]
+  - [water_heater, $492, 492]
+  - [bolt, $498, 498]
+  texto: Tankless isn't it
+- tipo: icono_grande
+  icono: water_heater
+  cifra: −$355/YR
+  color: ahorro
+  texto: [Best, upgrade]

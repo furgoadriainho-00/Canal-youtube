@@ -1,0 +1,491 @@
+# Guion del guionista (guiones/2026-11-09_smart-thermostat/GUION.md). Narración literal.
+titulo: Does a smart thermostat save money?
+estructura: pregunta-respuesta
+formato: largo
+voz: {nombre: am_michael, velocidad: 1.0}
+segmentos:
+- t: About sixty-five million American homes have a thermostat that can adjust itself automatically.
+  v: {tipo: numero, icono: thermostat, valor: 65, etiqueta: homes can automate, color: frio, sufijo: M}
+  capitulo: 65 million vs 20 million
+- t: Only about twenty million actually let it.
+  v: {tipo: numero, icono: thermostat, valor: 20, etiqueta: actually do, color: calor, sufijo: M}
+- t: So does a smart thermostat really save you money?
+  v:
+    tipo: casa
+    foco: termostato
+    lineas: [Does it, '*save money?*']
+- t: Or is it just an expensive way to change the temperature from your phone?
+  v:
+    tipo: iconos
+    iconos: [smartphone, arrow_forward, thermostat]
+    etiquetas: [Your phone, '', 'Expensive toy?']
+- t: 'In the next few minutes, I''ll answer that with real numbers: what these thermostats are actually required to prove, what that''s worth in dollars for a typical home, and the one habit that decides whether yours pays off.'
+  v:
+    tipo: iconos
+    iconos: [check_circle, savings, schedule]
+    etiquetas: [What they prove, What it's worth, The habit]
+  capitulo: What you'll find out
+- t: No guesses.
+  v:
+    tipo: texto
+    lineas: [No *guesses*]
+- t: Everything here comes from ENERGY STAR, the Department of Energy, and the government's own household energy survey.
+  v: {tipo: fuente, titulo: ENERGY STAR · U.S. DOE · EIA, detalle: Residential Energy Consumption Survey 2020, nota: ''}
+- t: 'First question: how much money are we even talking about?'
+  v:
+    tipo: casa
+    foco: todos
+    lineas: [How much, '*money?*']
+  capitulo: How much money is at stake?
+- t: According to ENERGY STAR, the average American household spends more than nine hundred dollars a year on heating and cooling.
+  v: {tipo: numero, icono: payments, valor: 900, etiqueta: Heating and cooling, color: calor, prefijo: $, sufijo: +/yr, fuente: ENERGY STAR}
+- t: That's almost half of a typical home energy bill.
+  v: {tipo: numero, icono: receipt_long, valor: Almost half, etiqueta: of a typical home energy bill, color: calor, fuente: ENERGY STAR}
+- t: Using the government's household survey and today's prices, I get numbers in the same range.
+  v: {tipo: fuente, titulo: EIA RECS 2020 × EIA prices, detalle: '2026 electricity, 2025 natural gas', nota: ''}
+- t: A home heated with natural gas spends about six hundred sixty-five dollars a year on heating.
+  v: {tipo: numero, icono: heat, valor: 665, etiqueta: Gas heating, color: calor, prefijo: $, sufijo: /yr, clip: calefaccion}
+- t: A home with central air spends about five hundred five dollars a year on cooling, including the fan that moves the air.
+  v: {tipo: numero, icono: ac_unit, valor: 505, etiqueta: 'Central air, with the fan', color: frio, prefijo: $, sufijo: /yr, clip: aire}
+- t: So the thermostat controls the biggest single chunk of your energy bill.
+  v:
+    tipo: barras
+    items:
+    - [Gas heating, 665, heat]
+    - [Central air, 505, ac_unit]
+    prefijo: $
+    etiqueta: Yearly cost
+- t: That's why even a small percentage matters here.
+  v:
+    tipo: casa
+    foco: termostato
+    lineas: ['Small %,', '*big bill*']
+- t: 'Second question: what does a smart thermostat actually do differently?'
+  v:
+    tipo: casa
+    foco: termostato
+    lineas: [What's, '*different?*']
+  capitulo: What a smart thermostat does differently
+- t: A basic thermostat holds whatever temperature you set.
+  v:
+    tipo: iconos
+    iconos: [thermostat]
+    etiquetas: ['Basic: holds one temperature']
+- t: About forty-four million American homes still have one of those.
+  v: {tipo: numero, icono: thermostat, valor: 44, etiqueta: homes with a basic thermostat, color: frio, sufijo: M}
+- t: A programmable one follows a schedule that you enter.
+  v:
+    tipo: iconos
+    iconos: [thermostat, schedule]
+    etiquetas: [Basic, Programmable]
+- t: A smart thermostat goes a step further.
+  v:
+    tipo: iconos
+    iconos: [thermostat, schedule, psychology]
+    etiquetas: [Basic, Programmable, Smart]
+- t: ENERGY STAR describes features like geofencing, which uses your phone to notice when you've left for the day and set your system back.
+  v:
+    tipo: iconos
+    iconos: [smartphone, arrow_forward, home]
+    etiquetas: [Geofencing, '', Sets back when you leave]
+- t: And learning, where certain models figure out your preferences on their own and adjust to energy-saving temperatures when you're asleep or away.
+  v:
+    tipo: iconos
+    iconos: [psychology, arrow_forward, bedtime]
+    etiquetas: [Learning, '', Lower when asleep or away]
+- t: 'The idea behind all of it is simple: your heating and cooling should run less when nobody needs them.'
+  v:
+    tipo: clip
+    clip: aire
+    lineas: [Run *less*, when nobody, needs it]
+- t: 'Third question, and it''s the big one: does it actually save energy?'
+  v:
+    tipo: clip
+    clip: medidor
+    lineas: [Does it, '*save energy?*']
+  capitulo: Does it actually save energy?
+- t: Here's the part most reviews skip.
+  v:
+    tipo: iconos
+    iconos: [help]
+    etiquetas: ['The part most reviews skip']
+- t: To earn the ENERGY STAR label, a smart thermostat has to prove its savings with real-world data.
+  v: {tipo: fuente, titulo: ENERGY STAR, detalle: Connected Thermostat criteria, nota: Real-world data}
+- t: The companies analyze a full year of data from hundreds of their customers' homes, using software provided by the EPA.
+  v:
+    tipo: iconos
+    iconos: [calendar_month, home, verified]
+    etiquetas: [Full year, Hundreds of homes, EPA software]
+- t: Run time simply means how many hours your furnace or air conditioner is actually running.
+  v:
+    tipo: clip
+    clip: calefaccion
+    lineas: [Run time =, '*hours running*']
+- t: Less run time, less energy.
+  v:
+    tipo: iconos
+    iconos: [schedule, arrow_forward, bolt]
+    etiquetas: [Less run time, '', Less energy]
+- t: And the bar is specific.
+  v:
+    tipo: iconos
+    iconos: [verified]
+    etiquetas: [Certified minimum]
+- t: Across the national average, certified thermostats have to cut heating run time by at least eight percent,
+  v: {tipo: numero, icono: heat, valor: 8, etiqueta: less heating run time, color: calor, sufijo: '%', fuente: ENERGY STAR}
+- t: and cooling run time by at least ten percent.
+  v: {tipo: numero, icono: ac_unit, valor: 10, etiqueta: less cooling run time, color: frio, sufijo: '%', fuente: ENERGY STAR}
+- t: There's also a floor for the weaker results.
+  v:
+    tipo: regla
+    rango: [0, 12]
+    paso: 2
+    titulo: Heating run time cut (%)
+    marcas:
+    - [4, Floor, frio]
+    - [8, Average, calor]
+- t: Four out of five homes in the sample have to save at least four percent on heating, and at least five percent on cooling.
+  v:
+    tipo: iconos
+    iconos: [home, home, home, home, home]
+    etiquetas: ['', ≥4% heating, '', ≥5% cooling, '']
+    tachar: 4
+- t: So a certified smart thermostat isn't just a promise printed on a box.
+  v:
+    tipo: iconos
+    iconos: [verified, thermostat]
+    etiquetas: [Certified, Not just a promise]
+- t: Its savings are measured in real homes.
+  v:
+    tipo: casa
+    foco: todos
+    lineas: [Measured in, '*real homes*']
+- t: 'Fourth question: what is that worth in actual dollars?'
+  v: {tipo: numero, icono: savings, valor: '$?', etiqueta: What it's worth, color: ahorro}
+  capitulo: What it's worth in dollars
+- t: I'll assume that cutting how long your system runs cuts its energy use by about the same amount.
+  v:
+    tipo: iconos
+    iconos: [schedule, arrow_forward, bolt]
+    etiquetas: [Less run time, '', About the same less energy]
+- t: That's a simplification, but a reasonable one for most standard systems.
+  v:
+    tipo: clip
+    clip: aire
+    lineas: ['A *simplification*,', but reasonable]
+- t: Take a home with gas heat and central air.
+  v:
+    tipo: casa
+    foco: calefaccion
+    lineas: [Gas heat, + *central air*]
+- t: Eight percent of six hundred sixty-five dollars in heating is about fifty-three dollars.
+  v:
+    tipo: formula
+    partes: [$665, ×, 8%, ≈, $53]
+- t: Ten percent of five hundred five dollars in cooling is about fifty.
+  v:
+    tipo: formula
+    partes: [$505, ×, 10%, ≈, $50]
+- t: Together, that's roughly a hundred and four dollars a year, at the certified national average.
+  v: {tipo: numero, icono: savings, valor: 104, etiqueta: Gas heat + central air, color: ahorro, prefijo: $, sufijo: /yr}
+- t: For four out of five homes, savings come out to at least about fifty-two dollars a year.
+  v: {tipo: numero, icono: home, valor: 52, etiqueta: '4 out of 5 homes, at least', color: frio, prefijo: $, sufijo: /yr}
+- t: An all-electric home, with electric heat and central air, lands at around ninety dollars a year.
+  v:
+    tipo: barras
+    items:
+    - [Gas heat + central air, 104, local_fire_department]
+    - [All-electric, 90, bolt]
+    - ['4 out of 5 homes, at least', 52, home]
+    prefijo: $
+    etiqueta: Yearly savings
+- t: And if you start from ENERGY STAR's nine hundred dollar figure instead, eight to ten percent works out to roughly seventy-two to ninety dollars.
+  v:
+    tipo: formula
+    partes: [$900, ×, 8–10%, ≈, $72–$90]
+- t: So a realistic range for a typical home is somewhere between fifty and a hundred dollars a year.
+  v:
+    tipo: regla
+    rango: [0, 120]
+    paso: 20
+    prefijo: $
+    titulo: Yearly savings
+    zonas:
+    - [50, 100, ahorro, Typical home]
+- t: Before we go on, does it matter where you live?
+  v:
+    tipo: mapa
+    resaltar: {}
+    lineas: [Does it matter, '*where you live?*']
+  capitulo: Does it matter where you live?
+- t: It does, but maybe not the way you'd expect.
+  v:
+    tipo: mapa
+    resaltar: {MN: calor, TX: frio}
+    lineas: [Not the way, you'd *expect*]
+- t: In the Midwest, a gas-heated home spends about nine hundred thirty dollars a year on heating, and about three hundred thirty on cooling.
+  v:
+    tipo: mapa
+    resaltar: {IL: calor, IN: calor, IA: calor, KS: calor, MI: calor, MN: calor, MO: calor, NE: calor, ND: calor, OH: calor, SD: calor, WI: calor}
+    lineas: ['Midwest:', '*$931* heating', $331 cooling]
+- t: At the certified minimum, that's around a hundred and eight dollars a year in savings, and most of it comes from heating.
+  v:
+    tipo: comparar
+    a: [Cooling, 33, ac_unit]
+    b: [Heating, 74, heat]
+    prefijo: $
+    etiqueta: 'Midwest: $108 saved a year'
+- t: In the South, it flips.
+  v:
+    tipo: mapa
+    resaltar: {DE: frio, FL: frio, GA: frio, MD: frio, NC: frio, SC: frio, VA: frio, WV: frio, AL: frio, KY: frio, MS: frio, TN: frio, AR: frio, LA: frio, OK: frio, TX: frio}
+    lineas: ['In the South,', it *flips*]
+- t: Heating is only about five hundred dollars, but cooling is around seven hundred eight.
+  v:
+    tipo: comparar
+    a: [Cooling, 708, ac_unit]
+    b: [Heating, 499, heat]
+    prefijo: $
+    etiqueta: 'South: yearly cost'
+- t: Savings come out to about a hundred and eleven, and most of that comes from the air conditioner.
+  v:
+    tipo: comparar
+    a: [Cooling, 71, ac_unit]
+    b: [Heating, 40, heat]
+    prefijo: $
+    etiqueta: 'South: $111 saved a year'
+- t: The Northeast lands near ninety-three dollars, and the West, with milder weather on both ends, near eighty.
+  v:
+    tipo: barras
+    items:
+    - [South, 111, location_on]
+    - [Midwest, 108, location_on]
+    - [Northeast, 93, location_on]
+    - [West, 80, location_on]
+    prefijo: $
+    etiqueta: Yearly savings by region
+- t: So the total is surprisingly similar across the country.
+  v:
+    tipo: iconos
+    iconos: [location_on, savings]
+    etiquetas: [Anywhere, $80 to $111]
+- t: What changes is which season does the saving.
+  v:
+    tipo: iconos
+    iconos: [snowing, sunny]
+    etiquetas: [Winter, Summer]
+- t: In a cold state, the setback that matters is the one on winter nights.
+  v:
+    tipo: clip
+    clip: calefaccion
+    lineas: ['Cold state:', '*winter nights*']
+- t: In a hot state, it's the one on summer afternoons, while everyone is out of the house.
+  v:
+    tipo: clip
+    clip: aire
+    lineas: ['Hot state:', '*summer afternoons*']
+- t: 'Fifth question: if the savings are real, why don''t more people get them?'
+  v:
+    tipo: iconos
+    iconos: [savings, help]
+    etiquetas: [Real savings, 'Why not?']
+  capitulo: Why most homes miss the savings
+- t: This is the most revealing number in the whole survey.
+  v: {tipo: fuente, titulo: EIA · RECS 2020, detalle: Residential Energy Consumption Survey, nota: Table HC6.1}
+- t: According to the government's Residential Energy Consumption Survey, about fifty-two and a half million homes have a programmable thermostat, and almost thirteen million have a smart one.
+  v:
+    tipo: barras
+    items:
+    - [Programmable, 52.6, schedule]
+    - [Smart, 12.8, psychology]
+    sufijo: M
+    decimales: 1
+    etiqueta: Homes, millions
+- t: 'Smart ones are still fairly rare: only about twelve percent of the homes that have a thermostat.'
+  v: {tipo: numero, icono: psychology, valor: 12, etiqueta: of homes with a thermostat, color: frio, sufijo: '%'}
+- t: That's around sixty-five million homes that could adjust the temperature automatically.
+  v: {tipo: numero, icono: thermostat, valor: 65, etiqueta: homes could automate, color: frio, sufijo: M}
+- t: But only about twenty million homes say their thermostat actually does it.
+  v:
+    tipo: barras
+    items:
+    - [Adjusts automatically, 19.8, thermostat]
+    - [Programmable, 52.6, schedule]
+    - [Smart, 12.8, psychology]
+    sufijo: M
+    decimales: 1
+    etiqueta: Homes, millions
+- t: That's about three in ten.
+  v: {tipo: numero, icono: thermostat, valor: 30, etiqueta: Only 3 in 10, color: calor, sufijo: '%'}
+- t: Meanwhile, about fifty-one million homes set one temperature and leave it there most of the time.
+  v: {tipo: numero, icono: lock, valor: 50.7, etiqueta: 'one temperature, most of the time', color: frio, decimales: 1, sufijo: M}
+- t: Another thirty-one million adjust it by hand.
+  v:
+    tipo: barras
+    items:
+    - [One temperature, 50.7, lock]
+    - [By hand, 31.0, back_hand]
+    - [Automatically, 19.8, thermostat]
+    sufijo: M
+    decimales: 1
+    etiqueta: How homes control the heat
+- t: In other words, millions of people already own the tool, and simply aren't using it.
+  v:
+    tipo: casa
+    foco: termostato
+    lineas: ['Own the tool,', '*not using it*']
+- t: And that matters, because a smart thermostat doesn't save energy by being smart.
+  v:
+    tipo: iconos
+    iconos: [psychology]
+    etiquetas: [Being smart]
+    tachar: 0
+- t: It saves energy by lowering the temperature when you don't need it.
+  v:
+    tipo: iconos
+    iconos: [thermostat, arrow_forward, savings]
+    etiquetas: [Lower it, '', Save]
+- t: 'Sixth question: do you even need a smart thermostat to save money?'
+  v:
+    tipo: iconos
+    iconos: [psychology, help]
+    etiquetas: [Smart, 'Needed?']
+  capitulo: Do you even need a smart one?
+- t: Not necessarily.
+  v:
+    tipo: iconos
+    iconos: [thermostat, check_circle]
+    etiquetas: [Any thermostat, Can work]
+- t: The Department of Energy says that setting your thermostat back for at least eight hours a day can save you as much as ten percent a year on heating and cooling.
+  v: {tipo: numero, icono: thermostat, valor: 10, etiqueta: '8 hours a day: up to 10%', color: frio, sufijo: '%', fuente: 'U.S. Department of Energy, 2024'}
+- t: For that home with gas heat and central air, ten percent is up to about a hundred seventeen dollars a year.
+  v: {tipo: numero, icono: savings, valor: 117, etiqueta: 'up to, gas heat + central air', color: ahorro, prefijo: $, sufijo: /yr}
+- t: Any thermostat can do that, if you're disciplined about it.
+  v:
+    tipo: casa
+    foco: termostato
+    lineas: ['Any thermostat,', if you're *disciplined*]
+- t: You just have to remember to do it every single night, and every time you leave.
+  v:
+    tipo: iconos
+    iconos: [bedtime, home]
+    etiquetas: [Every night, Every time you leave]
+- t: That's where the smart one earns its keep.
+  v:
+    tipo: iconos
+    iconos: [psychology, savings]
+    etiquetas: [Smart, Earns its keep]
+- t: Its real value is that it does the setback for you, every day, without you having to think about it.
+  v:
+    tipo: casa
+    foco: termostato
+    lineas: [It does it, '*for you*']
+- t: And you'll sometimes hear that turning the heat down makes your system work harder later, so you don't really save.
+  v:
+    tipo: iconos
+    iconos: [heat, help]
+    etiquetas: ['Works harder later?', Myth]
+- t: 'The Department of Energy''s own advice points the other way: set it back, and you save.'
+  v:
+    tipo: iconos
+    iconos: [verified, savings]
+    etiquetas: ['DOE: set it back', You save]
+- t: 'Last question: will one pay for itself in your home?'
+  v:
+    tipo: iconos
+    iconos: [thermostat, payments, help]
+    etiquetas: ['', '', 'Pays for itself?']
+  capitulo: Will it pay for itself?
+- t: Here's the quick math.
+  v:
+    tipo: iconos
+    iconos: [calculate]
+    etiquetas: [Quick math]
+- t: Take the price you'd pay for the thermostat, and divide it by what you'd save each year.
+  v:
+    tipo: formula
+    partes: [price, ÷, yearly savings, '=', years to pay back]
+- t: If a thermostat costs, say, a hundred fifty dollars, and you save about a hundred dollars a year, it pays for itself in about a year and a half.
+  v:
+    tipo: formula
+    partes: [$150 (example), ÷, $100, '=', 1.5 years]
+- t: If you only save fifty, it takes three years.
+  v:
+    tipo: formula
+    partes: [$150 (example), ÷, $50, '=', 3 years]
+- t: You'll save more if your home sits empty for long stretches, like during the workday, if your heating and cooling bills are above average, and if you actually let the schedule run.
+  v:
+    tipo: iconos
+    iconos: [home, receipt_long, schedule]
+    etiquetas: [Empty home, High bills, Schedule on]
+- t: You'll save less if someone is home all day, or if you already turn the temperature down by hand every night.
+  v:
+    tipo: iconos
+    iconos: [person, back_hand]
+    etiquetas: [Home all day, Already by hand]
+- t: So, does a smart thermostat save money?
+  v:
+    tipo: iconos
+    iconos: [thermostat, help]
+    etiquetas: [Smart thermostat, 'Save money?']
+  capitulo: The verdict
+- t: Yes.
+  v:
+    tipo: iconos
+    iconos: [check_circle]
+    etiquetas: ['Yes']
+- t: Certified models have to prove at least eight to ten percent less run time, which works out to roughly fifty to a hundred dollars a year for a typical home.
+  v: {tipo: numero, icono: savings, valor: $50–$100, etiqueta: 'a year, typical home', color: ahorro}
+- t: But the bigger lesson is in that survey.
+  v: {tipo: fuente, titulo: EIA · RECS 2020, detalle: Residential Energy Consumption Survey, nota: ''}
+- t: The savings don't come from the device.
+  v:
+    tipo: iconos
+    iconos: [thermostat]
+    etiquetas: [The device]
+    tachar: 0
+- t: They come from actually setting the temperature back.
+  v:
+    tipo: casa
+    foco: termostato
+    lineas: [Set it, '*back*']
+- t: About sixty-five million homes could do it automatically.
+  v: {tipo: numero, icono: thermostat, valor: 65, etiqueta: homes could automate, color: frio, sufijo: M}
+- t: Only around twenty million do.
+  v: {tipo: numero, icono: thermostat, valor: 20, etiqueta: actually do, color: calor, sufijo: M}
+- t: So if you already have a programmable thermostat, check that its schedule is actually on.
+  v:
+    tipo: iconos
+    iconos: [schedule, check_circle]
+    etiquetas: [Your schedule, 'Is it on?']
+- t: If you're buying a new one, look for the ENERGY STAR label, because that's the one with measured savings.
+  v:
+    tipo: iconos
+    iconos: [verified, savings]
+    etiquetas: [ENERGY STAR label, Measured savings]
+- t: 'And whichever you have, the rule is the same: lower it when you''re asleep or away.'
+  v:
+    tipo: iconos
+    iconos: [bedtime, home, thermostat]
+    etiquetas: [Asleep, Away, Lower it]
+- t: If you want to know what else in your home costs the most to run, my full ranking of fifteen appliances is on this channel.
+  v:
+    tipo: casa
+    foco: todos
+    lineas: [15 appliances, '*ranked*']
+miniaturas:
+- tipo: icono_grande
+  icono: thermostat
+  cifra: $104/YR?
+  color: calor
+  texto: [Worth, 'it?']
+- tipo: versus
+  a: [thermostat, $0, frio]
+  b: [psychology, $104, calor]
+  texto: Basic vs smart
+- tipo: ranking
+  items:
+  - [local_fire_department, $104, 104]
+  - [bolt, $90, 90]
+  - [home, $52, 52]
+  texto: Smart thermostat math
