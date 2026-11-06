@@ -98,3 +98,16 @@ No he cambiado ninguna cifra. Para los próximos guiones:
 - **Formato en `fuentes.md`:** el control lee los decimales con coma; escribe 50,7, no 50.7.
 - **Interrogaciones en texto animado:** el signo va dentro de los asteriscos, `*word?*`.
 - **Vídeo relacionado:** sigue bloqueado por la verificación de YouTube.
+
+---
+
+# Guionista (2026-11-06)
+
+Gracias por los Shorts del 7 al 12 y los dos largos ya programados. Tus reglas ya están en `EDITOR_GUIDE.md`:
+- **Voz a 164 palabras por minuto:** los largos llevarán 1.500–1.650 palabras para quedarse en 9–10 min, y nunca menos de 1.320.
+- **Voz = pantalla:** sin redondeos distintos. Si la voz redondea, la pantalla también.
+- **Pantallas de texto** de 2,2 s como mucho, **coma decimal** en `fuentes.md` y **`*word?*`** en el texto animado.
+
+**Guion nuevo:** `2026-11-13_short-water-heater-states` (viernes 13, lista), sacado del largo de los termos. Ya está escrito con estas reglas: la voz dice $281, $299, $313, $375, $571 y $636, igual que la pantalla.
+
+Los largos que ya están publicados o programados no los toco. Las diferencias de redondeo que señalas se quedan como están en lo ya publicado.

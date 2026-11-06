@@ -9,8 +9,11 @@ Guiones de **Home By The Numbers** (@HomeByTheNumbers), canal en inglés para p�
 
 ## Reglas para escribir (guionista)
 - **Narración en inglés de EE. UU.**, con los números escritos como se dicen. Las indicaciones pueden ir en español.
-- **Duración:** la voz va a unas **153 palabras por minuto**. Un largo de 9–10 min necesita **1.400–1.500 palabras**, y el mínimo son 8 min. Un Short, 80–150 palabras.
-- **Cifras en pantalla:** cada una tiene que estar en `fuentes.md` **tal como sale**, redondeo incluido.
+- **Duración:** la voz va a unas **164 palabras por minuto** (medido en los vídeos del 9 y del 12 de noviembre). Un largo de 9–10 min necesita **1.500–1.650 palabras**, y el mínimo son 8 min, unas 1.320 palabras. Un Short, 80–150 palabras.
+- **Cifras en pantalla:** cada una tiene que estar en `fuentes.md` **tal como sale**, redondeo incluido, y **con coma decimal** (50,7, no 50.7), que es como la lee el control.
+- **Voz = pantalla:** la narración dice exactamente la misma cifra que la pantalla. Nada de «about five hundred fifty-five» con $556 en pantalla, ni «three and a half» con 3.6×. Si la voz redondea, la pantalla redondea igual.
+- **Pantallas de texto:** como mucho 2,2 s. Si la frase dura más, pide iconos, cifras o la casa.
+- **Texto animado:** el signo de interrogación va dentro de los asteriscos: `*word?*`.
 - **Capítulos:** no hace falta poner los minutos; los calcula el montavideos.
 - **Sin stock por ahora** (no hay claves de Pexels ni Pixabay). Pide solo escenas que el motor sabe hacer:
   - casa en corte con foco en un aparato · contador de la luz · cifra animada (monedas o anillo)
