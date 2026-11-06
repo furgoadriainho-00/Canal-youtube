@@ -1,0 +1,99 @@
+# Short del guionista (guiones/2026-11-13_short-water-heater-states/GUION.md). Narración literal.
+titulo: Same water heater, different savings
+estructura: lista
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: The same water heater upgrade can save you two hundred eighty-one dollars a year,
+  v:
+    tipo: mapa
+    resaltar: {WA: frio}
+    lineas: ['$281', 'a year']
+- t: or six hundred thirty-six.
+  v:
+    tipo: mapa
+    resaltar: {WA: frio, CA: calor}
+    lineas: ['$281 or', '*$636?*']
+- t: It depends on your state.
+  v:
+    tipo: iconos
+    iconos: [water_heater, location_on]
+    etiquetas: ['Same upgrade', 'Your state']
+- t: A heat pump water heater uses one thousand nine hundred fifty-one fewer kilowatt-hours a year than a standard electric tank.
+  v:
+    tipo: contador
+    valor: 1951
+    unidad: kWh / year
+    lineas: ['Heat pump vs tank:', '*−1,951 kWh/yr*']
+- t: In Washington, that's two hundred eighty-one dollars a year.
+  v:
+    tipo: mapa
+    resaltar: {WA: frio}
+    lineas: ['WA:', '*$281*']
+- t: In Florida, two hundred ninety-nine.
+  v:
+    tipo: barras
+    etiqueta: Saved a year
+    prefijo: $
+    items:
+    - [Florida, 299, location_on]
+- t: In Texas, three hundred thirteen.
+  v:
+    tipo: barras
+    etiqueta: Saved a year
+    prefijo: $
+    items:
+    - [Texas, 313, location_on]
+    - [Florida, 299, location_on]
+- t: In Illinois, three hundred seventy-five.
+  v:
+    tipo: barras
+    etiqueta: Saved a year
+    prefijo: $
+    items:
+    - [Illinois, 375, location_on]
+    - [Texas, 313, location_on]
+    - [Florida, 299, location_on]
+- t: In New York, five hundred seventy-one.
+  v:
+    tipo: barras
+    etiqueta: Saved a year
+    prefijo: $
+    items:
+    - [New York, 571, location_on]
+    - [Illinois, 375, location_on]
+    - [Texas, 313, location_on]
+    - [Florida, 299, location_on]
+- t: And in California, six hundred thirty-six.
+  v:
+    tipo: barras
+    etiqueta: Saved a year
+    prefijo: $
+    items:
+    - [California, 636, location_on]
+    - [New York, 571, location_on]
+    - [Illinois, 375, location_on]
+    - [Texas, 313, location_on]
+    - [Florida, 299, location_on]
+- t: Same machine. The more you pay for electricity, the more it saves.
+  v:
+    tipo: barras
+    etiqueta: Same machine
+    prefijo: $
+    items:
+    - [California, 636, location_on]
+    - [New York, 571, location_on]
+    - [Illinois, 375, location_on]
+    - [Texas, 313, location_on]
+    - [Florida, 299, location_on]
+    - [Washington, 281, location_on]
+- t: So check your rate.
+  v:
+    tipo: iconos
+    iconos: [receipt_long, search]
+    etiquetas: ['Your bill', 'Check your rate']
+- t: Because the same water heater upgrade can save you two hundred eighty-one dollars a year…
+  v:
+    tipo: mapa
+    resaltar: {WA: frio, CA: calor}
+    lineas: ['$281 or', '*$636?*']
