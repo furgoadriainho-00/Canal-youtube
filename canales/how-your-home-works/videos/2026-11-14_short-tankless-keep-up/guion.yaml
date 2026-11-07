@@ -1,0 +1,84 @@
+# Short del guionista (guiones/2026-11-14_short-tankless-keep-up/GUION.md). Narración literal.
+titulo: Can a tankless keep up
+estructura: pregunta-respuesta
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: Can a tankless water heater keep up with your house?
+  v:
+    tipo: iconos
+    iconos: [water_heater, bolt, help]
+    etiquetas: ['', '', 'Can it keep up?']
+- t: Here's a quick test.
+  v:
+    tipo: iconos
+    iconos: [calculate]
+    etiquetas: ['Quick test']
+- t: A tankless heater warms water only as fast as it flows.
+  v:
+    tipo: iconos
+    iconos: [water_heater, water_drop]
+    etiquetas: ['Tankless heater', 'Only as fast as it flows']
+- t: ENERGY STAR lists typical flow rates.
+  v:
+    tipo: iconos
+    iconos: [verified, water_drop]
+    etiquetas: ['ENERGY STAR', 'Typical flow rates']
+- t: A shower uses about two point five gallons per minute.
+  v:
+    tipo: casa
+    foco: ducha
+    lineas: ['Shower:', '*2.5 GPM*']
+- t: A kitchen sink, two point two.
+  v:
+    tipo: iconos
+    iconos: [faucet]
+    etiquetas: ['Sink: 2.2 GPM']
+- t: A clothes washer, three point three.
+  v:
+    tipo: iconos
+    iconos: [faucet, local_laundry_service]
+    etiquetas: ['Sink: 2.2 GPM', 'Washer: 3.3 GPM']
+- t: Run a shower and a sink at the same time,
+  v:
+    tipo: iconos
+    iconos: [shower, add, faucet]
+    etiquetas: ['Shower', '', 'Sink']
+- t: and you're asking for four point seven gallons per minute.
+  v:
+    tipo: formula
+    partes: ['2.5', '+', '2.2', '=', '4.7 GPM']
+- t: An ENERGY STAR gas tankless heater only has to deliver at least two point eight gallons per minute,
+  v:
+    tipo: comparar
+    etiqueta: 'Minimum: 2.8 GPM'
+    a: [Minimum, 2.8, water_heater]
+    b: [Shower + sink, 4.7, water_drop]
+    decimales: 1
+    sufijo: ' GPM'
+- t: at a sixty-seven degree temperature rise.
+  v: {tipo: numero, icono: thermostat, valor: '67°', etiqueta: temperature rise, color: calor}
+- t: So at the minimum, it may not keep up.
+  v:
+    tipo: comparar
+    etiqueta: May not keep up
+    estatico: true
+    a: [Minimum, 2.8, water_heater]
+    b: [Shower + sink, 4.7, water_drop]
+    decimales: 1
+    sufijo: ' GPM'
+- t: If that's how your house uses hot water, you'd need a larger unit.
+  v:
+    tipo: iconos
+    iconos: [home, arrow_forward, water_heater]
+    etiquetas: ['Your house', '', 'A larger unit']
+- t: Before you buy, add up everything that runs at the same time.
+  v:
+    tipo: iconos
+    iconos: [shower, faucet, local_laundry_service]
+    etiquetas: ['', '', 'Add up your flow']
+- t: 'Then ask: can a tankless water heater keep up with your house?'
+  v:
+    tipo: iconos
+    iconos: [water_heater, bolt, help]
+    etiquetas: ['', '', 'Can it keep up?']

@@ -252,7 +252,7 @@ def comparar(lienzo, caja, s, t, dur, u):
               x0 + w / 2, y0 + h * 0.08, alfa=prog(t, 0, 0.3))
     for j, (item, cx) in enumerate([(a, x0 + w * 0.3), (b, x0 + w * 0.7)]):
         nombre, v, ic = item
-        ini = 0.1 + j * 0.45
+        ini = -1 if s.get("estatico") else 0.1 + j * 0.45  # estatico: barras ya llenas, sin contar
         col = C["frio"] if j == 0 else C["calor"]
         p = ease_out(prog(t, ini, 0.8))
         if isinstance(v, (int, float)):
