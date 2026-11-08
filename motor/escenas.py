@@ -450,11 +450,14 @@ def mapa_escena(lienzo, caja, s, t, dur, u):
     cx = x0 + (w * 0.33 if lineas and not vertical else w / 2)
     cy = y0 + h * (0.34 if vertical and lineas else 0.5)
     pegar(lienzo, mapa.base(aw, ah), cx, cy, alfa=prog(t, 0, 0.3))
-    reparto = min(0.5, max(0.12, dur * 0.6 / max(1, len(res))))
-    for i, (st, col) in enumerate(res.items()):
+    # cada grupo se enciende a la vez: un estado suelto o una región entera
+    grupos = [([st], col) for st, col in res.items()] + [(mapa.REGIONES[r], col) for r, col in s.get("regiones", {}).items()]
+    reparto = min(0.5, max(0.12, dur * 0.6 / max(1, len(grupos))))
+    for i, (estados, col) in enumerate(grupos):
         p = prog(t, 0.15 + i * reparto, 0.35)
         if p > 0:
-            pegar(lienzo, mapa.estado(st, aw, ah, _color(col)), cx, cy, alfa=p)
+            for st in estados:
+                pegar(lienzo, mapa.estado(st, aw, ah, _color(col)), cx, cy, alfa=p)
     if lineas and vertical:
         _lineas_cineticas(lienzo, lineas, x0 + w / 2, y0 + h * 0.74, u, t, dur, 84, int(w * 0.9), 0.4)
     elif lineas:

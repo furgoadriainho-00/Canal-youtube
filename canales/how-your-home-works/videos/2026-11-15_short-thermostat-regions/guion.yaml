@@ -1,0 +1,65 @@
+# Short del guionista (guiones/2026-11-15_short-thermostat-regions/GUION.md). Narración literal.
+titulo: Same thermostat savings, different season
+estructura: comparacion
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: A smart thermostat saves about the same wherever you live in America.
+  v:
+    tipo: mapa
+    regiones: {Northeast: ahorro, Midwest: calor, South: frio, West: suave}
+    lineas: ['Saves about', '*the same*']
+- t: What changes is when.
+  v:
+    tipo: casa
+    foco: termostato
+    lineas: ['Same savings,', '*different season?*']
+- t: At the ENERGY STAR minimum, a home with gas heat and central air
+  v:
+    tipo: iconos
+    iconos: [verified, local_fire_department, ac_unit]
+    etiquetas: ['ENERGY STAR minimum', 'Gas heat', 'Central air']
+- t: saves about one hundred eight dollars a year in the Midwest.
+  v:
+    tipo: mapa
+    regiones: {Midwest: calor}
+    lineas: ['Midwest:', '*$108/yr*']
+- t: One hundred eleven in the South.
+  v:
+    tipo: mapa
+    regiones: {Midwest: calor, South: frio}
+    lineas: ['South:', '*$111*']
+- t: Ninety-three in the Northeast, and eighty in the West.
+  v:
+    tipo: mapa
+    regiones: {Midwest: calor, South: frio, Northeast: ahorro, West: suave}
+    lineas: ['NE: $93', '*West: $80*']
+- t: But in the Midwest, seventy-four of those dollars come from heating.
+  v: {tipo: numero, icono: severe_cold, valor: 74, prefijo: $, etiqueta: 'from heating · Midwest', color: calor}
+- t: In the South, seventy-one come from air conditioning.
+  v: {tipo: numero, icono: sunny, valor: 71, prefijo: $, etiqueta: 'from cooling · South', color: frio}
+- t: So in a cold state, set it back on winter nights.
+  v:
+    tipo: iconos
+    iconos: [bedtime, severe_cold]
+    etiquetas: ['', 'Winter nights']
+- t: In a hot state, set it up on summer afternoons, while you're out.
+  v:
+    tipo: iconos
+    iconos: [sunny, home]
+    etiquetas: ['', 'Summer afternoons']
+- t: Same savings, different season.
+  v:
+    tipo: mapa
+    regiones: {Northeast: ahorro, Midwest: calor, South: frio, West: suave}
+    lineas: ['Same savings,', '*different season*']
+- t: Because a smart thermostat saves about the same wherever you live.
+  v:
+    tipo: barras
+    etiqueta: '$80–$111 everywhere'
+    prefijo: $
+    items:
+    - [South, 111, sunny]
+    - [Midwest, 108, severe_cold]
+    - [Northeast, 93, location_on]
+    - [West, 80, location_on]

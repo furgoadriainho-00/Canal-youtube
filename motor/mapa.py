@@ -40,6 +40,16 @@ ABREV = {"AL": "Alabama", "AR": "Arkansas", "CA": "California", "CO": "Colorado"
          "TX": "Texas", "UT": "Utah", "VA": "Virginia", "VT": "Vermont", "WI": "Wisconsin", "WV": "West Virginia", "WY": "Wyoming"}
 
 
+# Regiones del Censo (las de RECS)
+REGIONES = {
+    "Northeast": ["CT", "ME", "MA", "NH", "RI", "VT", "NJ", "NY", "PA"],
+    "Midwest": ["IL", "IN", "IA", "KS", "MI", "MN", "MO", "NE", "ND", "OH", "SD", "WI"],
+    "South": ["DE", "District of Columbia", "FL", "GA", "MD", "NC", "SC", "VA", "WV", "AL", "KY", "MS", "TN",
+              "AR", "LA", "OK", "TX"],
+    "West": ["AZ", "CO", "ID", "MT", "NV", "NM", "UT", "WY", "Alaska", "CA", "Hawaii", "OR", "WA"],
+}
+
+
 @lru_cache(maxsize=128)
 def estado(nombre, w, h, color):
     img = Image.new("RGBA", (w * SS, h * SS), (0, 0, 0, 0))

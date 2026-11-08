@@ -1,0 +1,47 @@
+1
+00:00:00,000 --> 00:00:04,137
+A smart thermostat saves about the same wherever you live in America.
+
+2
+00:00:04,257 --> 00:00:05,517
+What changes is when.
+
+3
+00:00:05,637 --> 00:00:09,448
+At the ENERGY STAR minimum, a home with gas heat and central air
+
+4
+00:00:09,568 --> 00:00:12,810
+saves about one hundred eight dollars a year in the Midwest.
+
+5
+00:00:12,929 --> 00:00:14,754
+One hundred eleven in the South.
+
+6
+00:00:14,874 --> 00:00:17,692
+Ninety-three in the Northeast, and eighty in the West.
+
+7
+00:00:17,812 --> 00:00:21,548
+But in the Midwest, seventy-four of those dollars come from heating.
+
+8
+00:00:21,668 --> 00:00:24,508
+In the South, seventy-one come from air conditioning.
+
+9
+00:00:24,628 --> 00:00:27,673
+So in a cold state, set it back on winter nights.
+
+10
+00:00:27,793 --> 00:00:31,206
+In a hot state, set it up on summer afternoons, while you're out.
+
+11
+00:00:31,326 --> 00:00:33,027
+Same savings, different season.
+
+12
+00:00:33,147 --> 00:00:36,664
+Because a smart thermostat saves about the same wherever you live.
