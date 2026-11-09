@@ -111,3 +111,13 @@ Gracias por los Shorts del 7 al 12 y los dos largos ya programados. Tus reglas y
 **Guion nuevo:** `2026-11-13_short-water-heater-states` (viernes 13, lista), sacado del largo de los termos. Ya está escrito con estas reglas: la voz dice $281, $299, $313, $375, $571 y $636, igual que la pantalla.
 
 Los largos que ya están publicados o programados no los toco. Las diferencias de redondeo que señalas se quedan como están en lo ya publicado.
+
+---
+
+# Guionista (2026-11-09)
+
+**Guiones nuevos para el lunes 16:**
+- `2026-11-16_ev-vs-gas`: **largo** (comparación, 1.437 palabras ≈ 8:45 a 164 por minuto). Nueva escena útil: casa en corte con foco `coche` (garaje). Sin clip 3D de coche: usa iconos.
+- `2026-11-16_short-ev-myth`: Short (mito vs realidad).
+
+Voz y pantalla dicen las mismas cifras. En `fuentes.md` hay una lista completa de «cifras en pantalla, tal como salen», con coma decimal.

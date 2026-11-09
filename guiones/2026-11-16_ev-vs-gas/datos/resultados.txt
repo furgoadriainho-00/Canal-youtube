@@ -1,0 +1,31 @@
+galones/año 405 · kWh/año 3308
+estado,gasolina_$,eléctrico_$,ahorro_$,eléctrico_84%_$,ahorro_84%_$,gas_$/100mi,ev_$/100mi
+U.S.,1255,602,654,716,539,11.39,5.46
+Washington,1675,477,1198,568,1107,15.19,4.33
+California,1788,1078,710,1283,505,16.21,9.77
+Texas,1078,530,548,631,447,9.78,4.81
+Florida,1199,507,692,603,595,10.87,4.60
+Colorado,1163,556,607,662,501,10.54,5.04
+Minnesota,1201,544,657,647,554,10.89,4.93
+Ohio,1200,622,578,741,459,10.88,5.64
+New York,1239,968,271,1152,87,11.24,8.78
+Massachusetts,1204,999,205,1189,15,10.92,9.06
+empate en EE. UU.: luz a 38.0 ¢/kWh (con 84 %: 31.9 ¢)
+Model Y LR RWD: 542 $/año en EE. UU.
+Equinox EV FWD: 622 $/año en EE. UU.
+
+cada 100 millas: gasolina 2020 $7.97 · 2022 $14.53 · 2025 $11.39
+cada 100 millas: eléctrico 2020 $3.94 · 2026 $5.46
+subida 2020→2025 gasolina 43% · luz 2020→2026 38%
+
+el coche suma 3308 kWh/año = 31% de los 10.791 kWh de un hogar medio (EIA, 2022)
+al mes: 276 kWh ≈ $50
+RECS 2020: hogares que cargan un eléctrico, 2.363 kWh/año de carga = $430/año a 18,19 ¢
+
+año: gasolina $/100mi · eléctrico $/100mi · proporción
+2020: 7.97 · 3.94 · 0.49
+2021: 11.06 · 4.10 · 0.37
+2022: 14.53 · 4.51 · 0.31
+2023: 12.94 · 4.80 · 0.37
+2024: 12.15 · 4.94 · 0.41
+2025: 11.39 · 5.17 · 0.45

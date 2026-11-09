@@ -22,5 +22,6 @@ fecha_alta,idea,estructura,palabra_clave,potencial_vistas_1a10,rpm_1a10,puntuaci
 2026-11-05,Is it cheaper to leave the AC on all day? The math,pregunta-respuesta,leave ac on all day,9,8,8.5,pendiente
 2026-11-05,How much does it cost to run a space heater? (by state),lista,space heater cost per hour,9,7,8.0,pendiente
 2026-11-05,LED vs incandescent vs halogen: the real cost per bulb per year,comparacion,led vs incandescent cost,7,7,7.0,pendiente
-2026-11-05,"How much does it cost to charge an EV at home vs gas, by state",comparacion,ev charging cost vs gas,9,8,8.5,pendiente
+2026-11-05,"How much does it cost to charge an EV at home vs gas, by state",comparacion,ev charging cost vs gas,9,8,8.5,guion
 2026-11-05,Window AC vs mini-split vs central air: yearly cost compared,comparacion,window ac vs mini split cost,8,8,8.0,pendiente
+2026-11-09,How much does a pool pump really cost to run? (and the variable-speed fix),pregunta-respuesta,pool pump cost,7,8,7.5,pendiente
