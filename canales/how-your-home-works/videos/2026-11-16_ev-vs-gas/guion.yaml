@@ -1,0 +1,616 @@
+# Guion del guionista (guiones/2026-11-16_ev-vs-gas/GUION.md). Narración literal.
+titulo: EV vs gas, what charging at home really costs
+estructura: comparacion
+formato: largo
+voz: {nombre: am_michael, velocidad: 1.0}
+segmentos:
+- t: In Washington State, charging an electric car at home instead of buying gas saves about one thousand one hundred ninety-eight dollars a year.
+  v:
+    tipo: mapa
+    resaltar: {WA: frio}
+    lineas: ['Washington:', '*$1,198/yr*', saved]
+  capitulo: Same car, different savings
+- t: In Massachusetts, it saves about two hundred five.
+  v:
+    tipo: mapa
+    resaltar: {WA: frio, MA: calor}
+    lineas: ['WA: $1,198/yr', '*MA: $205/yr*']
+- t: Same car.
+  v:
+    tipo: iconos
+    iconos: [electric_car]
+    etiquetas: ['Same car']
+- t: Same miles.
+  v:
+    tipo: iconos
+    iconos: [electric_car, speed]
+    etiquetas: ['Same car', 'Same miles']
+- t: So what's going on?
+  v:
+    tipo: comparar
+    a: [Washington, 1198, electric_car]
+    b: [Massachusetts, 205, electric_car]
+    prefijo: $
+    etiqueta: Saved a year
+    estatico: true
+- t: In this video, I'll work out what it really costs to drive an electric car charged at home, compared with a gas car, for the whole country and for nine states.
+  v:
+    tipo: casa
+    foco: coche
+    lineas: ['Charged', '*at home*', 'vs a gas car']
+  capitulo: What we'll work out
+- t: I'll use official numbers for how far Americans drive, how efficient the cars are, and what electricity and gasoline cost.
+  v: {tipo: fuente, titulo: EPA · U.S. DOT / FHWA · EIA, detalle: 'Miles driven, fuel economy, energy prices', nota: ''}
+- t: And at the end, I'll give you a two-line formula to check your own state.
+  v:
+    tipo: mapa
+    resaltar: {WA: frio, CA: frio, TX: frio, FL: frio, CO: frio, MN: frio, OH: frio, NY: frio, MA: frio}
+    lineas: ['Nine states', '*+ your formula*']
+- t: First, the ingredients.
+  v:
+    tipo: iconos
+    iconos: [speed, local_gas_station, ev_station, payments]
+    etiquetas: [Miles, Gas car, Electric car, Prices]
+  capitulo: The four ingredients
+- t: There are only four.
+  v:
+    tipo: titulo
+    lineas: ['Only *four*']
+    iconos: [speed, local_gas_station, ev_station, payments]
+- t: 'One: how far you drive.'
+  v:
+    tipo: iconos
+    iconos: [speed]
+    etiquetas: ['1 · How far you drive']
+- t: According to the Federal Highway Administration, the average car in America covers about eleven thousand twenty-six miles a year.
+  v: {tipo: numero, icono: speed, valor: 11026, sufijo: ' mi/yr', etiqueta: 'Average car · FHWA, Highway Statistics 2024', color: frio}
+- t: 'Two: how efficient a gas car is.'
+  v:
+    tipo: iconos
+    iconos: [local_gas_station]
+    etiquetas: ['2 · Gas car efficiency']
+- t: The EPA says the average new vehicle from model year twenty twenty-four gets about twenty-seven point two miles per gallon in real-world driving.
+  v: {tipo: numero, icono: local_gas_station, valor: 27.2, decimales: 1, sufijo: ' mpg', etiqueta: 'New vehicles, real-world · EPA Automotive Trends', color: calor}
+- t: That's a record high.
+  v:
+    tipo: iconos
+    iconos: [trending_up]
+    etiquetas: ['Record high']
+- t: 'Three: how efficient an electric car is.'
+  v:
+    tipo: iconos
+    iconos: [ev_station]
+    etiquetas: ['3 · Electric car efficiency']
+- t: Popular twenty twenty-five models are rated by the EPA at between twenty-seven and thirty-one kilowatt-hours per hundred miles.
+  v:
+    tipo: barras
+    etiqueta: 'EPA rating, kWh per 100 miles'
+    items:
+    - [Model Y LR RWD, 27, electric_car]
+    - [Model Y LR AWD, 29, electric_car]
+    - [Ioniq 5, 29, electric_car]
+    - [Equinox EV FWD, 31, electric_car]
+    - [Mach-E RWD Ext, 31, electric_car]
+    nota: 'Source: fueleconomy.gov'
+- t: For example, the Tesla Model Y Long Range rear-wheel drive is rated at twenty-seven, and the Chevrolet Equinox EV front-wheel drive at thirty-one.
+  v:
+    tipo: comparar
+    a: [Model Y LR RWD, 27, electric_car]
+    b: [Equinox EV FWD, 31, electric_car]
+    sufijo: ' kWh'
+    etiqueta: 'Per 100 miles (EPA)'
+- t: I'll use thirty, a middle value.
+  v:
+    tipo: regla
+    rango: [25, 33]
+    titulo: 'kWh per 100 miles'
+    marcas:
+    - [27, Model Y, frio]
+    - [31, Equinox, frio]
+    - [30, Used here, calor]
+- t: 'And four: what you pay for energy.'
+  v:
+    tipo: iconos
+    iconos: [payments]
+    etiquetas: ['4 · Energy prices']
+- t: Nationally, regular gasoline averaged about three dollars and ten cents a gallon in twenty twenty-five, and home electricity is about eighteen point two cents per kilowatt-hour in twenty twenty-six.
+  v:
+    tipo: iconos
+    iconos: [local_gas_station, bolt]
+    etiquetas: ['Gas: $3.10/gal (2025)', 'Power: 18.2¢/kWh (2026)']
+- t: That's everything we need.
+  v:
+    tipo: titulo
+    lineas: ['That''s *everything*']
+    iconos: [speed, local_gas_station, ev_station, payments]
+- t: Let's start small, with every hundred miles.
+  v:
+    tipo: iconos
+    iconos: [electric_car, local_gas_station]
+    etiquetas: ['', 'Every 100 miles']
+  capitulo: Every hundred miles
+- t: A gas car at twenty-seven point two miles per gallon needs about three point seven gallons to go a hundred miles.
+  v: {tipo: formula, partes: ['100 mi', '÷', '27.2 mpg', '=', '3.7 gal']}
+- t: At the national price, that's about eleven dollars and thirty-nine cents.
+  v: {tipo: formula, partes: ['3.7 gal', '×', '$3.10', '≈', '$11.39']}
+- t: An electric car at thirty kilowatt-hours per hundred miles, at the national electricity price, costs about five dollars and forty-six cents for the same hundred miles.
+  v: {tipo: formula, partes: ['30 kWh', '×', '$0.182', '≈', '$5.46']}
+- t: So charging at home costs less than half as much per mile, on average.
+  v:
+    tipo: comparar
+    a: [Electric, 5.46, ev_station]
+    b: [Gas, 11.39, local_gas_station]
+    prefijo: $
+    decimales: 2
+    gana: a
+    etiqueta: 'Per 100 miles'
+- t: Now scale that up to a full year of driving.
+  v:
+    tipo: iconos
+    iconos: [calendar_month, speed]
+    etiquetas: ['A full year', '11,026 miles']
+  capitulo: A full year
+- t: At eleven thousand twenty-six miles, the gas car burns about four hundred five gallons, which costs about one thousand two hundred fifty-five dollars.
+  v: {tipo: numero, icono: local_gas_station, valor: 1255, prefijo: $, sufijo: /yr, etiqueta: 'Gas car · about 405 gallons', color: calor}
+- t: The electric car uses about three thousand three hundred eight kilowatt-hours, which costs about six hundred two dollars.
+  v:
+    tipo: contador
+    valor: 3308
+    unidad: kWh / year
+    lineas: ['Electric car:', '*$602/yr*']
+- t: That's a difference of about six hundred fifty-four dollars a year, on national averages.
+  v:
+    tipo: comparar
+    a: [Electric, 602, ev_station]
+    b: [Gas, 1255, local_gas_station]
+    prefijo: $
+    gana: a
+    etiqueta: 'U.S. average, per year'
+    nota: 'Difference: about $654 a year'
+- t: Before going further, here's a cautious check.
+  v:
+    tipo: iconos
+    iconos: [search, battery_charging_full]
+    etiquetas: ['', 'A cautious check']
+  capitulo: The cautious check
+- t: Charging a battery always wastes a bit of energy as heat.
+  v:
+    tipo: iconos
+    iconos: [battery_charging_full, heat]
+    etiquetas: [Charging, 'Lost as heat']
+- t: Oak Ridge National Laboratory says charging efficiency is often between eighty-four and ninety-three percent.
+  v: {tipo: numero, icono: battery_charging_full, valor: 84, sufijo: '%', etiqueta: 'Charging efficiency: often 84–93% · ORNL', color: frio}
+- t: The government's fuel economy site defines the EPA number as the electricity the car uses to travel a hundred miles, but it doesn't spell out how charging losses are counted.
+  v: {tipo: fuente, titulo: fueleconomy.gov, detalle: 'kWh the car uses to travel 100 miles', nota: 'Charging losses: not spelled out'}
+- t: So let's take the worst case.
+  v:
+    tipo: iconos
+    iconos: [battery_charging_full, help]
+    etiquetas: ['', 'Worst case']
+- t: If we add charging losses on top, at eighty-four percent efficiency, the electric car would cost about seven hundred sixteen dollars a year.
+  v:
+    tipo: barras
+    etiqueta: Yearly cost
+    prefijo: $
+    items:
+    - [Gas, 1255, local_gas_station]
+    - [EV (worst case), 716, battery_charging_full]
+    - [EV (EPA rating), 602, ev_station]
+- t: It still saves about five hundred thirty-nine dollars.
+  v: {tipo: numero, icono: savings, valor: 539, prefijo: $, sufijo: /yr, etiqueta: 'Worst case: still saved', color: ahorro}
+- t: So the result holds either way.
+  v:
+    tipo: iconos
+    iconos: [check_circle]
+    etiquetas: ['Holds either way']
+- t: But nobody pays the national average.
+  v:
+    tipo: mapa
+    resaltar: {WA: frio, CA: calor, TX: frio, FL: frio, CO: frio, MN: frio, OH: frio, NY: calor, MA: calor}
+    lineas: ['Nobody pays', '*the average*']
+  capitulo: State by state
+- t: Let's go state by state.
+  v:
+    tipo: iconos
+    iconos: [location_on, electric_car, local_gas_station]
+    etiquetas: ['', '', 'State by state']
+- t: Washington has relatively cheap electricity, about fourteen point four cents, and expensive gas, about four dollars and thirteen cents.
+  v:
+    tipo: mapa
+    resaltar: {WA: frio}
+    lineas: ['Washington', 'power *14.4¢*', 'gas *$4.13*']
+- t: That's the best combination for an electric car.
+  v:
+    tipo: iconos
+    iconos: [bolt, local_gas_station, check_circle]
+    etiquetas: ['Cheap power', 'Pricey gas', 'Best combo']
+- t: Gas costs about one thousand six hundred seventy-five dollars a year, and charging at home about four hundred seventy-seven.
+  v:
+    tipo: comparar
+    a: [Electric, 477, ev_station]
+    b: [Gas, 1675, local_gas_station]
+    prefijo: $
+    etiqueta: 'Washington, per year'
+    nota: 'Power 14.4¢/kWh · gas $4.13/gal'
+- t: That saves about one thousand one hundred ninety-eight dollars.
+  v: {tipo: numero, icono: savings, valor: 1198, prefijo: $, sufijo: /yr, etiqueta: 'Washington: saved', color: ahorro}
+- t: In Florida, gas costs about one thousand one hundred ninety-nine dollars a year, and electricity about five hundred seven.
+  v:
+    tipo: comparar
+    a: [Electric, 507, ev_station]
+    b: [Gas, 1199, local_gas_station]
+    prefijo: $
+    etiqueta: 'Florida, per year'
+    nota: 'Power 15.3¢/kWh · gas $2.96/gal'
+- t: That saves about six hundred ninety-two.
+  v: {tipo: numero, icono: savings, valor: 692, prefijo: $, sufijo: /yr, etiqueta: 'Florida: saved', color: ahorro}
+- t: Minnesota lands close to the national picture, saving about six hundred fifty-seven dollars.
+  v:
+    tipo: barras
+    etiqueta: Saved a year
+    prefijo: $
+    items:
+    - [Minnesota, 657, location_on]
+    - [U.S. average, 654, location_on]
+- t: Colorado saves about six hundred seven.
+  v:
+    tipo: barras
+    etiqueta: Saved a year
+    prefijo: $
+    items:
+    - [Minnesota, 657, location_on]
+    - [Colorado, 607, location_on]
+- t: Texas has the cheapest gas of these states, about two dollars and sixty-six cents.
+  v:
+    tipo: mapa
+    resaltar: {TX: calor}
+    lineas: ['Texas gas:', '*$2.66/gal*', cheapest here]
+- t: Even so, an electric car saves about five hundred forty-eight dollars a year.
+  v:
+    tipo: comparar
+    a: [Electric, 530, ev_station]
+    b: [Gas, 1078, local_gas_station]
+    prefijo: $
+    etiqueta: 'Texas, per year'
+    nota: 'Saves about $548 · power 16.0¢/kWh'
+- t: Ohio saves about five hundred seventy-eight.
+  v:
+    tipo: barras
+    etiqueta: Saved a year
+    prefijo: $
+    items:
+    - [Minnesota, 657, location_on]
+    - [Colorado, 607, location_on]
+    - [Ohio, 578, location_on]
+    - [Texas, 548, location_on]
+- t: California is the interesting one.
+  v:
+    tipo: mapa
+    resaltar: {CA: calor}
+    lineas: [California, '*the interesting one*']
+- t: Its electricity is the most expensive here, at about thirty-two point six cents.
+  v: {tipo: numero, icono: bolt, valor: 32.6, decimales: 1, sufijo: '¢', etiqueta: 'California, per kWh', color: calor}
+- t: But its gas is also very expensive, about four dollars and forty-one cents.
+  v: {tipo: numero, icono: local_gas_station, valor: '$4.41', etiqueta: 'California, per gallon', color: calor}
+- t: So the electric car still saves about seven hundred ten dollars a year.
+  v:
+    tipo: comparar
+    a: [Electric, 1078, ev_station]
+    b: [Gas, 1788, local_gas_station]
+    prefijo: $
+    etiqueta: 'California, per year'
+    nota: 'Still saves about $710'
+- t: Now the two states where it gets tight.
+  v:
+    tipo: mapa
+    resaltar: {NY: calor, MA: calor}
+    lineas: [Where it, '*gets tight*']
+- t: In New York, with electricity near twenty-nine point three cents, the savings drop to about two hundred seventy-one dollars a year.
+  v:
+    tipo: comparar
+    a: [Electric, 968, ev_station]
+    b: [Gas, 1239, local_gas_station]
+    prefijo: $
+    etiqueta: 'New York, per year'
+    nota: 'Power 29.3¢/kWh · gas $3.06/gal · saves about $271'
+- t: And in Massachusetts, with electricity near thirty point two cents, it's about two hundred five dollars.
+  v:
+    tipo: comparar
+    a: [Electric, 999, ev_station]
+    b: [Gas, 1204, local_gas_station]
+    prefijo: $
+    etiqueta: 'Massachusetts, per year'
+    nota: 'Power 30.2¢/kWh · gas $2.97/gal · saves about $205'
+- t: In the worst-case check with charging losses added, Massachusetts drops to about fifteen dollars a year.
+  v:
+    tipo: barras
+    etiqueta: 'Massachusetts, saved a year'
+    prefijo: $
+    items:
+    - [EPA rating, 205, ev_station]
+    - [Worst case, 15, battery_charging_full]
+- t: Basically a tie.
+  v:
+    tipo: comparar
+    a: [Electric, 1189, battery_charging_full]
+    b: [Gas, 1204, local_gas_station]
+    prefijo: $
+    gana: '='
+    estatico: true
+    etiqueta: 'Massachusetts, worst case'
+- t: 'Here''s another way to see it: what an electric car adds to your home''s electric bill.'
+  v:
+    tipo: casa
+    foco: coche
+    lineas: ['Your', '*electric bill*']
+  capitulo: What it adds to your bill
+- t: At eleven thousand twenty-six miles a year, charging at home adds about three thousand three hundred eight kilowatt-hours.
+  v:
+    tipo: contador
+    valor: 3308
+    unidad: kWh / year
+    lineas: ['Home charging:', '*+3,308 kWh*']
+- t: The average American home uses about ten thousand seven hundred ninety-one kilowatt-hours a year.
+  v: {tipo: numero, icono: home, valor: 10791, sufijo: ' kWh', etiqueta: 'Average U.S. home, a year · EIA', color: frio}
+- t: So the car adds about thirty-one percent to the household's electricity use.
+  v: {tipo: numero, icono: ev_station, valor: 31, prefijo: +, sufijo: '%', etiqueta: 'household electricity', color: calor}
+- t: Month by month, that's about two hundred seventy-six kilowatt-hours, or about fifty dollars, at the national price.
+  v: {tipo: numero, icono: receipt_long, valor: 50, prefijo: $, sufijo: /mo, etiqueta: 'About 276 kWh a month', color: calor}
+- t: And the government's household survey has a real-world number too.
+  v: {tipo: fuente, titulo: EIA · RECS 2020, detalle: Residential Energy Consumption Survey, nota: 'Homes that charge an electric car'}
+- t: Homes that charge an electric car used about two thousand three hundred sixty-three kilowatt-hours a year for charging.
+  v:
+    tipo: contador
+    valor: 2363
+    unidad: kWh / year
+    lineas: ['Real homes:', '*2,363 kWh*']
+- t: At today's price, that's about four hundred thirty dollars.
+  v: {tipo: numero, icono: ev_station, valor: 430, prefijo: $, sufijo: /yr, etiqueta: '2,363 kWh at today''s price', color: frio}
+- t: That's below our estimate, a reminder that real households vary in how much they drive and where they plug in.
+  v:
+    tipo: comparar
+    a: [Real homes, 2363, home]
+    b: [Our estimate, 3308, ev_station]
+    sufijo: ' kWh'
+    etiqueta: Charging per year
+- t: 'One more thing: both prices move.'
+  v:
+    tipo: iconos
+    iconos: [local_gas_station, bolt, show_chart]
+    etiquetas: ['', '', 'Prices move']
+  capitulo: Prices move
+- t: In twenty twenty, regular gas averaged about two dollars and seventeen cents a gallon.
+  v:
+    tipo: barras
+    etiqueta: 'Regular gas, $ per gallon (EIA)'
+    prefijo: $
+    decimales: 2
+    max: 3.95
+    items:
+    - ['2020', 2.17, local_gas_station]
+- t: In twenty twenty-two, it spiked to about three dollars and ninety-five cents.
+  v:
+    tipo: barras
+    etiqueta: 'Regular gas, $ per gallon (EIA)'
+    prefijo: $
+    decimales: 2
+    items:
+    - ['2022', 3.95, local_gas_station]
+    - ['2020', 2.17, local_gas_station]
+- t: In twenty twenty-five, it was back to about three dollars and ten cents.
+  v:
+    tipo: barras
+    etiqueta: 'Regular gas, $ per gallon (EIA)'
+    prefijo: $
+    decimales: 2
+    items:
+    - ['2022', 3.95, local_gas_station]
+    - ['2025', 3.10, local_gas_station]
+    - ['2020', 2.17, local_gas_station]
+- t: Home electricity rose more steadily, from about thirteen point two cents in twenty twenty to about eighteen point two cents today.
+  v:
+    tipo: comparar
+    a: ['2020', 13.2, bolt]
+    b: [Today, 18.2, bolt]
+    decimales: 1
+    sufijo: '¢'
+    etiqueta: 'Home electricity, per kWh (EIA)'
+- t: Per hundred miles, gas went from about seven dollars and ninety-seven cents in twenty twenty, to about fourteen fifty-three at the twenty twenty-two peak, and about eleven thirty-nine now.
+  v:
+    tipo: barras
+    etiqueta: 'Gas, per 100 miles'
+    prefijo: $
+    decimales: 2
+    items:
+    - ['2022 peak', 14.53, local_gas_station]
+    - [Now, 11.39, local_gas_station]
+    - ['2020', 7.97, local_gas_station]
+- t: Electricity went from about three ninety-four to about five forty-six.
+  v:
+    tipo: comparar
+    a: ['2020', 3.94, ev_station]
+    b: [Now, 5.46, ev_station]
+    prefijo: $
+    decimales: 2
+    etiqueta: 'Electric, per 100 miles'
+- t: In twenty twenty, and again today, charging at home cost about half as much per mile as gas.
+  v:
+    tipo: barras
+    etiqueta: 'Per 100 miles: gas vs electric'
+    prefijo: $
+    decimales: 2
+    items:
+    - ['2020 gas', 7.97, local_gas_station]
+    - ['2020 electric', 3.94, ev_station]
+    - [Today gas, 11.39, local_gas_station]
+    - [Today electric, 5.46, ev_station]
+- t: At the twenty twenty-two peak, with electricity at about fifteen cents, it cost about four dollars and fifty-one cents per hundred miles, less than a third of gas.
+  v:
+    tipo: comparar
+    a: [Electric, 4.51, ev_station]
+    b: [Gas, 14.53, local_gas_station]
+    prefijo: $
+    decimales: 2
+    gana: a
+    etiqueta: '2022 peak, per 100 miles'
+- t: Gas simply swings a lot more than electricity.
+  v:
+    tipo: iconos
+    iconos: [local_gas_station, show_chart]
+    etiquetas: ['', 'Gas swings more']
+- t: So here's the pattern.
+  v:
+    tipo: iconos
+    iconos: [bolt, balance, local_gas_station]
+    etiquetas: ['', 'The pattern', '']
+  capitulo: The break-even power price
+- t: 'The savings depend on two prices: gas and electricity.'
+  v: {tipo: formula, partes: ['gas price', 'vs', 'power price', '=', 'savings']}
+- t: Cheap power and expensive gas, like Washington, is the jackpot.
+  v:
+    tipo: mapa
+    resaltar: {WA: ahorro}
+    lineas: ['Cheap power + pricey gas', '*the jackpot*']
+- t: Expensive power and average gas, like Massachusetts, shrinks the gap.
+  v:
+    tipo: mapa
+    resaltar: {WA: ahorro, MA: calor}
+    lineas: ['Pricey power', '*shrinks the gap*']
+- t: On national gas prices, electricity would have to cost about thirty-eight cents per kilowatt-hour before charging at home stopped being cheaper.
+  v:
+    tipo: regla
+    rango: [0, 40]
+    paso: 10
+    titulo: 'Electricity price, ¢ per kWh'
+    decimales: 1
+    marcas:
+    - [38.0, Break-even, calor]
+- t: In the worst case, with charging losses added, that line drops to about thirty-one point nine cents.
+  v:
+    tipo: regla
+    rango: [0, 40]
+    paso: 10
+    titulo: 'Electricity price, ¢ per kWh'
+    decimales: 1
+    marcas:
+    - [38.0, Break-even, calor]
+    - [31.9, Worst case, suave]
+- t: Most states are far below that line.
+  v:
+    tipo: regla
+    rango: [0, 40]
+    paso: 10
+    titulo: 'Electricity price, ¢ per kWh'
+    decimales: 1
+    marcas:
+    - [14.4, WA, frio]
+    - [18.2, US, frio]
+    - [31.9, Worst case, suave]
+- t: A few in the Northeast and California are getting close.
+  v:
+    tipo: regla
+    rango: [25, 40]
+    paso: 5
+    titulo: 'Electricity price, ¢ per kWh'
+    decimales: 1
+    marcas:
+    - [29.3, NY, calor]
+    - [30.2, MA, calor]
+    - [32.6, CA, calor]
+    nota: 'Break-even 38.0¢ · worst case 31.9¢'
+- t: Now let's do your own state, in two lines.
+  v:
+    tipo: iconos
+    iconos: [calculate, location_on]
+    etiquetas: ['Your state', 'In two lines']
+  capitulo: Your own formula
+- t: 'Line one, the electric car: multiply its rating in kilowatt-hours per hundred miles by your electricity price.'
+  v: {tipo: formula, partes: ['kWh/100 mi', '×', '$/kWh', '=', 'EV cost'], revelar: 3}
+- t: Thirty times eighteen point two cents is about five dollars and forty-six cents per hundred miles.
+  v: {tipo: formula, partes: ['30', '×', '$0.182', '=', '$5.46']}
+- t: 'Line two, the gas car: divide one hundred by its miles per gallon, then multiply by your gas price.'
+  v: {tipo: formula, partes: ['100', '÷', 'mpg', '×', '$/gal', '=', 'gas cost'], revelar: 5}
+- t: One hundred divided by twenty-seven point two, times three dollars and ten cents, is about eleven dollars and thirty-nine cents.
+  v: {tipo: formula, partes: ['100', '÷', '27.2', '×', '$3.10', '=', '$11.39']}
+- t: The difference, times the miles you drive divided by a hundred, is your yearly savings.
+  v: {tipo: formula, partes: ['(gas − EV)', '×', 'miles ÷ 100', '=', 'yearly savings']}
+- t: And the car itself matters.
+  v:
+    tipo: iconos
+    iconos: [electric_car, electric_car]
+    etiquetas: ['', 'The car matters']
+- t: A Tesla Model Y Long Range rear-wheel drive, at twenty-seven kilowatt-hours per hundred miles, costs about five hundred forty-two dollars a year to charge at the national price.
+  v: {tipo: numero, icono: electric_car, valor: 542, prefijo: $, sufijo: /yr, etiqueta: 'Model Y LR RWD · 27 kWh/100 mi', color: frio}
+- t: An Equinox EV front-wheel drive, at thirty-one, about six hundred twenty-two.
+  v:
+    tipo: comparar
+    a: [Model Y LR RWD, 542, electric_car]
+    b: [Equinox EV FWD, 622, electric_car]
+    prefijo: $
+    etiqueta: 'To charge, per year'
+- t: A few things are not in these numbers.
+  v:
+    tipo: iconos
+    iconos: [ev_charger, sell, build]
+    etiquetas: ['', '', 'Not included']
+  capitulo: What's not included
+- t: This is home charging only.
+  v:
+    tipo: casa
+    foco: coche
+    lineas: ['Home charging', '*only*']
+- t: Public charging prices vary a lot, and they're not included here.
+  v:
+    tipo: iconos
+    iconos: [ev_charger]
+    etiquetas: ['Public charging']
+    tachar: 0
+- t: It also leaves out the price of the car, insurance and maintenance.
+  v:
+    tipo: iconos
+    iconos: [sell, receipt_long, build]
+    etiquetas: ['Car price', Insurance, Maintenance]
+- t: This is purely the cost of energy to drive.
+  v:
+    tipo: iconos
+    iconos: [bolt, local_gas_station]
+    etiquetas: ['Energy', 'only']
+- t: And these are averages.
+  v:
+    tipo: iconos
+    iconos: [balance]
+    etiquetas: ['Averages']
+- t: If you drive more than eleven thousand miles a year, the savings grow with every mile.
+  v:
+    tipo: iconos
+    iconos: [speed, savings]
+    etiquetas: ['More miles', 'More savings']
+- t: So, is charging an electric car at home cheaper than buying gas?
+  v:
+    tipo: comparar
+    a: [Electric, '?', ev_station]
+    b: [Gas, '?', local_gas_station]
+  capitulo: The verdict
+- t: On national averages, yes, by about six hundred fifty-four dollars a year.
+  v: {tipo: numero, icono: savings, valor: 654, prefijo: $, sufijo: /yr, etiqueta: 'U.S. average: saved', color: ahorro}
+- t: In Washington, by about one thousand one hundred ninety-eight.
+  v:
+    tipo: mapa
+    resaltar: {WA: ahorro}
+    lineas: ['Washington:', '*$1,198/yr*']
+- t: In Massachusetts, only about two hundred five, and close to a tie in the worst case.
+  v:
+    tipo: mapa
+    resaltar: {WA: ahorro, MA: calor}
+    lineas: ['Massachusetts:', '*$205/yr*', 'worst case: a tie']
+- t: Check your own two prices with the formula, and you'll know where your state lands.
+  v: {tipo: formula, partes: ['your power price', '+', 'your gas price', '=', 'your answer']}
+- t: And if you're wondering what else charging adds to your home's electric bill, my ranking of fifteen home appliances is on this channel.
+  v:
+    tipo: casa
+    foco: coche
+    lineas: ['Next:', '*15 appliances*', 'ranked by cost']
+miniaturas:
+- {tipo: mapa, resaltar: {WA: frio, MA: calor}, cifras: "$1,198 vs $205"}
+- {tipo: versus, a: [ev_station, "$602", frio], b: [local_gas_station, "$1,255", calor], texto: "EV vs gas"}
+- {tipo: icono_grande, icono: electric_car, cifra: "−$654/YR", color: ahorro, texto: ["EV", "vs gas"]}

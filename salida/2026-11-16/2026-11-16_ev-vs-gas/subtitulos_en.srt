@@ -1,0 +1,439 @@
+1
+00:00:00,000 --> 00:00:09,153
+In Washington State, charging an electric car at home instead of buying gas saves about one thousand one hundred ninety-eight dollars a year.
+
+2
+00:00:09,453 --> 00:00:12,768
+In Massachusetts, it saves about two hundred five.
+
+3
+00:00:13,068 --> 00:00:13,961
+Same car.
+
+4
+00:00:14,261 --> 00:00:15,205
+Same miles.
+
+5
+00:00:15,505 --> 00:00:16,681
+So what's going on?
+
+6
+00:00:16,981 --> 00:00:27,527
+In this video, I'll work out what it really costs to drive an electric car charged at home, compared with a gas car, for the whole country and for nine states.
+
+7
+00:00:27,827 --> 00:00:36,098
+I'll use official numbers for how far Americans drive, how efficient the cars are, and what electricity and gasoline cost.
+
+8
+00:00:36,398 --> 00:00:40,599
+And at the end, I'll give you a two-line formula to check your own state.
+
+9
+00:00:40,899 --> 00:00:42,319
+First, the ingredients.
+
+10
+00:00:42,619 --> 00:00:43,768
+There are only four.
+
+11
+00:00:44,068 --> 00:00:45,574
+One: how far you drive.
+
+12
+00:00:45,874 --> 00:00:54,580
+According to the Federal Highway Administration, the average car in America covers about eleven thousand twenty-six miles a year.
+
+13
+00:00:54,880 --> 00:00:56,863
+Two: how efficient a gas car is.
+
+14
+00:00:57,163 --> 00:01:07,167
+The EPA says the average new vehicle from model year twenty twenty-four gets about twenty-seven point two miles per gallon in real-world driving.
+
+15
+00:01:07,467 --> 00:01:08,663
+That's a record high.
+
+16
+00:01:08,963 --> 00:01:11,476
+Three: how efficient an electric car is.
+
+17
+00:01:11,776 --> 00:01:20,639
+Popular twenty twenty-five models are rated by the EPA at between twenty-seven and thirty-one kilowatt-hours per hundred miles.
+
+18
+00:01:20,939 --> 00:01:31,152
+For example, the Tesla Model Y Long Range rear-wheel drive is rated at twenty-seven, and the Chevrolet Equinox EV front-wheel drive at thirty-one.
+
+19
+00:01:31,452 --> 00:01:33,411
+I'll use thirty, a middle value.
+
+20
+00:01:33,711 --> 00:01:35,711
+And four: what you pay for energy.
+
+21
+00:01:36,011 --> 00:01:49,359
+Nationally, regular gasoline averaged about three dollars and ten cents a gallon in twenty twenty-five, and home electricity is about eighteen point two cents per kilowatt-hour in twenty twenty-six.
+
+22
+00:01:49,659 --> 00:01:51,117
+That's everything we need.
+
+23
+00:01:51,417 --> 00:01:54,160
+Let's start small, with every hundred miles.
+
+24
+00:01:54,460 --> 00:02:02,416
+A gas car at twenty-seven point two miles per gallon needs about three point seven gallons to go a hundred miles.
+
+25
+00:02:02,716 --> 00:02:06,976
+At the national price, that's about eleven dollars and thirty-nine cents.
+
+26
+00:02:07,276 --> 00:02:18,734
+An electric car at thirty kilowatt-hours per hundred miles, at the national electricity price, costs about five dollars and forty-six cents for the same hundred miles.
+
+27
+00:02:19,034 --> 00:02:23,539
+So charging at home costs less than half as much per mile, on average.
+
+28
+00:02:23,839 --> 00:02:26,302
+Now scale that up to a full year of driving.
+
+29
+00:02:26,602 --> 00:02:36,886
+At eleven thousand twenty-six miles, the gas car burns about four hundred five gallons, which costs about one thousand two hundred fifty-five dollars.
+
+30
+00:02:37,186 --> 00:02:44,979
+The electric car uses about three thousand three hundred eight kilowatt-hours, which costs about six hundred two dollars.
+
+31
+00:02:45,279 --> 00:02:50,793
+That's a difference of about six hundred fifty-four dollars a year, on national averages.
+
+32
+00:02:51,093 --> 00:02:53,509
+Before going further, here's a cautious check.
+
+33
+00:02:53,809 --> 00:02:57,529
+Charging a battery always wastes a bit of energy as heat.
+
+34
+00:02:57,829 --> 00:03:05,136
+Oak Ridge National Laboratory says charging efficiency is often between eighty-four and ninety-three percent.
+
+35
+00:03:05,436 --> 00:03:17,594
+The government's fuel economy site defines the EPA number as the electricity the car uses to travel a hundred miles, but it doesn't spell out how charging losses are counted.
+
+36
+00:03:17,894 --> 00:03:19,524
+So let's take the worst case.
+
+37
+00:03:19,824 --> 00:03:29,402
+If we add charging losses on top, at eighty-four percent efficiency, the electric car would cost about seven hundred sixteen dollars a year.
+
+38
+00:03:29,702 --> 00:03:32,859
+It still saves about five hundred thirty-nine dollars.
+
+39
+00:03:33,159 --> 00:03:34,878
+So the result holds either way.
+
+40
+00:03:35,178 --> 00:03:37,431
+But nobody pays the national average.
+
+41
+00:03:37,731 --> 00:03:39,231
+Let's go state by state.
+
+42
+00:03:39,531 --> 00:03:49,031
+Washington has relatively cheap electricity, about fourteen point four cents, and expensive gas, about four dollars and thirteen cents.
+
+43
+00:03:49,331 --> 00:03:51,975
+That's the best combination for an electric car.
+
+44
+00:03:52,275 --> 00:04:00,211
+Gas costs about one thousand six hundred seventy-five dollars a year, and charging at home about four hundred seventy-seven.
+
+45
+00:04:00,511 --> 00:04:04,238
+That saves about one thousand one hundred ninety-eight dollars.
+
+46
+00:04:04,538 --> 00:04:12,743
+In Florida, gas costs about one thousand one hundred ninety-nine dollars a year, and electricity about five hundred seven.
+
+47
+00:04:13,043 --> 00:04:15,351
+That saves about six hundred ninety-two.
+
+48
+00:04:15,651 --> 00:04:21,623
+Minnesota lands close to the national picture, saving about six hundred fifty-seven dollars.
+
+49
+00:04:21,923 --> 00:04:24,500
+Colorado saves about six hundred seven.
+
+50
+00:04:24,800 --> 00:04:30,159
+Texas has the cheapest gas of these states, about two dollars and sixty-six cents.
+
+51
+00:04:30,459 --> 00:04:35,602
+Even so, an electric car saves about five hundred forty-eight dollars a year.
+
+52
+00:04:35,902 --> 00:04:38,602
+Ohio saves about five hundred seventy-eight.
+
+53
+00:04:38,902 --> 00:04:41,168
+California is the interesting one.
+
+54
+00:04:41,468 --> 00:04:46,556
+Its electricity is the most expensive here, at about thirty-two point six cents.
+
+55
+00:04:46,856 --> 00:04:52,024
+But its gas is also very expensive, about four dollars and forty-one cents.
+
+56
+00:04:52,324 --> 00:04:56,788
+So the electric car still saves about seven hundred ten dollars a year.
+
+57
+00:04:57,088 --> 00:04:58,990
+Now the two states where it gets tight.
+
+58
+00:04:59,290 --> 00:05:07,668
+In New York, with electricity near twenty-nine point three cents, the savings drop to about two hundred seventy-one dollars a year.
+
+59
+00:05:07,968 --> 00:05:14,867
+And in Massachusetts, with electricity near thirty point two cents, it's about two hundred five dollars.
+
+60
+00:05:15,167 --> 00:05:21,937
+In the worst-case check with charging losses added, Massachusetts drops to about fifteen dollars a year.
+
+61
+00:05:22,237 --> 00:05:23,459
+Basically a tie.
+
+62
+00:05:23,759 --> 00:05:28,784
+Here's another way to see it: what an electric car adds to your home's electric bill.
+
+63
+00:05:29,084 --> 00:05:36,686
+At eleven thousand twenty-six miles a year, charging at home adds about three thousand three hundred eight kilowatt-hours.
+
+64
+00:05:36,986 --> 00:05:43,558
+The average American home uses about ten thousand seven hundred ninety-one kilowatt-hours a year.
+
+65
+00:05:43,858 --> 00:05:48,557
+So the car adds about thirty-one percent to the household's electricity use.
+
+66
+00:05:48,857 --> 00:05:56,284
+Month by month, that's about two hundred seventy-six kilowatt-hours, or about fifty dollars, at the national price.
+
+67
+00:05:56,584 --> 00:06:00,365
+And the government's household survey has a real-world number too.
+
+68
+00:06:00,665 --> 00:06:08,380
+Homes that charge an electric car used about two thousand three hundred sixty-three kilowatt-hours a year for charging.
+
+69
+00:06:08,680 --> 00:06:12,304
+At today's price, that's about four hundred thirty dollars.
+
+70
+00:06:12,604 --> 00:06:19,553
+That's below our estimate, a reminder that real households vary in how much they drive and where they plug in.
+
+71
+00:06:19,853 --> 00:06:22,116
+One more thing: both prices move.
+
+72
+00:06:22,416 --> 00:06:28,092
+In twenty twenty, regular gas averaged about two dollars and seventeen cents a gallon.
+
+73
+00:06:28,392 --> 00:06:33,071
+In twenty twenty-two, it spiked to about three dollars and ninety-five cents.
+
+74
+00:06:33,371 --> 00:06:37,794
+In twenty twenty-five, it was back to about three dollars and ten cents.
+
+75
+00:06:38,094 --> 00:06:46,888
+Home electricity rose more steadily, from about thirteen point two cents in twenty twenty to about eighteen point two cents today.
+
+76
+00:06:47,188 --> 00:06:59,176
+Per hundred miles, gas went from about seven dollars and ninety-seven cents in twenty twenty, to about fourteen fifty-three at the twenty twenty-two peak, and about eleven thirty-nine now.
+
+77
+00:06:59,476 --> 00:07:03,990
+Electricity went from about three ninety-four to about five forty-six.
+
+78
+00:07:04,290 --> 00:07:10,478
+In twenty twenty, and again today, charging at home cost about half as much per mile as gas.
+
+79
+00:07:10,778 --> 00:07:21,695
+At the twenty twenty-two peak, with electricity at about fifteen cents, it cost about four dollars and fifty-one cents per hundred miles, less than a third of gas.
+
+80
+00:07:21,995 --> 00:07:24,946
+Gas simply swings a lot more than electricity.
+
+81
+00:07:25,246 --> 00:07:26,565
+So here's the pattern.
+
+82
+00:07:26,865 --> 00:07:30,814
+The savings depend on two prices: gas and electricity.
+
+83
+00:07:31,114 --> 00:07:35,320
+Cheap power and expensive gas, like Washington, is the jackpot.
+
+84
+00:07:35,620 --> 00:07:40,034
+Expensive power and average gas, like Massachusetts, shrinks the gap.
+
+85
+00:07:40,334 --> 00:07:49,616
+On national gas prices, electricity would have to cost about thirty-eight cents per kilowatt-hour before charging at home stopped being cheaper.
+
+86
+00:07:49,916 --> 00:07:56,407
+In the worst case, with charging losses added, that line drops to about thirty-one point nine cents.
+
+87
+00:07:56,707 --> 00:07:58,758
+Most states are far below that line.
+
+88
+00:07:59,058 --> 00:08:02,587
+A few in the Northeast and California are getting close.
+
+89
+00:08:02,887 --> 00:08:05,394
+Now let's do your own state, in two lines.
+
+90
+00:08:05,694 --> 00:08:13,643
+Line one, the electric car: multiply its rating in kilowatt-hours per hundred miles by your electricity price.
+
+91
+00:08:13,943 --> 00:08:20,647
+Thirty times eighteen point two cents is about five dollars and forty-six cents per hundred miles.
+
+92
+00:08:20,947 --> 00:08:28,338
+Line two, the gas car: divide one hundred by its miles per gallon, then multiply by your gas price.
+
+93
+00:08:28,638 --> 00:08:37,319
+One hundred divided by twenty-seven point two, times three dollars and ten cents, is about eleven dollars and thirty-nine cents.
+
+94
+00:08:37,619 --> 00:08:43,240
+The difference, times the miles you drive divided by a hundred, is your yearly savings.
+
+95
+00:08:43,540 --> 00:08:45,147
+And the car itself matters.
+
+96
+00:08:45,447 --> 00:08:58,009
+A Tesla Model Y Long Range rear-wheel drive, at twenty-seven kilowatt-hours per hundred miles, costs about five hundred forty-two dollars a year to charge at the national price.
+
+97
+00:08:58,309 --> 00:09:03,705
+An Equinox EV front-wheel drive, at thirty-one, about six hundred twenty-two.
+
+98
+00:09:04,005 --> 00:09:06,281
+A few things are not in these numbers.
+
+99
+00:09:06,581 --> 00:09:08,272
+This is home charging only.
+
+100
+00:09:08,572 --> 00:09:12,625
+Public charging prices vary a lot, and they're not included here.
+
+101
+00:09:12,925 --> 00:09:17,032
+It also leaves out the price of the car, insurance and maintenance.
+
+102
+00:09:17,332 --> 00:09:19,802
+This is purely the cost of energy to drive.
+
+103
+00:09:20,102 --> 00:09:21,507
+And these are averages.
+
+104
+00:09:21,807 --> 00:09:27,150
+If you drive more than eleven thousand miles a year, the savings grow with every mile.
+
+105
+00:09:27,450 --> 00:09:31,705
+So, is charging an electric car at home cheaper than buying gas?
+
+106
+00:09:32,005 --> 00:09:37,113
+On national averages, yes, by about six hundred fifty-four dollars a year.
+
+107
+00:09:37,413 --> 00:09:41,294
+In Washington, by about one thousand one hundred ninety-eight.
+
+108
+00:09:41,594 --> 00:09:47,033
+In Massachusetts, only about two hundred five, and close to a tie in the worst case.
+
+109
+00:09:47,333 --> 00:09:51,883
+Check your own two prices with the formula, and you'll know where your state lands.
+
+110
+00:09:52,183 --> 00:10:00,157
+And if you're wondering what else charging adds to your home's electric bill, my ranking of fifteen home appliances is on this channel.

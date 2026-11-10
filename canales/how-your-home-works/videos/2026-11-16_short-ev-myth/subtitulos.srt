@@ -1,0 +1,43 @@
+1
+00:00:00,000 --> 00:00:05,107
+Myth or reality: charging an electric car at home is always cheaper than gas.
+
+2
+00:00:05,227 --> 00:00:11,788
+On national averages, a gas car costs about one thousand two hundred fifty-five dollars a year in fuel.
+
+3
+00:00:11,908 --> 00:00:15,458
+Charging an electric car at home, about six hundred two.
+
+4
+00:00:15,578 --> 00:00:21,774
+In Washington State, the electric car saves about one thousand one hundred ninety-eight dollars a year.
+
+5
+00:00:21,894 --> 00:00:26,336
+But in Massachusetts, where electricity costs about thirty point two cents,
+
+6
+00:00:26,456 --> 00:00:28,674
+it saves only about two hundred five.
+
+7
+00:00:28,794 --> 00:00:35,569
+And in the worst case, with charging losses added, the Massachusetts savings drop to about fifteen dollars.
+
+8
+00:00:35,689 --> 00:00:36,824
+Basically a tie.
+
+9
+00:00:36,944 --> 00:00:39,599
+Verdict: mostly reality, but not everywhere.
+
+10
+00:00:39,719 --> 00:00:41,828
+It depends on your electricity price.
+
+11
+00:00:41,948 --> 00:00:46,141
+So, is charging an electric car at home always cheaper than gas?

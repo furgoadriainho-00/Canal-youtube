@@ -1,0 +1,47 @@
+TÍTULO:
+EV vs Gas: Real Cost of Charging at Home, by State
+
+DESCRIPCIÓN:
+Is charging an electric car at home really cheaper than gas? Using official data for miles driven (FHWA), fuel economy (EPA) and energy prices (EIA), I calculated the yearly cost for the U.S. and 9 states.
+
+U.S. average: gas about $1,255 a year vs about $602 charging at home, about $654 saved. Washington saves about $1,198; Massachusetts only about $205.
+
+How the numbers work: 11,026 miles a year (FHWA Highway Statistics 2024); gas car at 27.2 mpg (EPA, model year 2024 average); EV at 30 kWh/100 mi (EPA ratings of popular 2025 models: 27–31); regular gasoline 2025 and residential electricity Jan–Aug 2026 (EIA). Worst-case check adds charging losses at 84% efficiency (ORNL). Home charging only; car price, insurance and maintenance not included.
+
+Chapters:
+0:00 Same car, different savings
+0:16 What we'll work out
+0:40 The four ingredients
+1:51 Every hundred miles
+2:23 A full year
+2:51 The cautious check
+3:35 State by state
+5:23 What it adds to your bill
+6:19 Prices move
+7:25 The break-even power price
+8:02 Your own formula
+9:04 What's not included
+9:27 The verdict
+
+Sources:
+FHWA via AFDC, annual miles by vehicle type: https://afdc.energy.gov/data/10309
+EPA Automotive Trends: https://www.epa.gov/automotive-trends/highlights-automotive-trends-report
+EPA ratings: https://www.fueleconomy.gov
+EIA gasoline prices: https://www.eia.gov/dnav/pet/pet_pri_gnd_a_epmr_pte_dpgal_a.htm
+EIA electricity prices by state: https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_b
+Charging efficiency (ORNL, via fueleconomy.gov): https://www.fueleconomy.gov/feg/evtech.shtml
+
+ETIQUETAS:
+ev vs gas, cost to charge electric car at home, ev charging cost, electric car savings, ev cost by state, home ev charging, gas vs electric car, home by the numbers
+
+AJUSTES EN YOUTUBE STUDIO:
+
+- Idioma del vídeo: English · Subtítulos: sube subtitulos_en.srt (Inglés)
+
+- Lista de reproducción: Home energy costs, explained
+
+- Contenido para niños: NO
+
+- Contenido alterado o sintético: SÍ (narración con voz sintética)
+
+- Miniatura: miniatura_A.jpg (si tu cuenta tiene «Probar y comparar», sube también B y C)
