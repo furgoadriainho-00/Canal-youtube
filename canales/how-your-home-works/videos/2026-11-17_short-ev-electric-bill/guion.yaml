@@ -1,0 +1,59 @@
+# Short del guionista (guiones/2026-11-17_short-ev-electric-bill/GUION.md). Narración literal.
+titulo: How much does an EV add to your electric bill
+estructura: pregunta-respuesta
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: How much does an electric car add to your home's electric bill?
+  v:
+    tipo: casa
+    foco: coche
+    lineas: ['How much', '*more?*']
+- t: Here's the math.
+  v:
+    tipo: iconos
+    iconos: [calculate]
+    etiquetas: ['The math']
+- t: The average car in America drives about eleven thousand twenty-six miles a year.
+  v: {tipo: numero, icono: speed, valor: 11026, sufijo: ' mi', etiqueta: 'Average car, a year · FHWA', color: frio}
+- t: At thirty kilowatt-hours per hundred miles, that's about three thousand three hundred eight kilowatt-hours.
+  v: {tipo: formula, partes: ['11,026', '×', '30 ÷ 100', '=', '3,308 kWh/yr']}
+- t: The average American home uses about ten thousand seven hundred ninety-one kilowatt-hours a year.
+  v:
+    tipo: contador
+    valor: 10791
+    unidad: kWh / year
+    lineas: ['Average home:', '*10,791 kWh*']
+- t: So the car adds about thirty-one percent.
+  v: {tipo: numero, icono: electric_car, valor: 31, sufijo: '%', etiqueta: '+31% on home electricity', color: calor}
+- t: Per month, that's about two hundred seventy-six kilowatt-hours.
+  v: {tipo: numero, icono: bolt, valor: 276, sufijo: ' kWh/mo', etiqueta: 'Added each month', color: frio}
+- t: At the national price, about fifty dollars.
+  v: {tipo: numero, icono: ev_station, valor: 50, prefijo: $, sufijo: /mo, etiqueta: '~$50/month · U.S. price', color: frio}
+- t: Gas for the same miles would cost about one hundred five dollars a month.
+  v:
+    tipo: comparar
+    a: [Power, 50, ev_station]
+    b: [Gas, 105, local_gas_station]
+    prefijo: $
+    sufijo: /mo
+    gana: a
+    etiqueta: 'Gas: $105/month'
+- t: So yes, your power bill goes up.
+  v:
+    tipo: iconos
+    iconos: [receipt_long, trending_up]
+    etiquetas: ['Power bill', 'Goes up']
+- t: But your gas bill goes away.
+  v:
+    tipo: iconos
+    iconos: [local_gas_station]
+    etiquetas: ['Power up · gas gone']
+    tachar: 0
+- t: So, how much does an electric car add to your home's electric bill?
+  v:
+    tipo: casa
+    foco: coche
+    lineas: ['How much', '*more?*']
+- t: About fifty dollars a month.
+  v: {tipo: numero, icono: ev_station, valor: '$50/month', etiqueta: 'Electric car at home', color: frio}

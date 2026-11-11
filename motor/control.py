@@ -43,7 +43,8 @@ def _transcribir(f):
 
 # Whisper escribe las cifras con dígitos y el guion con letras: se comparan solo las demás palabras
 NUMEROS = set("""zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen
-seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety hundred thousand million point""".split())
+seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety hundred thousand million point
+dollar dollars cent cents""".split())  # Whisper escribe «$7.97» donde el guion dice «seven dollars and ninety-seven cents»
 
 
 def _norm(t):

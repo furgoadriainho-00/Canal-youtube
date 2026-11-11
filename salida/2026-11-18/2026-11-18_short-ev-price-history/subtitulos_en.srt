@@ -1,0 +1,55 @@
+1
+00:00:00,000 --> 00:00:01,077
+In twenty twenty,
+
+2
+00:00:01,197 --> 00:00:06,360
+driving a hundred miles on gas cost about seven dollars and ninety-seven cents.
+
+3
+00:00:06,480 --> 00:00:13,289
+Charging an electric car at home for the same hundred miles cost about three dollars and ninety-four cents.
+
+4
+00:00:13,409 --> 00:00:14,900
+Then in twenty twenty-two,
+
+5
+00:00:15,020 --> 00:00:18,709
+gas spiked to about three dollars and ninety-five cents a gallon.
+
+6
+00:00:18,829 --> 00:00:23,650
+A hundred miles on gas jumped to about fourteen dollars and fifty-three cents.
+
+7
+00:00:23,770 --> 00:00:26,536
+At home, about four dollars and fifty-one cents.
+
+8
+00:00:26,656 --> 00:00:29,804
+Today, gas is back to about three dollars and ten cents.
+
+9
+00:00:29,924 --> 00:00:33,871
+A hundred miles costs about eleven dollars and thirty-nine cents.
+
+10
+00:00:33,991 --> 00:00:37,675
+Charging at home, about five dollars and forty-six cents.
+
+11
+00:00:37,795 --> 00:00:40,632
+Electricity crept up. Gas swung wildly.
+
+12
+00:00:40,752 --> 00:00:42,964
+So the real difference isn't just the price.
+
+13
+00:00:43,084 --> 00:00:44,381
+It's how much it moves.
+
+14
+00:00:44,501 --> 00:00:49,388
+Because in twenty twenty, a hundred miles on gas cost about seven ninety-seven…

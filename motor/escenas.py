@@ -532,6 +532,48 @@ def dispersion(lienzo, caja, s, t, dur, u):
               x0 + w * (0.3 + 0.42 * j), y0 + h - 34 * u, alfa=prog(t, 1.2, 0.4))
 
 
+def serie(lienzo, caja, s, t, dur, u):
+    """Líneas en el tiempo: cada serie se dibuja de izquierda a derecha con su valor final al lado."""
+    x0, y0, w, h = caja
+    xa, xb = x0 + w * 0.12, x0 + w * 0.72
+    ya, yb = y0 + h * 0.18, y0 + h * 0.72
+    ejes = s["ejes"]
+    lo, hi = s["rango"]
+    pe = ease_out(prog(t, 0, 0.4))
+    pegar(lienzo, caja_redondeada(max(4, int((xb - xa) * pe)), int(6 * u), int(3 * u), C["suave"] + (255,)), xa, yb, ancla="l")
+    if s.get("etiqueta"):
+        pegar(lienzo, encajar(texto(s["etiqueta"], int(44 * u), C["suave"], "Inter", "SemiBold"), int(w * 0.85)),
+              x0 + w / 2, ya - 90 * u, alfa=prog(t, 0, 0.3))
+    xs = [xa + (xb - xa) * i / (len(ejes) - 1) for i in range(len(ejes))]
+    for x, et in zip(xs, ejes):
+        pegar(lienzo, texto(et, int(40 * u), C["suave"], "Inter", "SemiBold"), x, yb + 50 * u, alfa=pe)
+    capa = Image.new("RGBA", lienzo.size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(capa)
+    for j, (nombre, vals, col) in enumerate(s["series"]):
+        c = _color(col)
+        pts = [(x, yb - (yb - ya) * (v - lo) / (hi - lo)) for x, v in zip(xs, vals)]
+        p = ease_out(prog(t, 0.2 + j * 0.3, max(0.6, dur * 0.45))) * (len(pts) - 1)
+        tramo = [pts[0]]
+        for i in range(1, len(pts)):
+            f = min(1.0, max(0.0, p - (i - 1)))
+            if f <= 0:
+                break
+            (ax, ay), (bx, by) = pts[i - 1], pts[i]
+            tramo.append((ax + (bx - ax) * f, ay + (by - ay) * f))
+        d.line(tramo, fill=c + (255,), width=int(12 * u), joint="curve")
+        for i, (px, py) in enumerate(pts):
+            if p >= i:
+                r = 14 * u
+                d.ellipse((px - r, py - r, px + r, py + r), fill=c + (255,))
+        if p >= len(pts) - 1:
+            pegar(lienzo, encajar(texto(nombre, int(46 * u), c, "Inter", "Bold"), int(w * 0.25)),
+                  xb + 40 * u, pts[-1][1], alfa=prog(t, 0.2 + j * 0.3 + max(0.6, dur * 0.45), 0.3), ancla="l")
+    lienzo.alpha_composite(capa)
+    if s.get("nota"):
+        pegar(lienzo, encajar(texto(s["nota"], int(36 * u), C["suave"], "Inter", "Medium"), int(w * 0.9)),
+              x0 + w / 2, y0 + h - 60 * u, alfa=prog(t, 0.8, 0.4))
+
+
 def clip_escena(lienzo, caja, s, t, dur, u):
     """Clip 3D en un panel con texto al lado."""
     x0, y0, w, h = caja
@@ -543,6 +585,7 @@ ESCENAS = {
     "mapa": mapa_escena,
     "regla": regla,
     "dispersion": dispersion,
+    "serie": serie,
     "clip": clip_escena,
     "numero": numero,
     "texto": texto_escena,

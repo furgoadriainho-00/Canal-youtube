@@ -11,6 +11,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import subprocess
 import sys
 from concurrent.futures import ProcessPoolExecutor
@@ -327,9 +328,18 @@ def mezclar(carpeta: Path, total: float, mudo: Path, final: Path):
     _ffmpeg("-i", str(a / "voz_norm.wav"), "-i", str(a / "musica_norm.wav"), "-filter_complex",
             "[0][1]amix=inputs=2:duration=first:normalize=0", "-ar", "48000", str(a / "mezcla.wav"))
     _normalizar(a / "mezcla.wav", a / "mezcla_norm.wav", -14, tp=-2.0, lineal=False)  # el AAC sube los picos
-    _ffmpeg("-i", str(mudo), "-i", str(a / "mezcla_norm.wav"), "-c:v", "copy", "-af", "alimiter=limit=0.75:level=false",
-            "-c:a", "aac", "-b:a", "192k",
-            "-shortest", "-movflags", "+faststart", str(final))
+    ganancia = 0.0
+    for _ in range(2):  # el loudnorm dinámico y el limitador se quedan algo cortos: se mide y se corrige una vez
+        _ffmpeg("-i", str(mudo), "-i", str(a / "mezcla_norm.wav"), "-c:v", "copy",
+                "-af", f"volume={ganancia:.2f}dB,alimiter=limit=0.75:level=false",
+                "-c:a", "aac", "-b:a", "192k",
+                "-shortest", "-movflags", "+faststart", str(final))
+        r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(final), "-af", "ebur128", "-f", "null", "-"],
+                           capture_output=True, text=True)
+        i = float(re.search(r"I:\s+(-?[\d.]+) LUFS", r.stderr[r.stderr.rindex("Summary:"):]).group(1))
+        if abs(i + 14) <= 0.4:
+            break
+        ganancia += -14 - i
 
 
 def producir(carpeta: Path, prueba: int = 0, sin_cache=False):

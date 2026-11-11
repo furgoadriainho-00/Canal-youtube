@@ -1,0 +1,51 @@
+1
+00:00:00,000 --> 00:00:03,761
+How much does an electric car add to your home's electric bill?
+
+2
+00:00:03,881 --> 00:00:04,786
+Here's the math.
+
+3
+00:00:04,906 --> 00:00:10,076
+The average car in America drives about eleven thousand twenty-six miles a year.
+
+4
+00:00:10,196 --> 00:00:16,278
+At thirty kilowatt-hours per hundred miles, that's about three thousand three hundred eight kilowatt-hours.
+
+5
+00:00:16,398 --> 00:00:22,615
+The average American home uses about ten thousand seven hundred ninety-one kilowatt-hours a year.
+
+6
+00:00:22,735 --> 00:00:24,919
+So the car adds about thirty-one percent.
+
+7
+00:00:25,039 --> 00:00:28,597
+Per month, that's about two hundred seventy-six kilowatt-hours.
+
+8
+00:00:28,717 --> 00:00:31,206
+At the national price, about fifty dollars.
+
+9
+00:00:31,326 --> 00:00:35,736
+Gas for the same miles would cost about one hundred five dollars a month.
+
+10
+00:00:35,856 --> 00:00:37,856
+So yes, your power bill goes up.
+
+11
+00:00:37,976 --> 00:00:39,608
+But your gas bill goes away.
+
+12
+00:00:39,728 --> 00:00:43,819
+So, how much does an electric car add to your home's electric bill?
+
+13
+00:00:43,939 --> 00:00:45,569
+About fifty dollars a month.

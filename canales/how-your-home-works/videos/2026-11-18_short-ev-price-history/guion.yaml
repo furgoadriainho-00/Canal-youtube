@@ -1,0 +1,75 @@
+# Short del guionista (guiones/2026-11-18_short-ev-price-history/GUION.md). Narración literal.
+titulo: What 100 miles cost, gas vs EV, 2020 to today
+estructura: historia
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: In twenty twenty,
+  v:
+    tipo: iconos
+    iconos: [history]
+    etiquetas: ['2020']
+- t: driving a hundred miles on gas cost about seven dollars and ninety-seven cents.
+  v: {tipo: numero, icono: local_gas_station, valor: '$7.97', etiqueta: '2020 · 100 miles on gas', color: calor}
+- t: Charging an electric car at home for the same hundred miles cost about three dollars and ninety-four cents.
+  v:
+    tipo: comparar
+    a: [EV, 3.94, ev_station]
+    b: [Gas, 7.97, local_gas_station]
+    prefijo: $
+    decimales: 2
+    gana: a
+    etiqueta: '2020: $7.97 vs $3.94'
+- t: Then in twenty twenty-two,
+  v:
+    tipo: iconos
+    iconos: [trending_up]
+    etiquetas: ['2022']
+- t: gas spiked to about three dollars and ninety-five cents a gallon.
+  v: {tipo: numero, icono: local_gas_station, valor: '$3.95/gal', etiqueta: '2022 · gas, a gallon', color: calor}
+- t: A hundred miles on gas jumped to about fourteen dollars and fifty-three cents.
+  v: {tipo: numero, icono: local_gas_station, valor: '$14.53', etiqueta: '2022 · 100 miles on gas', color: calor}
+- t: At home, about four dollars and fifty-one cents.
+  v:
+    tipo: comparar
+    a: [EV, 4.51, ev_station]
+    b: [Gas, 14.53, local_gas_station]
+    prefijo: $
+    decimales: 2
+    gana: a
+    etiqueta: '2022: $14.53 vs $4.51'
+- t: Today, gas is back to about three dollars and ten cents.
+  v: {tipo: numero, icono: local_gas_station, valor: '$3.10/gal', etiqueta: 'Today · gas, a gallon', color: calor}
+- t: A hundred miles costs about eleven dollars and thirty-nine cents.
+  v: {tipo: numero, icono: local_gas_station, valor: '$11.39', etiqueta: 'Today · 100 miles on gas', color: calor}
+- t: Charging at home, about five dollars and forty-six cents.
+  v:
+    tipo: comparar
+    a: [EV, 5.46, ev_station]
+    b: [Gas, 11.39, local_gas_station]
+    prefijo: $
+    decimales: 2
+    gana: a
+    etiqueta: 'Today: $11.39 vs $5.46'
+- t: Electricity crept up. Gas swung wildly.
+  v:
+    tipo: serie
+    ejes: ['2020', '2022', 'Today']
+    rango: [0, 16]
+    series:
+    - [Gas, [7.97, 14.53, 11.39], calor]
+    - [EV, [3.94, 4.51, 5.46], frio]
+    etiqueta: 'Cost of 100 miles'
+    nota: 'Gas swings · power creeps'
+- t: So the real difference isn't just the price.
+  v:
+    tipo: iconos
+    iconos: [sell]
+    etiquetas: ['Not just the price']
+- t: It's how much it moves.
+  v:
+    tipo: iconos
+    iconos: [show_chart]
+    etiquetas: ["It's how much it moves"]
+- t: Because in twenty twenty, a hundred miles on gas cost about seven ninety-seven…
+  v: {tipo: numero, icono: local_gas_station, valor: '$7.97', etiqueta: '2020 · 100 miles on gas', color: calor}
