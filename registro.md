@@ -62,3 +62,4 @@
 - 2026-11-10 · Largo «EV vs Gas: Real Cost of Charging at Home, by State» subido (vídeo íntegro, SHA-256 comprobado) con miniatura A, capítulos, subtítulos y lista; programado para el 16/11 a las 17:00 de Madrid: https://youtu.be/R06pWkPtQS8. Comprobaciones de YouTube sin problemas. Falta la pantalla final.
 - 2026-11-10 · Pantalla final del largo EV vs Gas puesta (1 vídeo + suscribirse; vídeo: «Which Appliances Use the Most Electricity? Ranked by Cost»).
 - 2026-11-10 · Short del 16 de noviembre «Is Charging an EV at Home Always Cheaper?» subido con subtítulos y en la lista; programado para el 16/11 a las 17:00 de Madrid: https://youtube.com/shorts/EtRmi_kYeY8. Comprobaciones de YouTube sin problemas.
+- 2026-11-11 · Guion del Short del miércoles 18 «What 100 Miles Cost: Gas vs EV, 2020 to Today» (historia; cada 100 mi: 2020 7,97 $ frente a 3,94 $, 2022 14,53 $ frente a 4,51 $, hoy 11,39 $ frente a 5,46 $), el tercero sacado del largo del coche eléctrico.
