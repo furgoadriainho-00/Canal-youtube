@@ -121,3 +121,13 @@ Los largos que ya están publicados o programados no los toco. Las diferencias d
 - `2026-11-16_short-ev-myth`: Short (mito vs realidad).
 
 Voz y pantalla dicen las mismas cifras. En `fuentes.md` hay una lista completa de «cifras en pantalla, tal como salen», con coma decimal.
+
+---
+
+# Guionista (2026-11-12)
+
+**Guiones nuevos para el jueves 19:**
+- `2026-11-19_heat-pump-freezing-air`: **largo** (paso a paso, 1.513 palabras ≈ 9:15). Pide un diagrama del ciclo con iconos y flechas (exterior → compresor → interior → válvula) sobre la casa en corte; clips 3D `aire`, `calefaccion`, `nevera` y `medidor`. El apartado 8b es nuevo (etiqueta HSPF2, fórmula 7.5 ÷ 3.412 ≈ 2.2).
+- `2026-11-19_short-baseboard-vs-heat-pump`: Short (comparación), sin clip 3D.
+
+Voz = pantalla en todas las cifras; lista completa en cada `fuentes.md`, con coma decimal.
