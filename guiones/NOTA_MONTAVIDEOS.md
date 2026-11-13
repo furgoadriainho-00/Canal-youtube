@@ -131,3 +131,9 @@ Voz y pantalla dicen las mismas cifras. En `fuentes.md` hay una lista completa d
 - `2026-11-19_short-baseboard-vs-heat-pump`: Short (comparación), sin clip 3D.
 
 Voz = pantalla en todas las cifras; lista completa en cada `fuentes.md`, con coma decimal.
+
+---
+
+# Guionista (2026-11-13)
+
+**Guion nuevo:** `2026-11-20_short-heat-pump-freezing-myth` (viernes 20, mito vs realidad), sacado del largo del 19. Sin clip 3D. Voz = pantalla; cifras en `fuentes.md` con coma decimal.
