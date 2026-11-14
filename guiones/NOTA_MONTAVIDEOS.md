@@ -137,3 +137,9 @@ Voz = pantalla en todas las cifras; lista completa en cada `fuentes.md`, con com
 # Guionista (2026-11-13)
 
 **Guion nuevo:** `2026-11-20_short-heat-pump-freezing-myth` (viernes 20, mito vs realidad), sacado del largo del 19. Sin clip 3D. Voz = pantalla; cifras en `fuentes.md` con coma decimal.
+
+---
+
+# Guionista (2026-11-14)
+
+**Guion nuevo:** `2026-11-21_short-hspf2-label` (sábado 21, pregunta-respuesta), el tercero sacado del largo del 19. Sin clip 3D. Usa la fórmula animada (7.5 ÷ 3.412 ≈ 2.2 y 9 ÷ 3.412 ≈ 2.64). Voz = pantalla; cifras en `fuentes.md` con coma decimal.

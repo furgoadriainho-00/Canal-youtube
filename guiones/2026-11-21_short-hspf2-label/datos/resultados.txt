@@ -1,0 +1,3 @@
+HSPF2 7.5: COP 2.20 · 45% de la luz de un radiador · MN 1065 $/año
+HSPF2 9: COP 2.64 · 38% de la luz de un radiador · MN 888 $/año
+diferencia MN: 178 $/año
