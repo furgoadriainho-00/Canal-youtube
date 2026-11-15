@@ -143,3 +143,9 @@ Voz = pantalla en todas las cifras; lista completa en cada `fuentes.md`, con com
 # Guionista (2026-11-14)
 
 **Guion nuevo:** `2026-11-21_short-hspf2-label` (sábado 21, pregunta-respuesta), el tercero sacado del largo del 19. Sin clip 3D. Usa la fórmula animada (7.5 ÷ 3.412 ≈ 2.2 y 9 ÷ 3.412 ≈ 2.64). Voz = pantalla; cifras en `fuentes.md` con coma decimal.
+
+---
+
+# Guionista (2026-11-15)
+
+**Guion nuevo:** `2026-11-22_short-space-heater-cost` (domingo 22, lista). Sin clip 3D: casa en corte con foco en un radiador portátil, mapa con estados y puestos. Voz = pantalla (céntimos enteros: 22¢ … 49¢); cifras en `fuentes.md`.
