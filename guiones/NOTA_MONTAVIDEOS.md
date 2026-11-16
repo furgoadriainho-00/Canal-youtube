@@ -149,3 +149,13 @@ Voz = pantalla en todas las cifras; lista completa en cada `fuentes.md`, con com
 # Guionista (2026-11-15)
 
 **Guion nuevo:** `2026-11-22_short-space-heater-cost` (domingo 22, lista). Sin clip 3D: casa en corte con foco en un radiador portátil, mapa con estados y puestos. Voz = pantalla (céntimos enteros: 22¢ … 49¢); cifras en `fuentes.md`.
+
+---
+
+# Guionista (2026-11-16)
+
+**Guiones nuevos para el lunes 23:**
+- `2026-11-23_light-bulb-story`: **largo** (historia, 1.509 palabras ≈ 9:10). Pide una **línea de tiempo** recurrente 1879 → 2028 (escena `serie` o regla horizontal con marcas) con iconos sencillos. **Sin fotos ni caras de Edison ni de nadie real.** Clips 3D: `luz` y `medidor`.
+- `2026-11-23_short-porch-light`: Short (comparación), sin clip 3D.
+
+Voz = pantalla en todas las cifras; lista completa en cada `fuentes.md`, con coma decimal.

@@ -1,0 +1,19 @@
+horas al año: 1095; 2022: 800 lm ≤ 17.8 W; 2028: 124.3 lm/W → ≤ 6.4 W
+bombilla,W,kWh/año,$/año,$/año×10 bombillas
+incandescente 60 W,60.0,65.7,11.95,120
+halógena máx. 2014 (43 W),43.0,47.1,8.56,86
+límite 2022 (45 lm/W),17.8,19.5,3.54,35
+LED (FTC, 9 W),9.0,9.9,1.79,18
+límite 2028,6.4,7.0,1.28,13
+LED frente a 60 W: 15% de la luz, ahorro 10.16 $/año por bombilla, 102 $ por 10
+2020 todo o casi todo LED: 57.69 M de 123,53 (47%)
+2015 todo o casi todo LED: 5.3 M de 118,2 (4.5%; EIA lo publica como 4 %)
+2020 todo o casi todo incandescente/halógena: 18.69 M (15%); 2015: 36.6 M (31%)
+2020 al menos una incandescente/halógena: 75,22 M (61%)
+CFL todo o casi todo: 2020 14.90 M (12%); 2015 37.5 M (32%)
+ahorro 60→9 W en Washington (14.42 ¢): 8.05 $/año
+ahorro 60→9 W en California (32.58 ¢): 18.19 $/año
+exterior toda la noche: 51,12 M hogares con al menos una; 13,62 M con incandescente/halógena (11% de todos)
+exterior 60 W, 12 h al día: 47.80 $/año
+exterior 9 W, 12 h al día: 7.17 $/año
+diferencia exterior: 40.63 $/año
