@@ -1,0 +1,47 @@
+1
+00:00:00,000 --> 00:00:02,689
+October twenty-second, eighteen seventy-nine.
+
+2
+00:00:02,809 --> 00:00:07,239
+Edison's lab lights a bulb with a filament of carbonized cotton thread.
+
+3
+00:00:07,359 --> 00:00:09,446
+It glows for thirteen and a half hours.
+
+4
+00:00:09,566 --> 00:00:12,070
+The first lamp with real commercial promise.
+
+5
+00:00:12,190 --> 00:00:17,201
+Eighteen eighty-two: the Pearl Street station in New York starts selling electricity.
+
+6
+00:00:17,321 --> 00:00:19,320
+About four hundred lamps on day one.
+
+7
+00:00:19,440 --> 00:00:21,357
+Twenty fourteen: a federal limit.
+
+8
+00:00:21,477 --> 00:00:25,023
+An eight-hundred-lumen bulb can use forty-three watts at most.
+
+9
+00:00:25,143 --> 00:00:30,089
+Today, an LED gives those same eight hundred lumens for about nine watts.
+
+10
+00:00:30,209 --> 00:00:34,625
+On three hours a day, that's about one dollar and seventy-nine cents a year,
+
+11
+00:00:34,745 --> 00:00:38,083
+instead of eleven ninety-five for the old sixty-watt bulb.
+
+12
+00:00:38,203 --> 00:00:43,524
+All of it started with a cotton thread, on October twenty-second, eighteen seventy-nine…

@@ -1,0 +1,80 @@
+# Short del guionista (guiones/2026-11-24_short-first-light-bulb/GUION.md). Narración literal.
+titulo: The first light bulb lasted 13.5 hours
+estructura: historia
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: October twenty-second, eighteen seventy-nine.
+  v:
+    tipo: regla
+    rango: [1850, 2050]
+    paso: 50
+    titulo: The light bulb story
+    sin_valor: true
+    filas: 3
+    marcas:
+    - [1879, 'Oct 22, 1879', calor]
+- t: Edison's lab lights a bulb with a filament of carbonized cotton thread.
+  v:
+    tipo: formula
+    partes: [Cotton thread, + heat, →, carbon filament]
+- t: It glows for thirteen and a half hours.
+  v: {tipo: numero, icono: schedule, valor: '13.5 hours', etiqueta: 'Oct 22, 1879', color: calor}
+- t: The first lamp with real commercial promise.
+  v:
+    tipo: iconos
+    iconos: [wb_incandescent]
+    etiquetas: ['Real commercial promise']
+- t: 'Eighteen eighty-two: the Pearl Street station in New York starts selling electricity.'
+  v:
+    tipo: regla
+    rango: [1850, 2050]
+    paso: 50
+    titulo: The light bulb story
+    sin_valor: true
+    filas: 3
+    marcas:
+    - [1879, '1879', frio]
+    - [1882, '1882', calor]
+- t: About four hundred lamps on day one.
+  v: {tipo: numero, icono: factory, valor: '400 lamps', etiqueta: '1882 · day one', color: calor}
+- t: 'Twenty fourteen: a federal limit.'
+  v:
+    tipo: regla
+    rango: [1850, 2050]
+    paso: 50
+    titulo: The light bulb story
+    sin_valor: true
+    filas: 3
+    marcas:
+    - [1879, '1879', frio]
+    - [1882, '1882', frio]
+    - [2014, '2014', calor]
+- t: An eight-hundred-lumen bulb can use forty-three watts at most.
+  v: {tipo: numero, icono: wb_incandescent, valor: '43 W max', etiqueta: '800 lumens', color: calor}
+- t: Today, an LED gives those same eight hundred lumens for about nine watts.
+  v:
+    tipo: iconos
+    iconos: [lightbulb, wb_incandescent]
+    etiquetas: ['9 W LED', '60 W']
+- t: On three hours a day, that's about one dollar and seventy-nine cents a year,
+  v: {tipo: numero, icono: lightbulb, valor: '$1.79/yr', etiqueta: '9 W LED · 3 h a day', color: ahorro}
+- t: instead of eleven ninety-five for the old sixty-watt bulb.
+  v:
+    tipo: comparar
+    a: [LED, 1.79, lightbulb]
+    b: [60 W bulb, 11.95, wb_incandescent]
+    prefijo: $
+    decimales: 2
+    gana: a
+    etiqueta: '$11.95 vs $1.79 a year'
+- t: All of it started with a cotton thread, on October twenty-second, eighteen seventy-nine…
+  v:
+    tipo: regla
+    rango: [1850, 2050]
+    paso: 50
+    titulo: It started with a thread
+    sin_valor: true
+    filas: 3
+    marcas:
+    - [1879, 'Oct 22, 1879', calor]
