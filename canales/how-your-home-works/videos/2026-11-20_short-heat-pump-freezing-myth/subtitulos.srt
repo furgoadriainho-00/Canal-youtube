@@ -1,0 +1,47 @@
+1
+00:00:00,000 --> 00:00:04,880
+Myth or reality: a heat pump stops working once it's below freezing outside.
+
+2
+00:00:05,000 --> 00:00:05,513
+Myth.
+
+3
+00:00:05,633 --> 00:00:07,213
+Cold air still holds heat.
+
+4
+00:00:07,333 --> 00:00:13,195
+True zero heat is absolute zero, minus four hundred fifty-nine point six seven degrees.
+
+5
+00:00:13,315 --> 00:00:20,210
+Measured from there, thirty-two-degree air has about ninety-three percent of the heat energy of seventy-degree air.
+
+6
+00:00:20,330 --> 00:00:23,037
+Zero-degree air, about eighty-seven percent.
+
+7
+00:00:23,157 --> 00:00:25,015
+A heat pump doesn't make that heat.
+
+8
+00:00:25,135 --> 00:00:28,857
+It moves it inside, using electricity to run a compressor.
+
+9
+00:00:28,977 --> 00:00:38,130
+ENERGY STAR cold-climate models must still deliver at least one point seven five units of heat per unit of electricity at five degrees.
+
+10
+00:00:38,250 --> 00:00:39,839
+An electric heater gives one.
+
+11
+00:00:39,959 --> 00:00:42,834
+So it works harder in the cold, but it keeps working.
+
+12
+00:00:42,954 --> 00:00:45,342
+Which is why the real question isn't freezing…

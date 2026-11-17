@@ -1,0 +1,55 @@
+1
+00:00:00,000 --> 00:00:06,472
+Here's what a fifteen-hundred-watt space heater costs per hour at full power, from cheapest state to priciest.
+
+2
+00:00:06,592 --> 00:00:08,599
+Washington: about twenty-two cents.
+
+3
+00:00:08,719 --> 00:00:10,057
+Florida: twenty-three.
+
+4
+00:00:10,177 --> 00:00:11,409
+Texas: twenty-four.
+
+5
+00:00:11,529 --> 00:00:13,026
+Minnesota: twenty-five.
+
+6
+00:00:13,146 --> 00:00:16,230
+The US average: about twenty-seven cents an hour.
+
+7
+00:00:16,350 --> 00:00:18,009
+New York: forty-four cents.
+
+8
+00:00:18,129 --> 00:00:19,900
+Massachusetts: forty-five.
+
+9
+00:00:20,020 --> 00:00:23,043
+And California: about forty-nine cents an hour.
+
+10
+00:00:23,163 --> 00:00:25,072
+Run it eight hours a day for a month,
+
+11
+00:00:25,192 --> 00:00:30,833
+and that's about fifty-two dollars in Washington, and about one hundred seventeen in California.
+
+12
+00:00:30,953 --> 00:00:32,318
+Same heater, same heat.
+
+13
+00:00:32,438 --> 00:00:35,747
+The only thing that changes is your electricity price.
+
+14
+00:00:35,867 --> 00:00:40,167
+So check your rate, then do the math for a fifteen-hundred-watt space heater…

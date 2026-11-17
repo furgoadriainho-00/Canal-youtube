@@ -1,0 +1,63 @@
+# Short del guionista (guiones/2026-11-20_short-heat-pump-freezing-myth/GUION.md). Narración literal.
+titulo: Do heat pumps stop working below freezing
+estructura: mito-vs-realidad
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: 'Myth or reality: a heat pump stops working once it''s below freezing outside.'
+  v:
+    tipo: casa
+    foco: bomba_calor
+    lineas: ['Below', '*freezing?*']
+- t: Myth.
+  v:
+    tipo: iconos
+    iconos: [cancel]
+    etiquetas: ['Myth']
+- t: Cold air still holds heat.
+  v:
+    tipo: iconos
+    iconos: [ac_unit, heat]
+    etiquetas: ['Cold air', 'Still holds heat']
+- t: True zero heat is absolute zero, minus four hundred fifty-nine point six seven degrees.
+  v:
+    tipo: regla
+    rango: [-800, 200]
+    paso: 200
+    titulo: 'Temperature, °F'
+    sin_valor: true
+    marcas:
+    - [-459.67, 'Absolute zero: −459.67°F', frio]
+    - [32, '32°F', calor]
+    - [70, '70°F', calor]
+- t: Measured from there, thirty-two-degree air has about ninety-three percent of the heat energy of seventy-degree air.
+  v: {tipo: numero, icono: ac_unit, valor: 93, sufijo: '%', etiqueta: '32°F air vs 70°F air', color: frio}
+- t: Zero-degree air, about eighty-seven percent.
+  v: {tipo: numero, icono: severe_cold, valor: 87, sufijo: '%', etiqueta: '0°F air: 87% of the heat', color: frio}
+- t: A heat pump doesn't make that heat.
+  v:
+    tipo: iconos
+    iconos: [heat_pump]
+    etiquetas: ["Doesn't make heat"]
+- t: It moves it inside, using electricity to run a compressor.
+  v:
+    tipo: casa
+    foco: bomba_calor
+    lineas: ['It *moves*', 'heat inside']
+- t: ENERGY STAR cold-climate models must still deliver at least one point seven five units of heat per unit of electricity at five degrees.
+  v: {tipo: numero, icono: heat_pump, valor: '1.75×', etiqueta: 'Heat per unit of power at 5°F', color: frio}
+- t: An electric heater gives one.
+  v:
+    tipo: iconos
+    iconos: [heat_pump, heat]
+    etiquetas: ['Heat pump: 1.75', 'Heater: 1.0']
+- t: So it works harder in the cold, but it keeps working.
+  v:
+    tipo: casa
+    foco: bomba_calor
+    lineas: ['Works harder,', '*keeps working*']
+- t: Which is why the real question isn't freezing…
+  v:
+    tipo: casa
+    foco: bomba_calor
+    lineas: ['Below', '*freezing?*']

@@ -1,0 +1,1108 @@
+# Guion del guionista (guiones/2026-11-23_light-bulb-story/GUION.md). Narración literal.
+titulo: The light bulb story, from Edison to LEDs
+estructura: historia
+formato: largo
+voz:
+  nombre: am_michael
+  velocidad: 1.0
+segmentos:
+- t: The first light bulb that really worked lasted thirteen and a half hours.
+  v:
+    tipo: numero
+    icono: lightbulb
+    valor: 13.5 hours
+    etiqueta: 1879 · the first bulb that really worked
+    color: calor
+  capitulo: 13.5 hours
+- t: The bulb you'd buy today gives the same light for about fifteen percent of the electricity of the bulb most Americans grew up with.
+  v:
+    tipo: numero
+    icono: lightbulb
+    valor: 15
+    etiqueta: LED vs 60 W bulb, same light
+    color: frio
+    sufijo: '%'
+- t: Here's how we got from one to the other, and what that's worth on your bill.
+  v:
+    tipo: comparar
+    a:
+    - LED
+    - 9
+    - lightbulb
+    b:
+    - Classic bulb
+    - 60
+    - wb_incandescent
+    prefijo: ''
+    gana: a
+    etiqueta: Same 800 lumens
+    sufijo: ' W'
+- t: In this video, I'll walk through the story of the light bulb in six moments, from a lab in New Jersey to the rules that will shape the bulbs of twenty twenty-eight.
+  v:
+    tipo: regla
+    rango:
+    - 1850
+    - 2050
+    paso: 25
+    titulo: The light bulb story
+    sin_valor: true
+    filas: 3
+    marcas:
+    - - 1879
+      - '1879'
+      - calor
+    - - 1882
+      - '1882'
+      - calor
+    - - 2006
+      - '2006'
+      - frio
+    - - 2014
+      - '2014'
+      - frio
+    - - 2022
+      - '2022'
+      - frio
+    - - 2028
+      - '2028'
+      - ahorro
+    nota: 6 moments · 1 bill
+  capitulo: Six moments
+- t: At each step, I'll show you what one bulb costs to run for a year, so by the end you'll know exactly how much the bulbs in your house are worth changing.
+  v:
+    tipo: clip
+    clip: medidor
+    lineas:
+    - One bulb,
+    - '*one year*'
+    - at each step
+- t: 'Moment one: October twenty-second, eighteen seventy-nine, Menlo Park, New Jersey.'
+  v:
+    tipo: regla
+    rango:
+    - 1850
+    - 2050
+    paso: 25
+    titulo: The light bulb story
+    sin_valor: true
+    filas: 3
+    marcas:
+    - - 1879
+      - Oct 22, 1879
+      - calor
+  capitulo: '1879: a cotton thread'
+- t: Thomas Edison's team had already spent about a year and a half testing materials for the glowing part of a lamp, the filament.
+  v:
+    tipo: iconos
+    iconos:
+    - science
+    - lightbulb
+    etiquetas:
+    - A year and a half of tests
+    - The filament
+- t: The filament is the whole trick of an incandescent bulb.
+  v:
+    tipo: iconos
+    iconos:
+    - wb_incandescent
+    etiquetas:
+    - 'The filament: the whole trick'
+- t: Electricity flows through it, it gets so hot that it glows, and the glass bulb keeps the air out so it doesn't simply burn up.
+  v:
+    tipo: formula
+    partes:
+    - Electricity
+    - →
+    - hot filament
+    - →
+    - light
+- t: That morning, they tried a piece of cotton thread, carbonized, which means baked in a sealed chamber until only carbon was left.
+  v:
+    tipo: formula
+    partes:
+    - Cotton thread
+    - + heat
+    - →
+    - carbon
+- t: They sealed it inside a glass bulb and turned it on.
+  v:
+    tipo: clip
+    clip: luz
+    lineas:
+    - Sealed in glass,
+    - '*switched on*'
+- t: It kept glowing for thirteen and a half hours.
+  v:
+    tipo: numero
+    icono: schedule
+    valor: 13.5 hours
+    etiqueta: Oct 22, 1879
+    color: calor
+- t: The Edison Papers project at Rutgers University, which keeps the lab's records, calls it the first successful experiment with a high-resistance carbon filament.
+  v:
+    tipo: fuente
+    titulo: Thomas A. Edison Papers · Rutgers
+    detalle: First successful high-resistance carbon filament
+    nota: ''
+- t: Then they pushed more power through it, the bulb overheated and cracked about an hour later.
+  v:
+    tipo: iconos
+    iconos:
+    - bolt
+    - warning
+    etiquetas:
+    - More power
+    - Cracked
+- t: But for the first time, they had a lamp with real commercial promise.
+  v:
+    tipo: iconos
+    iconos:
+    - lightbulb
+    - storefront
+    etiquetas:
+    - A real lamp
+    - Commercial promise
+- t: Ten days later, on November first, Edison filed a patent application for the carbon filament.
+  v:
+    tipo: iconos
+    iconos:
+    - history_edu
+    etiquetas:
+    - 'Nov 1, 1879: patent'
+- t: And on December thirty-first, he held the first public demonstration of his electric lighting system at Menlo Park.
+  v:
+    tipo: iconos
+    iconos:
+    - calendar_month
+    - groups
+    etiquetas:
+    - Dec 31, 1879
+    - First public demo
+- t: But a lamp is useless without electricity to run it, and in eighteen seventy-nine almost no home had any.
+  v:
+    tipo: iconos
+    iconos:
+    - lightbulb
+    - power
+    etiquetas:
+    - A lamp
+    - No power at home
+  capitulo: '1882: the first power station'
+- t: So Edison's team kept improving the filament.
+  v:
+    tipo: iconos
+    iconos:
+    - science
+    etiquetas:
+    - Better filaments
+- t: In July eighteen eighty, they tested bamboo, and bamboo filaments became standard in Edison lamps.
+  v:
+    tipo: regla
+    rango:
+    - 1850
+    - 2050
+    paso: 25
+    titulo: The light bulb story
+    sin_valor: true
+    filas: 3
+    marcas:
+    - - 1879
+      - '1879'
+      - frio
+    - - 1880
+      - '1880: bamboo'
+      - calor
+- t: 'Moment two: September fourth, eighteen eighty-two.'
+  v:
+    tipo: regla
+    rango:
+    - 1850
+    - 2050
+    paso: 25
+    titulo: The light bulb story
+    sin_valor: true
+    filas: 3
+    marcas:
+    - - 1879
+      - '1879'
+      - frio
+    - - 1882
+      - Sep 4, 1882
+      - calor
+- t: At two fifty-seven Pearl Street, in lower Manhattan, Edison's generating station began supplying electricity to paying customers.
+  v:
+    tipo: iconos
+    iconos:
+    - factory
+    - location_city
+    etiquetas:
+    - Pearl Street station
+    - Lower Manhattan
+- t: On the first day, there were about four hundred lamps, for about eighty-five customers.
+  v:
+    tipo: numero
+    icono: lightbulb
+    valor: 400
+    etiqueta: lamps on day one · 85 customers
+    color: calor
+- t: Within a year, there were about ten thousand lamps, serving five hundred thirteen customers.
+  v:
+    tipo: barras
+    etiqueta: Pearl Street lamps · 513 customers after a year
+    items:
+    - - Day one
+      - 400
+      - lightbulb
+    - - A year later
+      - 10000
+      - lightbulb
+- t: That's the moment the light bulb stopped being an experiment and became something you pay for every month.
+  v:
+    tipo: clip
+    clip: medidor
+    lineas:
+    - Something
+    - '*you pay for*'
+- t: Which brings us to the bill.
+  v:
+    tipo: iconos
+    iconos:
+    - receipt_long
+    etiquetas:
+    - The bill
+- t: Before we jump forward, one thing you need to know to read a light bulb box.
+  v:
+    tipo: iconos
+    iconos:
+    - label
+    etiquetas:
+    - How to read the box
+  capitulo: Watts vs lumens
+- t: For most of the twentieth century, people bought bulbs by watts.
+  v:
+    tipo: iconos
+    iconos:
+    - wb_incandescent
+    etiquetas:
+    - Bought by watts
+- t: But watts measure the energy a bulb uses, not how bright it is.
+  v:
+    tipo: iconos
+    iconos:
+    - bolt
+    - light_mode
+    etiquetas:
+    - Watts = energy
+    - Not brightness
+- t: Brightness is measured in lumens.
+  v:
+    tipo: iconos
+    iconos:
+    - light_mode
+    etiquetas:
+    - Lumens = brightness
+- t: A traditional sixty-watt incandescent bulb gives about eight hundred lumens.
+  v:
+    tipo: numero
+    icono: wb_incandescent
+    valor: 800 lumens
+    etiqueta: 60 W incandescent
+    color: calor
+- t: That's the brightness most of us picture as a normal bulb.
+  v:
+    tipo: casa
+    foco: luz
+    lineas:
+    - A normal
+    - '*bulb*'
+- t: So in this video, every bulb I compare gives the same eight hundred lumens.
+  v:
+    tipo: iconos
+    iconos:
+    - light_mode
+    etiquetas:
+    - 'Every bulb: 800 lumens'
+- t: The only question is how many watts it takes to get there.
+  v:
+    tipo: iconos
+    iconos:
+    - bolt
+    etiquetas:
+    - How many watts?
+- t: And to put a price on it, I'll assume each bulb is on three hours a day, at the national average electricity price of eighteen point one nine cents per kilowatt-hour.
+  v:
+    tipo: iconos
+    iconos:
+    - schedule
+    - bolt
+    etiquetas:
+    - 3 h a day
+    - 18.19¢/kWh
+- t: Here's the math, so you can do it for any bulb in your house.
+  v:
+    tipo: iconos
+    iconos:
+    - calculate
+    etiquetas:
+    - The math
+- t: Take the watts, multiply by the hours it's on in a year, and divide by one thousand.
+  v:
+    tipo: formula
+    partes:
+    - W
+    - ×
+    - hours
+    - ÷
+    - 1,000
+- t: That gives you kilowatt-hours.
+  v:
+    tipo: formula
+    partes:
+    - W
+    - ×
+    - hours
+    - ÷
+    - 1,000
+    - '='
+    - kWh
+- t: Then multiply by your price.
+  v:
+    tipo: formula
+    partes:
+    - kWh
+    - ×
+    - your price
+    - '='
+    - $
+- t: Three hours a day is one thousand ninety-five hours a year.
+  v:
+    tipo: formula
+    partes:
+    - 3 h
+    - ×
+    - '365'
+    - '='
+    - 1,095 h
+- t: So a sixty-watt bulb uses about sixty-five point seven kilowatt-hours a year.
+  v:
+    tipo: formula
+    partes:
+    - '60'
+    - ×
+    - 1,095
+    - ÷
+    - 1,000
+    - '='
+    - 65.7 kWh
+- t: At that rate, the classic sixty-watt bulb costs about eleven dollars and ninety-five cents a year.
+  v:
+    tipo: formula
+    partes:
+    - 65.7 kWh
+    - ×
+    - 18.19¢
+    - '='
+    - $11.95
+- t: Just one bulb.
+  v:
+    tipo: numero
+    icono: wb_incandescent
+    valor: $11.95/yr
+    etiqueta: One 60 W bulb, 3 h a day
+    color: calor
+- t: Now jump forward more than a century.
+  v:
+    tipo: regla
+    rango:
+    - 1850
+    - 2050
+    paso: 25
+    titulo: The light bulb story
+    sin_valor: true
+    filas: 3
+    marcas:
+    - - 1882
+      - '1882'
+      - frio
+    - - 2006
+      - '2006'
+      - calor
+  capitulo: '2006: the spiral'
+- t: Light bulbs got cheaper and more common, but the basic idea, a hot glowing filament, stayed the same.
+  v:
+    tipo: iconos
+    iconos:
+    - wb_incandescent
+    - sync
+    etiquetas:
+    - Same hot filament
+    - For a century
+- t: Then came the compact fluorescent bulb, the spiral one.
+  v:
+    tipo: iconos
+    iconos:
+    - fluorescent
+    etiquetas:
+    - Compact fluorescent
+- t: 'Moment three: January first, two thousand six.'
+  v:
+    tipo: regla
+    rango:
+    - 1850
+    - 2050
+    paso: 25
+    titulo: The light bulb story
+    sin_valor: true
+    filas: 3
+    marcas:
+    - - 1879
+      - '1879'
+      - frio
+    - - 1882
+      - '1882'
+      - frio
+    - - 2006
+      - Jan 1, 2006
+      - calor
+- t: A federal standard required the common spiral bulbs of fifteen watts or more to give at least sixty lumens for every watt.
+  v:
+    tipo: formula
+    partes:
+    - Spiral, 15 W or more
+    - →
+    - 60 lumens per watt
+- t: By twenty fifteen, according to the government's household energy survey, thirty-two percent of American homes used fluorescent bulbs for all or most of their lighting.
+  v:
+    tipo: numero
+    icono: fluorescent
+    valor: 32
+    etiqueta: 2015 · homes mostly fluorescent
+    color: frio
+    sufijo: '%'
+- t: Thirty-one percent still used mostly incandescent or halogen bulbs.
+  v:
+    tipo: numero
+    icono: wb_incandescent
+    valor: 31
+    etiqueta: 2015 · mostly incandescent or halogen
+    color: calor
+    sufijo: '%'
+- t: And LED?
+  v:
+    tipo: iconos
+    iconos:
+    - lightbulb
+    etiquetas:
+    - LED?
+- t: Just four percent.
+  v:
+    tipo: numero
+    icono: lightbulb
+    valor: 4%
+    etiqueta: 2015 · homes mostly LED
+    color: frio
+- t: 'Moment four: the old bulb gets a limit.'
+  v:
+    tipo: regla
+    rango:
+    - 1850
+    - 2050
+    paso: 25
+    titulo: The light bulb story
+    sin_valor: true
+    filas: 3
+    marcas:
+    - - 2006
+      - '2006'
+      - frio
+    - - 2014
+      - 2012–2014
+      - calor
+  capitulo: '2012–2014: the old bulb shrinks'
+- t: Between twenty twelve and twenty fourteen, a federal standard capped how many watts a regular bulb could use for each level of brightness.
+  v:
+    tipo: iconos
+    iconos:
+    - gavel
+    - wb_incandescent
+    etiquetas:
+    - Federal cap
+    - Watts per brightness
+- t: It came in steps.
+  v:
+    tipo: iconos
+    iconos:
+    - trending_down
+    etiquetas:
+    - In steps
+- t: 'The brightest bulbs went first: from January first, twenty twelve, a bulb giving fourteen hundred ninety to twenty-six hundred lumens could use no more than seventy-two watts.'
+  v:
+    tipo: numero
+    icono: wb_incandescent
+    valor: 72 W max
+    etiqueta: 2012 · 1,490–2,600 lumens
+    color: calor
+- t: In twenty thirteen, the next size down was capped at fifty-three watts.
+  v:
+    tipo: numero
+    icono: wb_incandescent
+    valor: 53 W max
+    etiqueta: 2013 · the next size down
+    color: calor
+- t: For an eight-hundred-lumen bulb, the limit became forty-three watts, starting January first, twenty fourteen.
+  v:
+    tipo: numero
+    icono: wb_incandescent
+    valor: 43 W max
+    etiqueta: 2014 · 800 lumens
+    color: calor
+- t: So a new eight-hundred-lumen bulb on store shelves had to use forty-three watts or less.
+  v:
+    tipo: comparar
+    a:
+    - 2014 limit
+    - 43
+    - wb_incandescent
+    b:
+    - Classic
+    - 60
+    - wb_incandescent
+    prefijo: ''
+    gana: a
+    etiqueta: 800 lumens each
+    sufijo: ' W'
+- t: Running cost? About eight dollars and fifty-six cents a year, instead of eleven dollars and ninety-five cents.
+  v:
+    tipo: comparar
+    a:
+    - 43 W
+    - 8.56
+    - wb_incandescent
+    b:
+    - 60 W
+    - 11.95
+    - wb_incandescent
+    prefijo: $
+    gana: a
+    etiqueta: A year, 3 h a day
+    decimales: 2
+- t: Better, but still almost five times what a typical LED uses for the same light.
+  v:
+    tipo: comparar
+    a:
+    - Typical LED
+    - 9
+    - lightbulb
+    b:
+    - 2014 limit
+    - 43
+    - wb_incandescent
+    prefijo: ''
+    gana: a
+    etiqueta: Same 800 lumens
+    sufijo: ' W'
+- t: 'Moment five: the LED takes over.'
+  v:
+    tipo: regla
+    rango:
+    - 1850
+    - 2050
+    paso: 25
+    titulo: The light bulb story
+    sin_valor: true
+    filas: 3
+    marcas:
+    - - 2014
+      - '2014'
+      - frio
+    - - 2020
+      - 2020–2022
+      - calor
+  capitulo: '2020–2022: the LED takes over'
+- t: By twenty twenty, forty-seven percent of American homes used LED bulbs for all or most of their indoor lighting.
+  v:
+    tipo: numero
+    icono: lightbulb
+    valor: 47
+    etiqueta: 2020 · homes mostly LED
+    color: frio
+    sufijo: '%'
+- t: That's about fifty-seven point seven million homes, up from four percent just five years earlier.
+  v:
+    tipo: serie
+    ejes:
+    - '2015'
+    - '2020'
+    rango:
+    - 0
+    - 50
+    series:
+    - - LED
+      - - 4
+        - 47
+      - frio
+    etiqueta: Homes mostly LED, %
+    nota: 57.7M homes in 2020
+- t: Mostly fluorescent homes fell to twelve percent.
+  v:
+    tipo: numero
+    icono: fluorescent
+    valor: 12%
+    etiqueta: 2020 · homes mostly fluorescent
+    color: frio
+- t: Mostly incandescent or halogen homes, to fifteen percent.
+  v:
+    tipo: barras
+    etiqueta: Homes using mostly… (2020), %
+    items:
+    - - Incandescent/halogen
+      - 15
+      - wb_incandescent
+    - - Fluorescent
+      - 12
+      - fluorescent
+    - - LED
+      - 47
+      - lightbulb
+    max: 50
+- t: Then, starting July twenty-fifth, twenty twenty-two, the federal government banned the sale of any general service bulb that gives less than forty-five lumens per watt.
+  v:
+    tipo: regla
+    rango:
+    - 1850
+    - 2050
+    paso: 25
+    titulo: The light bulb story
+    sin_valor: true
+    filas: 3
+    marcas:
+    - - 2020
+      - '2020'
+      - frio
+    - - 2022
+      - July 25, 2022
+      - calor
+    nota: 'Banned: under 45 lumens per watt'
+- t: For an eight-hundred-lumen bulb, that's a limit of about seventeen point eight watts.
+  v:
+    tipo: formula
+    partes:
+    - 800 lumens
+    - ÷
+    - '45'
+    - ≈
+    - 17.8 W
+- t: The forty-three-watt bulb was out.
+  v:
+    tipo: iconos
+    iconos:
+    - wb_incandescent
+    etiquetas:
+    - '43 W: out'
+    tachar: 0
+- t: And a typical LED does much better than the limit.
+  v:
+    tipo: comparar
+    a:
+    - Typical LED
+    - 9
+    - lightbulb
+    b:
+    - 2022 limit
+    - 17.8
+    - wb_incandescent
+    prefijo: ''
+    gana: a
+    etiqueta: 800 lumens
+    sufijo: ' W'
+    decimales: 1
+- t: The Federal Trade Commission says you can find an eight-hundred-lumen LED that uses only about nine watts.
+  v:
+    tipo: fuente
+    titulo: Federal Trade Commission
+    detalle: '800-lumen LED: about 9 W'
+    nota: ''
+- t: 'Nine watts, three hours a day, at the national average price: about one dollar and seventy-nine cents a year.'
+  v:
+    tipo: numero
+    icono: lightbulb
+    valor: $1.79/yr
+    etiqueta: 9 W LED · 3 h a day
+    color: frio
+- t: And the shift kept going.
+  v:
+    tipo: iconos
+    iconos:
+    - trending_up
+    etiquetas:
+    - The shift kept going
+- t: By twenty twenty-four, the EIA says thirty-seven percent of households used LED bulbs for all of their indoor lighting.
+  v:
+    tipo: numero
+    icono: lightbulb
+    valor: 37
+    etiqueta: 2024 · all-LED indoor lighting
+    color: frio
+    sufijo: '%'
+- t: Moment six hasn't happened yet.
+  v:
+    tipo: regla
+    rango:
+    - 1850
+    - 2050
+    paso: 25
+    titulo: The light bulb story
+    sin_valor: true
+    filas: 3
+    marcas:
+    - - 2022
+      - '2022'
+      - frio
+    - - 2028
+      - '2028: the future'
+      - ahorro
+  capitulo: '2028: the next limit'
+- t: For general service bulbs made on or after July twenty-fifth, twenty twenty-eight, the federal standard gets much tighter.
+  v:
+    tipo: iconos
+    iconos:
+    - gavel
+    - calendar_month
+    etiquetas:
+    - Much tighter
+    - July 25, 2028
+- t: For a regular eight-hundred-lumen LED bulb, the new formula works out to about one hundred twenty-four point three lumens per watt.
+  v:
+    tipo: numero
+    icono: lightbulb
+    valor: 124.3 lm/W
+    etiqueta: 2028 · 800-lumen bulb
+    color: frio
+- t: That's a maximum of about six point four watts, and about one dollar and twenty-eight cents a year to run.
+  v:
+    tipo: formula
+    partes:
+    - '800'
+    - ÷
+    - '124.3'
+    - ≈
+    - 6.4 W
+    - →
+    - $1.28/yr
+- t: The rule applies to bulbs made from that date on.
+  v:
+    tipo: iconos
+    iconos:
+    - factory
+    etiquetas:
+    - Bulbs made from 2028
+- t: Nobody comes to take the bulbs already in your lamps.
+  v:
+    tipo: casa
+    foco: luz
+    lineas:
+    - Your bulbs
+    - '*stay*'
+- t: It just changes what you'll find on the shelf.
+  v:
+    tipo: iconos
+    iconos:
+    - storefront
+    etiquetas:
+    - What's on the shelf
+- t: So let's line up the whole story, one eight-hundred-lumen bulb, three hours a day, for a year.
+  v:
+    tipo: iconos
+    iconos:
+    - light_mode
+    - schedule
+    etiquetas:
+    - 800 lumens
+    - 3 h a day, a year
+  capitulo: What it's worth in your home
+- t: 'The classic sixty-watt incandescent: eleven dollars and ninety-five cents.'
+  v:
+    tipo: barras
+    etiqueta: One 800-lumen bulb, 3 h a day, a year
+    items:
+    - &id001
+      - 60 W (classic)
+      - 11.95
+      - wb_incandescent
+    prefijo: $
+    decimales: 2
+    max: 11.95
+- t: 'The forty-three-watt bulb from twenty fourteen: eight dollars and fifty-six cents.'
+  v:
+    tipo: barras
+    etiqueta: One 800-lumen bulb, 3 h a day, a year
+    items:
+    - *id001
+    - &id002
+      - 43 W (2014)
+      - 8.56
+      - wb_incandescent
+    prefijo: $
+    decimales: 2
+    max: 11.95
+- t: 'The twenty twenty-two limit, seventeen point eight watts: three dollars and fifty-four cents.'
+  v:
+    tipo: barras
+    etiqueta: One 800-lumen bulb, 3 h a day, a year
+    items:
+    - *id001
+    - *id002
+    - &id003
+      - 17.8 W (2022)
+      - 3.54
+      - wb_incandescent
+    prefijo: $
+    decimales: 2
+    max: 11.95
+- t: 'A nine-watt LED: one dollar and seventy-nine cents.'
+  v:
+    tipo: barras
+    etiqueta: One 800-lumen bulb, 3 h a day, a year
+    items:
+    - *id001
+    - *id002
+    - *id003
+    - &id004
+      - 9 W LED
+      - 1.79
+      - lightbulb
+    prefijo: $
+    decimales: 2
+    max: 11.95
+- t: 'And the twenty twenty-eight limit: one dollar and twenty-eight cents.'
+  v:
+    tipo: barras
+    etiqueta: One 800-lumen bulb, 3 h a day, a year
+    items:
+    - *id001
+    - *id002
+    - *id003
+    - *id004
+    - - 6.4 W (2028)
+      - 1.28
+      - lightbulb
+    prefijo: $
+    decimales: 2
+    max: 11.95
+- t: Swap one sixty-watt bulb for a nine-watt LED, and you save about ten dollars and sixteen cents a year.
+  v:
+    tipo: numero
+    icono: savings
+    valor: −$10.16/yr
+    etiqueta: One 60 W bulb → 9 W LED
+    color: ahorro
+- t: Swap ten of them, and that's about one hundred two dollars a year.
+  v:
+    tipo: numero
+    icono: savings
+    valor: −$102/yr
+    etiqueta: Ten bulbs swapped
+    color: ahorro
+- t: Where you live changes the number.
+  v:
+    tipo: mapa
+    resaltar:
+      WA: frio
+      CA: calor
+    lineas:
+    - Where you
+    - '*live*'
+- t: In Washington State, where electricity averages fourteen point four two cents, that one swap saves about eight dollars and five cents a year.
+  v:
+    tipo: mapa
+    resaltar:
+      WA: frio
+    lineas:
+    - 'Washington, 14.42¢:'
+    - '*−$8.05/yr*'
+- t: In California, at thirty-two point five eight cents, about eighteen dollars and nineteen cents.
+  v:
+    tipo: mapa
+    resaltar:
+      WA: frio
+      CA: calor
+    lineas:
+    - 'California, 32.58¢:'
+    - '*−$18.19/yr*'
+- t: And there's still room to do that.
+  v:
+    tipo: casa
+    foco: luz
+    lineas:
+    - Still
+    - '*room to save*'
+- t: In twenty twenty, about seventy-five point two million American homes still had at least one incandescent or halogen bulb.
+  v:
+    tipo: numero
+    icono: home
+    valor: 75.2M homes
+    etiqueta: 2020 · at least one old bulb
+    color: calor
+- t: That's sixty-one percent of all homes.
+  v:
+    tipo: numero
+    icono: wb_incandescent
+    valor: 61
+    etiqueta: Of all U.S. homes
+    color: calor
+    sufijo: '%'
+- t: The biggest single win is often outside.
+  v:
+    tipo: casa
+    foco: luz
+    lineas:
+    - 'The biggest win:'
+    - '*outside*'
+- t: About thirteen point six two million homes left at least one incandescent or halogen bulb on outdoors all night.
+  v:
+    tipo: numero
+    icono: nightlight
+    valor: 13.62M homes
+    etiqueta: Old bulb on outside all night
+    color: calor
+- t: If a sixty-watt porch light runs twelve hours a night, that's about forty-seven dollars and eighty cents a year.
+  v:
+    tipo: numero
+    icono: wb_incandescent
+    valor: $47.80/yr
+    etiqueta: 60 W porch light · 12 h a night
+    color: calor
+- t: 'A nine-watt LED doing the same job: about seven dollars and seventeen cents.'
+  v:
+    tipo: comparar
+    a:
+    - 9 W LED
+    - 7.17
+    - lightbulb
+    b:
+    - 60 W
+    - 47.8
+    - wb_incandescent
+    prefijo: $
+    gana: a
+    etiqueta: Porch light, a year
+    decimales: 2
+- t: That's about forty dollars and sixty-three cents saved, from one bulb.
+  v:
+    tipo: numero
+    icono: savings
+    valor: −$40.63/yr
+    etiqueta: From one porch bulb
+    color: ahorro
+- t: One honest caveat.
+  v:
+    tipo: iconos
+    iconos:
+    - info
+    etiquetas:
+    - One honest caveat
+  capitulo: An honest caveat
+- t: Your savings depend on how long each bulb is really on.
+  v:
+    tipo: iconos
+    iconos:
+    - schedule
+    - lightbulb
+    etiquetas:
+    - Hours on
+    - = savings
+- t: A bulb in a closet you open twice a day will never save ten dollars.
+  v:
+    tipo: iconos
+    iconos:
+    - checkroom
+    etiquetas:
+    - 'Closet: minutes a day'
+- t: The one in your kitchen might save more.
+  v:
+    tipo: casa
+    foco: cocina
+    lineas:
+    - 'Kitchen:'
+    - '*hours a day*'
+- t: So start with the lights you use the most.
+  v:
+    tipo: casa
+    foco: luz
+    lineas:
+    - Start with
+    - '*the ones you use most*'
+- t: So that's the story.
+  v:
+    tipo: iconos
+    iconos:
+    - history_edu
+    etiquetas:
+    - 1879 → 2028
+  capitulo: The whole story
+- t: A cotton thread that glowed for thirteen and a half hours in eighteen seventy-nine.
+  v:
+    tipo: numero
+    icono: schedule
+    valor: 13.5 hours
+    etiqueta: 1879 · carbonized cotton thread
+    color: calor
+- t: Four hundred lamps on Pearl Street in eighteen eighty-two.
+  v:
+    tipo: numero
+    icono: lightbulb
+    valor: 400 lamps
+    etiqueta: 1882 · Pearl Street
+    color: calor
+- t: Then decades of the same hot bulb, until rules and LEDs cut the electricity for the same light to about fifteen percent.
+  v:
+    tipo: numero
+    icono: lightbulb
+    valor: 15
+    etiqueta: LED vs 60 W bulb, same light
+    color: frio
+    sufijo: '%'
+- t: For one sixty-watt bulb you swap, that's about ten dollars and sixteen cents a year.
+  v:
+    tipo: numero
+    icono: savings
+    valor: −$10.16/yr
+    etiqueta: Per 60 W bulb swapped
+    color: ahorro
+- t: If you want to see which appliances in your home cost the most to run, the full ranking is right here on the channel.
+  v:
+    tipo: casa
+    foco: todos
+    lineas:
+    - Which appliances
+    - '*cost the most?*'
+miniaturas:
+- tipo: versus
+  a:
+  - lightbulb
+  - 9 W
+  - frio
+  b:
+  - wb_incandescent
+  - 60 W
+  - calor
+  texto: Same light
+- tipo: icono_grande
+  icono: wb_incandescent
+  cifra: 13.5 HOURS
+  color: calor
+  texto:
+  - The first
+  - real bulb
+- tipo: ranking
+  texto: $11.95 → $1.79
+  items:
+  - - wb_incandescent
+    - $11.95
+    - 11.95
+  - - wb_incandescent
+    - $8.56
+    - 8.56
+  - - lightbulb
+    - $1.79
+    - 1.79

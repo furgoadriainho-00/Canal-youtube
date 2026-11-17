@@ -1,0 +1,47 @@
+TÍTULO:
+How a Heat Pump Pulls Heat Out of Freezing Air
+
+DESCRIPCIÓN:
+How can a heat pump heat your home when it's 0°F outside? Step by step: freezing air still holds heat (0°F air has about 87% of the heat energy of 70°F air, measured from absolute zero), a refrigerant soaks it up outside, a compressor makes it hotter than your home, and an indoor coil releases it.
+
+Because it moves heat instead of making it, a heat pump at the federal minimum (HSPF2 7.5, about 2.2 units of heat per unit of electricity) uses about 45% of the electricity of baseboard heat; ENERGY STAR cold-climate models must reach 1.75 at 5°F.
+
+Yearly heating cost, baseboard vs heat pump: Florida $747 vs $340; Georgia $1,597 vs $727; Minnesota $2,342 vs $1,065.
+
+How the numbers work: heating needs from the EIA Residential Energy Consumption Survey 2020 (by climate); state electricity prices from the EIA (Jan–Aug 2026). Running costs only.
+
+Chapters:
+0:00 Heat from freezing air?
+0:16 Step by step
+0:32 Step 1: cold air still has heat
+1:35 Step 2: grab the heat outside
+2:35 Step 3: squeeze it
+3:11 Step 4: release the heat indoors
+3:32 Step 5: reset the loop
+4:06 Step 6: why it beats a heater
+5:08 Reading the label: HSPF2
+5:56 What it's worth in dollars
+7:29 Who heats this way
+7:59 And versus gas?
+8:37 The short version
+
+Sources:
+Federal heat pump standard, 10 CFR 430.32(c)(5): https://www.govinfo.gov/content/pkg/CFR-2025-title10-vol3/xml/CFR-2025-title10-vol3-sec430-32.xml
+ENERGY STAR heat pump criteria: https://www.energystar.gov/products/air_source_heat_pumps/key-product-criteria
+EIA Residential Energy Consumption Survey 2020 (CE5.4, HC6.1): https://www.eia.gov/consumption/residential/data/2020/
+EIA electricity prices by state: https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_b
+
+ETIQUETAS:
+how does a heat pump work, heat pump cold weather, heat pump vs baseboard heat, heat pump explained, heat pump efficiency, cold climate heat pump, electric heating cost, home by the numbers
+
+AJUSTES EN YOUTUBE STUDIO:
+
+- Idioma del vídeo: English · Subtítulos: sube subtitulos_en.srt (Inglés)
+
+- Lista de reproducción: Home energy costs, explained
+
+- Contenido para niños: NO
+
+- Contenido alterado o sintético: SÍ (narración con voz sintética)
+
+- Miniatura: miniatura_A.jpg (si tu cuenta tiene «Probar y comparar», sube también B y C)

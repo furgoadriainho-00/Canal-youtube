@@ -1,0 +1,12 @@
+estado,calor_kWh,resistencia_$,bomba_2.2_$,bomba_1.75_$,ahorro_$
+Florida,4878,747,340,427,407
+Georgia,10318,1597,727,913,871
+Minnesota,14244,2342,1065,1338,1276
+
+COP 2,2 → la bomba de calor usa 45% de la luz de la resistencia; COP 1,75 → 57%
+aire a 47 °F: 96% de la energía térmica del aire a 70 °F (en temperatura absoluta)
+aire a 32 °F: 93% de la energía térmica del aire a 70 °F (en temperatura absoluta)
+aire a 5 °F: 88% de la energía térmica del aire a 70 °F (en temperatura absoluta)
+aire a 0 °F: 87% de la energía térmica del aire a 70 °F (en temperatura absoluta)
+
+bomba de calor 16,13 M + minisplit 1,06 M = 17.19 M; resistencia (equipos fijos 7,65 + portátiles 3,03) = 10.68 M de 123,53 M (8.6%)

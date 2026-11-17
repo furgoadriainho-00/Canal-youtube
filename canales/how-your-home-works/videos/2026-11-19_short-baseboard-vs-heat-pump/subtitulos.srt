@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:02,033
+Same Minnesota home, same winter.
+
+2
+00:00:02,153 --> 00:00:05,740
+One heats with electric baseboards, the other with a heat pump.
+
+3
+00:00:05,860 --> 00:00:10,934
+The baseboard home pays about two thousand three hundred forty-two dollars a year for heat.
+
+4
+00:00:11,054 --> 00:00:14,262
+The heat pump home pays about one thousand sixty-five.
+
+5
+00:00:14,382 --> 00:00:19,013
+Why? A baseboard turns one unit of electricity into one unit of heat.
+
+6
+00:00:19,133 --> 00:00:25,062
+A heat pump moves heat from outside, about two point two units for every unit of electricity.
+
+7
+00:00:25,182 --> 00:00:33,876
+Even zero-degree air still holds about eighty-seven percent of the heat energy of seventy-degree air, counted from absolute zero.
+
+8
+00:00:33,996 --> 00:00:38,261
+That's about one thousand two hundred seventy-six dollars saved every year.
+
+9
+00:00:38,381 --> 00:00:39,816
+Same home, same winter…

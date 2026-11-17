@@ -1,0 +1,39 @@
+# Short del guionista (guiones/2026-11-19_short-baseboard-vs-heat-pump/GUION.md). Narración literal.
+titulo: Baseboard heat vs heat pump in Minnesota
+estructura: comparacion
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: Same Minnesota home, same winter.
+  v:
+    tipo: mapa
+    resaltar: {MN: frio}
+    lineas: ['Same home,', '*same winter*']
+- t: One heats with electric baseboards, the other with a heat pump.
+  v:
+    tipo: iconos
+    iconos: [heat, heat_pump]
+    etiquetas: ['Baseboard', 'Heat pump']
+- t: The baseboard home pays about two thousand three hundred forty-two dollars a year for heat.
+  v: {tipo: numero, icono: heat, valor: '$2,342/yr', etiqueta: 'Baseboard heat · Minnesota', color: calor}
+- t: The heat pump home pays about one thousand sixty-five.
+  v:
+    tipo: comparar
+    a: [Heat pump, 1065, heat_pump]
+    b: [Baseboard, 2342, heat]
+    prefijo: $
+    gana: a
+    etiqueta: '$2,342 vs $1,065 a year'
+- t: Why? A baseboard turns one unit of electricity into one unit of heat.
+  v: {tipo: formula, partes: ['Baseboard:', '1 power', '→', '1 heat']}
+- t: A heat pump moves heat from outside, about two point two units for every unit of electricity.
+  v: {tipo: formula, partes: ['Heat pump:', '1 power', '→', '2.2 heat']}
+- t: Even zero-degree air still holds about eighty-seven percent of the heat energy of seventy-degree air, counted from absolute zero.
+  v: {tipo: numero, icono: ac_unit, valor: 87, sufijo: '%', etiqueta: '0°F air: 87% of the heat of 70°F air', color: frio}
+- t: That's about one thousand two hundred seventy-six dollars saved every year.
+  v: {tipo: numero, icono: savings, valor: '−$1,276/yr', etiqueta: 'Saved with a heat pump', color: ahorro}
+- t: Same home, same winter…
+  v:
+    tipo: mapa
+    resaltar: {MN: frio}
+    lineas: ['Same home,', '*same winter*']

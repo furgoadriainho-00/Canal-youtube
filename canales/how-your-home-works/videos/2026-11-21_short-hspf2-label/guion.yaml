@@ -1,0 +1,48 @@
+# Short del guionista (guiones/2026-11-21_short-hspf2-label/GUION.md). Narración literal.
+titulo: What HSPF2 on a heat pump means
+estructura: pregunta-respuesta
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: What does that HSPF2 number on a heat pump actually mean?
+  v:
+    tipo: iconos
+    iconos: [label]
+    etiquetas: ['HSPF2?']
+- t: It's how many B T U of heat you get for each watt-hour of electricity, over a whole heating season.
+  v: {tipo: formula, partes: ['BTU of heat', '÷', 'Wh of power', '=', 'HSPF2']}
+- t: An electric heater turns one watt-hour into three point four one two B T U.
+  v: {tipo: formula, partes: ['1 Wh', '→', '3.412 BTU']}
+- t: That's the baseline.
+  v:
+    tipo: casa
+    foco: calefaccion
+    lineas: ['The', '*baseline*']
+- t: The federal minimum for a new heat pump is seven point five.
+  v:
+    tipo: iconos
+    iconos: [gavel, heat_pump]
+    etiquetas: ['Federal minimum', 'HSPF2 7.5']
+- t: Divide by three point four one two, and it gives about two point two times the heat of a heater,
+  v: {tipo: formula, partes: ['7.5', '÷', '3.412', '≈', '2.2×']}
+- t: for about forty-five percent of the electricity.
+  v: {tipo: numero, icono: bolt, valor: 45, sufijo: '%', etiqueta: 'Of a heater''s electricity', color: frio}
+- t: A model rated nine gives about two point six four,
+  v: {tipo: formula, partes: ['9', '÷', '3.412', '≈', '2.64×']}
+- t: about thirty-eight percent.
+  v: {tipo: numero, icono: bolt, valor: 38, sufijo: '%', etiqueta: 'HSPF2 9 · of a heater''s electricity', color: frio}
+- t: In a typical Minnesota home, that's about one thousand sixty-five dollars a year versus about eight hundred eighty-eight.
+  v:
+    tipo: comparar
+    a: [HSPF2 9, 888, heat_pump]
+    b: [HSPF2 7.5, 1065, heat_pump]
+    prefijo: $
+    gana: a
+    etiqueta: 'Minnesota, a year: $1,065 vs $888'
+- t: About one hundred seventy-eight dollars saved.
+  v: {tipo: numero, icono: savings, valor: '−$178/yr', etiqueta: 'With HSPF2 9 instead of 7.5', color: ahorro}
+- t: So next time you see HSPF2 on a heat pump, you'll know what that number actually means…
+  v:
+    tipo: iconos
+    iconos: [label, arrow_upward]
+    etiquetas: ['HSPF2?', 'Higher = less power']

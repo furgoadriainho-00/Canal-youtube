@@ -1,0 +1,443 @@
+1
+00:00:00,000 --> 00:00:01,720
+It's zero degrees outside.
+
+2
+00:00:02,020 --> 00:00:06,749
+Your heat pump is pulling heat out of that freezing air and pushing it into your house.
+
+3
+00:00:07,049 --> 00:00:08,428
+That sounds impossible.
+
+4
+00:00:08,728 --> 00:00:09,549
+It isn't.
+
+5
+00:00:09,849 --> 00:00:15,715
+And understanding how it works explains why it can cut an electric heating bill by more than half.
+
+6
+00:00:16,015 --> 00:00:18,668
+In this video, I'll walk through it step by step:
+
+7
+00:00:18,968 --> 00:00:27,594
+why freezing air still holds heat, how a heat pump moves it, and what that means in dollars compared with electric baseboard heaters,
+
+8
+00:00:27,894 --> 00:00:31,933
+using official efficiency ratings and real energy prices.
+
+9
+00:00:32,233 --> 00:00:34,542
+Step one: cold air still has heat in it.
+
+10
+00:00:34,842 --> 00:00:37,008
+Cold just means less heat, not none.
+
+11
+00:00:37,308 --> 00:00:47,565
+To find true zero heat, you'd have to go all the way down to absolute zero, which is minus four hundred fifty-nine point six seven degrees Fahrenheit.
+
+12
+00:00:47,865 --> 00:00:56,159
+Measured from that point, air at zero degrees still has about eighty-seven percent of the heat energy of air at seventy degrees.
+
+13
+00:00:56,459 --> 00:00:59,776
+At thirty-two degrees, it's about ninety-three percent.
+
+14
+00:01:00,076 --> 00:01:04,473
+At forty-seven degrees, a mild winter day, about ninety-six percent.
+
+15
+00:01:04,773 --> 00:01:08,389
+Even at five degrees, it's still about eighty-eight percent.
+
+16
+00:01:08,689 --> 00:01:10,219
+Think about that for a second.
+
+17
+00:01:10,519 --> 00:01:18,629
+The difference between a mild day and a brutal one feels huge to you, but for the air itself, it's a small drop in total heat.
+
+18
+00:01:18,929 --> 00:01:21,471
+So the outdoor air in winter isn't empty.
+
+19
+00:01:21,771 --> 00:01:22,785
+It's full of heat.
+
+20
+00:01:23,085 --> 00:01:31,288
+The problem is that it's at a lower temperature than your living room, and heat naturally flows from warm to cold, not the other way.
+
+21
+00:01:31,588 --> 00:01:35,148
+A heat pump's whole job is to make that heat flow uphill.
+
+22
+00:01:35,448 --> 00:01:37,402
+Step two: grab the heat outside.
+
+23
+00:01:37,702 --> 00:01:44,995
+A heat pump circulates a special fluid called a refrigerant through two coils, one outdoors and one indoors.
+
+24
+00:01:45,295 --> 00:01:52,972
+In the outdoor coil, the refrigerant is kept at very low pressure, which makes it even colder than the winter air around it.
+
+25
+00:01:53,272 --> 00:01:58,638
+Because the refrigerant is colder than the air, heat flows from the air into the refrigerant.
+
+26
+00:01:58,938 --> 00:02:01,641
+That's the normal direction: warm to cold.
+
+27
+00:02:01,941 --> 00:02:06,482
+As it soaks up that heat, the refrigerant boils and turns into a gas.
+
+28
+00:02:06,782 --> 00:02:07,725
+That's the trick.
+
+29
+00:02:08,025 --> 00:02:13,492
+Boiling absorbs a lot of energy, so the gas now carries the heat it took from outside.
+
+30
+00:02:13,792 --> 00:02:17,235
+It's the same thing that happens when water boils on your stove.
+
+31
+00:02:17,535 --> 00:02:21,032
+The pot keeps taking in heat while the water turns to steam.
+
+32
+00:02:21,332 --> 00:02:27,721
+Except the refrigerant boils at a temperature far below freezing, so the winter air is enough to do it.
+
+33
+00:02:28,021 --> 00:02:35,056
+A fan on the outdoor unit keeps pushing fresh outdoor air across the coil, so there's always more heat to grab.
+
+34
+00:02:35,356 --> 00:02:36,592
+Step three: squeeze it.
+
+35
+00:02:36,892 --> 00:02:41,714
+The gas goes into a compressor, the part that actually uses electricity.
+
+36
+00:02:42,014 --> 00:02:45,908
+Squeezing a gas into a smaller space raises its temperature.
+
+37
+00:02:46,208 --> 00:02:49,808
+It's the same reason a bike pump gets warm when you use it.
+
+38
+00:02:50,108 --> 00:02:54,836
+After the compressor, the refrigerant is now hotter than the air inside your home.
+
+39
+00:02:55,136 --> 00:03:00,063
+And here's the key detail: the electricity the compressor uses isn't wasted.
+
+40
+00:03:00,363 --> 00:03:02,987
+It also ends up as heat in the refrigerant.
+
+41
+00:03:03,287 --> 00:03:11,318
+So everything that went in, the heat from outside plus the compressor's own energy, is now ready to be delivered indoors.
+
+42
+00:03:11,618 --> 00:03:13,856
+Step four: release the heat indoors.
+
+43
+00:03:14,156 --> 00:03:17,043
+The hot refrigerant flows through the indoor coil.
+
+44
+00:03:17,343 --> 00:03:25,309
+Now it's warmer than your room, so heat flows out of it and into your house, again from warm to cold, the natural direction.
+
+45
+00:03:25,609 --> 00:03:28,018
+A fan pushes that warm air through your home.
+
+46
+00:03:28,318 --> 00:03:32,481
+And as the refrigerant gives up its heat, it turns back into a liquid.
+
+47
+00:03:32,781 --> 00:03:34,408
+Step five: reset the loop.
+
+48
+00:03:34,708 --> 00:03:40,554
+The liquid passes through an expansion valve, a small opening that drops its pressure suddenly.
+
+49
+00:03:40,854 --> 00:03:45,619
+That makes it very cold again, ready to go back outside and soak up more heat.
+
+50
+00:03:45,919 --> 00:03:47,765
+And the loop runs over and over.
+
+51
+00:03:48,065 --> 00:03:49,846
+If this sounds familiar, it should.
+
+52
+00:03:50,146 --> 00:03:53,137
+Your refrigerator does exactly the same thing.
+
+53
+00:03:53,437 --> 00:03:56,965
+It pumps heat out of the box and releases it into your kitchen.
+
+54
+00:03:57,265 --> 00:04:00,608
+That's why the coils on the back of an older fridge feel warm.
+
+55
+00:04:00,908 --> 00:04:06,295
+A heat pump is basically a refrigerator that cools the outdoors and heats your house.
+
+56
+00:04:06,595 --> 00:04:09,396
+Step six: why this beats an electric heater.
+
+57
+00:04:09,696 --> 00:04:13,813
+An electric baseboard heater turns electricity directly into heat.
+
+58
+00:04:14,113 --> 00:04:17,601
+One unit of electricity gives you one unit of heat.
+
+59
+00:04:17,901 --> 00:04:18,643
+That's it.
+
+60
+00:04:18,943 --> 00:04:23,025
+A heat pump uses its electricity to move heat, not to make it.
+
+61
+00:04:23,325 --> 00:04:26,993
+So it can deliver more heat than the electricity it uses.
+
+62
+00:04:27,293 --> 00:04:38,466
+Under federal rules, a new heat pump has to reach a heating rating that works out to about two point two units of heat for every unit of electricity, averaged over a season.
+
+63
+00:04:38,766 --> 00:04:46,273
+In other words, it uses about forty-five percent of the electricity of a baseboard heater for the same warmth.
+
+64
+00:04:46,573 --> 00:04:52,534
+In very cold weather, it works harder, because the gap between outdoor and indoor air is bigger.
+
+65
+00:04:52,834 --> 00:05:02,879
+ENERGY STAR's cold-climate heat pumps have to deliver at least one point seven five units of heat per unit of electricity at five degrees Fahrenheit.
+
+66
+00:05:03,179 --> 00:05:08,651
+Even then, that's about fifty-seven percent of the electricity of a baseboard heater.
+
+67
+00:05:08,951 --> 00:05:10,850
+Where does that two point two come from?
+
+68
+00:05:11,150 --> 00:05:15,305
+From the rating on every heat pump's label, called HSPF2.
+
+69
+00:05:15,605 --> 00:05:23,660
+It measures how many B T U of heat the heat pump delivers for each watt-hour of electricity, over a whole heating season.
+
+70
+00:05:23,960 --> 00:05:30,153
+One watt-hour of electricity turned straight into heat gives three point four one two B T U.
+
+71
+00:05:30,453 --> 00:05:32,293
+That's what a baseboard heater does.
+
+72
+00:05:32,593 --> 00:05:37,922
+The federal minimum for a new heat pump is an HSPF2 of seven point five.
+
+73
+00:05:38,222 --> 00:05:43,777
+Divide seven point five by three point four one two, and you get about two point two.
+
+74
+00:05:44,077 --> 00:05:49,513
+So when you shop, the higher that number, the less electricity it needs for the same heat.
+
+75
+00:05:49,813 --> 00:05:56,635
+And if you live somewhere with hard winters, look for a model that meets ENERGY STAR's cold-climate criteria.
+
+76
+00:05:56,935 --> 00:05:58,425
+Now let's put dollars on it.
+
+77
+00:05:58,725 --> 00:06:10,524
+I started with how much energy typical homes in three different climates use for heating, from the government's household energy survey, and worked out how much heat actually reaches the rooms.
+
+78
+00:06:10,824 --> 00:06:14,817
+Then I priced that heat with each state's average electricity price.
+
+79
+00:06:15,117 --> 00:06:23,120
+In Florida, heating a typical home with electric baseboard heaters costs about seven hundred forty-seven dollars a year.
+
+80
+00:06:23,420 --> 00:06:26,054
+With a heat pump, about three hundred forty.
+
+81
+00:06:26,354 --> 00:06:28,889
+That's about four hundred seven dollars saved.
+
+82
+00:06:29,189 --> 00:06:37,801
+In Georgia, about one thousand five hundred ninety-seven dollars with baseboard heat, and about seven hundred twenty-seven with a heat pump.
+
+83
+00:06:38,101 --> 00:06:40,198
+About eight hundred seventy-one saved.
+
+84
+00:06:40,498 --> 00:06:48,179
+And in Minnesota, where winters are long, baseboard heat costs about two thousand three hundred forty-two dollars a year.
+
+85
+00:06:48,479 --> 00:06:52,663
+A heat pump at the federal minimum, about one thousand sixty-five.
+
+86
+00:06:52,963 --> 00:06:56,653
+That's about one thousand two hundred seventy-six dollars saved.
+
+87
+00:06:56,953 --> 00:07:07,317
+Even if we assume the heat pump only manages the cold-weather rating all winter long, it would cost about one thousand three hundred thirty-eight dollars in Minnesota.
+
+88
+00:07:07,617 --> 00:07:10,870
+Still about a thousand dollars less than baseboard heat.
+
+89
+00:07:11,170 --> 00:07:17,753
+The colder the climate, the more heat you need, and the more a heat pump saves over electric resistance.
+
+90
+00:07:18,053 --> 00:07:20,870
+Notice that the percentage is the same everywhere.
+
+91
+00:07:21,170 --> 00:07:25,872
+The heat pump always uses about forty-five percent of the electricity.
+
+92
+00:07:26,172 --> 00:07:29,254
+What changes is the size of the bill it's cutting.
+
+93
+00:07:29,554 --> 00:07:32,533
+So how many American homes already heat this way?
+
+94
+00:07:32,833 --> 00:07:43,329
+According to the government's household energy survey, about seventeen point two million homes use a heat pump as their main heating, counting ductless mini-splits.
+
+95
+00:07:43,629 --> 00:07:52,863
+And about ten point seven million homes still rely mainly on electric resistance heat, from built-in electric units to portable heaters.
+
+96
+00:07:53,163 --> 00:07:58,736
+That's about eight point six percent of all homes, the group with the most to gain from switching.
+
+97
+00:07:59,036 --> 00:08:00,365
+One honest caveat.
+
+98
+00:08:00,665 --> 00:08:03,125
+Beating electric baseboard heat is easy.
+
+99
+00:08:03,425 --> 00:08:06,085
+Beating a gas furnace is a different question.
+
+100
+00:08:06,385 --> 00:08:13,360
+A gas furnace doesn't use electricity for heat at all, so the comparison depends on two prices instead of one.
+
+101
+00:08:13,660 --> 00:08:23,848
+In Minnesota, where gas is cheap, a new gas furnace heats that same typical home for about five hundred forty-two dollars a year, less than the heat pump.
+
+102
+00:08:24,148 --> 00:08:27,174
+In Florida, the heat pump wins against gas too.
+
+103
+00:08:27,474 --> 00:08:37,381
+It all comes down to the price of gas versus electricity where you live, and I worked that out state by state in my heat pump versus gas furnace video.
+
+104
+00:08:37,681 --> 00:08:40,581
+So that's how a heat pump pulls heat out of freezing air.
+
+105
+00:08:40,881 --> 00:08:43,097
+Freezing air still holds plenty of heat.
+
+106
+00:08:43,397 --> 00:08:51,951
+The refrigerant soaks it up outside, the compressor makes it hotter than your home, the indoor coil releases it, and the loop starts again.
+
+107
+00:08:52,251 --> 00:09:04,708
+Because it moves heat instead of making it, it uses about forty-five percent of the electricity of baseboard heat at the federal minimum, and about fifty-seven percent even at five degrees.
+
+108
+00:09:05,008 --> 00:09:13,703
+In a cold state like Minnesota, that's about one thousand two hundred seventy-six dollars a year compared with electric baseboard heaters.
+
+109
+00:09:14,003 --> 00:09:21,154
+So if you heat with baseboards or space heaters today, the cold outside isn't a reason to rule out a heat pump.
+
+110
+00:09:21,454 --> 00:09:23,525
+It's the reason the savings get bigger.
+
+111
+00:09:23,825 --> 00:09:28,735
+The full heat pump versus gas furnace comparison is right here on the channel.

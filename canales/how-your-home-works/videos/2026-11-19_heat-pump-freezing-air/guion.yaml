@@ -1,0 +1,1022 @@
+# Guion del guionista (guiones/2026-11-19_heat-pump-freezing-air/GUION.md). Narración literal.
+titulo: How a heat pump pulls heat out of freezing air
+estructura: paso-a-paso
+formato: largo
+voz:
+  nombre: am_michael
+  velocidad: 1.0
+segmentos:
+- t: It's zero degrees outside.
+  v:
+    tipo: numero
+    icono: severe_cold
+    valor: 0°F
+    etiqueta: Outside
+    color: frio
+  capitulo: Heat from freezing air?
+- t: Your heat pump is pulling heat out of that freezing air and pushing it into your house.
+  v:
+    tipo: casa
+    foco: bomba_calor
+    lineas:
+    - 0°F outside →
+    - '*heat inside?*'
+- t: That sounds impossible.
+  v:
+    tipo: iconos
+    iconos:
+    - help
+    etiquetas:
+    - Impossible?
+- t: It isn't.
+  v:
+    tipo: iconos
+    iconos:
+    - check_circle
+    etiquetas:
+    - It isn't
+- t: And understanding how it works explains why it can cut an electric heating bill by more than half.
+  v:
+    tipo: numero
+    icono: heat_pump
+    valor: 45
+    etiqueta: Of the electricity, same heat
+    color: frio
+    sufijo: '%'
+- t: 'In this video, I''ll walk through it step by step:'
+  v:
+    tipo: iconos
+    iconos:
+    - ac_unit
+    - compress
+    - home
+    - savings
+    etiquetas:
+    - Step 1
+    - Step 2
+    - Step 3
+    - Step 4
+  capitulo: Step by step
+- t: why freezing air still holds heat, how a heat pump moves it, and what that means in dollars compared with electric baseboard heaters,
+  v:
+    tipo: iconos
+    iconos:
+    - ac_unit
+    - compress
+    - savings
+    etiquetas:
+    - Cold air holds heat
+    - How it moves it
+    - What it's worth
+- t: using official efficiency ratings and real energy prices.
+  v:
+    tipo: fuente
+    titulo: DOE (10 CFR 430) · ENERGY STAR · EIA
+    detalle: Efficiency ratings and energy prices
+    nota: ''
+- t: 'Step one: cold air still has heat in it.'
+  v:
+    tipo: iconos
+    iconos:
+    - ac_unit
+    etiquetas:
+    - 'Step 1: cold air still has heat'
+  capitulo: 'Step 1: cold air still has heat'
+- t: Cold just means less heat, not none.
+  v:
+    tipo: iconos
+    iconos:
+    - ac_unit
+    - heat
+    etiquetas:
+    - Less heat
+    - Not none
+- t: To find true zero heat, you'd have to go all the way down to absolute zero, which is minus four hundred fifty-nine point six seven degrees Fahrenheit.
+  v:
+    tipo: regla
+    rango:
+    - -800
+    - 200
+    paso: 200
+    titulo: Temperature, °F
+    sin_valor: true
+    marcas:
+    - - -459.67
+      - 'Absolute zero: −459.67°F'
+      - frio
+    - - 0
+      - 0°F
+      - frio
+    - - 70
+      - 70°F
+      - calor
+- t: Measured from that point, air at zero degrees still has about eighty-seven percent of the heat energy of air at seventy degrees.
+  v:
+    tipo: numero
+    icono: severe_cold
+    valor: 87
+    etiqueta: 0°F air vs 70°F air
+    color: frio
+    sufijo: '%'
+- t: At thirty-two degrees, it's about ninety-three percent.
+  v:
+    tipo: numero
+    icono: ac_unit
+    valor: 93
+    etiqueta: 32°F air vs 70°F air
+    color: frio
+    sufijo: '%'
+- t: At forty-seven degrees, a mild winter day, about ninety-six percent.
+  v:
+    tipo: numero
+    icono: ac_unit
+    valor: 96
+    etiqueta: 47°F air vs 70°F air
+    color: frio
+    sufijo: '%'
+- t: Even at five degrees, it's still about eighty-eight percent.
+  v:
+    tipo: numero
+    icono: severe_cold
+    valor: 88
+    etiqueta: 5°F air vs 70°F air
+    color: frio
+    sufijo: '%'
+- t: Think about that for a second.
+  v:
+    tipo: iconos
+    iconos:
+    - hourglass_top
+    etiquetas:
+    - Think about it
+- t: The difference between a mild day and a brutal one feels huge to you, but for the air itself, it's a small drop in total heat.
+  v:
+    tipo: barras
+    etiqueta: Heat energy vs 70°F air, %
+    items:
+    - - 47°F
+      - 96
+      - ac_unit
+    - - 32°F
+      - 93
+      - ac_unit
+    - - 5°F
+      - 88
+      - severe_cold
+    - - 0°F
+      - 87
+      - severe_cold
+    max: 100
+- t: So the outdoor air in winter isn't empty.
+  v:
+    tipo: casa
+    foco: bomba_calor
+    lineas:
+    - Winter air
+    - '*isn''t empty*'
+- t: It's full of heat.
+  v:
+    tipo: iconos
+    iconos:
+    - air
+    - heat
+    etiquetas:
+    - Outdoor air
+    - Full of heat
+- t: The problem is that it's at a lower temperature than your living room, and heat naturally flows from warm to cold, not the other way.
+  v:
+    tipo: formula
+    partes:
+    - Warm room
+    - →
+    - cold outside
+- t: A heat pump's whole job is to make that heat flow uphill.
+  v:
+    tipo: formula
+    partes:
+    - Cold outside
+    - →
+    - warm room
+    - '='
+    - uphill
+- t: 'Step two: grab the heat outside.'
+  v:
+    tipo: iconos
+    iconos:
+    - air
+    etiquetas:
+    - 'Step 2: grab the heat outside'
+  capitulo: 'Step 2: grab the heat outside'
+- t: A heat pump circulates a special fluid called a refrigerant through two coils, one outdoors and one indoors.
+  v:
+    tipo: casa
+    foco: bomba_calor
+    lineas:
+    - Refrigerant,
+    - '*two coils*'
+- t: In the outdoor coil, the refrigerant is kept at very low pressure, which makes it even colder than the winter air around it.
+  v:
+    tipo: clip
+    clip: aire
+    lineas:
+    - Low pressure
+    - = *very cold*
+- t: Because the refrigerant is colder than the air, heat flows from the air into the refrigerant.
+  v:
+    tipo: formula
+    partes:
+    - Winter air
+    - →
+    - colder refrigerant
+- t: 'That''s the normal direction: warm to cold.'
+  v:
+    tipo: iconos
+    iconos:
+    - heat
+    - ac_unit
+    etiquetas:
+    - Warm
+    - → cold
+- t: As it soaks up that heat, the refrigerant boils and turns into a gas.
+  v:
+    tipo: formula
+    partes:
+    - Liquid
+    - + heat
+    - →
+    - gas
+- t: That's the trick.
+  v:
+    tipo: iconos
+    iconos:
+    - bubble_chart
+    etiquetas:
+    - 'The trick: boiling'
+- t: Boiling absorbs a lot of energy, so the gas now carries the heat it took from outside.
+  v:
+    tipo: iconos
+    iconos:
+    - bubble_chart
+    - heat
+    etiquetas:
+    - Gas
+    - Carries the heat
+- t: It's the same thing that happens when water boils on your stove.
+  v:
+    tipo: casa
+    foco: cocina
+    lineas:
+    - Like water
+    - '*on your stove*'
+- t: The pot keeps taking in heat while the water turns to steam.
+  v:
+    tipo: iconos
+    iconos:
+    - water_drop
+    - local_fire_department
+    etiquetas:
+    - Water
+    - Keeps taking in heat
+- t: Except the refrigerant boils at a temperature far below freezing, so the winter air is enough to do it.
+  v:
+    tipo: iconos
+    iconos:
+    - severe_cold
+    - bubble_chart
+    etiquetas:
+    - Far below freezing
+    - Still boils
+- t: A fan on the outdoor unit keeps pushing fresh outdoor air across the coil, so there's always more heat to grab.
+  v:
+    tipo: clip
+    clip: aire
+    lineas:
+    - 'Fan:'
+    - '*fresh air*'
+    - more heat
+- t: 'Step three: squeeze it.'
+  v:
+    tipo: iconos
+    iconos:
+    - compress
+    etiquetas:
+    - 'Step 3: squeeze it'
+  capitulo: 'Step 3: squeeze it'
+- t: The gas goes into a compressor, the part that actually uses electricity.
+  v:
+    tipo: iconos
+    iconos:
+    - compress
+    - bolt
+    etiquetas:
+    - Compressor
+    - Uses electricity
+- t: Squeezing a gas into a smaller space raises its temperature.
+  v:
+    tipo: formula
+    partes:
+    - Squeeze the gas
+    - →
+    - hotter
+- t: It's the same reason a bike pump gets warm when you use it.
+  v:
+    tipo: iconos
+    iconos:
+    - pedal_bike
+    - heat
+    etiquetas:
+    - Bike pump
+    - Gets warm
+- t: After the compressor, the refrigerant is now hotter than the air inside your home.
+  v:
+    tipo: iconos
+    iconos:
+    - thermometer
+    - home
+    etiquetas:
+    - Refrigerant
+    - Hotter than indoors
+- t: 'And here''s the key detail: the electricity the compressor uses isn''t wasted.'
+  v:
+    tipo: iconos
+    iconos:
+    - bolt
+    - check_circle
+    etiquetas:
+    - Electricity
+    - Not wasted
+- t: It also ends up as heat in the refrigerant.
+  v:
+    tipo: formula
+    partes:
+    - Electricity
+    - →
+    - heat
+- t: So everything that went in, the heat from outside plus the compressor's own energy, is now ready to be delivered indoors.
+  v:
+    tipo: formula
+    partes:
+    - Outside heat
+    - +
+    - compressor
+    - '='
+    - heat indoors
+- t: 'Step four: release the heat indoors.'
+  v:
+    tipo: iconos
+    iconos:
+    - home
+    etiquetas:
+    - 'Step 4: release the heat indoors'
+  capitulo: 'Step 4: release the heat indoors'
+- t: The hot refrigerant flows through the indoor coil.
+  v:
+    tipo: casa
+    foco: aire
+    lineas:
+    - Indoor
+    - '*coil*'
+- t: Now it's warmer than your room, so heat flows out of it and into your house, again from warm to cold, the natural direction.
+  v:
+    tipo: formula
+    partes:
+    - Hot refrigerant
+    - →
+    - your room
+- t: A fan pushes that warm air through your home.
+  v:
+    tipo: casa
+    foco: ventiladores
+    lineas:
+    - 'Fan:'
+    - '*warm air*'
+- t: And as the refrigerant gives up its heat, it turns back into a liquid.
+  v:
+    tipo: formula
+    partes:
+    - Gas
+    - − heat
+    - →
+    - liquid
+- t: 'Step five: reset the loop.'
+  v:
+    tipo: iconos
+    iconos:
+    - autorenew
+    etiquetas:
+    - 'Step 5: reset the loop'
+  capitulo: 'Step 5: reset the loop'
+- t: The liquid passes through an expansion valve, a small opening that drops its pressure suddenly.
+  v:
+    tipo: iconos
+    iconos:
+    - water_drop
+    - trending_down
+    etiquetas:
+    - Expansion valve
+    - Pressure drops
+- t: That makes it very cold again, ready to go back outside and soak up more heat.
+  v:
+    tipo: iconos
+    iconos:
+    - severe_cold
+    - air
+    etiquetas:
+    - Very cold again
+    - Back outside
+- t: And the loop runs over and over.
+  v: &id002
+    tipo: formula
+    partes:
+    - Outdoor coil
+    - →
+    - compressor
+    - →
+    - indoor coil
+    - →
+    - valve
+- t: If this sounds familiar, it should.
+  v:
+    tipo: clip
+    clip: nevera
+    lineas:
+    - Sound
+    - '*familiar?*'
+- t: Your refrigerator does exactly the same thing.
+  v:
+    tipo: clip
+    clip: nevera
+    lineas:
+    - Your fridge
+    - '*does the same*'
+- t: It pumps heat out of the box and releases it into your kitchen.
+  v:
+    tipo: formula
+    partes:
+    - Fridge box
+    - →
+    - kitchen
+- t: That's why the coils on the back of an older fridge feel warm.
+  v:
+    tipo: casa
+    foco: nevera
+    lineas:
+    - Warm coils
+    - '*on the back*'
+- t: A heat pump is basically a refrigerator that cools the outdoors and heats your house.
+  v:
+    tipo: formula
+    partes:
+    - 'Heat pump:'
+    - outdoors
+    - →
+    - your home
+- t: 'Step six: why this beats an electric heater.'
+  v:
+    tipo: clip
+    clip: calefaccion
+    lineas:
+    - 'Step 6:'
+    - '*vs a heater*'
+  capitulo: 'Step 6: why it beats a heater'
+- t: An electric baseboard heater turns electricity directly into heat.
+  v:
+    tipo: casa
+    foco: calefaccion
+    lineas:
+    - Electricity
+    - '*→ heat*'
+- t: One unit of electricity gives you one unit of heat.
+  v:
+    tipo: formula
+    partes:
+    - 1 power
+    - →
+    - 1 heat
+- t: That's it.
+  v:
+    tipo: iconos
+    iconos:
+    - heat
+    etiquetas:
+    - 1 to 1
+- t: A heat pump uses its electricity to move heat, not to make it.
+  v:
+    tipo: iconos
+    iconos:
+    - heat_pump
+    - swap_horiz
+    etiquetas:
+    - Heat pump
+    - Moves heat
+- t: So it can deliver more heat than the electricity it uses.
+  v:
+    tipo: formula
+    partes:
+    - 1 power
+    - →
+    - more than 1 heat
+- t: Under federal rules, a new heat pump has to reach a heating rating that works out to about two point two units of heat for every unit of electricity, averaged over a season.
+  v:
+    tipo: regla
+    rango:
+    - 0
+    - 3
+    paso: 1
+    titulo: Units of heat per unit of electricity
+    sin_valor: true
+    marcas:
+    - - 1.0
+      - Baseboard 1.0
+      - calor
+    - - 2.2
+      - Federal minimum 2.2
+      - frio
+- t: In other words, it uses about forty-five percent of the electricity of a baseboard heater for the same warmth.
+  v:
+    tipo: numero
+    icono: heat_pump
+    valor: 45
+    etiqueta: Of a baseboard heater's electricity
+    color: frio
+    sufijo: '%'
+- t: In very cold weather, it works harder, because the gap between outdoor and indoor air is bigger.
+  v:
+    tipo: formula
+    partes:
+    - 5°F outside
+    - ↔
+    - 70°F inside
+    - '='
+    - bigger gap
+- t: ENERGY STAR's cold-climate heat pumps have to deliver at least one point seven five units of heat per unit of electricity at five degrees Fahrenheit.
+  v:
+    tipo: regla
+    rango:
+    - 0
+    - 3
+    paso: 1
+    titulo: Units of heat per unit of electricity
+    sin_valor: true
+    marcas:
+    - - 1.0
+      - Baseboard 1.0
+      - calor
+    - - 1.75
+      - 5°F, ENERGY STAR 1.75
+      - frio
+    - - 2.2
+      - Federal minimum 2.2
+      - frio
+- t: Even then, that's about fifty-seven percent of the electricity of a baseboard heater.
+  v:
+    tipo: numero
+    icono: severe_cold
+    valor: 57
+    etiqueta: At 5°F · of a heater's electricity
+    color: frio
+    sufijo: '%'
+- t: Where does that two point two come from?
+  v:
+    tipo: iconos
+    iconos:
+    - help
+    etiquetas:
+    - Where does 2.2 come from?
+  capitulo: 'Reading the label: HSPF2'
+- t: From the rating on every heat pump's label, called HSPF2.
+  v:
+    tipo: iconos
+    iconos:
+    - label
+    etiquetas:
+    - HSPF2
+- t: It measures how many B T U of heat the heat pump delivers for each watt-hour of electricity, over a whole heating season.
+  v:
+    tipo: formula
+    partes:
+    - BTU of heat
+    - ÷
+    - Wh of power
+    - '='
+    - HSPF2
+- t: One watt-hour of electricity turned straight into heat gives three point four one two B T U.
+  v:
+    tipo: formula
+    partes:
+    - 1 Wh
+    - →
+    - 3.412 BTU
+- t: That's what a baseboard heater does.
+  v:
+    tipo: casa
+    foco: calefaccion
+    lineas:
+    - 'Baseboard:'
+    - '*3.412 BTU per Wh*'
+- t: The federal minimum for a new heat pump is an HSPF2 of seven point five.
+  v:
+    tipo: iconos
+    iconos:
+    - gavel
+    - label
+    etiquetas:
+    - Federal minimum
+    - HSPF2 7.5
+- t: Divide seven point five by three point four one two, and you get about two point two.
+  v:
+    tipo: formula
+    partes:
+    - '7.5'
+    - ÷
+    - '3.412'
+    - ≈
+    - '2.2'
+- t: So when you shop, the higher that number, the less electricity it needs for the same heat.
+  v:
+    tipo: iconos
+    iconos:
+    - shopping_cart
+    - arrow_upward
+    etiquetas:
+    - When you shop
+    - Higher = less power
+- t: And if you live somewhere with hard winters, look for a model that meets ENERGY STAR's cold-climate criteria.
+  v:
+    tipo: fuente
+    titulo: ENERGY STAR
+    detalle: Cold-climate heat pump criteria
+    nota: ''
+- t: Now let's put dollars on it.
+  v:
+    tipo: iconos
+    iconos:
+    - savings
+    etiquetas:
+    - In dollars
+  capitulo: What it's worth in dollars
+- t: I started with how much energy typical homes in three different climates use for heating, from the government's household energy survey, and worked out how much heat actually reaches the rooms.
+  v:
+    tipo: fuente
+    titulo: EIA · RECS 2020
+    detalle: Heating energy of typical homes, by climate
+    nota: ''
+- t: Then I priced that heat with each state's average electricity price.
+  v:
+    tipo: mapa
+    resaltar: &id001
+      FL: frio
+      GA: frio
+      MN: frio
+    lineas:
+    - 3 states,
+    - '*3 climates*'
+- t: In Florida, heating a typical home with electric baseboard heaters costs about seven hundred forty-seven dollars a year.
+  v:
+    tipo: mapa
+    resaltar:
+      FL: calor
+    lineas:
+    - 'Florida, baseboard:'
+    - '*$747/yr*'
+- t: With a heat pump, about three hundred forty.
+  v:
+    tipo: comparar
+    a:
+    - Heat pump
+    - 340
+    - heat_pump
+    b:
+    - Baseboard
+    - 747
+    - heat
+    prefijo: $
+    gana: a
+    etiqueta: Florida, a year
+- t: That's about four hundred seven dollars saved.
+  v:
+    tipo: numero
+    icono: savings
+    valor: −$407/yr
+    etiqueta: Florida · saved
+    color: ahorro
+- t: In Georgia, about one thousand five hundred ninety-seven dollars with baseboard heat, and about seven hundred twenty-seven with a heat pump.
+  v:
+    tipo: comparar
+    a:
+    - Heat pump
+    - 727
+    - heat_pump
+    b:
+    - Baseboard
+    - 1597
+    - heat
+    prefijo: $
+    gana: a
+    etiqueta: Georgia, a year
+- t: About eight hundred seventy-one saved.
+  v:
+    tipo: numero
+    icono: savings
+    valor: −$871/yr
+    etiqueta: Georgia · saved
+    color: ahorro
+- t: And in Minnesota, where winters are long, baseboard heat costs about two thousand three hundred forty-two dollars a year.
+  v:
+    tipo: mapa
+    resaltar:
+      MN: calor
+    lineas:
+    - 'Minnesota, baseboard:'
+    - '*$2,342/yr*'
+- t: A heat pump at the federal minimum, about one thousand sixty-five.
+  v:
+    tipo: comparar
+    a:
+    - Heat pump
+    - 1065
+    - heat_pump
+    b:
+    - Baseboard
+    - 2342
+    - heat
+    prefijo: $
+    gana: a
+    etiqueta: Minnesota, a year
+- t: That's about one thousand two hundred seventy-six dollars saved.
+  v:
+    tipo: numero
+    icono: savings
+    valor: −$1,276/yr
+    etiqueta: Minnesota · saved
+    color: ahorro
+- t: Even if we assume the heat pump only manages the cold-weather rating all winter long, it would cost about one thousand three hundred thirty-eight dollars in Minnesota.
+  v:
+    tipo: barras
+    etiqueta: Minnesota, a year
+    items:
+    - - Baseboard
+      - 2342
+      - heat
+    - - Cold rating all winter
+      - 1338
+      - heat_pump
+    - - Federal minimum
+      - 1065
+      - heat_pump
+    prefijo: $
+- t: Still about a thousand dollars less than baseboard heat.
+  v:
+    tipo: iconos
+    iconos:
+    - check_circle
+    etiquetas:
+    - About $1,000 less than baseboard
+- t: The colder the climate, the more heat you need, and the more a heat pump saves over electric resistance.
+  v:
+    tipo: barras
+    etiqueta: Saved a year with a heat pump
+    items:
+    - - Minnesota
+      - 1276
+      - severe_cold
+    - - Georgia
+      - 871
+      - ac_unit
+    - - Florida
+      - 407
+      - light_mode
+    prefijo: $
+- t: Notice that the percentage is the same everywhere.
+  v:
+    tipo: mapa
+    resaltar: *id001
+    lineas:
+    - Same
+    - '*percentage*'
+- t: The heat pump always uses about forty-five percent of the electricity.
+  v:
+    tipo: numero
+    icono: heat_pump
+    valor: 45
+    etiqueta: In every state, same heat
+    color: frio
+    sufijo: '%'
+- t: What changes is the size of the bill it's cutting.
+  v:
+    tipo: barras
+    etiqueta: Baseboard bill, a year
+    items:
+    - - Minnesota
+      - 2342
+      - heat
+    - - Georgia
+      - 1597
+      - heat
+    - - Florida
+      - 747
+      - heat
+    prefijo: $
+- t: So how many American homes already heat this way?
+  v:
+    tipo: casa
+    foco: bomba_calor
+    lineas:
+    - How many
+    - '*homes?*'
+  capitulo: Who heats this way
+- t: According to the government's household energy survey, about seventeen point two million homes use a heat pump as their main heating, counting ductless mini-splits.
+  v:
+    tipo: numero
+    icono: heat_pump
+    valor: 17.2M homes
+    etiqueta: Heat pump or mini-split · EIA RECS 2020
+    color: frio
+- t: And about ten point seven million homes still rely mainly on electric resistance heat, from built-in electric units to portable heaters.
+  v:
+    tipo: barras
+    etiqueta: Main heating, million homes
+    items:
+    - - Electric resistance
+      - 10.7
+      - heat
+    - - Heat pump + mini-split
+      - 17.2
+      - heat_pump
+    decimales: 1
+- t: That's about eight point six percent of all homes, the group with the most to gain from switching.
+  v:
+    tipo: numero
+    icono: heat
+    valor: 8.6
+    etiqueta: Of all U.S. homes
+    color: calor
+    sufijo: '%'
+    decimales: 1
+- t: One honest caveat.
+  v:
+    tipo: iconos
+    iconos:
+    - info
+    etiquetas:
+    - One honest caveat
+  capitulo: And versus gas?
+- t: Beating electric baseboard heat is easy.
+  v:
+    tipo: iconos
+    iconos:
+    - heat_pump
+    - heat
+    etiquetas:
+    - Heat pump
+    - beats baseboard
+- t: Beating a gas furnace is a different question.
+  v:
+    tipo: iconos
+    iconos:
+    - heat_pump
+    - local_fire_department
+    etiquetas:
+    - Heat pump
+    - vs gas furnace?
+- t: A gas furnace doesn't use electricity for heat at all, so the comparison depends on two prices instead of one.
+  v:
+    tipo: formula
+    partes:
+    - Gas price
+    - vs
+    - power price
+- t: In Minnesota, where gas is cheap, a new gas furnace heats that same typical home for about five hundred forty-two dollars a year, less than the heat pump.
+  v:
+    tipo: barras
+    etiqueta: Minnesota, a year
+    items:
+    - - Baseboard
+      - 2342
+      - heat
+    - - Heat pump
+      - 1065
+      - heat_pump
+    - - Gas furnace
+      - 542
+      - local_fire_department
+    prefijo: $
+- t: In Florida, the heat pump wins against gas too.
+  v:
+    tipo: comparar
+    a:
+    - Heat pump
+    - 340
+    - heat_pump
+    b:
+    - Gas furnace
+    - 431
+    - local_fire_department
+    prefijo: $
+    gana: a
+    etiqueta: Florida, a year
+- t: It all comes down to the price of gas versus electricity where you live, and I worked that out state by state in my heat pump versus gas furnace video.
+  v:
+    tipo: mapa
+    resaltar:
+      FL: frio
+      MN: calor
+    lineas:
+    - Heat pump
+    - '*vs gas*'
+    - state by state
+- t: So that's how a heat pump pulls heat out of freezing air.
+  v:
+    tipo: casa
+    foco: bomba_calor
+    lineas:
+    - Heat from
+    - '*freezing air*'
+  capitulo: The short version
+- t: Freezing air still holds plenty of heat.
+  v:
+    tipo: numero
+    icono: severe_cold
+    valor: 87
+    etiqueta: 0°F air vs 70°F air
+    color: frio
+    sufijo: '%'
+- t: The refrigerant soaks it up outside, the compressor makes it hotter than your home, the indoor coil releases it, and the loop starts again.
+  v: *id002
+- t: Because it moves heat instead of making it, it uses about forty-five percent of the electricity of baseboard heat at the federal minimum, and about fifty-seven percent even at five degrees.
+  v:
+    tipo: barras
+    etiqueta: Electricity for the same heat, %
+    items:
+    - - Baseboard
+      - 100
+      - heat
+    - - Heat pump at 5°F
+      - 57
+      - severe_cold
+    - - Federal minimum
+      - 45
+      - heat_pump
+    max: 100
+- t: In a cold state like Minnesota, that's about one thousand two hundred seventy-six dollars a year compared with electric baseboard heaters.
+  v:
+    tipo: mapa
+    resaltar:
+      MN: ahorro
+    lineas:
+    - 'Minnesota:'
+    - '*−$1,276/yr*'
+- t: So if you heat with baseboards or space heaters today, the cold outside isn't a reason to rule out a heat pump.
+  v:
+    tipo: casa
+    foco: calefaccion
+    lineas:
+    - Baseboards
+    - '*today?*'
+- t: It's the reason the savings get bigger.
+  v:
+    tipo: barras
+    etiqueta: Saved a year with a heat pump
+    items:
+    - - Minnesota
+      - 1276
+      - severe_cold
+    - - Georgia
+      - 871
+      - ac_unit
+    - - Florida
+      - 407
+      - light_mode
+    prefijo: $
+    estatico: true
+- t: The full heat pump versus gas furnace comparison is right here on the channel.
+  v:
+    tipo: iconos
+    iconos:
+    - heat_pump
+    - local_fire_department
+    etiquetas:
+    - Heat pump
+    - vs gas furnace
+miniaturas:
+- tipo: icono_grande
+  icono: heat_pump
+  cifra: 0°F
+  color: frio
+  texto:
+  - Heat from
+  - ice?
+- tipo: versus
+  a:
+  - heat
+  - $2,342
+  - calor
+  b:
+  - heat_pump
+  - $1,065
+  - frio
+  texto: Baseboard vs heat pump
+- tipo: mapa
+  resaltar:
+    MN: ahorro
+  cifras: −$1,276/YR

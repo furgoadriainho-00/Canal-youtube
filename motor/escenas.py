@@ -498,7 +498,7 @@ def regla(lienzo, caja, s, t, dur, u):
             cad = et if s.get("sin_valor") else f"{et} {v:.{s['decimales']}f}" if "decimales" in s else f"{et} {v:g}"
             sp = encajar(texto(cad, int(58 * u), c), int(w * 0.42))
             x = min(max(px(v), x0 + sp.width / 2 + 20 * u), x0 + w - sp.width / 2 - 20 * u)
-            pegar(lienzo, sp, x, yb - (160 + 80 * (i % 2)) * u, escala=max(0.01, pm))
+            pegar(lienzo, sp, x, yb - (160 + 80 * (i % s.get("filas", 2))) * u, escala=max(0.01, pm))
     if s.get("nota"):
         pegar(lienzo, encajar(texto(s["nota"], int(30 * u), C["suave"], "Inter", "Medium"), int(w * 0.9)),
               x0 + w / 2, y0 + h - 40 * u, alfa=prog(t, 0.8, 0.4))
@@ -571,7 +571,7 @@ def serie(lienzo, caja, s, t, dur, u):
     lienzo.alpha_composite(capa)
     if s.get("nota"):
         pegar(lienzo, encajar(texto(s["nota"], int(36 * u), C["suave"], "Inter", "Medium"), int(w * 0.9)),
-              x0 + w / 2, y0 + h - 60 * u, alfa=prog(t, 0.8, 0.4))
+              x0 + w / 2, yb + 130 * u, alfa=prog(t, 0.8, 0.4))
 
 
 def clip_escena(lienzo, caja, s, t, dur, u):

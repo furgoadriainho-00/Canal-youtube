@@ -1,0 +1,47 @@
+1
+00:00:00,000 --> 00:00:03,811
+What does that HSPF2 number on a heat pump actually mean?
+
+2
+00:00:03,931 --> 00:00:10,141
+It's how many B T U of heat you get for each watt-hour of electricity, over a whole heating season.
+
+3
+00:00:10,261 --> 00:00:15,073
+An electric heater turns one watt-hour into three point four one two B T U.
+
+4
+00:00:15,193 --> 00:00:16,250
+That's the baseline.
+
+5
+00:00:16,370 --> 00:00:19,701
+The federal minimum for a new heat pump is seven point five.
+
+6
+00:00:19,821 --> 00:00:25,648
+Divide by three point four one two, and it gives about two point two times the heat of a heater,
+
+7
+00:00:25,768 --> 00:00:28,331
+for about forty-five percent of the electricity.
+
+8
+00:00:28,451 --> 00:00:31,598
+A model rated nine gives about two point six four,
+
+9
+00:00:31,718 --> 00:00:33,113
+about thirty-eight percent.
+
+10
+00:00:33,233 --> 00:00:40,446
+In a typical Minnesota home, that's about one thousand sixty-five dollars a year versus about eight hundred eighty-eight.
+
+11
+00:00:40,566 --> 00:00:42,997
+About one hundred seventy-eight dollars saved.
+
+12
+00:00:43,117 --> 00:00:48,882
+So next time you see HSPF2 on a heat pump, you'll know what that number actually means…

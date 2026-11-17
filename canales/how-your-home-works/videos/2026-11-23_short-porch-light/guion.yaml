@@ -1,0 +1,56 @@
+# Short del guionista (guiones/2026-11-23_short-porch-light/GUION.md). Narración literal.
+titulo: Your porch light costs more than you think
+estructura: comparacion
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: Two identical porch lights, on all night.
+  v:
+    tipo: casa
+    foco: luz
+    lineas: ['Porch light,', '*all night*']
+- t: One is a sixty-watt incandescent.
+  v:
+    tipo: iconos
+    iconos: [wb_incandescent]
+    etiquetas: ['60 W incandescent']
+- t: The other, a nine-watt LED.
+  v:
+    tipo: iconos
+    iconos: [wb_incandescent, lightbulb]
+    etiquetas: ['60 W', '9 W LED']
+- t: Same brightness.
+  v:
+    tipo: iconos
+    iconos: [light_mode]
+    etiquetas: ['800 lumens each']
+- t: Twelve hours a night, every night of the year.
+  v:
+    tipo: iconos
+    iconos: [bedtime, calendar_month]
+    etiquetas: ['12 h a night', '365 nights']
+- t: The incandescent costs about forty-seven dollars and eighty cents a year, at the national average electricity price.
+  v: {tipo: numero, icono: wb_incandescent, valor: '$47.80/yr', etiqueta: '60 W · U.S. average price', color: calor}
+- t: The LED costs about seven dollars and seventeen cents.
+  v:
+    tipo: comparar
+    a: [LED, 7.17, lightbulb]
+    b: [Incandescent, 47.80, wb_incandescent]
+    prefijo: $
+    decimales: 2
+    gana: a
+    etiqueta: '$47.80 vs $7.17 a year'
+- t: That's about forty dollars and sixty-three cents a year, from one bulb.
+  v: {tipo: numero, icono: savings, valor: '−$40.63/yr', etiqueta: 'From one bulb', color: ahorro}
+- t: And in twenty twenty, about thirteen point six two million homes still left an incandescent or halogen bulb on outside all night.
+  v: {tipo: numero, icono: home, valor: '13.62M homes', etiqueta: '2020 · old bulb on outside all night', color: calor}
+- t: So if you change just one bulb, make it the one that's on while you sleep.
+  v:
+    tipo: casa
+    foco: luz
+    lineas: ['Change', '*this one first*']
+- t: Like those two identical porch lights…
+  v:
+    tipo: iconos
+    iconos: [wb_incandescent, lightbulb]
+    etiquetas: ['60 W', '9 W LED']

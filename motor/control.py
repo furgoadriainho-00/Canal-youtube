@@ -124,7 +124,8 @@ def controlar(carpeta: Path):
     fuentes = (carpeta / "fuentes.md").read_text()
     if "../" in fuentes:  # los Shorts remiten a las fuentes del largo
         for ref in re.findall(r"`(\.\./[^`]+)`", fuentes):
-            fuentes += (carpeta / ref).read_text() if (carpeta / ref).exists() else ""
+            if (carpeta / ref).suffix in (".md", ".txt") and (carpeta / ref).exists():  # no las hojas de cálculo
+                fuentes += (carpeta / ref).read_text()
     numeros = set()
     for s in g["segmentos"]:
         for k in ("valor",):

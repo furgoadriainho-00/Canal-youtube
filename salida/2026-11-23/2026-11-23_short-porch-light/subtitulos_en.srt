@@ -1,0 +1,43 @@
+1
+00:00:00,000 --> 00:00:02,336
+Two identical porch lights, on all night.
+
+2
+00:00:02,456 --> 00:00:04,489
+One is a sixty-watt incandescent.
+
+3
+00:00:04,609 --> 00:00:06,405
+The other, a nine-watt LED.
+
+4
+00:00:06,525 --> 00:00:07,502
+Same brightness.
+
+5
+00:00:07,622 --> 00:00:10,177
+Twelve hours a night, every night of the year.
+
+6
+00:00:10,297 --> 00:00:17,627
+The incandescent costs about forty-seven dollars and eighty cents a year, at the national average electricity price.
+
+7
+00:00:17,747 --> 00:00:21,167
+The LED costs about seven dollars and seventeen cents.
+
+8
+00:00:21,287 --> 00:00:25,278
+That's about forty dollars and sixty-three cents a year, from one bulb.
+
+9
+00:00:25,398 --> 00:00:33,533
+And in twenty twenty, about thirteen point six two million homes still left an incandescent or halogen bulb on outside all night.
+
+10
+00:00:33,653 --> 00:00:37,780
+So if you change just one bulb, make it the one that's on while you sleep.
+
+11
+00:00:37,900 --> 00:00:40,154
+Like those two identical porch lights…

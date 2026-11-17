@@ -1,0 +1,20 @@
+TÍTULO:
+What Does HSPF2 on a Heat Pump Mean? #shorts
+
+DESCRIPCIÓN:
+HSPF2 = BTU of heat per watt-hour of electricity over a heating season. 1 Wh = 3.412 BTU, so HSPF2 ÷ 3.412 = units of heat per unit of electricity. Federal minimum HSPF2 7.5 (10 CFR 430.32) → about 2.2, or 45% of the electricity of a baseboard heater. HSPF2 9 → about 2.64 (38%). Typical cold-climate home in Minnesota: $1,065 vs $888 a year (EIA RECS 2020 heating needs, EIA MN electricity 16.44¢/kWh, Jan–Aug 2026). Running costs only.
+
+ETIQUETAS:
+hspf2, heat pump efficiency, heat pump rating explained, heat pump label, heat pump cost, shorts, home by the numbers
+
+AJUSTES EN YOUTUBE STUDIO:
+
+- Idioma del vídeo: English · Subtítulos: sube subtitulos_en.srt (Inglés)
+
+- Lista de reproducción: Home energy costs, explained
+
+- Contenido para niños: NO
+
+- Contenido alterado o sintético: SÍ (narración con voz sintética)
+
+- Short: sin miniatura personalizada

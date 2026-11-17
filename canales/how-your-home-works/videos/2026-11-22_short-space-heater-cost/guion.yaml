@@ -1,0 +1,73 @@
+# Short del guionista (guiones/2026-11-22_short-space-heater-cost/GUION.md). Narración literal.
+titulo: What a space heater costs per hour, by state
+estructura: lista
+formato: short
+voz: {nombre: am_michael, velocidad: 1.08}
+segmentos:
+- t: Here's what a fifteen-hundred-watt space heater costs per hour at full power, from cheapest state to priciest.
+  v:
+    tipo: casa
+    foco: calefaccion
+    lineas: ['1,500 W', '*per hour?*']
+- t: 'Washington: about twenty-two cents.'
+  v:
+    tipo: mapa
+    resaltar: {WA: frio}
+    lineas: ['Washington', '*22¢/hr*']
+- t: 'Florida: twenty-three.'
+  v:
+    tipo: mapa
+    resaltar: {WA: frio, FL: frio}
+    lineas: ['Florida', '*23¢/hr*']
+- t: 'Texas: twenty-four.'
+  v:
+    tipo: mapa
+    resaltar: {WA: frio, FL: frio, TX: frio}
+    lineas: ['Texas', '*24¢/hr*']
+- t: 'Minnesota: twenty-five.'
+  v:
+    tipo: mapa
+    resaltar: {WA: frio, FL: frio, TX: frio, MN: frio}
+    lineas: ['Minnesota', '*25¢/hr*']
+- t: 'The US average: about twenty-seven cents an hour.'
+  v: {tipo: numero, icono: bolt, valor: '27¢/hr', etiqueta: 'U.S. average · 1,500 W heater', color: frio}
+- t: 'New York: forty-four cents.'
+  v:
+    tipo: mapa
+    resaltar: {NY: calor}
+    lineas: ['New York', '*44¢/hr*']
+- t: 'Massachusetts: forty-five.'
+  v:
+    tipo: mapa
+    resaltar: {NY: calor, MA: calor}
+    lineas: ['Massachusetts', '*45¢/hr*']
+- t: 'And California: about forty-nine cents an hour.'
+  v:
+    tipo: mapa
+    resaltar: {NY: calor, MA: calor, CA: calor}
+    lineas: ['California', '*49¢/hr*']
+- t: Run it eight hours a day for a month,
+  v:
+    tipo: iconos
+    iconos: [schedule, calendar_month]
+    etiquetas: ['8 h a day', '30 days']
+- t: and that's about fifty-two dollars in Washington, and about one hundred seventeen in California.
+  v:
+    tipo: comparar
+    a: [Washington, 52, heat]
+    b: [California, 117, heat]
+    prefijo: $
+    gana: a
+    etiqueta: '$52 vs $117 a month'
+- t: Same heater, same heat.
+  v:
+    tipo: iconos
+    iconos: [heat, local_fire_department]
+    etiquetas: ['Same heater', 'Same heat']
+- t: The only thing that changes is your electricity price.
+  v:
+    tipo: mapa
+    resaltar: {WA: frio, CA: calor}
+    lineas: ['Only the', '*price changes*']
+- t: So check your rate, then do the math for a fifteen-hundred-watt space heater…
+  v: {tipo: formula, partes: ['1.5 kWh', '×', 'your rate', '=', 'cost per hour']}
