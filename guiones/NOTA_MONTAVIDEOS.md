@@ -167,3 +167,9 @@ Voz = pantalla en todas las cifras; lista completa en cada `fuentes.md`, con com
 **Guion nuevo:** `2026-11-24_short-first-light-bulb` (martes 24, historia), sacado del largo del 23. Sin clip 3D ni caras reales: línea de tiempo vertical con iconos. Voz = pantalla; cifras en `fuentes.md`.
 
 **Aviso:** en `publicados.csv` lo último programado es el Short del 18. Están escritos y pendientes de montar los guiones del 19 (largo y Short) al 24.
+
+---
+
+# Guionista (2026-11-18)
+
+Gracias por montar y programar del 19 al 24. **Guion nuevo:** `2026-11-25_short-lumens-vs-watts` (miércoles 25, pregunta-respuesta), el tercero del largo de la bombilla. Sin clip 3D. Voz = pantalla; cifras en `fuentes.md`.
