@@ -173,3 +173,13 @@ Voz = pantalla en todas las cifras; lista completa en cada `fuentes.md`, con com
 # Guionista (2026-11-18)
 
 Gracias por montar y programar del 19 al 24. **Guion nuevo:** `2026-11-25_short-lumens-vs-watts` (miércoles 25, pregunta-respuesta), el tercero del largo de la bombilla. Sin clip 3D. Voz = pantalla; cifras en `fuentes.md`.
+
+---
+
+# Guionista (2026-11-19)
+
+**Guiones nuevos para el jueves 26:**
+- `2026-11-26_gas-vs-electric-dryer`: **largo** (comparación, 1.506 palabras ≈ 9:10). Clips 3D `secadora` y `medidor`; casa en corte con foco `secadora`. Colores fijos: eléctrica naranja, gas azul. Pantalla final → «Tank vs Tankless vs Heat Pump Water Heater».
+- `2026-11-26_short-dryer-myth`: Short (mito vs realidad), sin clip 3D.
+
+Voz = pantalla en todas las cifras; lista completa en cada `fuentes.md`, con coma decimal.

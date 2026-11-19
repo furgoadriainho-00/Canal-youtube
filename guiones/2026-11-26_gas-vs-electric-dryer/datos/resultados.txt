@@ -1,0 +1,43 @@
+eléctrica: 679.6 kWh/año → 2.40 kWh por carga (283 cargas)
+gas: 2.064 MMBtu/año → 1.992 Mcf → 7,293 Btu por carga
+estado,luz_¢,gas_$Mcf,eléctrica_$año,gas_$año,eléctrica_$carga,gas_$carga,diferencia_$año
+Florida,15.32,25.48,104,51,0.37,0.18,53
+Arizona,15.36,18.58,104,37,0.37,0.13,67
+Washington,14.42,17.62,98,35,0.35,0.12,63
+Georgia,15.48,20.42,105,41,0.37,0.14,65
+Minnesota,16.44,10.98,112,22,0.39,0.08,90
+Illinois,19.23,11.25,131,22,0.46,0.08,108
+US average,18.19,15.34,124,31,0.44,0.11,93
+
+prueba del DOE (carga 8,45 lb):
+  eléctrica 1994 (EF): 3.01 lb/kWh → 2.81 kWh por carga (máximo)
+  eléctrica 2015: 3.73 lb/kWh → 2.27 kWh por carga (máximo)
+  eléctrica 2028: 3.93 lb/kWh → 2.15 kWh por carga (máximo)
+  gas 2015: 3.3 lb/kWh → 2.56 kWh por carga (máximo)
+  gas 2028: 3.48 lb/kWh → 2.43 kWh por carga (máximo)
+eléctrica 2015 en la prueba: 2.27 kWh × 18,19 ¢ = 0.41 $ por carga
+mejora 2015→2028 eléctrica: 5.1% menos energía por carga
+
+hogares (M): con secadora 102,32 · eléctrica 82,21 (80%) · gas 18,89 (18%) · propano 1,22 · sin secadora 21,20 de 123,53
+cargas por semana (M): 0 → 1,92 · 1–4 → 67,48 · 5–9 → 25,93 · 10–15 → 6,06 · >15 → 0,93
+1–4 cargas: 66% de los hogares con secadora
+283 cargas/año = 5.4 por semana; 236 = 4.5
+10 años, media EE. UU.: eléctrica 1236 $, gas 306 $ (sin la luz del motor de la de gas ni subidas de precio)
+
+precio de la misma energía (1 MMBtu):
+  Florida: luz 44.90 $ · gas 24.59 $ · luz/gas 1.8×
+  Arizona: luz 45.02 $ · gas 17.93 $ · luz/gas 2.5×
+  Washington: luz 42.26 $ · gas 17.01 $ · luz/gas 2.5×
+  Georgia: luz 45.37 $ · gas 19.71 $ · luz/gas 2.3×
+  Minnesota: luz 48.18 $ · gas 10.60 $ · luz/gas 4.5×
+  Illinois: luz 56.36 $ · gas 10.86 $ · luz/gas 5.2×
+  US average: luz 53.31 $ · gas 14.81 $ · luz/gas 3.6×
+energía al año: eléctrica 2,319 MMBtu frente a gas 2,064 MMBtu (89%)
+
+secadoras de 10 años o más en 2020: 29.60 M (29% de las secadoras)
+prueba: norma de 1994 2.81 kWh frente a 2015 2.27 kWh → 19% menos energía con la de 2015
+
+una carga de prueba en una eléctrica nueva (2,27 kWh):
+  Washington: 0.33 $
+  US average: 0.41 $
+  Illinois: 0.44 $
