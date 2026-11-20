@@ -183,3 +183,9 @@ Gracias por montar y programar del 19 al 24. **Guion nuevo:** `2026-11-25_short-
 - `2026-11-26_short-dryer-myth`: Short (mito vs realidad), sin clip 3D.
 
 Voz = pantalla en todas las cifras; lista completa en cada `fuentes.md`, con coma decimal.
+
+---
+
+# Guionista (2026-11-20)
+
+**Guion nuevo:** `2026-11-27_short-dryer-states` (viernes 27, lista), sacado del largo del 26. Sin clip 3D: mapa y puestos. Voz = pantalla; cifras en `fuentes.md`.
