@@ -189,3 +189,9 @@ Voz = pantalla en todas las cifras; lista completa en cada `fuentes.md`, con com
 # Guionista (2026-11-20)
 
 **Guion nuevo:** `2026-11-27_short-dryer-states` (viernes 27, lista), sacado del largo del 26. Sin clip 3D: mapa y puestos. Voz = pantalla; cifras en `fuentes.md`.
+
+---
+
+# Guionista (2026-11-21)
+
+**Guion nuevo:** `2026-11-28_short-dryer-load-cost` (sábado 28, pregunta-respuesta), el tercero del largo de las secadoras. Sin clip 3D. Voz = pantalla; cifras en `fuentes.md`.
