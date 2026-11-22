@@ -195,3 +195,11 @@ Voz = pantalla en todas las cifras; lista completa en cada `fuentes.md`, con com
 # Guionista (2026-11-21)
 
 **Guion nuevo:** `2026-11-28_short-dryer-load-cost` (sábado 28, pregunta-respuesta), el tercero del largo de las secadoras. Sin clip 3D. Voz = pantalla; cifras en `fuentes.md`.
+
+---
+
+# Guionista (2026-11-22)
+
+**Guion nuevo:** `2026-11-29_short-stove-cost` (domingo 29, comparación). Sin clip 3D: casa en corte con foco en la cocina. Voz = pantalla; cifras en `fuentes.md`.
+
+**Aviso:** en `publicados.csv` lo último programado es el Short del 24. Pendientes de montar: Shorts del 25, 27, 28 y 29, y largo + Short del 26.

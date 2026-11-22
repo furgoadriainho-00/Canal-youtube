@@ -1,0 +1,4 @@
+eléctrica: 290.4 kWh → 52.83 $/año
+gas: 2,023 MMBtu → 29.95 $/año · 2.0× la energía de la eléctrica
+microondas: 106.7 kWh → 19.40 $/año
+hogares con cocina (range) 110,32 M: eléctrica 65,56 (59%) · gas 34,68 (31%) · propano 4,82 · mixta 5,26
