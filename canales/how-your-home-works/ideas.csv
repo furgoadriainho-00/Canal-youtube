@@ -3,7 +3,7 @@ fecha_alta,idea,estructura,palabra_clave,potencial_vistas_1a10,rpm_1a10,puntuaci
 2026-10-29,Which appliances really use the most electricity (ranked by yearly cost),lista,appliances most electricity,9,8,8.5,hecha
 2026-10-29,Does a smart thermostat actually save money? The math,pregunta-respuesta,smart thermostat save money,8,9,8.5,guion
 2026-10-29,Tankless vs tank water heater: when each one pays off,comparacion,tankless vs tank water heater,8,9,8.5,guion
-2026-10-29,7 home energy-saving myths that cost you money,mito-vs-realidad,home energy myths,8,8,8.0,pendiente
+2026-10-29,7 home energy-saving myths that cost you money,mito-vs-realidad,home energy myths,8,8,8.0,guion
 2026-10-29,How a heat pump pulls heat out of freezing air,paso-a-paso,how heat pump works,8,8,8.0,guion
 2026-10-29,"Induction vs gas vs electric stove: cost, speed and air quality",comparacion,induction vs gas stove,8,8,8.0,pendiente
 2026-10-29,Mesh Wi-Fi vs extender vs a better router: which fixes your dead zone,comparacion,mesh wifi vs extender,8,8,8.0,pendiente
@@ -29,3 +29,4 @@ fecha_alta,idea,estructura,palabra_clave,potencial_vistas_1a10,rpm_1a10,puntuaci
 2026-11-16,"Gas vs electric dryer: what a load really costs, by state",comparacion,gas vs electric dryer cost,8,8,8.0,guion
 2026-11-16,"How a dishwasher cleans with less water than your sink",paso-a-paso,dishwasher vs hand washing,7,7,7.0,pendiente
 2026-11-19,"Gas vs electric stove: what cooking really costs per year",comparacion,gas vs electric stove cost,8,7,7.5,pendiente
+2026-11-23,"Refrigerator vs freezer vs second fridge: what each really costs",comparacion,second fridge cost,7,7,7.0,pendiente

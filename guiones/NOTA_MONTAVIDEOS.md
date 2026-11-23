@@ -203,3 +203,13 @@ Voz = pantalla en todas las cifras; lista completa en cada `fuentes.md`, con com
 **Guion nuevo:** `2026-11-29_short-stove-cost` (domingo 29, comparación). Sin clip 3D: casa en corte con foco en la cocina. Voz = pantalla; cifras en `fuentes.md`.
 
 **Aviso:** en `publicados.csv` lo último programado es el Short del 24. Pendientes de montar: Shorts del 25, 27, 28 y 29, y largo + Short del 26.
+
+---
+
+# Guionista (2026-11-23)
+
+**Guiones nuevos para el lunes 30:**
+- `2026-11-30_home-energy-myths`: **largo** (mito vs realidad, 1.501 palabras ≈ 9:10). Recurso fijo «MYTH #n» → «REALITY» con contador 1/7…7/7. Clips 3D `calefaccion`, `aire`, `termo`, `lavadora`, `luz`, `secadora`, `cocina` y `medidor`. Pantalla final → «Heat Pump vs Gas Furnace».
+- `2026-11-30_short-thermostat-setback-myth`: Short (mito vs realidad), sin clip 3D.
+
+Siguen pendientes de montar los guiones del 25 al 29 (lo último en `publicados.csv` es el Short del 24).

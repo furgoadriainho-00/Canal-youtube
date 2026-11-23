@@ -1,0 +1,6 @@
+ENERGY STAR: más de 900 $ al año en calefacción y refrigeración × 10 % (DOE) = hasta 90 $
+termo de gas: depósito 269 $ − sin depósito 187 $ = 82 $ al año
+termo con bomba de calor frente a eléctrico: 1 − 137/492 = 72%
+radiador 1,5 kW × 8 h × 30 días: WA 52 $ · EE. UU. 65 $ · CA 117 $; por hora EE. UU. 0.27 $
+bomba de calor COP 2,2 (7,5 ÷ 3,412): 45% de la luz
+cocina de gas frente a eléctrica: 2,023 ÷ 0,991 = 2.0×
