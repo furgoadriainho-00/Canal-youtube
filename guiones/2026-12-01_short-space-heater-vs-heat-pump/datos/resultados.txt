@@ -1,0 +1,2 @@
+radiador: 1.50 kWh por hora → 0.27 $/h · 65 $/mes
+bomba de calor: 0.68 kWh por hora → 0.12 $/h · 30 $/mes

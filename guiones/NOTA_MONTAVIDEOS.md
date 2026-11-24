@@ -213,3 +213,9 @@ Voz = pantalla en todas las cifras; lista completa en cada `fuentes.md`, con com
 - `2026-11-30_short-thermostat-setback-myth`: Short (mito vs realidad), sin clip 3D.
 
 Siguen pendientes de montar los guiones del 25 al 29 (lo último en `publicados.csv` es el Short del 24).
+
+---
+
+# Guionista (2026-11-24)
+
+**Guion nuevo:** `2026-12-01_short-space-heater-vs-heat-pump` (martes 1/12, comparación), sacado del largo del 30. Sin clip 3D. Voz = pantalla; cifras en `fuentes.md`.
