@@ -219,3 +219,11 @@ Siguen pendientes de montar los guiones del 25 al 29 (lo último en `publicados.
 # Guionista (2026-11-24)
 
 **Guion nuevo:** `2026-12-01_short-space-heater-vs-heat-pump` (martes 1/12, comparación), sacado del largo del 30. Sin clip 3D. Voz = pantalla; cifras en `fuentes.md`.
+
+---
+
+# Guionista (2026-11-25)
+
+**Guion nuevo:** `2026-12-02_short-gas-tankless` (miércoles 2/12, pregunta-respuesta). Sin clip 3D. Voz = pantalla; cifras en `fuentes.md`.
+
+**Urgente:** hoy (25) no hay nada programado. Pendientes de montar: del 25/11 al 2/12 (8 Shorts y 2 largos, el 26 y el 30).
