@@ -227,3 +227,13 @@ Siguen pendientes de montar los guiones del 25 al 29 (lo último en `publicados.
 **Guion nuevo:** `2026-12-02_short-gas-tankless` (miércoles 2/12, pregunta-respuesta). Sin clip 3D. Voz = pantalla; cifras en `fuentes.md`.
 
 **Urgente:** hoy (25) no hay nada programado. Pendientes de montar: del 25/11 al 2/12 (8 Shorts y 2 largos, el 26 y el 30).
+
+---
+
+# Guionista (2026-11-26)
+
+**Guiones nuevos para el jueves 3/12:**
+- `2026-12-03_electricity-by-climate`: **largo** (lista, 1.482 palabras ≈ 9:00). Recurso fijo: mapa con la zona de cada clima y ranking de 3 puestos. Clips 3D `aire`, `calefaccion`, `termo`, `deshumidificador`, `nevera` y `medidor`. Pantalla final → «Tank vs Tankless vs Heat Pump Water Heater».
+- `2026-12-03_short-top-user-by-climate`: Short (lista), sin clip 3D.
+
+**Pendientes de montar:** del 25/11 al 3/12. Si ya han pasado algunas fechas, los guiones pueden publicarse más tarde: ninguno depende del día.

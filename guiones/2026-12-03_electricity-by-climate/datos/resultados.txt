@@ -1,0 +1,96 @@
+
+== All homes
+  1. Air conditioning (with its fan): 2,775 kWh → 505 $
+  2. Heating (with its fan): 2,717 kWh → 494 $
+  3. Water heating: 2,706 kWh → 492 $
+  4. Dehumidifier: 999 kWh → 182 $
+  5. All refrigerators: 839 kWh → 153 $
+  6. Clothes dryer: 680 kWh → 124 $
+  7. Lighting: 654 kWh → 119 $
+  8. TVs and related: 632 kWh → 115 $
+  9. Separate freezer: 570 kWh → 104 $
+  10. Cooking: 290 kWh → 53 $
+  11. Ceiling fans: 227 kWh → 41 $
+  (solo quien lo tiene) Pool pump: 2,384 kWh → 434 $
+  (solo quien lo tiene) Hot tub (heater + pump): 1,963 kWh → 357 $
+  (solo quien lo tiene) EV charging: 2,363 kWh → 430 $
+
+== Very cold and Cold
+  1. Heating (with its fan): 3,271 kWh → 595 $
+  2. Water heating: 2,668 kWh → 485 $
+  3. Air conditioning (with its fan): 1,580 kWh → 287 $
+  4. Dehumidifier: 933 kWh → 170 $
+  5. All refrigerators: 805 kWh → 146 $
+  6. Clothes dryer: 678 kWh → 123 $
+  7. Lighting: 608 kWh → 111 $
+  8. TVs and related: 605 kWh → 110 $
+  9. Separate freezer: 532 kWh → 97 $
+  10. Cooking: 290 kWh → 53 $
+  11. Ceiling fans: 143 kWh → 26 $
+  (solo quien lo tiene) Pool pump: 2,072 kWh → 377 $
+  (solo quien lo tiene) Hot tub (heater + pump): 2,221 kWh → 404 $
+  (solo quien lo tiene) EV charging: 2,554 kWh → 465 $
+
+== Mixed-humid
+  1. Heating (with its fan): 3,158 kWh → 574 $
+  2. Water heating: 2,927 kWh → 532 $
+  3. Air conditioning (with its fan): 2,745 kWh → 499 $
+  4. Dehumidifier: 1,076 kWh → 196 $
+  5. All refrigerators: 834 kWh → 152 $
+  6. Clothes dryer: 708 kWh → 129 $
+  7. Lighting: 706 kWh → 128 $
+  8. TVs and related: 648 kWh → 118 $
+  9. Separate freezer: 576 kWh → 105 $
+  10. Cooking: 309 kWh → 56 $
+  11. Ceiling fans: 246 kWh → 45 $
+  (solo quien lo tiene) Pool pump: 2,466 kWh → 449 $
+  (solo quien lo tiene) Hot tub (heater + pump): 1,834 kWh → 334 $
+  (solo quien lo tiene) EV charging: 3,644 kWh → 663 $
+
+== Hot-humid
+  1. Air conditioning (with its fan): 4,893 kWh → 890 $
+  2. Water heating: 2,559 kWh → 465 $
+  3. Heating (with its fan): 1,981 kWh → 360 $
+  4. Dehumidifier: 1,368 kWh → 249 $
+  5. All refrigerators: 912 kWh → 166 $
+  6. Lighting: 713 kWh → 130 $
+  7. Clothes dryer: 682 kWh → 124 $
+  8. TVs and related: 680 kWh → 124 $
+  9. Separate freezer: 672 kWh → 122 $
+  10. Ceiling fans: 366 kWh → 67 $
+  11. Cooking: 284 kWh → 52 $
+  (solo quien lo tiene) Pool pump: 2,864 kWh → 521 $
+  (solo quien lo tiene) Hot tub (heater + pump): 1,589 kWh → 289 $
+  (solo quien lo tiene) EV charging: 2,584 kWh → 470 $
+
+== Mixed-dry and Hot-dry
+  1. Air conditioning (with its fan): 3,189 kWh → 580 $
+  2. Water heating: 2,065 kWh → 376 $
+  3. Heating (with its fan): 1,050 kWh → 191 $
+  4. All refrigerators: 868 kWh → 158 $
+  5. Dehumidifier: 773 kWh → 141 $
+  6. TVs and related: 632 kWh → 115 $
+  7. Clothes dryer: 619 kWh → 113 $
+  8. Lighting: 571 kWh → 104 $
+  9. Separate freezer: 559 kWh → 102 $
+  10. Cooking: 253 kWh → 46 $
+  11. Ceiling fans: 191 kWh → 35 $
+  (solo quien lo tiene) Pool pump: 1,960 kWh → 357 $
+  (solo quien lo tiene) Hot tub (heater + pump): 1,697 kWh → 309 $
+  (solo quien lo tiene) EV charging: 1,889 kWh → 344 $
+
+== Marine
+  1. Water heating: 3,073 kWh → 559 $
+  2. Heating (with its fan): 2,862 kWh → 521 $
+  3. Air conditioning (with its fan): 1,097 kWh → 200 $
+  4. Dehumidifier: 865 kWh → 157 $
+  5. All refrigerators: 773 kWh → 141 $
+  6. Lighting: 653 kWh → 119 $
+  7. Clothes dryer: 608 kWh → 111 $
+  8. TVs and related: 550 kWh → 100 $
+  9. Separate freezer: 528 kWh → 96 $
+  10. Cooking: 275 kWh → 50 $
+  11. Ceiling fans: 111 kWh → 20 $
+  (solo quien lo tiene) Pool pump: 1,994 kWh → 363 $
+  (solo quien lo tiene) Hot tub (heater + pump): 2,330 kWh → 424 $
+  (solo quien lo tiene) EV charging: 1,548 kWh → 282 $
