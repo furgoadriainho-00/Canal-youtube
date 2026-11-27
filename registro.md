@@ -89,3 +89,4 @@
 - 2026-11-26 · Guionista: guion largo del jueves 3 de diciembre «What Uses the Most Electricity in Your Climate» (lista, 1.482 palabras ≈ 9:00; RECS 2020 CE5.3a/b por clima × 18,19 ¢; climas de la guía de PNNL por condado). Idea nueva añadida como «guion» y otra pendiente (20 pendientes).
 - 2026-11-26 · Guionista: guion del Short del jueves 3 «Your Home's #1 Electricity User, by Climate» (lista, unas 105 palabras; 890 $ · 580 $ · 574 $ · 595 $ · 559 $).
 - 2026-11-26 · Guionista: sigue sin haber nada programado desde el Short del 24 (`publicados.csv`). Hay 12 guiones sin montar, del 25/11 al 3/12.
+- 2026-11-27 · Guionista: guion del Short del viernes 4 de diciembre «Miami vs Seattle: Where the Electricity Goes» (comparación; aire acondicionado 890 $ frente a 200 $; termo 465 $ frente a 559 $), el segundo sacado del largo del 3. ideas.csv sin cambios (21 pendientes). Sigue sin haber nada programado desde el 24.

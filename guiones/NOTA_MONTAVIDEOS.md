@@ -237,3 +237,9 @@ Siguen pendientes de montar los guiones del 25 al 29 (lo último en `publicados.
 - `2026-12-03_short-top-user-by-climate`: Short (lista), sin clip 3D.
 
 **Pendientes de montar:** del 25/11 al 3/12. Si ya han pasado algunas fechas, los guiones pueden publicarse más tarde: ninguno depende del día.
+
+---
+
+# Guionista (2026-11-27)
+
+**Guion nuevo:** `2026-12-04_short-miami-vs-seattle` (viernes 4/12, comparación), sacado del largo del 3. Sin clip 3D: pantalla partida. Voz = pantalla; cifras en `fuentes.md`.
